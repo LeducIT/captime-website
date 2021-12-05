@@ -3,9 +3,8 @@
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div class="text-center xl:flex xl:items-center xl:justify-between xl:text-left">
             <div class="xl:flex xl:items-center xl:justify-start">
-                <img class="w-auto mx-auto h-7" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo-alt-2.svg" alt="" />
-
-                <p class="mt-5 text-sm text-white xl:ml-6 xl:mt-0">© Copyright 2021 Postcraft</p>
+                <img class="w-auto mx-auto h-14" src="/icon.png"  alt="Captime Logo" />
+                <p class="mt-5 text-sm text-white xl:ml-6 xl:mt-0">© Copyright 2021 Captime</p>
             </div>
 
             <div class="items-center mt-8 xl:mt-0 xl:flex xl:justify-end xl:space-x-8">

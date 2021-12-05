@@ -4,8 +4,8 @@
         <div class="px-4 mx-auto sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 lg:h-20">
                 <div class="flex-shrink-0">
-                    <a href="#" title="" class="flex">
-                        <img class="w-auto h-8 bg-white" src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/logo.svg" alt="" />
+                    <a href="#" title="" class="flex items-center text-xl text-white font-handel">
+                        <img class="w-auto mr-3 bg-white h-14" src="/icon.png" alt="Captime Logo" />Captime
                     </a>
                 </div>
 
@@ -70,7 +70,7 @@
 
             <div class="relative w-full overflow-hidden lg:w-5/12 lg:order-1">
                 <div class="lg:absolute lg:bottom-0 lg:left-0">
-                    <img class="w-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/phone-mockup.png" alt="" />
+                    <img class="w-full" src="/captime_hand.png" alt="" />
                 </div>
             </div>
         </div>
