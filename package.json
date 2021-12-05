@@ -13,5 +13,8 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1"
   }
 }
