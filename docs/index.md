@@ -1,3 +1,85 @@
+<div class="relative bg-black">
+    <section class="overflow-hidden">
+        <div class="flex flex-col lg:flex-row lg:items-stretch lg:max-h-[900px] lg:min-h-[900px]">
+            <div class="flex items-center justify-center w-full lg:order-2 lg:w-7/12">
+                <div class="h-full px-4 pt-24 pb-16 sm:px-6 lg:px-24 2xl:px-32 lg:pt-40 lg:pb-14">
+                    <div class="flex flex-col justify-between flex-1 h-full">
+                        <div>
+                            <h1 class="text-4xl font-bold text-white sm:text-6xl xl:text-7xl">Achieve amazing <br /> workouts</h1>
+                            <p class="mt-6 text-base text-white sm:text-xl">With customized timers for Crossfit, HIIT, AMRAP, TABATA, EMOM, SALLY and VIDEO recording for crossfit games, it’s one of the handiest timers you will ever use.</p>
+                            <a href="#" title="" class="inline-flex items-center px-6 py-5 text-base font-semibold text-white transition-all duration-200 bg-red-500 mt-9 hover:bg-red-700 focus:bg-red-900" role="button"> Get started for free </a>
+                        </div>
+                        <div class="mt-8 border-t-2 border-black lg:mt-auto sm:mt-14">
+                            <div class="pt-8 sm:flex sm:items-center sm:justify-between sm:pt-14">
+                                <p class="text-base font-semibold text-black">App available on</p>
+                                <div class="flex items-center mt-5 space-x-5 sm:mt-0">
+                                    <a href="#" title="" class="block transition-all duration-200 border-2 border-white hover:opacity-80 focus:opacity-80" role="button">
+                                        <img class="w-auto rounded h-14 sm:h-16" src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/app-store-button.png" alt="" />
+                                    </a>
+                                    <a href="#" title="" class="block transition-all duration-200 border-2 border-white hover:opacity-80 focus:opacity-80" role="button">
+                                        <img class="w-auto rounded h-14 sm:h-16" src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/play-store-button.png" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative w-full overflow-hidden lg:w-5/12 lg:order-1">
+                <div class="lg:absolute lg:bottom-0 lg:left-0">
+                    <img class="w-full" src="/captime_hand.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<section class="py-10 bg-red-600 sm:py-16 lg:py-24">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 text-center sm:grid-cols-2 gap-y-8 lg:grid-cols-4 sm:gap-12">
+            <div>
+                <div class="flex items-center justify-center w-20 h-20 mx-auto bg-blue-100 rounded-full">
+                    <svg class="text-blue-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
+                        />
+                    </svg>
+                </div>
+                <h3 class="mt-8 text-lg font-semibold text-black">Secured Payments</h3>
+                <p class="mt-4 text-sm text-gray-200">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            </div>
+            <div>
+                <div class="flex items-center justify-center w-20 h-20 mx-auto bg-blue-200 rounded-full">
+                    <svg class="text-blue-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="mt-8 text-lg font-semibold text-black">Fast & Easy to Load</h3>
+                <p class="mt-4 text-sm text-gray-200">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            </div>
+            <div>
+                <div class="flex items-center justify-center w-20 h-20 mx-auto bg-green-100 rounded-full">
+                    <svg class="text-green-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                </div>
+                <h3 class="mt-8 text-lg font-semibold text-black">Light & Dark Version</h3>
+                <p class="mt-4 text-sm text-gray-200">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            </div>
+            <div>
+                <div class="flex items-center justify-center w-20 h-20 mx-auto bg-red-100 rounded-full">
+                    <svg class="text-red-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+                    </svg>
+                </div>
+                <h3 class="mt-8 text-lg font-semibold text-black">Filter Blocks</h3>
+                <p class="mt-4 text-sm text-gray-200">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
     <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto text-center">
@@ -25,53 +107,6 @@
                 </h3>
                 <p class="mt-4 text-xl font-medium text-gray-900">Team members</p>
                 <p class="text-base mt-0.5 text-gray-500">Working for your success</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="py-10 bg-red-600 sm:py-16 lg:py-24">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 text-center sm:grid-cols-2 gap-y-8 lg:grid-cols-4 sm:gap-12">
-            <div>
-                <div class="flex items-center justify-center w-20 h-20 mx-auto bg-blue-100 rounded-full">
-                    <svg class="text-blue-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-                        />
-                    </svg>
-                </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">Secured Payments</h3>
-                <p class="mt-4 text-sm text-gray-200">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            </div>
-            <div>
-                <div class="flex items-center justify-center w-20 h-20 mx-auto bg-orange-100 rounded-full">
-                    <svg class="text-orange-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">Fast & Easy to Load</h3>
-                <p class="mt-4 text-sm text-gray-200">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            </div>
-            <div>
-                <div class="flex items-center justify-center w-20 h-20 mx-auto bg-green-100 rounded-full">
-                    <svg class="text-green-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                    </svg>
-                </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">Light & Dark Version</h3>
-                <p class="mt-4 text-sm text-gray-200">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            </div>
-            <div>
-                <div class="flex items-center justify-center w-20 h-20 mx-auto bg-red-100 rounded-full">
-                    <svg class="text-red-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
-                    </svg>
-                </div>
-                <h3 class="mt-8 text-lg font-semibold text-black">Filter Blocks</h3>
-                <p class="mt-4 text-sm text-gray-200">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
             </div>
         </div>
     </div>
