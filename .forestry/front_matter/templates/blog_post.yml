@@ -1,4 +1,82 @@
 ---
 label: Blog_post
 hide_body: false
-fields: []
+fields:
+- name: slug
+  type: text
+  config:
+    required: true
+  label: slug
+- name: title
+  type: text
+  config:
+    required: true
+  label: title
+- name: article_date
+  type: datetime
+  label: Article date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+- name: published
+  type: boolean
+  label: published
+  default: true
+- name: type
+  type: select
+  default: article
+  config:
+    required: false
+    options:
+    - article
+    - tips
+    - alternative
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: type
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+    max: 160
+    min: 80
+  label: description
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+    min: 300
+    max: 1500
+  label: content
+- name: author
+  type: text
+  config:
+    required: true
+  label: author
+  default: Martin Donadieu
+- name: authorimg
+  type: text
+  config:
+    required: true
+  label: authorImg
+  default: https://firebasestorage.googleapis.com/v0/b/indiemakerfr.appspot.com/o/static%2Fprofil_martin.png?alt=media&token=845cecb1-7445-409d-8169-cc233f149071
+- name: metaimage
+  type: text
+  config:
+    required: true
+  label: metaImage
