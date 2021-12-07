@@ -1,6 +1,5 @@
 <template>
-<div class="relative bg-black">
-    <header class="absolute inset-x-0 top-0 z-10 w-full">
+    <header class="absolute inset-x-0 top-0 z-10 w-full bg-black">
         <div class="px-4 mx-auto sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 lg:h-20">
                 <div class="flex-shrink-0">
@@ -37,6 +36,4 @@
             </div>
         </div>
     </header>
-</div>
-
 </template>
