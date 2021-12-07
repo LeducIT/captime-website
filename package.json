@@ -4,17 +4,23 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-beta.27",
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.14",
+    "postcss-windicss": "^1.0.0",
     "tailwindcss": "^2.1.2",
-    "vitepress": "^0.13.2"
+    "vite-plugin-windicss": "^1.5.4",
+    "vitepress": "^0.13.2",
+    "windicss": "^3.2.1"
   },
   "scripts": {
+    "docs2:dev": "vuepress dev docs",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.4.1"
+    "@tailwindcss/typography": "^0.4.1",
+    "vuepress": "^2.0.0-beta.27"
   }
 }

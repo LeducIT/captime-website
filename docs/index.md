@@ -7,7 +7,7 @@
                         <div>
                             <h1 class="text-4xl font-bold text-white sm:text-6xl xl:text-7xl">Achieve amazing <br /> workouts</h1>
                             <p class="mt-6 text-base text-white sm:text-xl">With customized timers for Crossfit, HIIT, AMRAP, TABATA, EMOM, SALLY and VIDEO recording for crossfit games, it’s one of the handiest timers you will ever use.</p>
-                            <a href="#" title="" class="inline-flex items-center px-6 py-5 text-base font-semibold text-white transition-all duration-200 bg-red-500 mt-9 hover:bg-red-700 focus:bg-red-900" role="button"> Get started for free </a>
+                            <a href="#" title="" class="inline-flex items-center px-6 py-5 text-base font-semibold text-white transition-all duration-200 bg-ruby-500 mt-9 hover:bg-ruby-700 focus:bg-ruby-900" role="button"> Get started for free </a>
                         </div>
                         <div class="mt-8 border-t-2 border-black lg:mt-auto sm:mt-14">
                             <div class="pt-8 sm:flex sm:items-center sm:justify-between sm:pt-14">
@@ -33,7 +33,7 @@
         </div>
     </section>
 </div>
-<section class="py-10 bg-red-600 sm:py-16 lg:py-24">
+<section class="py-10 bg-ruby-600 sm:py-16 lg:py-24">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 text-center sm:grid-cols-2 gap-y-8 lg:grid-cols-4 sm:gap-12">
             <div>
@@ -69,8 +69,8 @@
                 <p class="mt-4 text-sm text-gray-200">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
             </div>
             <div>
-                <div class="flex items-center justify-center w-20 h-20 mx-auto bg-red-100 rounded-full">
-                    <svg class="text-red-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div class="flex items-center justify-center w-20 h-20 mx-auto bg-ruby-100 rounded-full">
+                    <svg class="text-ruby-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
                     </svg>
                 </div>
@@ -89,21 +89,21 @@
         <div class="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
             <div>
                 <h3 class="font-bold text-7xl">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-600"> 6+ </span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-ruby-500 to-blue-600"> 6+ </span>
                 </h3>
                 <p class="mt-4 text-xl font-medium text-gray-900">Years in business</p>
                 <p class="text-base mt-0.5 text-gray-500">Creating the successful path</p>
             </div>
             <div>
                 <h3 class="font-bold text-7xl">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-600"> 4821 </span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-ruby-500 to-blue-600"> 4821 </span>
                 </h3>
                 <p class="mt-4 text-xl font-medium text-gray-900">Projects delivered</p>
                 <p class="text-base mt-0.5 text-gray-500">In last 6 years</p>
             </div>
             <div>
                 <h3 class="font-bold text-7xl">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-600"> 37+ </span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-ruby-500 to-blue-600"> 37+ </span>
                 </h3>
                 <p class="mt-4 text-xl font-medium text-gray-900">Team members</p>
                 <p class="text-base mt-0.5 text-gray-500">Working for your success</p>

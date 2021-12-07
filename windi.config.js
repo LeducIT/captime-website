@@ -1,16 +1,25 @@
+import defaultTheme from 'windicss/defaultTheme'
+import typography from 'windicss/plugin/typography'
+
 module.exports = {
-  mode: "jit",
-  purge: [
-    './docs/**/*.{vue,js,ts,jsx,tsx,md}',
-    './docs/.vitepress/**/*.{vue,js,ts,jsx,tsx,md}'
-  ],
+  extract: {
+    include: ['./docs/.vuepress/theme/**/*.{vue,js,ts,jsx,tsx,md}', './docs/**/*.{vue,js,ts,jsx,tsx,md}'],
+  },
   darkMode: false, // or 'media' or 'class'
+  shortcuts: {
+    'timer-point-mini': '-right-1 iv:-right-2 md:-right-4 lg:-right-5',
+    'timer-point-big': '-right-4 lg:-right-5',
+    'timer-big':
+      'text-[8rem] tab:text-[9rem] sm:text-[11rem] ix:text-[13rem] md:text-[14rem] lg:text-[18rem] xl:text-[22rem] 2xl:text-[28rem] 4xl:text-[30rem] tracking-[-14px] xl:tracking-[-25px]',
+    'timer-mini':
+      'text-[4rem] tab:text-[5rem] sm:text-[6rem] ix:text-[7rem] md:text-[8rem] lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem] 4xl:text-[20rem] tracking-[-5px] xl:tracking-[-15px]',
+  },
   theme: {
+    fontFamily: {
+      alarm: ['Alarm_Clock', ...defaultTheme.fontFamily.sans],
+      handel: ['Handel_Gothic', ...defaultTheme.fontFamily.sans],
+    },
     extend: {
-      fontFamily: {
-        alarm: ['Alarm_Clock', 'sans-serif'],
-        handel: ['Handel_Gothic', 'sans-serif'],
-      },
       backgroundImage: {
         pricing: "url('/assets/images/pricing.jpeg')",
         tabata: "url('/assets/images/tabata.png')",
@@ -93,5 +102,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [typography],
 }

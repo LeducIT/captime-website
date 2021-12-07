@@ -1,7 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@windicss;
 
+body{
+    background-color: theme('colors.ruby.500');
+}
 @font-face {
     font-family: "Alarm_Clock";
     font-weight: normal;

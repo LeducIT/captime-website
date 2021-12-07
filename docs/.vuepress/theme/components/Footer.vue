@@ -1,5 +1,5 @@
 <template>
-<section class="py-12 bg-red-600">
+<section class="py-12 bg-ruby-600">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div class="text-center xl:flex xl:items-center xl:justify-between xl:text-left">
             <div class="xl:flex xl:items-center xl:justify-start">
