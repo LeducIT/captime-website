@@ -5,16 +5,19 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: docs
+  path: content
   label: Pages
   create: all
   match: "*"
-upload_dir: public/uploads
+upload_dir: docs/.vuepress/public/uploads
 public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.81.0
   preview_output_directory: docs/.vitepress/dist
   install_dependencies_command: yarn
   preview_docker_image: forestryio/node:12
