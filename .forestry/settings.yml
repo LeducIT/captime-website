@@ -15,10 +15,7 @@ front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  preview_env:
-  - HUGO_ENV=staging
-  - HUGO_VERSION=0.81.0
-  preview_output_directory: docs/.vitepress/dist
+  preview_output_directory: docs/.vuepress/dist
   install_dependencies_command: yarn
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
