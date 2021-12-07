@@ -46,23 +46,12 @@ fields:
   default: ''
   config:
     required: false
-    wysiwyg: true
+    wysiwyg: false
     schema:
       format: markdown
     max: 160
     min: 80
   label: description
-- name: content
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-    min: 300
-    max: 1500
-  label: content
 - name: author
   type: text
   config:
