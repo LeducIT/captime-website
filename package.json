@@ -14,10 +14,9 @@
     "windicss": "^3.2.1"
   },
   "scripts": {
-    "docs2:dev": "vuepress dev docs",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:serve": "vuepress serve docs"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",
