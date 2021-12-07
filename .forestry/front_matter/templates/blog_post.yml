@@ -80,3 +80,5 @@ fields:
   config:
     required: true
   label: metaImage
+pages:
+- content/blog/test-2.md
