@@ -9,6 +9,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     description: 'Just playing around.2',
     theme: path.resolve(__dirname, './theme'),
     bundler: '@vuepress/bundler-vite',
+    clientAppSetupFiles: path.resolve(__dirname, './clientAppSetup.ts'),
     // options for vite bundler
     bundlerConfig: {
         viteOptions: {
