@@ -1,4 +1,9 @@
+.DS_Store
+.vite-ssg-dist
+.vite-ssg-temp
+*.local
+dist
+dist-ssr
 node_modules
-docs/.vuepress/dist
-docs/.vuepress/.temp
-docs/.vuepress/.cache
+.idea/
+*.log
