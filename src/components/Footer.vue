@@ -1,6 +1,9 @@
 <script setup lang="ts">
-const openSupport = () => {
+import Crisp from '~/services/crisp'
 
+const crisp = Crisp()
+const openSupport = () => {
+  crisp.openMessenger()
 }
 </script>
 <template>

@@ -3,6 +3,7 @@ import { ViteSSG } from 'vite-ssg'
 import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'virtual:generated-layouts'
 import App from './App.vue'
+import Crisp from '~/services/crisp'
 
 // windicss layers
 import 'virtual:windi-base.css'
@@ -16,6 +17,8 @@ import 'virtual:windi-devtools'
 
 const routes = setupLayouts(generatedRoutes)
 
+const crisp = Crisp()
+crisp.configure({ websiteID: '1f5d5a70-2622-4536-a454-996394feeaad' })
 // https://github.com/antfu/vite-ssg
 export const createApp = ViteSSG(
   App,
