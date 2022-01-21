@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import * as dayjs from 'dayjs'
+import dayjs from 'dayjs'
 import { initBlog } from '~/services/blog'
 
 const data = initBlog()

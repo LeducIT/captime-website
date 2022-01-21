@@ -1,3 +1,4 @@
+import { isClient } from '@vueuse/core'
 
 declare global {
   interface Window {
@@ -9,7 +10,7 @@ declare global {
 
 class CapacitorCrispWeb {
   constructor() {
-    if (window.$crisp)
+    if (!isClient || window.$crisp)
       return
     window.$crisp = []
     const s = document.createElement('script')
@@ -20,6 +21,8 @@ class CapacitorCrispWeb {
   }
 
   private setAutoHide() {
+    if (!isClient)
+      return
     window.$crisp.push(['safe', true],
       ['do', 'chat:hide'],
       [
@@ -39,20 +42,28 @@ class CapacitorCrispWeb {
   }
 
   async configure(data: { websiteID: string }): Promise<void> {
+    if (!isClient)
+      return
     window.CRISP_WEBSITE_ID = data.websiteID
   }
 
   async openMessenger(): Promise<void> {
+    if (!isClient)
+      return
     window.$crisp.push(['do', 'chat:show'])
     window.$crisp.push(['do', 'chat:open'])
   }
 
   async setTokenID(data: { tokenID: string }): Promise<void> {
+    if (!isClient)
+      return
     window.CRISP_TOKEN_ID = data.tokenID
     this.reset()
   }
 
   async setUser(data: { nickname?: string; phone?: string; email?: string; avatar?: string }): Promise<void> {
+    if (!isClient)
+      return
     if (data.nickname)
       window.$crisp.push(['set', 'user:nickname', [data.nickname]])
 
@@ -67,10 +78,14 @@ class CapacitorCrispWeb {
   }
 
   async pushEvent(data: { name: string; color: any }): Promise<void> {
+    if (!isClient)
+      return
     window.$crisp.push(['set', 'session:event', [[[data.name, null, data.color]]]])
   }
 
   async setCompany(data: { name: string; url?: string; description?: string; employment?: [title: string, role: string]; geolocation?: [country: string, city: string] }): Promise<void> {
+    if (!isClient)
+      return
     const meta: any = {
     }
     if (data.url)
@@ -89,14 +104,20 @@ class CapacitorCrispWeb {
   }
 
   async setInt(data: { key: string; value: number }): Promise<void> {
+    if (!isClient)
+      return
     window.$crisp.push(['set', 'session:data', [[[data.key, data.value]]]])
   }
 
   async setString(data: { key: string; value: string }): Promise<void> {
+    if (!isClient)
+      return
     window.$crisp.push(['set', 'session:data', [[[data.key, data.value]]]])
   }
 
   async sendMessage(data: { value: string }): Promise<void> {
+    if (!isClient)
+      return
     window.$crisp.push([
       'do',
       'message:send',
@@ -105,10 +126,14 @@ class CapacitorCrispWeb {
   }
 
   async setSegment(data: { segment: string }): Promise<void> {
+    if (!isClient)
+      return
     window.$crisp.push(['set', 'session:segments', [[data.segment]]])
   }
 
   async reset(): Promise<void> {
+    if (!isClient)
+      return
     window.$crisp.push(['do', 'session:reset'])
     this.setAutoHide()
   }
