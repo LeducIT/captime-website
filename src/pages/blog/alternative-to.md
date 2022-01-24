@@ -11,7 +11,7 @@ published: true
 
 **Best Alternative To Rogue Echo Gym Timer**
 
-![Untitled](/alternativeTo1.png)
+![Untitled](/alternative_to_1.png)
 
 Keeping track of your reps or rounds is one of the most vital things to achieve your fitness goals, no matter where you perform your workouts. This way, you can add measurability to your workouts and structure your fitness regimen. The best way to achieve all this is to use a timer clock that helps you micro-schedule your movements in the middle of your gym activity.
 
@@ -31,7 +31,7 @@ Interval training refers to exercises that improve your cardiovascular health by
 
 Counting the number of reps you can perform in a set is the primary way to measure your progress in any given workout. Unfortunately, it is easier said than done if you perform AMRAP or other forms of HIIT without the support of a preset timer. These timers help you use the time to measure your movements. The best thing about these timers is they take care of the counting process, helping you focus on your movements in a better way.
 
-![Untitled](/alternativeTo2.png)
+![Untitled](/alternative_to_2.png)
 
 **The Best Alternative To Rogue Echo Gym Timer**
 
