@@ -4,6 +4,7 @@ description: "Explanation of AMRAP in CrossFit For Beginners."
 author: "Martin Donadieu"
 date: "2022-01-12"
 tag: timers
+head_image: /amrap1.png
 published: true
 ---
 

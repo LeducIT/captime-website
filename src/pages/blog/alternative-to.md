@@ -3,6 +3,7 @@ title: "Alternative to"
 description: "Best Alternative To Rogue Echo Gym Timer"
 author: "Martin Donadieu"
 date: "2022-01-13"
+head_image: /alternative_to_1.png
 tag: alternatives
 published: true
 ---
