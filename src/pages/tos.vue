@@ -1,5 +1,7 @@
 <template>
-  <h1>Terms and Conditions</h1>
+  <h1>
+    Terms and Conditions
+  </h1>
   <p>Last updated: January 12, 2022</p>
   <p>Please read these terms and conditions carefully before using Our Service.</p>
   <h1>Interpretation and Definitions</h1>
