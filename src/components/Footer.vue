@@ -1,10 +1,16 @@
 <script setup lang="ts">
 import Crisp from '~/services/crisp'
+const router = useRouter()
 
 const crisp = Crisp()
 const openSupport = () => {
   crisp.openMessenger()
 }
+router.afterEach((to) => {
+  if (to.hash && to.hash.startsWith('#support'))
+    crisp.openMessenger()
+})
+router.currentRoute.value.hash.startsWith('#support') && crisp.openMessenger()
 </script>
 <template>
   <section class="py-12 bg-ruby-600">
