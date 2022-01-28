@@ -42,7 +42,7 @@ router.currentRoute.value.hash.startsWith('#support') && crisp.openMessenger()
             </li>
 
             <li>
-              <a href="#" title="" class="text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80" @click="openSupport()"> Support </a>
+              <a href="#support" title="" class="text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80" @click="openSupport()"> Support </a>
             </li>
           </ul>
 
