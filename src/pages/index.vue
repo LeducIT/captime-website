@@ -33,8 +33,8 @@
                 </p>
                 <div class="flex items-center mt-5 space-x-5 sm:mt-0">
                   <a
-                    href="#"
-                    title=""
+                    href="http://onelink.to/captime"
+                    title="Apple store download link"
                     class="block transition-all duration-200 border-2 border-white hover:opacity-80 focus:opacity-80"
                     role="button"
                   ><img
@@ -42,8 +42,8 @@
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/app-store-button.png"
                     alt=""
                   ></a><a
-                    href="#"
-                    title=""
+                    href="http://onelink.to/captime"
+                    title="Google play download link"
                     class="block transition-all duration-200 border-2 border-white hover:opacity-80 focus:opacity-80"
                     role="button"
                   ><img

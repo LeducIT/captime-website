@@ -39,7 +39,8 @@ const expanded = ref(false)
 
         <nav class="hidden lg:flex">
           <a
-            href="#"
+            href="http://onelink.to/captime"
+            target="_blank"
             title="Try Captime for free"
             class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-white border-2 border-white hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white"
             role="button"
