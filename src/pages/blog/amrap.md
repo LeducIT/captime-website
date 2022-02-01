@@ -58,7 +58,7 @@ While completing a greater number of rounds or reps makes an AMRAP-based workout
 
 With the help of AMRAP exercises, you can measure changes and improvements in your fitness. Having that said, keeping track of the allotted time plays a vital role. That’s where you can consider incorporating app-based timers that give you an alert when the time is up for a round or rep. With the help of these timers, you can track the number of intervals or rounds you perform during your workout.
 
-In the end, you can use the Captime app to allot time for your AMRAP and other workouts. The best thing about this app is its ease of use. It's simple options help you start the timer of your choice on the go.
+In the end, you can use the [Captime](http://onelink.to/captime) app to allot time for your AMRAP and other workouts. The best thing about this app is its ease of use. It's simple options help you start the timer of your choice on the go.
 
 <route lang="yaml">
 meta:
