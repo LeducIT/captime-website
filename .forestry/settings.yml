@@ -24,4 +24,3 @@ build:
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: yarn build
-version: 0.81.0
