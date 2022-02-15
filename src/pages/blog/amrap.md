@@ -6,6 +6,9 @@ date: "2022-01-12"
 tag: timers
 head_image: /amrap1.png
 published: true
+meta:
+    - name: image
+    content: https://captime.app/amrap1.png
 ---
 
 # AMRAP

@@ -6,6 +6,9 @@ date: "2022-01-13"
 head_image: /alternative_to_1.png
 tag: alternatives
 published: true
+meta:
+    - name: image
+    content: https://captime.app/alternative_to_1.png
 ---
 
 # Alternative to Rogue Echo Gym Timer

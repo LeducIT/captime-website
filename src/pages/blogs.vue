@@ -12,9 +12,9 @@ const stringToDate = (date: string) => {
   <section class="py-10 bg-black sm:py-16 lg:py-24">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="max-w-2xl mx-auto text-center">
-        <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+        <h1 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
           Latest from our blog
-        </h2>
+        </h1>
         <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-50">
           The best articles to enhence your Crossfit experience.
         </p>
