@@ -5,10 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: src/pages/blog
-  label: Articles
-  create: documents
-  match: "*"
+  path: src/pages
+  label: Pages
+  create: all
+  match: "**/*"
 upload_dir: public
 public_path: "/uploads"
 front_matter_path: ''
@@ -24,4 +24,3 @@ build:
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: yarn build
-version: 0.81.0
