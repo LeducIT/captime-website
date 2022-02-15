@@ -7,7 +7,7 @@ head_image: /alternative_to_1.png
 tag: alternatives
 published: true
 meta:
-    - name: image
+  - name: image
     content: https://captime.app/alternative_to_1.png
 ---
 

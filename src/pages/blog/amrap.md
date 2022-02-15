@@ -3,11 +3,11 @@ title: "AMRAP"
 description: "Explanation of AMRAP in CrossFit For Beginners."
 author: "Martin Donadieu"
 date: "2022-01-12"
-tag: timers
 head_image: /amrap1.png
+tag: timers
 published: true
 meta:
-    - name: image
+  - name: image
     content: https://captime.app/amrap1.png
 ---
 
