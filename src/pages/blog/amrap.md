@@ -11,7 +11,7 @@ meta:
     content: https://captime.app/amrap1.png
   - name: twitter:image
     content: https://captime.app/amrap1.png
-  - name: og:image
+  - name: og:image:alt
     content: Crossfit Men doing sport and thinking about AMRAP
   - name: twitter:title
     content: AMRAP

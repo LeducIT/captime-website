@@ -11,7 +11,7 @@ meta:
     content: https://captime.app/alternative_to_1.png
   - name: twitter:image
     content: https://captime.app/alternative_to_1.png
-  - name: og:image
+  - name: og:image:alt
     content: Crossfit Men looking for alternative
   - name: twitter:title
     content: Alternative to Rogue Echo Gym Timer
