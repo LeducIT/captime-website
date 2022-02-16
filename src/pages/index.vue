@@ -39,8 +39,8 @@
                     role="button"
                   ><img
                     class="w-auto rounded h-14 sm:h-16"
+                    alt="Apple store download link"
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/app-store-button.png"
-                    alt=""
                   ></a><a
                     href="http://onelink.to/captime"
                     title="Google play download link"
@@ -49,7 +49,7 @@
                   ><img
                     class="w-auto rounded h-14 sm:h-16"
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/play-store-button.png"
-                    alt=""
+                    alt="Google play donwload link"
                   ></a>
                 </div>
               </div>
