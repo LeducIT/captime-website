@@ -1,0 +1,35 @@
+---
+label: Article
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: text
+  name: author
+  label: author
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: head_image
+  label: head_image
+- type: text
+  name: tag
+  label: tag
+- type: boolean
+  name: published
+  label: published
+- type: field_group_list
+  name: meta
+  label: meta
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: file
+    name: content
+    label: content
