@@ -7,8 +7,14 @@ head_image: /amrap1.png
 tag: timers
 published: true
 meta:
-  - name: image
+  - name: og:image
     content: https://captime.app/amrap1.png
+  - name: twitter:image
+    content: https://captime.app/amrap1.png
+  - name: twitter:title
+    content: AMRAP
+  - name: twitter:description
+    content: Explanation of AMRAP in CrossFit For Beginners.
 ---
 
 # AMRAP

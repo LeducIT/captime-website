@@ -7,8 +7,14 @@ head_image: /alternative_to_1.png
 tag: alternatives
 published: true
 meta:
-  - name: image
+  - name: og:image
     content: https://captime.app/alternative_to_1.png
+  - name: twitter:image
+    content: https://captime.app/alternative_to_1.png
+  - name: twitter:title
+    content: Alternative to Rogue Echo Gym Timer
+  - name: twitter:description
+    content: Best Alternative To Rogue Echo Gym Timer
 ---
 
 # Alternative to Rogue Echo Gym Timer
