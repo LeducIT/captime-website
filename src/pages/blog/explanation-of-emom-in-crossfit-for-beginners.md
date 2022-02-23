@@ -7,7 +7,7 @@ description: Training programs are a dime a dozen. That's a good thing because v
 author: Team Captime
 date: 2022-02-23T19:00:00Z
 head_image: "/uploads/explanation-of-emom-in-crossfit-for-beginners.png"
-tag: Beginner's Guide, EMOM, CrossFit
+tag: EMOM
 published: true
 meta: []
 
