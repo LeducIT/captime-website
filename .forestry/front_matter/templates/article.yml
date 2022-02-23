@@ -33,3 +33,5 @@ fields:
   - type: file
     name: content
     label: content
+pages:
+- src/pages/explanation-of-emom-in-crossfit-for-beginners.md
