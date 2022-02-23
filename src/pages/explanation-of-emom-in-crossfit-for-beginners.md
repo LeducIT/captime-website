@@ -8,7 +8,7 @@ author: Team Captime
 date: 2022-02-22T19:00:00Z
 head_image: "/uploads/explanation-of-emom-in-crossfit-for-beginners.png"
 tag: Beginner's Guide, EMOM, CrossFit
-published: true
+published: false
 meta: []
 
 ---
