@@ -34,4 +34,5 @@ fields:
     name: content
     label: content
 pages:
+- src/pages/blog/explanation-of-emom-in-crossfit-for-beginners.md
 - src/pages/explanation-of-emom-in-crossfit-for-beginners.md
