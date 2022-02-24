@@ -6,7 +6,7 @@ description: Training programs are a dime a dozen. That's a good thing because v
   workout, this CrossFit workout can be a big challenge.
 author: Team Captime
 date: 2022-02-23T19:00:00Z
-head_image: "/uploads/explanation-of-emom-in-crossfit-for-beginners.png"
+head_image: "/explanation-of-emom-in-crossfit-for-beginners.png"
 tag: EMOM
 published: true
 meta: []
@@ -24,7 +24,7 @@ With the appropriate selection of exercises, you can decide for yourself what yo
 
 Depending on your fitness level, you can vary an EMOM workout. It is best for beginners to start with a maximum ten-minute program. Advanced users and cracks can also train for up to 30 minutes. Realistic repetition numbers are important for individual exercises. It can be frustrating if you can't complete them in 60 seconds. A little experience is required here. If you can speak English, you will find a whole range of training examples for different fitness levels here.
 
-![](/uploads/the-right-technique-when-you-are-tired.png)
+![](/the-right-technique-when-you-are-tired.png)
 
 # The Right Technique When You Are Tired
 
