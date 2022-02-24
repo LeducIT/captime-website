@@ -4,7 +4,7 @@ description: Tabata is the name of interval training that is done by many people
   For example, during boot camp training, runners can also apply this training.
 author: Team Captime
 date: 2022-02-23T19:00:00Z
-head_image: "/uploads/explanation-of-tabata-in-crossfit-for-beginners.png"
+head_image: "/explanation-of-tabata-in-crossfit-for-beginners.png"
 tag: Tabata
 published: true
 meta: []
@@ -24,7 +24,7 @@ The Tabata Protocol appeared to improve two of the body's major energy systems. 
 
 Both moderate-intensity and steady-state cardio target the aerobic system in traditional interval training. They don't always improve your anaerobic system, however, unless you step outside your comfort zone. Using high-intensity interval training with a rest period shorter than the work period can still target both systems, as Dr. Tabata found. Thus, it's a very effective way to boost the efficiency of both athletes and average exercisers.
 
-![](/uploads/effects-on-energy-systems.png)
+![](/effects-on-energy-systems.png)
 
 # Example Tabata Training
 
