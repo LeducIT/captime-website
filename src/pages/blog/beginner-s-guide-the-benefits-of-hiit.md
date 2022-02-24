@@ -5,7 +5,7 @@ description: 'Occasionally, you may feel that you don''t have time to exercise, 
   in the gym. You just need to maximize the time you spend exercising. '
 author: Team Captime
 date: 2022-02-23T19:00:00Z
-head_image: "/uploads/beginner-s-guide-the-benefits-of-hiit.png"
+head_image: "/beginner-s-guide-the-benefits-of-hiit.png"
 tag: HIIT
 published: true
 meta: []
