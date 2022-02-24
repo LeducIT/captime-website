@@ -23,7 +23,7 @@ In addition to the fact that EPOC increases the number of calories we will burn 
 
 Another benefit is that HIIT increases our VO2 max much more than traditional cardiovascular training i.e. the amount of oxygen we can absorb. This means that if we do all kinds of exercises, we can last longer. This type of exercise also allows us to improve our circulatory function, lowers our total cholesterol levels, and reduces our risk of developing type 2 diabetes. In addition, HIIT involves an increase in hormones such as testosterone or growth hormone.
 
-![Example Of HIIT Plan](/uploads/example-of-hiit-plan.png)
+![Example Of HIIT Plan](/example-of-hiit-plan.png)
 
 # Example Of HIIT Plan
 
