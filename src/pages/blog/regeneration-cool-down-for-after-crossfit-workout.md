@@ -5,7 +5,7 @@ description: After the workout do you pack your things and go straight home? In 
   you should include a short cool down in your training.
 author: Team Captime
 date: 2022-02-23T19:00:00Z
-head_image: "/uploads/regeneration-cool-down-for-after-crossfit-workout.png"
+head_image: "/regeneration-cool-down-for-after-crossfit-workout.png"
 tag: Quick Tips
 published: true
 meta: []
@@ -33,7 +33,7 @@ The stretches help to relax the warmed muscles, which increases blood flow, impr
 
 Targeted breathing techniques lower your blood pressure and lower your heart rate.
 
-![Do The Cool Down Properly](/uploads/do-the-cool-down-properly.png)
+![Do The Cool Down Properly](/do-the-cool-down-properly.png)
 
 # Things You Can Add To Your Cool-Down Routine
 
