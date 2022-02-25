@@ -41,3 +41,28 @@ html.dark {
     hover:opacity-100 hover:text-teal-600;
   font-size: 0.9em;
 }
+
+@font-face {
+  font-family: "Alarm_Clock";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 8pc;
+  font-display: swap;
+  src:
+    url("/fonts/Alarm_Clock.woff2") format("woff2"),
+    url("/fonts/Alarm_Clock.woff")
+    format("woff"),
+    url("/fonts/Alarm_Clock.ttf")
+    format("truetype"),
+    url("/fonts/Alarm_Clock.svg#svgFontName")
+    format("svg");
+}
+
+@font-face {
+  font-family: "Handel_Gothic";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 8pc;
+  font-display: swap;
+  src: url("/fonts/Handel_Gothic.ttf") format("truetype");
+}

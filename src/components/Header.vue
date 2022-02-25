@@ -6,7 +6,7 @@ const expanded = ref(false)
     <div class="container px-4 mx-auto sm:px-6 lg:px-8">
       <div class="flex items-center justify-between">
         <div class="flex-shrink-0">
-          <a href="/" title="" class="flex items-center text-xl text-white font-handel">
+          <a href="/" title="" class="flex items-center text-3xl text-white font-handel">
             <img class="w-auto mr-3 bg-white h-14" src="/icon.png" alt="Captime Logo">Captime
           </a>
         </div>
@@ -42,7 +42,7 @@ const expanded = ref(false)
             href="http://onelink.to/captime"
             target="_blank"
             title="Try Captime for free"
-            class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-white border-2 border-white hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white"
+            class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-white border-2 border-white bg-true-gray-900 hover:bg-true-gray-500 hover:text-white transition-all duration-200 focus:bg-true-gray-500 focus:text-white"
             role="button"
           >
             Try for free
@@ -53,13 +53,13 @@ const expanded = ref(false)
       <nav :class="{'hidden': !expanded}">
         <div class="px-1 py-8">
           <div class="grid gap-y-7">
-            <a href="/blogs" title="" class="flex items-center p-3 -m-3 text-base font-medium text-white transition-all duration-200 rounded hover:bg-gray-500 focus:outline-none font-pj focus:ring-1 focus:ring-gray-300 focus:ring-offset-2"> Blog </a>
+            <a href="/blogs" title="" class="flex items-center p-3 -m-3 text-base font-medium text-white transition-all duration-200 rounded hover:bg-true-gray-500 focus:outline-none font-pj focus:ring-1 focus:ring-gray-300 focus:ring-offset-2"> Blog </a>
 
             <a
               href="http://onelink.to/captime"
               target="_blank"
               title="Try Captime for free"
-              class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-7 text-white transition-all border-2 border-white duration-200 bg-gray-900 rounded hover:bg-gray-500 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-7 text-white transition-all border-2 border-white duration-200 bg-true-gray-900 rounded hover:bg-true-gray-500 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
               role="button"
             >
               Try for free
