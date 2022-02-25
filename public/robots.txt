@@ -1,4 +1,19 @@
 User-agent: *
 Allow: /
 
+User-agent: *
+Disallow: /eula
+
+User-agent: *
+Disallow: /privacy
+
+User-agent: *
+Disallow: /tos
+
+User-agent: *
+Disallow: /disclaimer
+
+User-agent: *
+Disallow: /return
+
 Sitemap: https://captime.app/sitemap.xml
