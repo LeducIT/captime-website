@@ -11,13 +11,15 @@ published: true
 meta: []
 
 ---
+# Beginner's Guide: The Benefits Of HIIT
+
 HIIT is a form of cardio training that alternates periods of high and low intensity. These workout intensity variations keep you track of time and speed, making workouts more enjoyable and less boring. High-intensity workouts are the latest fitness trend. But what are the benefits associated with it?
 
-# Why Is HIIT Training Useful?
+## Why Is HIIT Training Useful?
 
 HIIT (High-Intensity Interval Training) usually involves a very hard time of about 30 seconds, followed by a break of between twice and four times that time. The phenomenon that occurs when we recover from this exercise is known as EPOC (Excessive Post-Exercise Oxygen Consumption or Excessive Post-Exercise Oxygen Consumption), which means a significant increase in oxygen consumption to replace the oxygen deficiency that occurs during HIIT -Training was triggered. This is a very important fact because you will actually be burning more calories once you are done exercising.
 
-# What Are The Benefits Of HIIT?
+## What Are The Benefits Of HIIT?
 
 In addition to the fact that EPOC increases the number of calories we will burn without exercising, we save a lot of time because a HIIT session takes much less time than conventional aerobic exercise. In general, HIIT can save us up to half the time we would invest in exercises like the treadmill, elliptical machine, or stationary bike.
 
@@ -25,23 +27,23 @@ Another benefit is that HIIT increases our VO2 max much more than traditional ca
 
 ![Example Of HIIT Plan](/example-of-hiit-plan.png)
 
-# Example Of HIIT Plan
+## Example Of HIIT Plan
 
 In HIIT, the duration, length, and frequency of the load depend on the person’s basic fitness level, the type of sport in which the training is to be carried out, and the desired goals. The following training plans are therefore only to be understood as examples and suggestions.
 
-## HIIT cardio training on the bike:
+### HIIT cardio training on the bike:
 
 * Four to five sprints of 30 seconds each
 * 4 to 5-minute breaks in between
 * 40 to 60 minutes, three days a week
 
-## HIIT training for swimmers:
+### HIIT training for swimmers:
 
 * Four rounds with four times 25 meters sprint
 * Followed by a 10-second break each time
 * Plus a series break of four minutes after each set of four
 
-## HIIT training for runners:
+### HIIT training for runners:
 
 * Give (almost) full throttle for ten to 60 seconds
 * Followed by a break of equal to four times the time of the stress phase
@@ -49,7 +51,7 @@ In HIIT, the duration, length, and frequency of the load depend on the person’
 
 On the track, for example, intervals of six times 40 to 80 meters sprint and two to three minutes of walking or trotting would be possible for beginners.
 
-# Final Words
+## Final Words
 
 High-intensity interval training has many advantages in terms of short learning curves, although we must keep in mind that they are far from easy. You should observe the following rules so that you do not overtax your body:
 

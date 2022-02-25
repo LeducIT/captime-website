@@ -23,13 +23,13 @@ meta:
 
 **Best Alternative To Rogue Echo Gym Timer**
 
-![Untitled](/alternative_to_1.png)
+![alternative_to_1](/alternative_to_1.png)
 
 Keeping track of your reps or rounds is one of the most vital things to achieve your fitness goals, no matter where you perform your workouts. This way, you can add measurability to your workouts and structure your fitness regimen. The best way to achieve all this is to use a timer clock that helps you micro-schedule your movements in the middle of your gym activity.
 
 Timer clocks come equipped with visual and auditory signals that can tell when to start or stop your movements. Some modern-day timers offer even more. One of the most popular options in this regard is the Rogue Echo Gym Timer, which consists of dedicated hardware running a specialized timer application. In the latter part of this post, we will describe the best alternative to Rogue Gym Timer. For now, let’s have a brief overview of why you should use a gym timer.
 
-**What Does A Typical Gym Timer Do?**
+## **What Does A Typical Gym Timer Do?**
 
 - ***It Helps Manage Time.***
 
@@ -43,9 +43,9 @@ Interval training refers to exercises that improve your cardiovascular health by
 
 Counting the number of reps you can perform in a set is the primary way to measure your progress in any given workout. Unfortunately, it is easier said than done if you perform AMRAP or other forms of HIIT without the support of a preset timer. These timers help you use the time to measure your movements. The best thing about these timers is they take care of the counting process, helping you focus on your movements in a better way.
 
-![Untitled](/alternative_to_2.png)
+![alternative_to_2](/alternative_to_2.png)
 
-**The Best Alternative To Rogue Echo Gym Timer**
+## **The Best Alternative To Rogue Echo Gym Timer**
 
 Rogue echo gym trainer is considered a gold standard in fitness circles, and for good reasons. It comes with several preset interval settings, which are also programmable. Hence, you can customize this timer according to your workout requirements or preferences.
 
