@@ -8,6 +8,12 @@
   command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
 
 [[redirects]]
+  from = "/robot.txt"
+  to = "/robot.txt"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/sitemap.xml"
   to = "/sitemap.xml"
   status = 200
