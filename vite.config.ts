@@ -20,6 +20,8 @@ import generateSitemap from 'vite-plugin-pages-sitemap'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
+const sitemapIgnore = ['/eula', '/privacy', '/tos', '/disclaimer', '/return']
+
 export default defineConfig({
   resolve: {
     alias: {
@@ -47,7 +49,7 @@ export default defineConfig({
         return route
         // Augment the route with meta that indicates that the route requires authentication.
       },
-      onRoutesGenerated: routes => (generateSitemap({ hostname: 'https://captime.app', routes })),
+      onRoutesGenerated: routes => (generateSitemap({ hostname: 'https://captime.app', routes: routes.filter(route => !sitemapIgnore.includes(route.path)) })),
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
