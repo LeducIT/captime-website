@@ -33,3 +33,8 @@ fields:
   - type: file
     name: content
     label: content
+pages:
+- src/pages/blog/beginner-s-guide-the-benefits-of-hiit.md
+- src/pages/blog/explanation-of-emom-in-crossfit-for-beginners.md
+- src/pages/blog/explanation-of-tabata-in-crossfit-for-beginners.md
+- src/pages/blog/regeneration-cool-down-for-after-crossfit-workout.md

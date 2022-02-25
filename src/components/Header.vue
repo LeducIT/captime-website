@@ -56,8 +56,9 @@ const expanded = ref(false)
             <a href="#" title="" class="flex items-center p-3 -m-3 text-base font-medium text-white transition-all duration-200 rounded hover:bg-gray-500 focus:outline-none font-pj focus:ring-1 focus:ring-gray-300 focus:ring-offset-2"> Resources </a>
 
             <a
-              href="#"
-              title=""
+              href="http://onelink.to/captime"
+              target="_blank"
+              title="Try Captime for free"
               class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-7 text-white transition-all border-2 border-white duration-200 bg-gray-900 rounded hover:bg-gray-500 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
               role="button"
             >
