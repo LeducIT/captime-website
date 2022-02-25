@@ -1,3 +1,10 @@
+<script setup lang="ts">
+useHead({
+  meta: [
+    { name: 'robots', content: ['noindex', 'nofollow'] },
+  ],
+})
+</script>
 <template>
   <div class="prose prose-sm m-auto text-left">
     <h1>Privacy Policy</h1>
