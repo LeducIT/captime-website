@@ -20,7 +20,7 @@ import generateSitemap from 'vite-plugin-pages-sitemap'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
-const sitemapIgnore = ['/eula', '/privacy', '/tos', '/disclaimer', '/return']
+const sitemapIgnore = ['/eula', '/privacy', '/tos', '/disclaimer', '/return', '/404']
 
 export default defineConfig({
   resolve: {
