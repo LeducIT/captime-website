@@ -12,6 +12,8 @@
   to = “/sitemap.xml”
   status = 200
   force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
