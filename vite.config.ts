@@ -16,6 +16,7 @@ import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
 import fs from 'fs-extra'
 import matter from 'gray-matter'
+import generateSitemap from 'vite-plugin-pages-sitemap'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -46,6 +47,7 @@ export default defineConfig({
         return route
         // Augment the route with meta that indicates that the route requires authentication.
       },
+      onRoutesGenerated: routes => (generateSitemap({ routes })),
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
