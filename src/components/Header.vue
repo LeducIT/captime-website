@@ -28,7 +28,7 @@ const expanded = ref(false)
         </div>
 
         <nav class="hidden lg:flex lg:items-center lg:justify-center lg:ml-10 lg:mr-auto lg:space-x-10">
-          <a href="/blogs" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80"> Articles </a>
+          <a href="/blogs" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80"> Blog </a>
 
           <!-- <a href="#" title="" class="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Features </a>
 
@@ -53,7 +53,7 @@ const expanded = ref(false)
       <nav :class="{'hidden': !expanded}">
         <div class="px-1 py-8">
           <div class="grid gap-y-7">
-            <a href="/blogs" title="" class="flex items-center p-3 -m-3 text-base font-medium text-white transition-all duration-200 rounded hover:bg-gray-500 focus:outline-none font-pj focus:ring-1 focus:ring-gray-300 focus:ring-offset-2"> Articles </a>
+            <a href="/blogs" title="" class="flex items-center p-3 -m-3 text-base font-medium text-white transition-all duration-200 rounded hover:bg-gray-500 focus:outline-none font-pj focus:ring-1 focus:ring-gray-300 focus:ring-offset-2"> Blog </a>
 
             <a
               href="http://onelink.to/captime"

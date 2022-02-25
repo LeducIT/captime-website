@@ -24,6 +24,7 @@ export const initBlog = (): Route[] => {
       acc.push(route as Route)
     return acc
   }, [] as Route[])
+  blogs.sort((a, b) => { return dayjs(b.meta.frontmatter.date).valueOf() - dayjs(a.meta.frontmatter.date).valueOf() })
   return blogs
 }
 
