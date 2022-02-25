@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   meta: [
-    { name: 'robots', content: ['noindex', 'nofollow'] },
+    { name: 'robots', content: '[noindex, nofollow]' },
   ],
 })
 </script>
