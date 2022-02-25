@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import dayjs from 'dayjs'
-import { initBlog } from '~/services/blog'
+import { initBlog, stringToDate } from '~/services/blog'
 
-const data = initBlog()
+const blogs = initBlog()
 
-const stringToDate = (date: string) => {
-  return dayjs(date).format('MMMM DD, YYYY')
-}
 </script>
 <template>
   <section class="py-10 bg-black sm:py-16 lg:py-24">
@@ -21,11 +17,11 @@ const stringToDate = (date: string) => {
       </div>
 
       <div class="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 lg:grid-cols-3 lg:max-w-full">
-        <div v-for="(article, index) in data.blogs" :key="index" class="overflow-hidden bg-white rounded shadow">
+        <div v-for="(article, index) in blogs" :key="index" class="overflow-hidden bg-white rounded shadow">
           <div class="p-5">
             <div class="relative">
               <a :href="article.path" :title="article.meta.frontmatter.title" class="block aspect-w-4 aspect-h-3">
-                <img class="object-cover w-full h-full" :src="article.meta.frontmatter.head_image" :alt="'blog illustration ' + article.meta.frontmatter.title">
+                <img class="object-cover w-full h-full rounded-lg" :src="article.meta.frontmatter.head_image" :alt="'blog illustration ' + article.meta.frontmatter.title">
               </a>
 
               <div class="absolute top-4 left-4">

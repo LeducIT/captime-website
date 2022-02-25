@@ -5,17 +5,27 @@ description: Training programs are a dime a dozen. That's a good thing because v
   fitness variant is EMOM Workout. Depending on the duration and composition of the
   workout, this CrossFit workout can be a big challenge.
 author: Team Captime
-date: 2022-02-23T19:00:00Z
+date: 2022-02-20T19:00:00Z
 head_image: "/explanation-of-emom-in-crossfit-for-beginners.png"
 tag: EMOM
 published: true
-meta: []
+meta:
+  - name: og:image
+    content: https://captime.app/explanation-of-emom-in-crossfit-for-beginners.png
+  - name: twitter:image
+    content: https://captime.app/explanation-of-emom-in-crossfit-for-beginners.png
+  - name: og:image:alt
+    content: Crossfit Men looking for alternative
+  - name: twitter:title
+    content: Explanation of EMOM in CrossFit For Beginners
+  - name: twitter:description
+    content: Training programs are a dime a dozen. That's a good thing because variety
+      helps to set new stimuli and to stay on task with fun. A particularly interesting
+      fitness variant is EMOM Workout. Depending on the duration and composition of the
+      workout, this CrossFit workout can be a big challenge.
 
 ---
 
-# Explanation of EMOM in CrossFit For Beginners
-
-Training programs are a dime a dozen. That's a good thing because variety helps to set new stimuli and to stay on task with fun. A particularly interesting fitness variant is EMOM Workout. Depending on the duration and composition of the workout, this CrossFit workout can be a big challenge.
 ## How Does It Work?
 
 EMOM is the abbreviation for "Every Minute on the Minute". In this particular CrossFit variant, which is extremely popular with the top athletes in this discipline, you perform a different exercise every minute. The special thing about it: The number of repetitions for the individual exercises is predetermined. If it takes you less than 60 seconds for the repetitions, you rest until the full minute and then start the next exercise. The faster you can do the repetitions, the more rest you have. That not only sounds very motivating. But It is!
@@ -28,7 +38,7 @@ With the appropriate selection of exercises, you can decide for yourself what yo
 
 Depending on your fitness level, you can vary an EMOM workout. It is best for beginners to start with a maximum ten-minute program. Advanced users and cracks can also train for up to 30 minutes. Realistic repetition numbers are important for individual exercises. It can be frustrating if you can't complete them in 60 seconds. A little experience is required here. If you can speak English, you will find a whole range of training examples for different fitness levels here.
 
-![](/the-right-technique-when-you-are-tired.png)
+![The right technique when you are tired](/the-right-technique-when-you-are-tired.png)
 
 ## The Right Technique When You Are Tired
 

@@ -8,12 +8,21 @@ date: 2022-02-23T19:00:00Z
 head_image: "/beginner-s-guide-the-benefits-of-hiit.png"
 tag: HIIT
 published: true
-meta: []
+meta:
+  - name: og:image
+    content: https://captime.app/beginner-s-guide-the-benefits-of-hiit.png
+  - name: twitter:image
+    content: https://captime.app/beginner-s-guide-the-benefits-of-hiit.png
+  - name: og:image:alt
+    content: Example Of HIIT Plan
+  - name: twitter:title
+    content: 'Beginner''s Guide: The Benefits Of HIIT'
+  - name: twitter:description
+    content: 'Occasionally, you may feel that you don''t have time to exercise, which
+      might make you skip it. However, to see results, you don''t need to spend hours
+      in the gym. You just need to maximize the time you spend exercising.'
 
 ---
-# Beginner's Guide: The Benefits Of HIIT
-
-HIIT is a form of cardio training that alternates periods of high and low intensity. These workout intensity variations keep you track of time and speed, making workouts more enjoyable and less boring. High-intensity workouts are the latest fitness trend. But what are the benefits associated with it?
 
 ## Why Is HIIT Training Useful?
 

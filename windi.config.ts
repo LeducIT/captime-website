@@ -17,6 +17,9 @@ export default defineConfig({
       handel: ['Handel_Gothic', ...defaultTheme.fontFamily.sans],
     },
     extend: {
+      fontSize: {
+        tiny: '.4rem',
+      },
       typography: {
         DEFAULT: {
           css: {
