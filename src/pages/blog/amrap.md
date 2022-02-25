@@ -1,24 +1,24 @@
 ---
-title: "AMRAP"
-description: "Explanation of AMRAP in CrossFit For Beginners."
-author: "Martin Donadieu"
-date: "2022-01-12"
-head_image: /amrap1.png
+title: 'AMRAP Guide: What Is an AMRAP Workout? - 2022'
+description: Explanation of AMRAP in CrossFit For Beginners.
+author: Martin Donadieu
+date: 2022-01-12
+head_image: "/amrap1.png"
 tag: timers
 published: true
 meta:
-  - name: og:image
-    content: https://captime.app/amrap1.png
-  - name: twitter:image
-    content: https://captime.app/amrap1.png
-  - name: og:image:alt
-    content: Crossfit Men doing sport and thinking about AMRAP
-  - name: twitter:title
-    content: AMRAP
-  - name: twitter:description
-    content: Explanation of AMRAP in CrossFit For Beginners.
----
+- name: og:image
+  content: https://captime.app/amrap1.png
+- name: twitter:image
+  content: https://captime.app/amrap1.png
+- name: og:image:alt
+  content: Crossfit Men doing sport and thinking about AMRAP
+- name: twitter:title
+  content: AMRAP
+- name: twitter:description
+  content: Explanation of AMRAP in CrossFit For Beginners.
 
+---
 # AMRAP
 
 **Explanation of AMRAP in CrossFit For Beginners**
