@@ -17,7 +17,7 @@ router.currentRoute.value.hash.startsWith('#support') && crisp.openMessenger()
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="text-center xl:flex xl:items-center xl:justify-between xl:text-left">
         <div class="xl:flex xl:items-center xl:justify-start">
-          <img class="w-auto mx-auto h-14" src="/icon.png" alt="Captime Logo">
+          <img class="w-auto mx-auto h-14" src="/icon.webp" alt="Captime Logo">
           <div class="mt-5 text-sm text-white xl:ml-6 xl:mt-0 flex">
             © Copyright 2021
             <div class="font-handel pl-2">

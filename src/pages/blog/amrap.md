@@ -3,12 +3,12 @@ title: 'AMRAP Guide: What kind of Workout? - 2022'
 description: AMRAP workouts involve doing as many repetitions of an exercise as possible during a set amount of time, without resting (or with very limited resting). AMRAP is an acronym for "as many rounds as possible". They can be beneficial to literally anyone at any fitness level. 
 author: Martin Donadieu
 date: 2022-01-12
-head_image: "/amrap1.png"
+head_image: "/amrap1.webp"
 tag: timers
 published: true
 meta:
 - name: og:image
-  content: https://captime.app/amrap1.png
+  content: https://captime.app/amrap1.webp
 - name: og:image:alt
   content: Crossfit Men doing sport and thinking about AMRAP
 - name: og:title
@@ -16,7 +16,7 @@ meta:
 - name: og:description
   content: AMRAP workouts involve doing as many repetitions of an exercise as possible during a set amount of time, without resting (or with very limited resting). AMRAP is an acronym for "as many rounds as possible". They can be beneficial to literally anyone at any fitness level.
 - name: twitter:image
-  content: https://captime.app/amrap1.png
+  content: https://captime.app/amrap1.webp
 - name: twitter:title
   content: "AMRAP Guide: What kind of Workout? - 2022"
 - name: twitter:description
@@ -58,7 +58,7 @@ AMRAP based on repetitions involves performing each exercise for a specific time
 
 Since you will be performing multiple exercises instead of one, the timeframe will undoubtedly be longer with this AMRAP protocol. This timeframe can last up to 5, 10, 15, or even 20 minutes. The goal of this protocol is to complete as many circuits as possible.
 
-![Untitled](/amrap2.png)
+![Untitled](/amrap2.webp)
 
 ## **Remember, It Is More About Form Than Speed.**
 

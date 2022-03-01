@@ -3,7 +3,7 @@ title: "Alternative to Rogue Echo Gym Timer"
 description: "Best Alternative To Rogue Echo Gym Timer. For your home gym or CrossFit box, it’s crucial to invest in a good timer. A good gym timer allows you to focus on your workout without dealing with your watch when you’re out of breath."
 author: "Martin Donadieu"
 date: "2022-01-13"
-head_image: /alternative_to_1.png
+head_image: /alternative_to_1.webp
 tag: alternatives
 published: true
 meta:
@@ -14,9 +14,9 @@ meta:
   - name: og:description
     content: Best Alternative To Rogue Echo Gym Timer. For your home gym or CrossFit box, it’s crucial to invest in a good timer. A good gym timer allows you to focus on your workout without dealing with your watch when you’re out of breath.
   - name: og:image
-    content: https://captime.app/alternative_to_1.png
+    content: https://captime.app/alternative_to_1.webp
   - name: twitter:image
-    content: https://captime.app/alternative_to_1.png
+    content: https://captime.app/alternative_to_1.webp
   - name: twitter:title
     content: Alternative to Rogue Echo Gym Timer
   - name: twitter:description
@@ -41,7 +41,7 @@ Interval training refers to exercises that improve your cardiovascular health by
 
 Counting the number of reps you can perform in a set is the primary way to measure your progress in any given workout. Unfortunately, it is easier said than done if you perform AMRAP or other forms of HIIT without the support of a preset timer. These timers help you use the time to measure your movements. The best thing about these timers is they take care of the counting process, helping you focus on your movements in a better way.
 
-![alternative_to_2](/alternative_to_2.png)
+![alternative_to_2](/alternative_to_2.webp)
 
 ## **The Best Alternative To Rogue Echo Gym Timer**
 

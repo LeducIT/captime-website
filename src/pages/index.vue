@@ -41,7 +41,7 @@
                     height="4rem;"
                     class="w-auto rounded h-14 sm:h-16"
                     alt="Apple store download link"
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/app-store-button.png"
+                    src="/app-store-button.webp"
                   ></a><a
                     href="http://onelink.to/captime"
                     title="Google play download link"
@@ -50,7 +50,7 @@
                   ><img
                     height="4rem;"
                     class="w-auto rounded h-14 sm:h-16"
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/play-store-button.png"
+                    src="/play-store-button.webp"
                     alt="Google play donwload link"
                   ></a>
                 </div>
@@ -61,7 +61,7 @@
       </div>
       <div class="relative w-full overflow-hidden lg:w-5/12 lg:order-1">
         <div class="lg:absolute lg:bottom-0 lg:left-0">
-          <img class="w-full" src="/captime_hand.png" alt="hand holding phone with captime app inside">
+          <img class="w-full" src="/captime_hand.webp" alt="hand holding phone with captime app inside">
         </div>
       </div>
     </div>

@@ -6,12 +6,12 @@ description: Training programs are a dime a dozen. That's a good thing because v
   workout, this CrossFit workout can be a big challenge.
 author: Team Captime
 date: 2022-02-20T19:00:00Z
-head_image: "/explanation-of-emom-in-crossfit-for-beginners.png"
+head_image: "/explanation-of-emom-in-crossfit-for-beginners.webp"
 tag: EMOM
 published: true
 meta:
   - name: og:image
-    content: https://captime.app/explanation-of-emom-in-crossfit-for-beginners.png
+    content: https://captime.app/explanation-of-emom-in-crossfit-for-beginners.webp
   - name: og:image:alt
     content: Crossfit Men looking for alternative
   - name: og:title
@@ -22,7 +22,7 @@ meta:
       fitness variant is EMOM Workout. Depending on the duration and composition of the
       workout, this CrossFit workout can be a big challenge.
   - name: twitter:image
-    content: https://captime.app/explanation-of-emom-in-crossfit-for-beginners.png
+    content: https://captime.app/explanation-of-emom-in-crossfit-for-beginners.webp
   - name: twitter:title
     content: Explanation of EMOM in CrossFit For Beginners
   - name: twitter:description
@@ -45,7 +45,7 @@ With the appropriate selection of exercises, you can decide for yourself what yo
 
 Depending on your fitness level, you can vary an EMOM workout. It is best for beginners to start with a maximum ten-minute program. Advanced users and cracks can also train for up to 30 minutes. Realistic repetition numbers are important for individual exercises. It can be frustrating if you can't complete them in 60 seconds. A little experience is required here. If you can speak English, you will find a whole range of training examples for different fitness levels here.
 
-![The right technique when you are tired](/the-right-technique-when-you-are-tired.png)
+![The right technique when you are tired](/the-right-technique-when-you-are-tired.webp)
 
 ## The Right Technique When You Are Tired
 

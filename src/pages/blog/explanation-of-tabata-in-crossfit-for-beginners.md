@@ -4,12 +4,12 @@ description: Tabata is the name of interval training that is done by many people
   For example, during boot camp training, runners can also apply this training.
 author: Team Captime
 date: 2022-02-15T19:00:00Z
-head_image: "/explanation-of-tabata-in-crossfit-for-beginners.png"
+head_image: "/explanation-of-tabata-in-crossfit-for-beginners.webp"
 tag: Tabata
 published: true
 meta:
   - name: og:image
-    content: https://captime.app/explanation-of-tabata-in-crossfit-for-beginners.png
+    content: https://captime.app/explanation-of-tabata-in-crossfit-for-beginners.webp
   - name: og:image:alt
     content: Effects on energy systemse
   - name: og:title
@@ -18,7 +18,7 @@ meta:
     content: Tabata is the name of interval training that is done by many people.
       For example, during boot camp training, runners can also apply this training.
   - name: twitter:image
-    content: https://captime.app/explanation-of-tabata-in-crossfit-for-beginners.png
+    content: https://captime.app/explanation-of-tabata-in-crossfit-for-beginners.webp
   - name: twitter:title
     content: Explanation of Tabata in CrossFit For Beginners
   - name: twitter:description
@@ -42,7 +42,7 @@ The Tabata Protocol appeared to improve two of the body's major energy systems. 
 
 Both moderate-intensity and steady-state cardio target the aerobic system in traditional interval training. They don't always improve your anaerobic system, however, unless you step outside your comfort zone. Using high-intensity interval training with a rest period shorter than the work period can still target both systems, as Dr. Tabata found. Thus, it's a very effective way to boost the efficiency of both athletes and average exercisers.
 
-![Effects on energy systems](/effects-on-energy-systems.png)
+![Effects on energy systems](/effects-on-energy-systems.webp)
 
 ## Example Tabata Training
 

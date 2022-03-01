@@ -7,7 +7,7 @@ const expanded = ref(false)
       <div class="flex items-center justify-between">
         <div class="flex-shrink-0">
           <a href="/" title="" class="flex items-center text-3xl text-white font-handel">
-            <img class="w-auto mr-3 bg-white h-14" height="3.5rem" width="3.5rem" src="/icon.png" alt="Captime Logo">Captime
+            <img class="w-auto mr-3 bg-white border border-2 border-white h-14" height="3.5rem" width="3.5rem" src="/icon.webp" alt="Captime Logo">Captime
           </a>
         </div>
 
