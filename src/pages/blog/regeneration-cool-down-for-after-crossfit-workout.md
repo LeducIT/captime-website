@@ -11,10 +11,16 @@ published: true
 meta:
   - name: og:image
     content: https://captime.app/do-the-cool-down-properly.png
-  - name: twitter:image
-    content: https://captime.app/do-the-cool-down-properly.png
   - name: og:image:alt
     content: Do The Cool Down Properly
+  - name: og:title
+    content: "Regeneration: Cool Down for After CrossFit Workout"
+  - name: og:description
+    content: After the workout do you pack your things and go straight home? In order
+      to do something good for your body after training and to improve your muscle growth,
+      you should include a short cool down in your training.
+  - name: twitter:image
+    content: https://captime.app/do-the-cool-down-properly.png
   - name: twitter:title
     content: "Regeneration: Cool Down for After CrossFit Workout"
   - name: twitter:description

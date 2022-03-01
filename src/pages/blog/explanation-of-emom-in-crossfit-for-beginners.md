@@ -12,10 +12,17 @@ published: true
 meta:
   - name: og:image
     content: https://captime.app/explanation-of-emom-in-crossfit-for-beginners.png
-  - name: twitter:image
-    content: https://captime.app/explanation-of-emom-in-crossfit-for-beginners.png
   - name: og:image:alt
     content: Crossfit Men looking for alternative
+  - name: og:title
+    content: Explanation of EMOM in CrossFit For Beginners
+  - name: og:description
+    content: Training programs are a dime a dozen. That's a good thing because variety
+      helps to set new stimuli and to stay on task with fun. A particularly interesting
+      fitness variant is EMOM Workout. Depending on the duration and composition of the
+      workout, this CrossFit workout can be a big challenge.
+  - name: twitter:image
+    content: https://captime.app/explanation-of-emom-in-crossfit-for-beginners.png
   - name: twitter:title
     content: Explanation of EMOM in CrossFit For Beginners
   - name: twitter:description

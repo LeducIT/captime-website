@@ -15,6 +15,12 @@ meta:
     content: https://captime.app/beginner-s-guide-the-benefits-of-hiit.png
   - name: og:image:alt
     content: Example Of HIIT Plan
+  - name: og:title
+    content: 'Beginner''s Guide: The Benefits Of HIIT'
+  - name: og:description
+    content: 'Occasionally, you may feel that you don''t have time to exercise, which
+      might make you skip it. However, to see results, you don''t need to spend hours
+      in the gym. You just need to maximize the time you spend exercising.'
   - name: twitter:title
     content: 'Beginner''s Guide: The Benefits Of HIIT'
   - name: twitter:description

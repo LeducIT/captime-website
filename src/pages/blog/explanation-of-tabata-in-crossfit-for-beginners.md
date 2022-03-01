@@ -10,10 +10,15 @@ published: true
 meta:
   - name: og:image
     content: https://captime.app/explanation-of-tabata-in-crossfit-for-beginners.png
-  - name: twitter:image
-    content: https://captime.app/explanation-of-tabata-in-crossfit-for-beginners.png
   - name: og:image:alt
     content: Effects on energy systemse
+  - name: og:title
+    content: Explanation of Tabata in CrossFit For Beginners
+  - name: og:description
+    content: Tabata is the name of interval training that is done by many people.
+      For example, during boot camp training, runners can also apply this training.
+  - name: twitter:image
+    content: https://captime.app/explanation-of-tabata-in-crossfit-for-beginners.png
   - name: twitter:title
     content: Explanation of Tabata in CrossFit For Beginners
   - name: twitter:description
