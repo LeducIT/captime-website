@@ -38,6 +38,7 @@
                     class="block transition-all duration-200 border-2 border-white hover:opacity-80 focus:opacity-80"
                     role="button"
                   ><img
+                    height="4rem;"
                     class="w-auto rounded h-14 sm:h-16"
                     alt="Apple store download link"
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/app-store-button.png"
@@ -47,6 +48,7 @@
                     class="block transition-all duration-200 border-2 border-white hover:opacity-80 focus:opacity-80"
                     role="button"
                   ><img
+                    height="4rem;"
                     class="w-auto rounded h-14 sm:h-16"
                     src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/4/play-store-button.png"
                     alt="Google play donwload link"

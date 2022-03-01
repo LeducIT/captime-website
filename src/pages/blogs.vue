@@ -3,7 +3,7 @@ import { initBlog, stringToDate } from '~/services/blog'
 useHead({
   title: 'Captime | Crossfit Blog',
   meta: [
-    { name: 'description', content: 'Check our blog to learn more about crossfit and timers !' },
+    { name: 'description', content: 'Check our blog to learn more about crossfit and timers. Become the best athlete now !' },
     { name: 'og:type', content: 'website' },
     { name: 'og:title', content: 'Captime | Crossfit Blog' },
     { name: 'twitter:title', content: 'Captime | Crossfit Blog' },

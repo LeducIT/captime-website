@@ -7,12 +7,12 @@ const expanded = ref(false)
       <div class="flex items-center justify-between">
         <div class="flex-shrink-0">
           <a href="/" title="" class="flex items-center text-3xl text-white font-handel">
-            <img class="w-auto mr-3 bg-white h-14" src="/icon.png" alt="Captime Logo">Captime
+            <img class="w-auto mr-3 bg-white h-14" height="3.5rem" width="3.5rem" src="/icon.png" alt="Captime Logo">Captime
           </a>
         </div>
 
         <div class="flex lg:hidden text-white">
-          <button type="button" class="text-gray-100" :aria-expanded="expanded" @click="expanded = !expanded">
+          <button type="button" class="text-gray-100" aria-label="menu button" :aria-expanded="expanded" @click="expanded = !expanded">
             <span :class="{'hidden': expanded}" aria-hidden="true">
               <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
