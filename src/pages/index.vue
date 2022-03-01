@@ -112,15 +112,14 @@
 
   <section class="relative">
     <img
-      style="height: 100vh;"
-      class="w-full opacity-50 object-cover"
+      class="w-full h-[100vh] sm:h-auto opacity-50 object-cover"
       src="https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
       alt="Smash workout illusatration"
     >
     <div
       class="text-center absolute pt-10 md:pt-0 px-2 md:px-0 top-0 left-0 md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2"
     >
-      <h2 class="text-3xl font-bold text-white sm:text-4xl xl:text-5xl">
+      <h2 class="text-[1.875rem] font-bold text-white sm:text-[2.25rem] sm:text-[3rem] tracking-wide leading-loose">
         It's time to smash your workout goals and achieve the maximum results using this professional
         timer app. It makes no difference if you work out at home or in the gym. Captime ensures that
         your workouts are effective regardless of where you train.
