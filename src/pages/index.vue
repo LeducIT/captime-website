@@ -18,8 +18,8 @@
                 select advanced timers within seconds, including HIIT, AMRAP, TABATA, EMOM, and more.
               </p>
               <a
-                href="#"
-                title=""
+                href="http://onelink.to/captime"
+                title="Get started for free"
                 class="inline-flex items-center px-6 py-5 text-base font-semibold text-white transition-all duration-200 bg-ruby-500 mt-9 hover:bg-ruby-700 focus:bg-ruby-900"
                 role="button"
               >
@@ -125,7 +125,7 @@
         timer app. It makes no difference if you work out at home or in the gym. Captime ensures that
         your workouts are effective regardless of where you train.
       </h2>
-      <a class="inline-block mt-8 bg-ruby-500 text-white px-6 py-5 font-bold">Get Captime</a>
+      <a title="Get Captime" href="http://onelink.to/captime" class="inline-block mt-8 bg-ruby-500 text-white px-6 py-5 font-bold">Get Captime</a>
     </div>
   </section>
 
