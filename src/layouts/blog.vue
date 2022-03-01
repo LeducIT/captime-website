@@ -71,9 +71,9 @@ const random = randomBlog(router.currentRoute.value.path)
         </div>
       </div>
       <div class="px-4 pt-2 sm:pt-0 text-left">
-        <h4 class="text-lg font-bold">
+        <p class="text-lg font-bold">
           {{ random.meta.frontmatter.title }}
-        </h4>
+        </p>
         <span class="block mt-3 text-sm font-semibold tracking-widest text-gray-500 uppercase"> {{ stringToDate(random.meta.frontmatter.date) }} </span>
         <p class="mt-1">
           {{ random.meta.frontmatter.description }}
