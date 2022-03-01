@@ -1,6 +1,8 @@
 <script setup lang="ts">
 useHead({
+  title: 'Captime | EULA',
   meta: [
+    { name: 'description', content: 'End-User License Agreement' },
     { name: 'robots', content: 'noindex, nofollow' },
   ],
 })

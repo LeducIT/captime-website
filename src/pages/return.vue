@@ -1,6 +1,8 @@
 <script setup lang="ts">
 useHead({
+  title: 'Captime | Return Policy',
   meta: [
+    { name: 'description', content: 'Return Policy' },
     { name: 'robots', content: 'noindex, nofollow' },
   ],
 })

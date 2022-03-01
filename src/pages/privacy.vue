@@ -1,6 +1,8 @@
 <script setup lang="ts">
 useHead({
+  title: 'Captime | Privacy Policy',
   meta: [
+    { name: 'description', content: 'Privacy Policy' },
     { name: 'robots', content: 'noindex, nofollow' },
   ],
 })

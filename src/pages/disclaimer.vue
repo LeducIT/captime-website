@@ -1,6 +1,8 @@
 <script setup lang="ts">
 useHead({
+  title: 'Captime | Disclaimer',
   meta: [
+    { name: 'description', content: 'Disclaimer' },
     { name: 'robots', content: 'noindex, nofollow' },
   ],
 })
