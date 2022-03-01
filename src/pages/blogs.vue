@@ -10,6 +10,7 @@ useHead({
     { name: 'twitter:image', content: 'https://captime.app/blog_meta.png' },
     { name: 'og:image', content: 'https://captime.app/blog_meta.png' },
     { name: 'og:alt', content: 'crossfit blog image' },
+    { name: 'og:url', content: 'https://captime.app/blogs' },
   ],
 })
 
