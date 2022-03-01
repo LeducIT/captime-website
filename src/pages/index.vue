@@ -69,6 +69,9 @@
 
   <section class="py-10 bg-ruby-600 sm:py-16 lg:py-24 bg-ruby-500">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-4xl xl:text-5xl pb-10 font-bold text-white">
+        The features you always wanted
+      </h2>
       <div class="grid grid-cols-1 text-center sm:grid-cols-2 gap-y-8 lg:grid-cols-3 sm:gap-12">
         <div>
           <div class="flex items-center justify-center w-20 h-20 mx-auto bg-blue-100 rounded-full">
@@ -112,14 +115,14 @@
 
   <section class="relative">
     <img
-      class="w-full h-[100vh] sm:h-auto opacity-50 object-cover"
+      class="w-full h-[120vh] sm:h-auto opacity-50 object-cover"
       src="https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
       alt="Smash workout illusatration"
     >
     <div
       class="text-center absolute pt-10 md:pt-0 px-2 md:px-0 top-0 left-0 md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2"
     >
-      <h2 class="text-[1.875rem] font-bold text-white sm:text-[2.25rem] sm:text-[3rem] tracking-wide leading-loose">
+      <h2 class="text-3xl font-bold text-white sm:text-4xl xl:text-5xl">
         It's time to smash your workout goals and achieve the maximum results using this professional
         timer app. It makes no difference if you work out at home or in the gym. Captime ensures that
         your workouts are effective regardless of where you train.
