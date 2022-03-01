@@ -1,5 +1,15 @@
 <script setup lang="ts">
 import { initBlog, stringToDate } from '~/services/blog'
+useHead({
+  title: 'Captime | Crossfit Blog',
+  meta: [
+    { name: 'description', content: 'Check our blog to learn more about crossfit and timers !' },
+    { name: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:domain', content: 'captime.app' },
+    { name: 'og:image', content: 'https://captime.app/alternative_to_1.png' },
+  ],
+})
 
 const blogs = initBlog()
 
