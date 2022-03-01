@@ -5,9 +5,11 @@ useHead({
   meta: [
     { name: 'description', content: 'Check our blog to learn more about crossfit and timers !' },
     { name: 'og:type', content: 'website' },
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:domain', content: 'captime.app' },
-    { name: 'og:image', content: 'https://captime.app/alternative_to_1.png' },
+    { name: 'og:title', content: 'Captime | Crossfit Blog' },
+    { name: 'twitter:title', content: 'Captime | Crossfit Blog' },
+    { name: 'twitter:image', content: 'https://captime.app/blog_meta.png' },
+    { name: 'og:image', content: 'https://captime.app/blog_meta.png' },
+    { name: 'og:alt', content: 'crossfit blog image' },
   ],
 })
 

@@ -164,7 +164,7 @@
                 </div>
 
                 <div class="flex items-center mt-8">
-                  <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png" alt="">
+                  <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png" alt="Jenny Wilson picture">
                   <div class="ml-4">
                     <p class="text-base font-bold text-gray-900 font-pj">
                       Jenny Wilson

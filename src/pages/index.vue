@@ -59,7 +59,7 @@
       </div>
       <div class="relative w-full overflow-hidden lg:w-5/12 lg:order-1">
         <div class="lg:absolute lg:bottom-0 lg:left-0">
-          <img class="w-full" src="/captime_hand.png" alt="">
+          <img class="w-full" src="/captime_hand.png" alt="hand holding phone with captime app inside">
         </div>
       </div>
     </div>
