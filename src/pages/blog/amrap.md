@@ -1,6 +1,6 @@
 ---
-title: 'AMRAP Guide: What kind of Workout? - 2022'
-description: AMRAP workouts involve doing as many repetitions of an exercise as possible during a set amount of time, without resting (or with very limited resting). AMRAP is an acronym for "as many rounds as possible". They can be beneficial to literally anyone at any fitness level. 
+title: 'AMRAP Guide: What are the benefits - 2022'
+description: AMRAP is the short term for “As Many Reps/Rounds As Possible.” This CrossFit workout involves you competing with the clock, meaning that you have to complete as many reps or rounds as you can in a given time.
 author: Martin Donadieu
 date: 2022-01-12
 head_image: "/amrap1.webp"
@@ -12,19 +12,19 @@ meta:
 - name: og:image:alt
   content: Crossfit Men doing sport and thinking about AMRAP
 - name: og:title
-  content: "AMRAP Guide: What kind of Workout? - 2022"
+  content: "AMRAP Guide: What are the benefits - 2022"
 - name: og:description
-  content: AMRAP workouts involve doing as many repetitions of an exercise as possible during a set amount of time, without resting (or with very limited resting). AMRAP is an acronym for "as many rounds as possible". They can be beneficial to literally anyone at any fitness level.
+  content: AMRAP is the short term for “As Many Reps/Rounds As Possible.” This CrossFit workout involves you competing with the clock, meaning that you have to complete as many reps or rounds as you can in a given time.
 - name: twitter:image
   content: https://captime.app/amrap1.webp
 - name: twitter:title
-  content: "AMRAP Guide: What kind of Workout? - 2022"
+  content: "AMRAP Guide: What are the benefits - 2022"
 - name: twitter:description
-  content: AMRAP workouts involve doing as many repetitions of an exercise as possible during a set amount of time, without resting (or with very limited resting). AMRAP is an acronym for "as many rounds as possible". They can be beneficial to literally anyone at any fitness level.
+  content: AMRAP is the short term for “As Many Reps/Rounds As Possible.” This CrossFit workout involves you competing with the clock, meaning that you have to complete as many reps or rounds as you can in a given time.
 
 ---
 
-AMRAP is the short term for “As Many Reps/Rounds As Possible.” This CrossFit workout involves you competing with the clock, meaning that you have to complete as many reps or rounds as you can in a given time. This workout protocol has endless possibilities since you can manipulate exercises and allotted time in many ways. However, most AMRAP workouts are based on high-intensity circuit training or high-intensity interval training.
+This workout protocol has endless possibilities since you can manipulate exercises and allotted time in many ways. However, most AMRAP workouts are based on high-intensity circuit training or high-intensity interval training.
 
 Hence, there are a few things you should keep in mind about AMRAP.
 
