@@ -17,8 +17,7 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import fs from 'fs-extra'
 import matter from 'gray-matter'
 import generateSitemap from 'vite-plugin-pages-sitemap'
-// import Compress from 'vite-plugin-compress'
-import ViteImagemin from 'vite-plugin-imagemin'
+// import ViteImagemin from 'vite-plugin-imagemin'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
@@ -163,33 +162,33 @@ export default defineConfig({
       enabled: false,
     }),
     // Compress({ exclude: ['ssr-manifest.json'] }),
-    ViteImagemin({
-      gifsicle: {
-        optimizationLevel: 7,
-        interlaced: false,
-      },
-      optipng: {
-        optimizationLevel: 7,
-      },
-      mozjpeg: {
-        quality: 20,
-      },
-      pngquant: {
-        quality: [0.8, 0.9],
-        speed: 4,
-      },
-      svgo: {
-        plugins: [
-          {
-            name: 'removeViewBox',
-          },
-          {
-            name: 'removeEmptyAttrs',
-            active: false,
-          },
-        ],
-      },
-    }),
+    // ViteImagemin({
+    //   gifsicle: {
+    //     optimizationLevel: 7,
+    //     interlaced: false,
+    //   },
+    //   optipng: {
+    //     optimizationLevel: 7,
+    //   },
+    //   mozjpeg: {
+    //     quality: 20,
+    //   },
+    //   pngquant: {
+    //     quality: [0.8, 0.9],
+    //     speed: 4,
+    //   },
+    //   svgo: {
+    //     plugins: [
+    //       {
+    //         name: 'removeViewBox',
+    //       },
+    //       {
+    //         name: 'removeEmptyAttrs',
+    //         active: false,
+    //       },
+    //     ],
+    //   },
+    // }),
   ],
 
   server: {
