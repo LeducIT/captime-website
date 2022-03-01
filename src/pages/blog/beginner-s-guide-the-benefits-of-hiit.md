@@ -1,8 +1,6 @@
 ---
 title: 'Beginner''s Guide: The Benefits Of HIIT'
-description: 'Occasionally, you may feel that you don''t have time to exercise, which
-  might make you skip it. However, to see results, you don''t need to spend hours
-  in the gym. You just need to maximize the time you spend exercising. '
+description: 'HIIT (High-Intensity Interval Training) usually involves a very hard time of about 30 seconds, followed by a break of between twice and four times that time.'
 author: Team Captime
 date: 2022-02-23T19:00:00Z
 head_image: "/beginner-s-guide-the-benefits-of-hiit.webp"
@@ -18,17 +16,15 @@ meta:
   - name: og:title
     content: 'Beginner''s Guide: The Benefits Of HIIT'
   - name: og:description
-    content: 'Occasionally, you may feel that you don''t have time to exercise, which
-      might make you skip it. However, to see results, you don''t need to spend hours
-      in the gym. You just need to maximize the time you spend exercising.'
+    content: 'HIIT (High-Intensity Interval Training) usually involves a very hard time of about 30 seconds, followed by a break of between twice and four times that time.'
   - name: twitter:title
     content: 'Beginner''s Guide: The Benefits Of HIIT'
   - name: twitter:description
-    content: 'Occasionally, you may feel that you don''t have time to exercise, which
-      might make you skip it. However, to see results, you don''t need to spend hours
-      in the gym. You just need to maximize the time you spend exercising.'
+    content: 'HIIT (High-Intensity Interval Training) usually involves a very hard time of about 30 seconds, followed by a break of between twice and four times that time.'
 
 ---
+
+Occasionally, you may feel that you don't have time to exercise, which might make you skip it. However, to see results, you don''t need to spend hours in the gym. You just need to maximize the time you spend exercising.
 
 ## Why Is HIIT Training Useful?
 

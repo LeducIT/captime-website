@@ -1,7 +1,6 @@
 ---
 title: Explanation of Tabata in CrossFit For Beginners
-description: Tabata is the name of interval training that is done by many people.
-  For example, during boot camp training, runners can also apply this training.
+description: The Tabata workout is a 4-minute workout consisting of 8 intervals. You do a certain exercise reasonably intensively for 20 seconds, and then you rest for 10 seconds,  for a total of 8 rounds.
 author: Team Captime
 date: 2022-02-15T19:00:00Z
 head_image: "/explanation-of-tabata-in-crossfit-for-beginners.webp"
@@ -15,15 +14,13 @@ meta:
   - name: og:title
     content: Explanation of Tabata in CrossFit For Beginners
   - name: og:description
-    content: Tabata is the name of interval training that is done by many people.
-      For example, during boot camp training, runners can also apply this training.
+    content: The Tabata workout is a 4-minute workout consisting of 8 intervals. You do a certain exercise reasonably intensively for 20 seconds, and then you rest for 10 seconds,  for a total of 8 rounds.
   - name: twitter:image
     content: https://captime.app/explanation-of-tabata-in-crossfit-for-beginners.webp
   - name: twitter:title
     content: Explanation of Tabata in CrossFit For Beginners
   - name: twitter:description
-    content: Tabata is the name of interval training that is done by many people.
-      For example, during boot camp training, runners can also apply this training.
+    content: The Tabata workout is a 4-minute workout consisting of 8 intervals. You do a certain exercise reasonably intensively for 20 seconds, and then you rest for 10 seconds,  for a total of 8 rounds.
 
 ---
 

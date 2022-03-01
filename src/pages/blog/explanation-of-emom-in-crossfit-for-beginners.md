@@ -1,9 +1,6 @@
 ---
 title: Explanation of EMOM in CrossFit For Beginners
-description: Training programs are a dime a dozen. That's a good thing because variety
-  helps to set new stimuli and to stay on task with fun. A particularly interesting
-  fitness variant is EMOM Workout. Depending on the duration and composition of the
-  workout, this CrossFit workout can be a big challenge.
+description: EMOM is the abbreviation for "Every Minute on the Minute". In this particular CrossFit variant, you perform a different exercise every minute.
 author: Team Captime
 date: 2022-02-20T19:00:00Z
 head_image: "/explanation-of-emom-in-crossfit-for-beginners.webp"
@@ -17,19 +14,13 @@ meta:
   - name: og:title
     content: Explanation of EMOM in CrossFit For Beginners
   - name: og:description
-    content: Training programs are a dime a dozen. That's a good thing because variety
-      helps to set new stimuli and to stay on task with fun. A particularly interesting
-      fitness variant is EMOM Workout. Depending on the duration and composition of the
-      workout, this CrossFit workout can be a big challenge.
+    content: EMOM is the abbreviation for "Every Minute on the Minute". In this particular CrossFit variant, you perform a different exercise every minute.
   - name: twitter:image
     content: https://captime.app/explanation-of-emom-in-crossfit-for-beginners.webp
   - name: twitter:title
     content: Explanation of EMOM in CrossFit For Beginners
   - name: twitter:description
-    content: Training programs are a dime a dozen. That's a good thing because variety
-      helps to set new stimuli and to stay on task with fun. A particularly interesting
-      fitness variant is EMOM Workout. Depending on the duration and composition of the
-      workout, this CrossFit workout can be a big challenge.
+    content: EMOM is the abbreviation for "Every Minute on the Minute". In this particular CrossFit variant, you perform a different exercise every minute.
 
 ---
 

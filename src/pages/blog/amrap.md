@@ -1,6 +1,6 @@
 ---
 title: 'AMRAP Guide: What are the benefits - 2022'
-description: AMRAP is the short term for “As Many Reps/Rounds As Possible.” This CrossFit workout involves you competing with the clock, meaning that you have to complete as many reps or rounds as you can in a given time.
+description: AMRAP stand for “As Many Reps/Rounds As Possible.” This workout involves you competing with the clock,  complete as many reps or rounds as you can in a given time.
 author: Martin Donadieu
 date: 2022-01-12
 head_image: "/amrap1.webp"
@@ -14,13 +14,13 @@ meta:
 - name: og:title
   content: "AMRAP Guide: What are the benefits - 2022"
 - name: og:description
-  content: AMRAP is the short term for “As Many Reps/Rounds As Possible.” This CrossFit workout involves you competing with the clock, meaning that you have to complete as many reps or rounds as you can in a given time.
+  content: AMRAP stand for “As Many Reps/Rounds As Possible.” This workout involves you competing with the clock,  complete as many reps or rounds as you can in a given time.
 - name: twitter:image
   content: https://captime.app/amrap1.webp
 - name: twitter:title
   content: "AMRAP Guide: What are the benefits - 2022"
 - name: twitter:description
-  content: AMRAP is the short term for “As Many Reps/Rounds As Possible.” This CrossFit workout involves you competing with the clock, meaning that you have to complete as many reps or rounds as you can in a given time.
+  content: AMRAP stand for “As Many Reps/Rounds As Possible.” This workout involves you competing with the clock,  complete as many reps or rounds as you can in a given time.
 
 ---
 
