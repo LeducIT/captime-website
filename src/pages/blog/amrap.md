@@ -1,6 +1,6 @@
 ---
-title: 'AMRAP Guide: What Is an AMRAP Workout? - 2022'
-description: Explanation of AMRAP in CrossFit For Beginners.
+title: 'AMRAP Guide: What kind of Workout? - 2022'
+description: AMRAP workouts involve doing as many repetitions of an exercise as possible during a set amount of time, without resting (or with very limited resting). AMRAP is an acronym for "as many rounds as possible". They can be beneficial to literally anyone at any fitness level. 
 author: Martin Donadieu
 date: 2022-01-12
 head_image: "/amrap1.png"
@@ -16,7 +16,7 @@ meta:
 - name: twitter:title
   content: AMRAP
 - name: twitter:description
-  content: Explanation of AMRAP in CrossFit For Beginners.
+  content: AMRAP workouts involve doing as many repetitions of an exercise as possible during a set amount of time, without resting (or with very limited resting). AMRAP is an acronym for "as many rounds as possible". They can be beneficial to literally anyone at any fitness level.
 
 ---
 
