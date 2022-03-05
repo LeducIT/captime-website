@@ -50,7 +50,10 @@ export default defineConfig({
         return route
         // Augment the route with meta that indicates that the route requires authentication.
       },
-      onRoutesGenerated: routes => (generateSitemap({ hostname: 'https://captime.app', routes: routes.filter(route => !sitemapIgnore.includes(route.path)) })),
+      onRoutesGenerated: (routes) => {
+        generateSitemap({ hostname: 'https://captime.app', routes: routes.filter(route => !sitemapIgnore.includes(route.path)) })
+        return routes
+      },
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts

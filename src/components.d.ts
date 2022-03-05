@@ -7,9 +7,6 @@ declare module 'vue' {
     Counter: typeof import('./components/Counter.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
-    ICarbonTime: typeof import('~icons/carbon/time')['default']
-    ICarbonVideo: typeof import('~icons/carbon/video')['default']
-    ICarbonVoiceActivate: typeof import('~icons/carbon/voice-activate')['default']
     README: typeof import('./components/README.md')['default']
     Testimonials: typeof import('./components/Testimonials.vue')['default']
   }
