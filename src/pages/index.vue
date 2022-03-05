@@ -39,17 +39,18 @@
                     role="button"
                   ><img
                     height="4rem;"
-                    class="w-auto rounded h-14 sm:h-16"
+                    class="w-auto rounded h-11 sm:h-16"
                     alt="Apple store download link"
                     src="/app-store-button.webp"
-                  ></a><a
+                  ></a>
+                  <a
                     href="http://onelink.to/captime"
                     title="Google play download link"
                     class="block transition-all duration-200 border-2 border-white hover:opacity-80 focus:opacity-80"
                     role="button"
                   ><img
                     height="4rem;"
-                    class="w-auto rounded h-14 sm:h-16"
+                    class="w-auto rounded h-11 sm:h-16"
                     src="/play-store-button.webp"
                     alt="Google play donwload link"
                   ></a>
