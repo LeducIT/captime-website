@@ -1,5 +1,9 @@
 <script setup lang="ts">
 const expanded = ref(false)
+
+const toggle = () => {
+  expanded.value = !expanded.value
+}
 </script>
 <template>
   <header class="py-4 bg-black">
@@ -12,7 +16,7 @@ const expanded = ref(false)
         </div>
 
         <div class="flex lg:hidden text-white">
-          <button type="button" class="text-gray-100" aria-label="menu button" :aria-expanded="expanded" @click="expanded = !expanded">
+          <button type="button" class="text-gray-100" aria-label="menu button" @click="toggle()">
             <span :class="{'hidden': expanded}" aria-hidden="true">
               <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
