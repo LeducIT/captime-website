@@ -40,7 +40,7 @@ const props = defineProps<{
 }>()
 const topList = ref<Athlete[]>([])
 const today = dayjs().format('MMMM DD, YYYY')
-fetch(`http://localhost:8887/.netlify/functions/topOpen?limit=${props.limit}&skip=${props.skip}`).then(async(res) => {
+fetch(`/topOpen?limit=${props.limit}&skip=${props.skip}`).then(async(res) => {
   topList.value = await res.json()
 })
 </script>
