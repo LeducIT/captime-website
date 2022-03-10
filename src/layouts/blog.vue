@@ -7,7 +7,13 @@ const router = useRouter()
 
 const frontmatter: Frontmatter = router.currentRoute.value.meta.frontmatter as any
 const random = randomBlog(router.currentRoute.value.path)
-
+if (!frontmatter.published) {
+  useHead({
+    meta: [
+      { name: 'robots', content: 'noindex, nofollow' },
+    ],
+  })
+}
 </script>
 <template>
   <main class="text-center text-gray-700 dark:text-gray-200">
