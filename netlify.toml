@@ -1,23 +1,20 @@
 [build.environment]
-  # bypass npm auto install
-  NPM_FLAGS = "--version"
-  NODE_VERSION = "16"
+  NPM_FLAGS = "--prefix=/dev/null"
+  NODE_VERSION = "14"
 
 [build]
   publish = "dist"
   command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
 
 [[redirects]]
-  from = "/robot.txt"
-  to = "/robot.txt"
+  from = '/.well-known/*'
   status = 200
-  force = true
+  to = '/deepLink/:splat'
 
 [[redirects]]
-  from = "/sitemap.xml"
-  to = "/sitemap.xml"
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
   status = 200
-  force = true
 
 [[redirects]]
   from = "/*"
@@ -28,3 +25,14 @@
   for = "/manifest.webmanifest"
   [headers.values]
     Content-Type = "application/manifest+json"
+
+[[headers]]
+  for = "/.well-known/*"
+  [headers.values]
+    Content-Type = "application/json"
+
+[dev]
+  command = "pnpm front"
+  autoLaunch = false
+  functionsPort = 8887
+  targetPort = 3336

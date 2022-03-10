@@ -12,6 +12,8 @@ declare module 'vue' {
     ICarbonVoiceActivate: typeof import('~icons/carbon/voice-activate')['default']
     README: typeof import('./components/README.md')['default']
     Testimonials: typeof import('./components/Testimonials.vue')['default']
+    Top5: typeof import('./components/Top5.vue')['default']
+    TopOpen: typeof import('./components/TopOpen.vue')['default']
   }
 }
 
