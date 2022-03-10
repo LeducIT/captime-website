@@ -51,7 +51,11 @@ export default defineConfig({
         // Augment the route with meta that indicates that the route requires authentication.
       },
       onRoutesGenerated: (routes) => {
-        generateSitemap({ hostname: 'https://captime.app', routes: routes.filter(route => !sitemapIgnore.includes(route.path)) })
+        const filetred = routes.filter(route => !sitemapIgnore.includes(route.path)).filter(route => !route.meta?.frontmatter || route.meta?.frontmatter?.published)
+        generateSitemap({
+          hostname: 'https://captime.app',
+          routes: filetred,
+        })
         return routes
       },
     }),

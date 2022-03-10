@@ -20,7 +20,8 @@ export interface Route extends RouteRecordNormalized {
 export const initBlog = (): Route[] => {
   const router = useRouter()
   const blogs = router.getRoutes().reduce((acc, route) => {
-    if (route.meta.frontmatter && route.path.startsWith('/blog/'))
+    const frontmatter = route.meta.frontmatter as Frontmatter
+    if (frontmatter && route.path.startsWith('/blog/') && frontmatter.published)
       acc.push(route as Route)
     return acc
   }, [] as Route[])
