@@ -5,11 +5,19 @@ description: Doing well in the CrossFit Open is a wonderful feat that requires a
   of this challenge. All you need is to follow a proper schedule with a well-developed
   strategy. Eventually, you will get there.
 author: Team Captime
-date: 2022-03-09T19:00:00Z
+date: 2022-03-09T19:00:00.000+00:00
 head_image: "/steps-to-getting-ready-for-the-next-crossfit-open.png"
 tag: CrossFit Open
 published: false
-meta: []
+meta:
+- name: og:description
+  content: ''
+- name: og:title
+  content: ''
+- name: og:image:alt
+  content: ''
+- name: og:image
+  content: "/perfect-your-moves.png"
 
 ---
 Getting into the game shape before the CrossFit Open doesn’t necessarily need you to hire a coach if feasibility is your weak link. This article describes some effective ways to get ready for your next CrossFit Open.
