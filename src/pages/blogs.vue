@@ -8,6 +8,7 @@ useHead({
     { name: 'og:title', content: 'Captime | Crossfit Blog' },
     { name: 'twitter:title', content: 'Captime | Crossfit Blog' },
     { name: 'twitter:image', content: `https://${import.meta.env.domain}/blog_meta.png` },
+    { name: 'og:image:alt', content: 'Crossfit Blog Captime' },
     { name: 'og:image', content: `https://${import.meta.env.domain}/blog_meta.png` },
     { name: 'og:alt', content: 'crossfit blog image' },
     { name: 'og:url', content: `https://${import.meta.env.domain}/blogs` },

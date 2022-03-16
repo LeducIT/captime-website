@@ -14,10 +14,11 @@ useHead({
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:description', content: 'The best crossfit timer you can find. Available in iOS and Android.' },
     { name: 'twitter:domain', content: import.meta.env.domain },
-    { name: 'twitter:image', content: `https://${import.meta.env.domain}p/alternative_to_1.png` },
+    { name: 'twitter:image', content: `https://${import.meta.env.domain}/alternative_to_1.png` },
+    { name: 'og:image:alt', content: 'Crossfit Time App illustration' },
     { name: 'og:image', content: `https://${import.meta.env.domain}/alternative_to_1.png` },
     { name: 'og:alt', content: 'crossfit image' },
-    { name: 'og:url', content: `https://${import.meta.env.domain}${router.currentRoute.value.path}` },
+    { name: 'og:url', content: `https://${import.meta.env.domain}/${router.currentRoute.value.path}` },
   ],
 })
 </script>
