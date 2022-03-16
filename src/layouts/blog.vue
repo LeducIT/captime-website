@@ -14,8 +14,8 @@ const meta = [
   { name: 'og:description', content: frontmatter.description },
   { name: 'title', content: frontmatter.title },
   { name: 'description', content: frontmatter.description },
-  { name: 'og:image', content: `https://${import.meta.env.domain}/frontmatter.head_image` },
-  { name: 'twitter:image', content: `https://${import.meta.env.domain}/frontmatter.head_image` },
+  { name: 'og:image', content: `https://${import.meta.env.domain}/${frontmatter.head_image}` },
+  { name: 'twitter:image', content: `https://${import.meta.env.domain}/${frontmatter.head_image}` },
   { name: 'twitter:title', content: frontmatter.title },
   { name: 'twitter:description', content: frontmatter.description },
 ]
