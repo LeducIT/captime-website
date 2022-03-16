@@ -40,7 +40,7 @@ const props = defineProps<{
 }>()
 const topList = ref<Athlete[]>([])
 const today = dayjs().format('MMMM DD, YYYY')
-fetch(`https://captime.app/api/topOpen?limit=${props.limit}&skip=${props.skip}`).then(async(res) => {
+fetch(`https://${import.meta.env.domain}/api/topOpen?limit=${props.limit}&skip=${props.skip}`).then(async(res) => {
   topList.value = await res.json()
 })
 </script>

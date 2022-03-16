@@ -9,8 +9,6 @@ date: 2022-03-09T19:00:00Z
 head_image: "/steps-to-getting-ready-for-the-next-crossfit-open.png"
 tag: CrossFit Open
 published: false
-meta: []
-
 ---
 Getting into the game shape before the CrossFit Open doesn’t necessarily need you to hire a coach if feasibility is your weak link. This article describes some effective ways to get ready for your next CrossFit Open.
 

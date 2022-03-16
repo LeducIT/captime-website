@@ -4,23 +4,9 @@ description: "For your home gym or CrossFit box, it’s crucial to invest in a g
 author: "Martin Donadieu"
 date: "2022-01-13"
 head_image: /alternative_to_1.webp
+head_image_alt: Crossfit Men looking for alternative
 tag: alternatives
 published: true
-meta:
-  - name: og:image:alt
-    content: Crossfit Men looking for alternative
-  - name: og:title
-    content: Alternative to Rogue Echo Gym Timer
-  - name: og:description
-    content: For your home gym or CrossFit box, it’s crucial to invest in a good timer. Focus on your workout without dealing with your watch when you’re out of breath.
-  - name: og:image
-    content: https://captime.app/alternative_to_1.webp
-  - name: twitter:image
-    content: https://captime.app/alternative_to_1.webp
-  - name: twitter:title
-    content: Alternative to Rogue Echo Gym Timer
-  - name: twitter:description
-    content: For your home gym or CrossFit box, it’s crucial to invest in a good timer. Focus on your workout without dealing with your watch when you’re out of breath.
 ---
 
 Keeping track of your reps or rounds is one of the most vital things to achieve your fitness goals, no matter where you perform your workouts. This way, you can add measurability to your workouts and structure your fitness regimen. The best way to achieve all this is to use a timer clock that helps you micro-schedule your movements in the middle of your gym activity.

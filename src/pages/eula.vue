@@ -6,6 +6,7 @@ useHead({
     { name: 'robots', content: 'noindex, nofollow' },
   ],
 })
+const domain = import.meta.env.domain
 </script>
 <template>
   <div class="prose prose-sm m-auto text-left">
@@ -125,7 +126,7 @@ useHead({
     <h2>Contact Us</h2>
     <p>If you have any questions about this Agreement, You can contact Us:</p>
     <ul>
-      <li>By visiting this page on our website: <a href="https://captime.app/#support" rel="external nofollow noopener" target="_blank">https://captime.app/#support</a></li>
+      <li>By visiting this page on our website: <a :href="`https://${domain}/#support`" rel="external nofollow noopener" target="_blank">https://{{ domain }}/#support</a></li>
     </ul>
   </div>
 </template>

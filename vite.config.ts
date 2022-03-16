@@ -17,11 +17,13 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import fs from 'fs-extra'
 import matter from 'gray-matter'
 import generateSitemap from 'vite-plugin-pages-sitemap'
+import EnvironmentPlugin from 'vite-plugin-environment'
 // import ViteImagemin from 'vite-plugin-imagemin'
 
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
 const sitemapIgnore = ['/eula', '/privacy', '/tos', '/disclaimer', '/return', '/404']
+const domain = 'captime.app'
 
 export default defineConfig({
   resolve: {
@@ -33,6 +35,9 @@ export default defineConfig({
     Vue({
       include: [/\.vue$/, /\.md$/],
     }),
+    EnvironmentPlugin({
+      domain,
+    }, { defineOn: 'import.meta.env' }),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
@@ -53,7 +58,7 @@ export default defineConfig({
       onRoutesGenerated: (routes) => {
         const filetred = routes.filter(route => !sitemapIgnore.includes(route.path)).filter(route => !route.meta?.frontmatter || route.meta?.frontmatter?.published)
         generateSitemap({
-          hostname: 'https://captime.app',
+          hostname: `https://${domain}`,
           routes: filetred,
         })
         return routes

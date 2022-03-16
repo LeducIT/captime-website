@@ -10,6 +10,7 @@ export interface Frontmatter {
   author: string
   published: boolean
   head_image: string
+  head_image_alt: string
 }
 export interface Route extends RouteRecordNormalized {
   meta: {

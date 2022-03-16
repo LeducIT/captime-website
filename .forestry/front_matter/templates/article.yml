@@ -23,16 +23,6 @@ fields:
 - type: boolean
   name: published
   label: published
-- type: field_group_list
-  name: meta
-  label: meta
-  fields:
-  - type: text
-    name: name
-    label: name
-  - type: file
-    name: content
-    label: content
 pages:
 - src/pages/blog/beginner-s-guide-the-benefits-of-hiit.md
 - src/pages/blog/explanation-of-emom-in-crossfit-for-beginners.md

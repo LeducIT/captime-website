@@ -7,10 +7,10 @@ useHead({
     { name: 'og:type', content: 'website' },
     { name: 'og:title', content: 'Captime | Crossfit Blog' },
     { name: 'twitter:title', content: 'Captime | Crossfit Blog' },
-    { name: 'twitter:image', content: 'https://captime.app/blog_meta.png' },
-    { name: 'og:image', content: 'https://captime.app/blog_meta.png' },
+    { name: 'twitter:image', content: `https://${import.meta.env.domain}/blog_meta.png` },
+    { name: 'og:image', content: `https://${import.meta.env.domain}/blog_meta.png` },
     { name: 'og:alt', content: 'crossfit blog image' },
-    { name: 'og:url', content: 'https://captime.app/blogs' },
+    { name: 'og:url', content: `https://${import.meta.env.domain}/blogs` },
   ],
 })
 
