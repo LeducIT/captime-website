@@ -5,7 +5,7 @@ description: Doing well in the CrossFit Open is a wonderful feat that requires a
   of this challenge. All you need is to follow a proper schedule with a well-developed
   strategy. Eventually, you will get there.
 author: Team Captime
-date: 2022-03-09T19:00:00Z
+date: 2022-03-09T19:00:00.000+00:00
 head_image: "/steps-to-getting-ready-for-the-next-crossfit-open.png"
 tag: CrossFit Open
 published: false
