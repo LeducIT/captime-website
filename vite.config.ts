@@ -20,7 +20,7 @@ import generateSitemap from 'vite-plugin-pages-sitemap'
 import EnvironmentPlugin from 'vite-plugin-environment'
 // import ViteImagemin from 'vite-plugin-imagemin'
 
-const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
+const markdownWrapperClasses = 'prose prose-xl m-auto text-left'
 
 const sitemapIgnore = ['/eula', '/privacy', '/tos', '/disclaimer', '/return', '/404']
 const domain = 'captime.app'
