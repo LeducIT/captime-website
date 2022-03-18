@@ -1,6 +1,5 @@
 import { defineConfig } from 'windicss/helpers'
 import colors from 'windicss/colors'
-import typography from 'windicss/plugin/typography'
 import defaultTheme from 'windicss/defaultTheme'
 
 export default defineConfig({
@@ -9,7 +8,10 @@ export default defineConfig({
   attributify: true,
 
   plugins: [
-    typography(),
+    require('windicss/plugin/line-clamp'),
+    require('windicss/plugin/forms'),
+    require('windicss/plugin/typography'),
+    require('windicss/plugin/aspect-ratio'),
   ],
   theme: {
     fontFamily: {
