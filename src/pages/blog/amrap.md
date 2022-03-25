@@ -7,6 +7,7 @@ head_image: "/amrap1.webp"
 head_image_alt: Crossfit Men doing sport and thinking about AMRAP
 tag: timers
 published: true
+next_blog: ""
 ---
 
 This workout protocol has endless possibilities since you can manipulate exercises and allotted time in many ways. However, most AMRAP workouts are based on high-intensity circuit training or high-intensity interval training.

@@ -18,6 +18,9 @@ fields:
   name: head_image
   label: head_image
 - type: text
+  name: head_image_alt
+  label: head_image_alt
+- type: text
   name: tag
   label: tag
 - type: boolean
@@ -27,8 +30,11 @@ fields:
   name: next_blog
   label: next_blog
 pages:
+- src/pages/blog/alternative-to.md
+- src/pages/blog/amrap.md
 - src/pages/blog/beginner-s-guide-the-benefits-of-hiit.md
 - src/pages/blog/explanation-of-emom-in-crossfit-for-beginners.md
 - src/pages/blog/explanation-of-tabata-in-crossfit-for-beginners.md
 - src/pages/blog/regeneration-cool-down-for-after-crossfit-workout.md
 - src/pages/blog/steps-to-getting-ready-for-the-next-crossfit-open.md
+- src/pages/blog/top-5-open-2022.md

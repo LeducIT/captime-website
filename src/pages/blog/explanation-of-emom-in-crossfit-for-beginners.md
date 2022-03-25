@@ -7,6 +7,7 @@ head_image: "/explanation-of-emom-in-crossfit-for-beginners.webp"
 head_image_alt: Crossfit Men looking for alternative
 tag: EMOM
 published: true
+next_blog: ""
 ---
 
 ## How Does It Work?

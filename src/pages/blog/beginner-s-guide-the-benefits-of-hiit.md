@@ -7,6 +7,7 @@ head_image: "/beginner-s-guide-the-benefits-of-hiit.webp"
 head_image_alt: Example Of HIIT Plan
 tag: HIIT
 published: true
+next_blog: ""
 ---
 
 Occasionally, you may feel that you don't have time to exercise, which might make you skip it. However, to see results, you don''t need to spend hours in the gym. You just need to maximize the time you spend exercising.

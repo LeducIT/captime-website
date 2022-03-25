@@ -7,6 +7,7 @@ head_image: /alternative_to_1.webp
 head_image_alt: Crossfit Men looking for alternative
 tag: alternatives
 published: true
+next_blog: ""
 ---
 
 Keeping track of your reps or rounds is one of the most vital things to achieve your fitness goals, no matter where you perform your workouts. This way, you can add measurability to your workouts and structure your fitness regimen. The best way to achieve all this is to use a timer clock that helps you micro-schedule your movements in the middle of your gym activity.

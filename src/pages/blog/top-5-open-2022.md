@@ -7,6 +7,7 @@ head_image: "/crossfit_games.webp"
 head_image_alt: Top 5 Athletes Crossfit Open 2022
 tag: Games
 published: true
+next_blog: ""
 ---
 
 Every week competitors perform the workouts and submit their scores online before a specified time.

@@ -7,6 +7,7 @@ head_image: "/explanation-of-tabata-in-crossfit-for-beginners.webp"
 head_image_alt: Effects on energy systeme
 tag: Tabata
 published: true
+next_blog: ""
 ---
 
 

@@ -7,6 +7,7 @@ head_image: "/regeneration-cool-down-for-after-crossfit-workout.webp"
 head_image_alt: Do The Cool Down Properly
 tag: Quick Tips
 published: true
+next_blog: ""
 ---
 
 After the workout do you pack your things and go straight home? In order to do something good for your body after training and to improve your muscle growth, you should include a short cool down in your training.
