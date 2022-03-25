@@ -23,6 +23,9 @@ fields:
 - type: boolean
   name: published
   label: published
+- type: text
+  name: next_blog
+  label: next_blog
 pages:
 - src/pages/blog/beginner-s-guide-the-benefits-of-hiit.md
 - src/pages/blog/explanation-of-emom-in-crossfit-for-beginners.md

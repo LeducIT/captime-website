@@ -30,9 +30,13 @@ export const initBlog = (): Route[] => {
   return blogs
 }
 
-export const randomBlog = (path: string): Route => {
+export const randomBlog = (path: string, nextBlog = 'undefined'): Route => {
   const blogs = initBlog()
+
   const filtered = blogs.filter(blog => blog.path !== path)
+  const nextBlogRoute = blogs.find(blog => blog.path === nextBlog)
+  if (nextBlogRoute)
+    return nextBlogRoute
   const blog = filtered[Math.floor(Math.random() * filtered.length)]
   return blog
 }
