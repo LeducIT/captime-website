@@ -24,6 +24,7 @@ const markdownWrapperClasses = 'prose prose-xl m-auto text-left'
 
 const sitemapIgnore = ['/eula', '/privacy', '/tos', '/disclaimer', '/return', '/404']
 const domain = 'captime.app'
+const brand = 'Captime'
 
 export default defineConfig({
   resolve: {
@@ -37,6 +38,7 @@ export default defineConfig({
     }),
     EnvironmentPlugin({
       domain,
+      brand,
     }, { defineOn: 'import.meta.env' }),
 
     // https://github.com/hannoeru/vite-plugin-pages
