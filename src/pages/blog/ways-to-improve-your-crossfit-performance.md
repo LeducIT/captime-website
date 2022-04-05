@@ -14,8 +14,6 @@ next_blog: ''
 head_image_alt: Ways To Improve Your CrossFit Performance
 
 ---
-Regardless of whether or not you acknowledge its effectiveness, CrossFit continues to become popular with every passing day. The existence of over 15,000 CrossFit gyms worldwide is good enough proof of the growing interest of new and seasoned athletes in this workout. Many athletes even buy equipment to perform these workouts at home.
-
 However, saying that this workout regimen doesn’t have much to do with being technically sound is pretty far from the truth. The fact is that CrossFit is all about the right technique and performance improvement. In this article, we are going to discuss some effective ways to help you get better with your CrossFit program.
 
 # Work On Your Movements
