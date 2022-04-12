@@ -1,9 +1,9 @@
 ---
 title: 'CrossFit Zone Diet: A Crash Diet or An Effective One?'
-description: Cross-fit is one of the most effective fitness training in the last few
-  generations that fascinate new sports enthusiasts a lot. But those who do Crossfit
-  not only go to their body limits but should also aim for sport-related nutrition
-  i.e. Cross Fit nutrition. In this article, you will find out what a compatible Crossfit
+description: CrossFit is one of the most effective fitness training in the last few
+  generations that fascinate new sports enthusiasts. But those who do CrossFit not
+  only go to their body limits but should also aim for sport-related nutrition i.e.
+  CrossFit nutrition. In this article, you will find out what a compatible Crossfit
   diet looks like and what you should be careful about.
 author: Team Captime
 date: 2022-04-10T19:00:00Z
