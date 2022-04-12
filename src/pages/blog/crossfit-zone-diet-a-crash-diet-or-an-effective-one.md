@@ -26,7 +26,7 @@ It is recommended that to organize a balanced, Zone- and CrossFit diet, divide y
 
 Significantly, not all CrossFit trainers offer the same dietary advice. Some recommend a paleo diet, which completely excludes dairy products, cereals, and vegetables. It is also possible to combine both - eating a paleo-style Zone Diet. Additionally, you can adjust your diet to match the vegetarian or vegan lifestyle.
 
-# **CrossFit Nutritional Tips**
+# **Quick Tips**
 
 In the world of fitness, food is a tricky topic but here are some good CrossFit nutrition tips that you can follow:
 
