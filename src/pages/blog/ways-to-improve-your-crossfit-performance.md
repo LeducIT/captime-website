@@ -1,17 +1,20 @@
 ---
 title: Ways To Improve Your CrossFit Performance
-description: ''
-author: ''
-date: 
-head_image: ''
-tag: ''
-published: false
+description: Regardless of whether or not you acknowledge its effectiveness, CrossFit
+  continues to become popular with every passing day. The existence of over 15,000
+  CrossFit gyms worldwide is good enough proof of the growing interest of new and
+  seasoned athletes in this workout. Many athletes even buy equipment to perform these
+  workouts at home.
+author: Team Captime
+date: 2022-04-03T19:00:00Z
+head_image: "/ways-to-improve-your-crossfit-performance.webp"
+tag: CrossFit Games
+published: true
 next_blog: ''
+head_image_alt: Ways To Improve Your CrossFit Performance
 
 ---
-Regardless of whether or not you acknowledge its effectiveness, CrossFit continues to become popular with every passing day. The existence of over 15,000 CrossFit gyms worldwide is good enough proof of the growing interest of new and seasoned athletes in this workout. Many athletes even buy equipment to perform these workouts at home.
-
-However, saying that this workout regimen doesn’t have much to do with being technically sound is pretty far from the truth. The fact is CrossFit is all about the right technique and performance improvement. In this article, we are going to discuss some effective ways to help you get better with your CrossFit program.
+However, saying that this workout regimen doesn’t have much to do with being technically sound is pretty far from the truth. The fact is that CrossFit is all about the right technique and performance improvement. In this article, we are going to discuss some effective ways to help you get better with your CrossFit program.
 
 # Work On Your Movements
 
@@ -32,7 +35,7 @@ CrossFit is different from other workouts as it mimics everyday movements and en
 * Overhead movements
 * Hinge patterns
 
-While all these movements hold a fundamental value, squats are the most important. About 50% of all CrossFit movements involve squatting, so perfecting this fundamental move is vital. Here is a generalized guide for how to squat properly.
+While all these movements hold a fundamental value, squats are the most important. About 50% of all CrossFit movements involve squatting, so perfecting this fundamental move is vital. Here is a generalized guide on how to squat properly.
 
 * First off, drive your hips back and bring them lower than your knees. Your knees should spread out during this posture.
 * Your feet should be little more than the hip-width apart.
