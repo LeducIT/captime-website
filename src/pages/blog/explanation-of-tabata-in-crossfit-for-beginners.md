@@ -41,3 +41,5 @@ You also have countless other options. For example, 8 rounds with the same exerc
 ## Summary
 
 Tabata workout offers significant performance benefits in a shorter time frame. But as the intensity intervals require all-out efforts.  it’s important to get the basics right first. Beginners should start with lighter interval training and gradually work their way up to this level of intensity. Try 20 seconds on/10 seconds off with easier exercises such as walking or low impact moves like running in place, step touches, or knee lifts. To track your WODs more efficiently, Take advantage of Captime (CrossFit Timer App), which is available for both iPhone and Android.
+
+<Cta/>

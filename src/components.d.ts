@@ -5,6 +5,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     Counter: typeof import('./components/Counter.vue')['default']
+    Cta: typeof import('./components/Cta.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
     ICarbonTime: typeof import('~icons/carbon/time')['default']

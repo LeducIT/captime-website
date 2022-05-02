@@ -57,3 +57,5 @@ High-intensity interval training has many advantages in terms of short learning 
 * **Skip non-training days:** After each training session, you should take a break of at least one or two days. The body only builds up its performance reserves during the training break. Without regeneration times there is no training effect with HIIT.
 
 You can do many HIIT workouts at home. All you need is some space, suitable sportswear, and a fitness mat as a base. Moreover, as mentioned earlier the intervals highly depend on timing so having a good CrossFit timer app is a great addition to track WODs.
+
+<Cta/>

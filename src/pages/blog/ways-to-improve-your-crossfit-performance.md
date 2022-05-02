@@ -63,3 +63,5 @@ You can achieve your CrossFit goals like a pro with a positive mindset. And the 
 Your mobile screen can be your instructor during your CrossFit training. Several apps are available on the web to help you measure your performance. One of such apps is CapTime, the ultimate CrossFit timer app that enables you to track your performance. This app comes with programmed timers for different kinds of CrossFit workouts. The timers relay visual and voice alarms to help you know when to slow down or stop.
 
 Another valuable feature of this app is its timer-based video recording capability. You can use this feature to create video clips of your sets and later analyze them to identify room for improvements.
+
+<Cta/>

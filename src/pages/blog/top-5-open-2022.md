@@ -30,3 +30,5 @@ Open are a three-week competition.
 I look forward to cheering on the top athletes in the Sport of Fitness with you in 2022! 
 
 And if you’re among the dedicated few with aspirations to rise to the top: Good luck, and we hope to see you in Madison!
+
+<Cta/>

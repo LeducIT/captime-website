@@ -97,3 +97,5 @@ As your workout progresses, you'll become more exhausted and your rest periods s
 ## Do You Train At Home?
 
 Don't worry if you don't have the necessary equipment for this workout - you can simply replace the respective equipment with everyday objects, or modify the exercises. The alternative to Kettlebell, you can use a bag weighted down with books. The replacement to Assault Bike, you can do a cardio exercise like jumping jacks, jumping lunges, squat jumps, or high knees instead.
+
+<Cta/>

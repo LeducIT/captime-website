@@ -57,3 +57,5 @@ Targeted breathing techniques lower your blood pressure and lower your heart rat
 ## Conclusion
 
 Following gentle exercise, stretching, and refueling are the key components of any cool down. It is intended that you bring your heart rate to its resting level through this exercise. The objective of stretching is to improve your flexibility over time, and this can help you prevent injuries. Last but not least, the importance of the CrossFit diet to refuel cannot be understated. By feeding the hungry muscles, you are helping them recover.
+
+<Cta/>

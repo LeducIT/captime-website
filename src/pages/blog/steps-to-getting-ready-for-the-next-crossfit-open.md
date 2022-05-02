@@ -46,3 +46,5 @@ You can be in the right mindset by:
 Last but not least, using a programmed CrossFit timer app can help you get ready for the Open like a Pro. With the workout strategy developed, your toughest challenge is to keep up with the plan every day, especially if you are training without coaching. The timer app will help you meet this significant requirement in the easiest way possible.
 
 One of the best apps to use in this regard is CapTime, the CrossFit Timer app to adjust the speed of your AMRAPs, HIITs, TABATAs, Sallys, and EMOMs. Additionally, this app comes with a video recording feature to allow you to see your moves and apply necessary modifications. This feature records your workout with a timer, helping you calculate the number of reps performed as well as the adjustment required in your workout.
+
+<Cta/>
