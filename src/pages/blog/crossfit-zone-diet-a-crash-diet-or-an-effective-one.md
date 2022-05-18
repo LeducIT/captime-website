@@ -6,11 +6,11 @@ description: CrossFit is one of the most effective fitness training in the last 
   CrossFit nutrition. In this article, you will find out what a compatible Crossfit
   diet looks like and what you should be careful about.
 author: Team Captime
-date: 2022-04-10T19:00:00Z
+date: 2022-04-10T19:00:00.000+00:00
 head_image: "/crossfit-zone-diet-a-crash-diet-or-an-effective-one.webp"
 head_image_alt: What is a Compatible CrossFit Diet?
 tag: CrossFit Nutrition
-published: false
+published: true
 next_blog: ''
 
 ---
