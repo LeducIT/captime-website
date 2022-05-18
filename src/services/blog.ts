@@ -11,6 +11,7 @@ export interface Frontmatter {
   published: boolean
   head_image: string
   head_image_alt: string
+  next_blog: string
 }
 export interface Route extends RouteRecordNormalized {
   meta: {
