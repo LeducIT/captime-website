@@ -14,7 +14,7 @@ published: true
 next_blog: ''
 
 ---
-# **What is a Compatible CrossFit Diet?**
+### **What is a Compatible CrossFit Diet?**
 
 In CrossFit, athletes are generally recommended to eat fats, vegetables, nuts and seeds, certain fruits, and low-starch and low-sugar foods, as well as to "maintain levels that will support exercise, yet not gain body fat. But specific CrossFit nutritional recommendations are based on the Zone Diet, founded 30 years ago by Barry Sears, a biochemist, and author of The Zone. Cross Fit diet is designed to control blood sugar and reduce inflammation, which can prevent hunger and reduce the risk of chronic diseases, such as obesity, heart disease, and type II diabetes.
 
@@ -26,7 +26,7 @@ It is recommended that to organize a balanced, Zone- and CrossFit diet, divide y
 
 Significantly, not all CrossFit trainers offer the same dietary advice. Some recommend a paleo diet, which completely excludes dairy products, cereals, and vegetables. It is also possible to combine both - eating a paleo-style Zone Diet. Additionally, you can adjust your diet to match the vegetarian or vegan lifestyle.
 
-# **Quick Tips**
+## **Quick Tips**
 
 In the world of fitness, food is a tricky topic but here are some good CrossFit nutrition tips that you can follow:
 
@@ -36,17 +36,17 @@ In the world of fitness, food is a tricky topic but here are some good CrossFit 
 * According to your goals, your diet should be based on what you would like to achieve (i.e. weight loss, better performance, qualifying for a particular CrossFit competition, etc.) so, aligning with the goal is important.
 * Balance your diet in a way that promotes permanence and longevity.
 
-# **CrossFit Nutritional Guideline**
+## **CrossFit Nutritional Guideline**
 
 The CrossFit-compatible Zone Diet advises consuming 40% of your calories from carbs, 30% from protein and 30% from fat — but says that best athletes may need more fat. Protein, carbs, and fat are classified into blocks in food to simplify your diet and ensure you consume the recommended ratio of macronutrients. These blocks also help maintain nutritional balance during meals.
 
-## **What Is A Block?**
+### **What Is A Block?**
 
 A block is a way to measure the protein, carbs, and fat you take. You can measure the amount of protein, carbs, and fat you eat with blocks: one carbohydrate block is equal to 9 grams of carbohydrates (excluding fiber), one protein block is equal to 7 grams of protein, and one fat block is equal to 1.5 grams of fat.
 
 Fat block represents a limited amount of healthy fats - such as salad dressings - that you add to a diet. You can put together a Zone meal simply by choosing one item from protein, one item from carbohydrate, and one from fat.
 
-## **How Many Blocks Do You Need?**
+### **How Many Blocks Do You Need?**
 
 Your gender, body size, and level of activity determine how many blocks you need each day. A medium-sized woman needs 11 blocks daily for each macronutrient phase - carbohydrates, proteins, and fats - and a medium-sized man needs 14 blocks.
 
@@ -54,11 +54,11 @@ Once you know your block count, divide your blocks evenly into snacks and meals 
 
 For instance: To plan a 3 block breakfast, you will need 3 blocks each of protein, carbs, and fats. Consulting with the block chart shows you that 1/3 cup of cooked oatmeal counts as a 1 carb block. For 3 blocks, you can eat 1 cup of cooked oatmeal. Similarly, 1/4 cup cottage cheese is counted as 1 protein block. For 3 blocks, eat 3/4 cup cottage cheese. Finally, 3 almonds are counted as 1 fat block. So, eating 9 almonds can give you 3 blocks.
 
-## **Weighing And Measuring Foods**
+### **Weighing And Measuring Foods**
 
 CrossFit- recommended hand and eye method to measure the components of healthy protein and carbs which means choosing proteins, such as meat, according to the size and thickness of your palm (3–4 ounces of cooked), and then making about two-thirds of the vegetables on your plate and then a small amount of fruit. However, you need to weigh your dishes at least once a week to get a better observation for measuring food portions.
 
-# **Wrapping up**
+## **Wrapping up**
 
 If you are an enthusiast about Crossfit and want to achieve success, you just cannot avoid well-considered and planned meals. Crossfitters find a balance between high-energy foods and light foods to be able to work out profoundly and maintain speed and flexibility.
 
