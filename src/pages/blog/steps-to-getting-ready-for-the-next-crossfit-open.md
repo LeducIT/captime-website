@@ -6,7 +6,7 @@ description: Doing well in the CrossFit Open is a wonderful feat that requires a
   strategy. Eventually, you will get there.
 author: Team Captime
 date: 2022-03-09T19:00:00.000+00:00
-head_image: "/steps-to-getting-ready-for-the-next-crossfit-open.png"
+head_image: "/steps-to-getting-ready-for-the-next-crossfit-open.webp"
 tag: CrossFit Open
 published: true
 next_blog: ""
@@ -25,7 +25,7 @@ Challenges involved in CrossFit Open typically involve metcons, the short for me
 
 Apart from the surprise moves introduced during CrossFit Open, most other moves are usually a mandatory part of every event. Your best shot at winning in your category is identifying those necessary moves and practicing them to perfection. Workouts you will need to be really good at include pull-ups, chest-to-bar pull-ups, HSPUs, bar muscle-ups, TTB, and handstand walk. Other workouts you need to practice a lot are bouncing box jumps, push-ups, burpees, and barbell cycling.
 
-![Steps To Getting Ready For the Next CrossFit Open](/perfect-your-moves.png)
+![Steps To Getting Ready For the Next CrossFit Open](/perfect-your-moves.webp)
 
 # Modifying Your Training Strategy during Weeks before the Event
 

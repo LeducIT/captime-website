@@ -48,17 +48,6 @@ export default defineConfig({
           },
         },
       },
-      backgroundImage: {
-        pricing: 'url(\'/assets/images/pricing.jpeg\')',
-        tabata: 'url(\'/assets/images/tabata.png\')',
-        amrap: 'url(\'/assets/images/amrap.png\')',
-        emom: 'url(\'/assets/images/emom.png\')',
-        interval: 'url(\'/assets/images/interval.png\')',
-        forTime: 'url(\'/assets/images/forTime.png\')',
-        sally: 'url(\'/assets/images/sally.jpg\')',
-        clock: 'url(\'/assets/images/clock_image.jpg\')',
-        openCrossfit: 'url(\'/assets/images/open-crossfit.jpg\')',
-      },
       screens: {
         'vtab': { raw: '(min-height: 361px)' },
         'vix': { raw: '(min-height: 812px)' },
