@@ -1,20 +1,10 @@
 [build.environment]
-  NPM_FLAGS = "--prefix=/dev/null"
-  NODE_VERSION = "14"
+  NPM_FLAGS = "--version"
+  NODE_VERSION = "16"
 
 [build]
   publish = "dist"
-  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
-
-[[redirects]]
-  from = '/.well-known/*'
-  status = 200
-  to = '/deepLink/:splat'
-
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm build"
 
 [[redirects]]
   from = "/sitemap.xml"
@@ -27,22 +17,16 @@
   status = 200
 
 [[redirects]]
+  from = "/rss.xml"
+  to = "/rss.xml"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
 [[headers]]
-  for = "/manifest.webmanifest"
+  for = "/api/*"
   [headers.values]
-    Content-Type = "application/manifest+json"
-
-[[headers]]
-  for = "/.well-known/*"
-  [headers.values]
-    Content-Type = "application/json"
-
-[dev]
-  command = "pnpm front"
-  autoLaunch = false
-  functionsPort = 8887
-  targetPort = 3336
+    cache-control = "public, s-max-age=60"
