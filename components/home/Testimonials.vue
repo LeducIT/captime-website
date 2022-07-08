@@ -6,8 +6,7 @@
           <h2
             class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl"
           >
-            Trusted by <span class="text-ruby">30k+</span> world class companies
-            & design teams
+            <span class="text-ruby">157</span> people have said how good is Captime
           </h2>
         </div>
         <div
