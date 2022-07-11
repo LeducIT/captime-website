@@ -25,10 +25,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: "fr",
+        lang: "en",
       },
-      title:
-        "Le 1er podcast francais qui aide les independants a vivre de leur business.",
+      title: "Captime - Crossfit Timer",
       script: [
         {
           src: "https://captime-pls.digitalshift-ee.workers.dev/js/script.js",
@@ -43,23 +42,21 @@ export default defineNuxtConfig({
         {
           hid: "title",
           name: "title",
-          content:
-            "Le 1er podcast francais qui aide les independants a vivre de leur business.",
+          content: "Captime - Crossfit Timer",
         },
         {
           hid: "description",
           name: "description",
           content:
-            "Ici, tu trouveras des podcasts où j'échange avec ceux qui ont su transformer leurs idées en business florissant.",
+            "The Captime app offers a variety of workout timers for common CrossFit and high-intensity interval training workouts.",
         },
         {
           hid: "og:title",
           property: "og:title",
-          content:
-            "Le 1er podcast francais qui aide les independants a vivre de leur business.",
+          content: "Captime - Crossfit Timer",
         },
         { hid: "og:type", property: "og:type", content: "website" },
-        { hid: "og:locale", property: "og:locale", content: "fr_FR" },
+        { hid: "og:locale", property: "og:locale", content: "en_EN" },
         {
           hid: "og:site_name",
           property: "og:site_name",
@@ -79,7 +76,7 @@ export default defineNuxtConfig({
           hid: "og:description",
           property: "og:description",
           content:
-            "Ici, tu trouveras des podcasts où j'échange avec ceux qui ont su transformer leurs idées en business florissant.",
+            "The Captime app offers a variety of workout timers for common CrossFit and high-intensity interval training workouts.",
         },
       ],
       link: [

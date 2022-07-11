@@ -4,7 +4,7 @@
 
     <div class="sm:flex sm:items-center sm:justify-between">
       <a href="/" class="flex items-center mb-4 sm:mb-0">
-        <img src="/icon.webp" class="mr-3 h-8" alt="Captime Logo" />
+        <img src="/icon.webp" class="mr-3 h-8 border" alt="Captime Logo" />
         <span
           class="self-center text-2xl text-white font-handel whitespace-nowrap"
           >Captime</span
