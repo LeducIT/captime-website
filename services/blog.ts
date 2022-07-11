@@ -13,5 +13,6 @@ export const randomArticle = async (slug: string) => {
   const articles = content.data.value;
   const list = articles.filter((a) => a.slug !== slug);
   const index = Math.floor(Math.random() * list.length);
+
   return list[index];
 };

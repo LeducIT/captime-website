@@ -25,6 +25,9 @@ module.exports = {
             a: {
               color: "white",
             },
+            strong: {
+              color: "white",
+            },
           },
         },
       },
