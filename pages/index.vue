@@ -25,7 +25,7 @@ const messages = [
 
 useHead(() => ({
   titleTemplate: "The Crossfit Timer",
-  meta: createMeta(title, messages[0] + messages[3], image, "Martin Donadieu"),
+  meta: createMeta(title, messages[0], image, "Martin Donadieu"),
 }));
 
 onMounted(() => {
