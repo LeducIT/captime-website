@@ -3,6 +3,7 @@
     <Hero />
     <Features />
     <CallToAction />
+    <CrossfitModes />
     <Testimonials />
   </div>
 </template>
@@ -12,6 +13,7 @@ import { createMeta } from "~/services/meta";
 import Hero from "~/components/home/Hero.vue";
 import Features from "~/components/home/Features.vue";
 import CallToAction from "~/components/home/CallToAction.vue";
+import CrossfitModes from "~~/components/home/CrossfitModes.vue";
 import Testimonials from "~/components/home/Testimonials.vue";
 import { crispLoader } from "~~/services/crisp";
 
