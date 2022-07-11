@@ -21,6 +21,9 @@
             >Terms & Conditions</a
           >
         </li>
+        <li>
+          <a href="#support" class="mr-4 hover:underline md:mr-6">Support</a>
+        </li>
       </ul>
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
@@ -31,8 +34,11 @@
   </footer>
 </template>
 
-<script>
-export default {
-  name: "Footer",
-};
+<script setup lang="ts">
+import { openMessenger } from "~~/services/crisp";
+const router = useRouter();
+router.afterEach((to) => {
+  if (to.hash && to.hash.startsWith("#support")) openMessenger();
+});
+router.currentRoute.value.hash.startsWith("#support") && openMessenger();
 </script>

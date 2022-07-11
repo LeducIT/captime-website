@@ -15,14 +15,12 @@ import CallToAction from "~/components/home/CallToAction.vue";
 import Testimonials from "~/components/home/Testimonials.vue";
 import { crispLoader } from "~~/services/crisp";
 
-const image =
-  "https://res.cloudinary.com/forgr/image/upload/v1621181948/captime/bot_cover-im_akq50z.jpg";
-const title = "🚀 Le podcast des entrepreneurs indépendant";
+const image = "/icon.webp";
+const title = "Captime | CrossFit Timer";
 const messages = [
-  "J'échange avec ceux qui ont su transformer leurs idées en business florissant.",
-  "Au-delà des belles histoires, je décrypte leur passé, leur stratégie, leurs challenges, afin de comprendre comment ils ont réussi à devenir profitables en indépendant.",
-  "J’interroge différents types de Makers, des novices, des aguerris, toujours dans le but de comprendre comment ils se sont lancés et comment ils ont rendu leur projet profitable.",
-  "Un épisode toute les semaines",
+  "The Captime app offers a variety of workout timers for common CrossFit and high-intensity interval training workouts.",
+  "A user-friendly interface enables you to select advanced timers within seconds.",
+  "Captime includes a built-in timer for HIIT, AMRAP, TABATA, EMOM, and more.",
 ];
 
 useHead(() => ({

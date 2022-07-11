@@ -14,3 +14,9 @@ export const crispLoader = () => {
     d.getElementsByTagName("head")[0].appendChild(s);
   }
 };
+
+export const openMessenger = () => {
+  crispLoader();
+  window.$crisp.push(["do", "chat:show"]);
+  window.$crisp.push(["do", "chat:open"]);
+};

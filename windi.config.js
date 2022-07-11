@@ -18,6 +18,16 @@ module.exports = {
       colors: {
         ruby: "#ff2222",
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: "white",
+            a: {
+              color: "white",
+            },
+          },
+        },
+      },
     },
   },
   variants: {},

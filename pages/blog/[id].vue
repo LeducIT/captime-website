@@ -1,5 +1,5 @@
 <template>
-  <main class="text-center text-white dark:text-gray-200">
+  <main class="text-center text-white">
     <div class="relative lg:pt-10 pb-4 lg:max-w-1/2 mx-auto">
       <div class="block aspect-w-4 aspect-h-3">
         <img
@@ -29,10 +29,24 @@
     <p class="py-5 px-4 lg:max-w-1/2 mx-auto text-left">
       {{ page.description }}
     </p>
-    <ContentRenderer
-      :value="page"
-      class="mx-auto text-left text-white prose pb-4 px-4 lg:max-w-1/2"
-    />
+    <article
+      class="mx-auto text-left text-white prose text-white pb-4 px-4 lg:max-w-1/2"
+    >
+      <ContentRenderer :value="page" />
+    </article>
+
+    <div class="flex justify-center mt-8">
+      <a
+        target="_blank"
+        href="http://onelink.to/captime"
+        title="Download"
+        class="relative items-center justify-center px-6 py-2 text-xl font-bold text-white border border-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
+      >
+        Get
+        <span class="text-2xl font-handel font-bold text-ruby">Captime</span>
+      </a>
+    </div>
+
     <a
       v-if="random"
       :href="'/blog/' + random.slug"
@@ -76,14 +90,16 @@
 import { createMeta } from "~/services/meta";
 import { randomArticle, formatTime } from "~/services/blog";
 
-const config = useRuntimeConfig();
 const route = useRoute();
 
 const { data: page } = await useAsyncData("articleData", () =>
   queryContent("blog").where({ slug: route.params.id }).findOne()
 );
 
-const random = await randomArticle(page.value.slug);
+// If the article has a next article, get it, otherwise get a random article
+const random = page.value?.next_blog
+  ? await queryContent("blog").where({ slug: page.value.next_blog }).findOne()
+  : await randomArticle(page.value.slug);
 
 useHead(() => ({
   titleTemplate: page.value?.title || "No title",
