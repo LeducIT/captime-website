@@ -9,7 +9,7 @@
       <div class="grid lg:grid-cols-3 gap-6 md:w-8/12 md:mx-auto lg:w-full">
         <div
           v-for="feature in features"
-          class="group bg-white rounded-xl shadow-xl px-8 py-12 space-y-6 text-center"
+          class="group bg-white rounded-none shadow-xl px-8 py-12 space-y-6 text-center"
         >
           <img
             class="mx-auto w-24"
@@ -17,7 +17,7 @@
             alt="illustration"
             loading="lazy"
           />
-          <h3 class="text-2xl font-semibold text-gray-800">
+          <h3 class="text-2xl font-semibold text-gray-900">
             {{ feature.title }}
           </h3>
           <p>
