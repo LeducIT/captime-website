@@ -33,14 +33,13 @@
               <span class="text-2xl font-handel font-bold text-ruby"
                 >Captime</span
               >
-              !
             </a>
           </div>
         </div>
 
         <div class="pb-16 flex flex-col items-center justify-center container">
           <img
-            src="~/public/app-demo.png"
+            src="/app-demo.png"
             alt="image"
             loading="lazy"
             class="md:px-12 self-center"

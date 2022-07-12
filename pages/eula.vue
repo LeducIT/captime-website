@@ -10,7 +10,7 @@ const brand = "Captime";
 const domain = "https://captime.app";
 </script>
 <template>
-  <div class="bg-white h-full">
+  <div class="h-full">
     <div class="prose prose-sm text-left m-auto pt-8">
       <h1>End-User License Agreement (&quot;Agreement&quot;)</h1>
       <p>Last updated: January 28, 2022</p>

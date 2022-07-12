@@ -19,7 +19,7 @@
         target="_blank"
         href="http://onelink.to/captime"
         class="inline-block mt-8 text-white font-bold text-xl bg-ruby border px-6 py-2 rounded-none hover:bg-white hover:text-ruby transition ease-in-out"
-        >Get <span class="font-handel text-2xl">Captime</span> !
+        >Get <span class="font-handel text-2xl">Captime</span>
       </a>
     </div>
   </section>

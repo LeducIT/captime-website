@@ -4,7 +4,7 @@
 
     <div class="sm:flex sm:items-center sm:justify-between">
       <a href="/" class="flex items-center mb-4 sm:mb-0">
-        <img src="/icon.webp" class="mr-3 h-8" alt="Captime Logo" />
+        <img src="/icon.webp" class="mr-3 h-8 border" alt="Captime Logo" />
         <span
           class="self-center text-2xl text-white font-handel whitespace-nowrap"
           >Captime</span
@@ -21,6 +21,9 @@
             >Terms & Conditions</a
           >
         </li>
+        <li>
+          <a href="#support" class="mr-4 hover:underline md:mr-6">Support</a>
+        </li>
       </ul>
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
@@ -31,8 +34,11 @@
   </footer>
 </template>
 
-<script>
-export default {
-  name: "Footer",
-};
+<script setup lang="ts">
+import { openMessenger } from "~~/services/crisp";
+const router = useRouter();
+router.afterEach((to) => {
+  if (to.hash && to.hash.startsWith("#support")) openMessenger();
+});
+router.currentRoute.value.hash.startsWith("#support") && openMessenger();
 </script>

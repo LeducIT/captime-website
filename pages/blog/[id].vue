@@ -1,11 +1,11 @@
 <template>
-  <main class="text-center text-white dark:text-gray-200">
+  <main class="text-center text-white">
     <div class="relative lg:pt-10 pb-4 lg:max-w-1/2 mx-auto">
       <div class="block aspect-w-4 aspect-h-3">
         <img
           class="object-cover w-full h-full lg:rounded-lg"
-          :src="page.headImage"
-          :alt="'blog illustration ' + page.title"
+          :src="page.data.value.headImage"
+          :alt="'blog illustration ' + page.data.value.title"
         />
       </div>
 
@@ -13,37 +13,51 @@
         <span
           class="px-4 py-2 text-xs font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full"
         >
-          {{ page.tag }}
+          {{ page.data.value.tag }}
         </span>
       </div>
     </div>
     <span
       class="block mt-6 text-sm font-semibold tracking-widest text-white uppercase"
     >
-      {{ formatTime(page.date) }}
+      {{ formatTime(page.data.value.date) }}
     </span>
 
     <h1 class="py-5 text-3xl lg:text-4xl lg:max-w-1/2 px-4 font-800 mx-auto">
-      {{ page.title }}
+      {{ page.data.value.title }}
     </h1>
     <p class="py-5 px-4 lg:max-w-1/2 mx-auto text-left">
-      {{ page.description }}
+      {{ page.data.value.description }}
     </p>
-    <ContentRenderer
-      :value="page"
-      class="mx-auto text-left text-white prose pb-4 px-4 lg:max-w-1/2"
-    />
+    <article
+      class="mx-auto text-left text-white prose text-white pb-4 px-4 lg:max-w-1/2"
+    >
+      <ContentRenderer :value="page.data.value" />
+    </article>
+
+    <div class="flex justify-center mt-8">
+      <a
+        target="_blank"
+        href="http://onelink.to/captime"
+        title="Download"
+        class="relative items-center justify-center px-6 py-2 text-xl font-bold text-white border border-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
+      >
+        Get
+        <span class="text-2xl font-handel font-bold text-ruby">Captime</span>
+      </a>
+    </div>
+
     <a
       v-if="random"
-      :href="'/blog/' + random.slug"
+      :href="'/blog/' + random.data.value.slug"
       class="flex flex-col sm:flex-row py-8 lg:max-w-1/2 mx-auto lg:my-10 bg-true-gray-800 lg:rounded-lg"
     >
       <div class="relative mx-4 flex">
-        <div :title="random.title" class="block w-full">
+        <div :title="random.data.value.title" class="block w-full">
           <img
             class="object-cover w-full sm:w-52 h-full rounded-lg"
-            :src="random.headImage"
-            :alt="'blog illustration ' + random.title"
+            :src="random.data.value.headImage"
+            :alt="'blog illustration ' + random.data.value.title"
           />
         </div>
 
@@ -51,21 +65,21 @@
           <span
             class="px-4 py-2 text-tiny font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full"
           >
-            {{ random.tag }}
+            {{ random.data.value.tag }}
           </span>
         </div>
       </div>
       <div class="px-4 pt-2 sm:pt-0 text-left">
         <p class="text-lg font-bold">
-          {{ random.title }}
+          {{ random.data.value.title }}
         </p>
         <span
           class="block mt-3 text-sm font-semibold tracking-widest text-white uppercase"
         >
-          {{ formatTime(random.date) }}
+          {{ formatTime(random.data.value.date) }}
         </span>
         <p class="mt-1">
-          {{ random.description }}
+          {{ random.data.value.description }}
         </p>
       </div>
     </a>
@@ -76,21 +90,26 @@
 import { createMeta } from "~/services/meta";
 import { randomArticle, formatTime } from "~/services/blog";
 
-const config = useRuntimeConfig();
 const route = useRoute();
 
-const { data: page } = await useAsyncData("articleData", () =>
-  queryContent("blog").where({ slug: route.params.id }).findOne()
-);
+const page = await useAsyncData("articleData", async () => {
+  return await queryContent("blog").where({ slug: route.params.id }).findOne();
+});
 
-const random = await randomArticle(page.value.slug);
+const random = await useAsyncData("randomData", async () => {
+  return page.data.value.next_blog !== ""
+    ? await queryContent("blog")
+        .where({ slug: page.data.value.next_blog })
+        .findOne()
+    : await randomArticle(page.data.value.slug);
+});
 
 useHead(() => ({
-  titleTemplate: page.value?.title || "No title",
+  titleTemplate: page.data.value.title || "No title",
   meta: createMeta(
-    page.value?.title || "No title",
-    page.value?.description || "No description",
-    page.value?.author || "Captime"
+    page.data.value.title || "No title",
+    page.data.value.description || "No description",
+    page.data.value.author || "Captime"
   ),
 }));
 </script>
