@@ -15,8 +15,9 @@ const baseUrl = () => {
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   generate: {
-    fallback: true,
+    fallback: "404.html",
   },
+  ssr: true,
   target: "static",
   publicRuntimeConfig: {
     domain: baseDomain(),
