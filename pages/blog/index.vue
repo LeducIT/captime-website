@@ -29,7 +29,7 @@
               >
                 <img
                   class="object-cover w-full h-full rounded-lg"
-                  :src="article.headImage"
+                  :src="article.head_image"
                   :alt="'blog illustration ' + article.title"
                 />
               </a>

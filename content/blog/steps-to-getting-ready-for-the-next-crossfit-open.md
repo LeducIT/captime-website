@@ -8,7 +8,7 @@ description:
   strategy. Eventually, you will get there.
 author: Team Captime
 date: 2022-03-09T19:00:00.000+00:00
-headImage: "/steps-to-getting-ready-for-the-next-crossfit-open.webp"
+head_image: "/steps-to-getting-ready-for-the-next-crossfit-open.webp"
 tag: CrossFit Open
 published: true
 next_blog: ""

@@ -4,8 +4,8 @@ title: "Regeneration: Cool Down for After CrossFit Workout"
 description: The cooldown makes it easier to remove metabolic end products from the body, the body temperature is reduced again and the heart rate and respiratory rate normalize again.
 author: Team Captime
 date: 2022-02-02T19:00:00Z
-headImage: "/regeneration-cool-down-for-after-crossfit-workout.webp"
-headImage_alt: Do The Cool Down Properly
+head_image: "/regeneration-cool-down-for-after-crossfit-workout.webp"
+head_image_alt: Do The Cool Down Properly
 tag: Quick Tips
 published: true
 next_blog: ""
