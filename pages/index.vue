@@ -26,7 +26,7 @@ const messages = [
 ];
 
 useHead(() => ({
-  titleTemplate: "The Crossfit Timer",
+  titleTemplate: "Captime | CrossFit Timer",
   meta: createMeta(title, messages[0], image, "Martin Donadieu"),
 }));
 

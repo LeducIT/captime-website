@@ -4,8 +4,8 @@ title: "Top 5 Athletes Crossfit Open 2022 - Leaderboad"
 description: The Open is held over 3 weeks, and a series of workouts are released weekly for competitors to complete. Athletes who wish to progress further in individual competitions need to perform the workouts as prescribed
 author: Martin Donadieu
 date: 2022-03-10
-headImage: "/crossfit_games.webp"
-headImage_alt: Top 5 Athletes Crossfit Open 2022
+head_image: "/crossfit_games.webp"
+head_image_alt: Top 5 Athletes Crossfit Open 2022
 tag: Games
 published: true
 next_blog: ""

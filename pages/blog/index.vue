@@ -8,7 +8,7 @@
           Latest from our blog
         </h1>
         <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-50">
-          The best articles to enhence your Crossfit experience.
+          The best articles to enhance your Crossfit experience.
         </p>
       </div>
 
@@ -29,7 +29,7 @@
               >
                 <img
                   class="object-cover w-full h-full rounded-lg"
-                  :src="article.headImage"
+                  :src="article.head_image"
                   :alt="'blog illustration ' + article.title"
                 />
               </a>

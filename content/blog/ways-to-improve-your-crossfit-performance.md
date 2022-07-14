@@ -9,11 +9,11 @@ description:
   workouts at home.
 author: Team Captime
 date: 2022-04-03T19:00:00Z
-headImage: "/ways-to-improve-your-crossfit-performance.webp"
+head_image: "/ways-to-improve-your-crossfit-performance.webp"
 tag: CrossFit Games
 published: true
 next_blog: ""
-headImage_alt: Ways To Improve Your CrossFit Performance
+head_image_alt: Ways To Improve Your CrossFit Performance
 ---
 
 However, saying that this workout regimen doesn’t have much to do with being technically sound is pretty far from the truth. The fact is that CrossFit is all about the right technique and performance improvement. In this article, we are going to discuss some effective ways to help you get better with your CrossFit program.

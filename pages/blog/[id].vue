@@ -4,7 +4,7 @@
       <div class="block aspect-w-4 aspect-h-3">
         <img
           class="object-cover w-full h-full lg:rounded-lg"
-          :src="page.data.value.headImage"
+          :src="page.data.value.head_image"
           :alt="'blog illustration ' + page.data.value.title"
         />
       </div>
@@ -43,7 +43,9 @@
         class="relative items-center justify-center px-6 py-2 text-xl font-bold text-white border border-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
       >
         Get
-        <span class="text-2xl font-handel font-bold text-ruby">Captime</span>
+        <span class="text-2xl font-handel font-bold text-ruby-500"
+          >Captime</span
+        >
       </a>
     </div>
 
@@ -56,7 +58,7 @@
         <div :title="random.data.value.title" class="block w-full">
           <img
             class="object-cover w-full sm:w-52 h-full rounded-lg"
-            :src="random.data.value.headImage"
+            :src="random.data.value.head_image"
             :alt="'blog illustration ' + random.data.value.title"
           />
         </div>

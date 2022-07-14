@@ -12,7 +12,7 @@
           <h1
             class="text-white text-center text-3xl font-bold sm:text-4xl md:text-5xl"
           >
-            Meet your new <span class="text-ruby">CrossFit</span> timer.
+            Meet your new <span class="text-ruby-500">CrossFit</span> timer.
           </h1>
 
           <p class="text-white text-center text-lg">
@@ -30,7 +30,7 @@
               class="relative items-center justify-center px-6 py-2 text-xl font-bold text-white border border-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
             >
               Get
-              <span class="text-2xl font-handel font-bold text-ruby"
+              <span class="text-2xl font-handel font-bold text-ruby-500"
                 >Captime</span
               >
             </a>

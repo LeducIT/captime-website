@@ -4,8 +4,8 @@ title: Explanation of Tabata in CrossFit For Beginners
 description: The Tabata workout is a 4-minute workout consisting of 8 intervals. You do a certain exercise reasonably intensively for 20 seconds, and then you rest for 10 seconds,  for a total of 8 rounds.
 author: Team Captime
 date: 2022-02-15T19:00:00Z
-headImage: "/explanation-of-tabata-in-crossfit-for-beginners.webp"
-headImage_alt: Effects on energy systeme
+head_image: "/explanation-of-tabata-in-crossfit-for-beginners.webp"
+head_image_alt: Effects on energy systeme
 tag: Tabata
 published: true
 next_blog: ""

@@ -6,7 +6,8 @@
           <h2
             class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl"
           >
-            <span class="text-ruby">157</span> people have said how good is Captime
+            <span class="text-ruby-500">157</span> people have said how good is
+            Captime
           </h2>
         </div>
         <div
