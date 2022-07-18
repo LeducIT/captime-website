@@ -12,6 +12,24 @@ export const crispLoader = () => {
     s.src = "https://client.crisp.chat/l.js";
     s.async = true;
     d.getElementsByTagName("head")[0].appendChild(s);
+    
+    // Hide the Crisp widget
+    window.$crisp.push(['safe', true],
+      ['do', 'chat:hide'],
+      [
+        'on',
+        'chat:closed',
+        () => {
+          window.$crisp.push(['do', 'chat:hide'])
+        },
+      ],
+      [
+        'on',
+        'message:received',
+        () => {
+          window.$crisp.push(['do', 'chat:show'])
+        },
+      ])
   }
 };
 
