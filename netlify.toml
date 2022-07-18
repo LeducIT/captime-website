@@ -28,8 +28,8 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
+  to = "/404"
+  status = 404
 
 [[headers]]
   for = "/manifest.webmanifest"
@@ -42,7 +42,7 @@
     Content-Type = "application/json"
 
 [dev]
-  command = "pnpm run dev"
+  command = "npm run dev"
   autoLaunch = false
   functionsPort = 8887
   targetPort = 3336
