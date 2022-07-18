@@ -11,7 +11,7 @@ const domain = "https://captime.app";
 </script>
 <template>
   <div class="h-full">
-    <div class="prose prose-sm text-left m-auto pt-8">
+    <div class="prose prose-sm text-left m-auto pt-8 text-white">
       <h1>Terms and Conditions</h1>
       <p>Last updated: January 12, 2022</p>
       <p>
