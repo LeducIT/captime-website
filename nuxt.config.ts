@@ -128,12 +128,6 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        {
-          rel: "alternate",
-          title: "RSS captime",
-          type: "application/rss+xml",
-          href: `${baseUrl()}/rss.xml`,
-        },
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       ],
     },
