@@ -44,6 +44,7 @@ export const createMeta = (
     );
   }
   if (image) {
+    const image_unsecure = image.replace("https://", "http://");
     base.push(
       {
         hid: "og:image:alt",
@@ -51,13 +52,23 @@ export const createMeta = (
         content: title,
       },
       {
+        hid: 'twitter:image:alt',
+        property: 'twitter:image:alt',
+        content: image,
+      },
+      {
         hid: "og:image:type",
         property: "og:image:type",
-        content: "image/jpg",
+        content: "image/webp",
       },
       {
         hid: "og:image",
         property: "og:image",
+        content: image_unsecure,
+      },
+      {
+        hid: "og:image:secure",
+        property: "og:image:secure",
         content: image,
       },
       {
@@ -65,8 +76,8 @@ export const createMeta = (
         property: 'twitter:image',
         content: image,
       },
-      { hid: "og:image:width", property: "og:image:width", content: "300" },
-      { hid: "og:image:height", property: "og:image:height", content: "300" }
+      { hid: "og:image:width", property: "og:image:width", content: "1200" },
+      { hid: "og:image:height", property: "og:image:height", content: "627" }
     );
   }
   if (audio) {
