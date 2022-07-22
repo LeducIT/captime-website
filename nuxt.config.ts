@@ -12,7 +12,7 @@ const baseUrl = () => {
   }
   return "http://localhost:3000";
 };
-const name = "Captime - Crossfit Timer";
+const name = "Captime - Crossfit WOD Timer";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   // nitro: {
