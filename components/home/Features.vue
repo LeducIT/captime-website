@@ -32,19 +32,19 @@
 <script setup lang="ts">
 const features = [
   {
-    icon: "/clock.png",
+    icon: "/clock.webp",
     title: "Six-in-one Timer",
     description:
       "Captime includes templates for common training formats. You can also use the custom timer to create one interval at a time if you want.",
   },
   {
-    icon: "/camera.jpeg",
+    icon: "/camera.webp",
     title: "Video Mode",
     description:
       "This is the first and only timer app with a video recording feature. Which enables you to record videos for your CrossFit competitions and challenges.",
   },
   {
-    icon: "/voice-recognition.jpeg",
+    icon: "/voice-recognition.webp",
     title: "Voice Recognition",
     description:
       'Management of timers without using your hands. You can stop the timer by shouting "TIME" or "STOP" when you finish your workout.',

@@ -23,7 +23,7 @@ import { crispLoader } from "~~/services/crisp";
 
 const config = useRuntimeConfig();
 
-const image = `${config.baseUrl}/app-demo.png`;
+const image = `${config.baseUrl}/app-demo.webp`;
 const title = "Captime | CrossFit Timer";
 const messages = [
   "The Captime app offers a variety of workout timers for common CrossFit and high-intensity interval training workouts.",
