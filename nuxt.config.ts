@@ -55,6 +55,11 @@ export default defineNuxtConfig({
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
+          hid: 'keywords',
+          property: 'keywordse',
+          content: 'crossfit, AMRAP, TABATA, HIIT, EMOM, SALLY, WOD, TIMER, INTERVAL, FOR TIME, FIGHT GONE BAD, ROXANNE',
+        },
+        {
           hid: "title",
           name: "title",
           content: "Captime - Crossfit Timer",
@@ -70,7 +75,13 @@ export default defineNuxtConfig({
           property: "og:title",
           content: "Captime - Crossfit Timer",
         },
+        { hid: 'theme-color', name: 'theme-color', content: '#ff2222' },
         { hid: "og:type", property: "og:type", content: "website" },
+        {
+          hid: 'apple-mobile-web-app-title',
+          name: 'apple-mobile-web-app-title',
+          content: baseDomain(),
+        },
         { hid: "og:locale", property: "og:locale", content: "en_EN" },
         {
           hid: "og:site_name",
