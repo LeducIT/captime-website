@@ -22,14 +22,14 @@ export const createMeta = (
   const base = [
     { hid: "title", name: "title", content: title },
     {
-      hid: "description",
-      name: "description",
-      content: description,
-    },
-    {
       hid: "og:title",
       property: "og:title",
       content: title,
+    },
+    {
+      hid: "description",
+      name: "description",
+      content: description,
     },
     {
       hid: "og:description",
@@ -52,11 +52,6 @@ export const createMeta = (
         content: title,
       },
       {
-        hid: 'twitter:image:alt',
-        property: 'twitter:image:alt',
-        content: image,
-      },
-      {
         hid: "og:image:type",
         property: "og:image:type",
         content: "image/webp",
@@ -69,11 +64,6 @@ export const createMeta = (
       {
         hid: "og:image:secure",
         property: "og:image:secure",
-        content: image,
-      },
-      {
-        hid: 'twitter:image',
-        property: 'twitter:image',
         content: image,
       },
       { hid: "og:image:width", property: "og:image:width", content: "1200" },
