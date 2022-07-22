@@ -12,6 +12,7 @@ const baseUrl = () => {
   }
   return "http://localhost:3000";
 };
+const name = "Captime - Crossfit Timer";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   // nitro: {
@@ -42,7 +43,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en",
       },
-      title: "Captime - Crossfit Timer",
+      title: name,
       script: [
         {
           src: "https://captime-pls.digitalshift-ee.workers.dev/js/script.js",
@@ -54,6 +55,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { hid: "og:type", property: "og:type", content: "website" },
         {
           hid: 'keywords',
           property: 'keywordse',
@@ -62,7 +64,7 @@ export default defineNuxtConfig({
         {
           hid: "title",
           name: "title",
-          content: "Captime - Crossfit Timer",
+          content: name,
         },
         {
           hid: "description",
@@ -73,7 +75,7 @@ export default defineNuxtConfig({
         {
           hid: "og:title",
           property: "og:title",
-          content: "Captime - Crossfit Timer",
+          content: name,
         },
         { hid: 'theme-color', name: 'theme-color', content: '#ff2222' },
         { hid: "og:type", property: "og:type", content: "website" },
@@ -94,10 +96,30 @@ export default defineNuxtConfig({
           content: "Martin DONADIEU",
         },
         {
-          hid: "twitter:card",
-          property: "twitter:card",
-          content: "summary",
+          hid: "twitter:app:id:iphone",
+          property: "twitter:app:id:iphone",
+          content: name,
         },
+        {
+          hid: "twitter:app:id:googleplay",
+          property: "twitter:app:id:googleplay",
+          content: "ee.forgr.captime",
+        },
+        {
+          hid: "twitter:app:name:iphone",
+          property: "twitter:app:name:iphone",
+          content: name,
+        },
+        {
+          hid: "twitter:app:name:googleplay",
+          property: "twitter:app:name:googleplay",
+          content: "ee.forgr.captime",
+        },
+        {
+          hid: "twitter:creator",
+          property: "twitter:creator",
+          content: "@martindonadieu",
+        }, 
         {
           hid: "og:description",
           property: "og:description",
