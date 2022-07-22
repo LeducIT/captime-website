@@ -58,7 +58,7 @@ export default defineNuxtConfig({
         { hid: "og:type", property: "og:type", content: "website" },
         {
           hid: 'keywords',
-          property: 'keywordse',
+          property: 'keywords',
           content: 'crossfit, AMRAP, TABATA, HIIT, EMOM, SALLY, WOD, TIMER, INTERVAL, FOR TIME, FIGHT GONE BAD, ROXANNE',
         },
         {
