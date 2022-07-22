@@ -15,7 +15,14 @@ const baseUrl = () => {
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   nitro: {
-    preset: 'netlify-edge'
+    preset: 'netlify-edge',
+    rollupConfig: {
+      output: {
+        generatedCode: {
+          symbols: true
+        }
+      }
+    },
   },
   generate: {
     fallback: "true",
