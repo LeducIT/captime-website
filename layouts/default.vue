@@ -10,9 +10,11 @@
 <script setup lang="ts">
 import NavBar from "~/components/NavBar.vue";
 import Footer from "~~/components/Footer.vue";
+import { createMetaImage } from "~~/services/meta";
 
 const config = useRuntimeConfig();
 const route = useRoute();
+const image = `${config.baseUrl}/app-demo.webp`;
 useHead(() => ({
   link: [
     {
@@ -32,6 +34,7 @@ useHead(() => ({
       property: "og:url",
       content: `${config.baseUrl}${route.fullPath}`,
     },
+    ...createMetaImage(image)
   ],
 }));
 </script>
