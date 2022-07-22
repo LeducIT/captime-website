@@ -21,7 +21,9 @@ import Trust from "~/components/home/Trust.vue";
 import Testimonials from "~/components/home/Testimonials.vue";
 import { crispLoader } from "~~/services/crisp";
 
-const image = "/icon.webp";
+const config = useRuntimeConfig();
+
+const image = `${config.baseUrl}/app-demo.png`;
 const title = "Captime | CrossFit Timer";
 const messages = [
   "The Captime app offers a variety of workout timers for common CrossFit and high-intensity interval training workouts.",
