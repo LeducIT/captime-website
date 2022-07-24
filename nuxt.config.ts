@@ -70,7 +70,7 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "The Captime app offers a variety of workout timers for common CrossFit and high-intensity interval training workouts. A user-friendly interface enables you to select advanced timers within seconds, including WOD, HIIT, AMRAP, TABATA, EMOM, and more.",
+            "The app offers all workout timers for CrossFit and high-intensity interval training workouts. A intuitive interface enables you to select advanced timers within seconds, including HIIT, AMRAP, TABATA, EMOM, and more.",
         },
         {
           hid: "og:title",

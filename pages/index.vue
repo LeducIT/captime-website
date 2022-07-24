@@ -31,10 +31,10 @@ const messages = [
   "Captime includes a built-in timer for HIIT, AMRAP, TABATA, EMOM, and more.",
 ];
 
-useHead(() => ({
-  titleTemplate: "Captime | CrossFit Timer",
-  meta: createMeta(title, messages[0], image, "Martin Donadieu"),
-}));
+// useHead(() => ({
+//   titleTemplate: "Captime | CrossFit Timer",
+//   meta: createMeta(title, messages[0], image, "Martin Donadieu"),
+// }));
 
 onMounted(() => {
   window.addEventListener(

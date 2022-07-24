@@ -12,14 +12,12 @@
           <h1
             class="text-white text-center text-3xl font-bold sm:text-4xl md:text-5xl"
           >
-            Meet your new <span class="text-ruby-500">CrossFit</span> timer.
+            Top Athlete, meet your <span class="text-ruby-500">CrossFit</span> timer.
           </h1>
 
           <p class="text-white text-center text-lg">
-            The Captime app offers a variety of workout timers for common
-            CrossFit and high-intensity interval training workouts. A
-            user-friendly interface enables you to select advanced timers within
-            seconds, including HIIT, AMRAP, TABATA, EMOM, and more.
+            Captime app offers all workout timers for
+            CrossFit and high-intensity interval training workouts.
           </p>
 
           <div class="flex justify-center mt-8">
@@ -29,9 +27,9 @@
               title="Download"
               class="relative items-center justify-center px-6 py-2 text-xl font-bold text-white border border-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
             >
-              Get
+              Smash wods
               <span class="text-2xl font-handel font-bold text-ruby-500"
-                >Captime</span
+                >NOW</span
               >
             </a>
           </div>

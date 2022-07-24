@@ -5,6 +5,10 @@
     >
       The features you always needed
     </h2>
+    <h3 class="text-white text-center text-lg pb-4">
+      The intuitive interface enables you to select advanced timers within
+      seconds, including HIIT, AMRAP, TABATA, EMOM, and more.
+    </h3>
     <div class="relative container m-auto px-6 text-gray-500 md:px-12">
       <div class="grid lg:grid-cols-3 gap-6 md:w-8/12 md:mx-auto lg:w-full">
         <div
