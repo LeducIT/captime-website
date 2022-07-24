@@ -13,6 +13,64 @@ const baseUrl = () => {
   return "http://localhost:3000";
 };
 const name = "Captime - Crossfit WOD Timer";
+const description =  "The app offers all workout timers for CrossFit and high-intensity interval training workouts. A intuitive interface enables you to select advanced timers within seconds, including HIIT, AMRAP, TABATA, EMOM, and more."
+// <script type="application/ld+json" class="yoast-schema-graph">
+const structuredData = {
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "@id": `${baseUrl()}/#website`,
+      "url": baseUrl(),
+      "name": name,
+      "isPartOf":{
+        "@id":"https://www.sugarwod.com/#website"
+      },
+      "datePublished":"2018-01-12T22:51:56+00:00",
+      "dateModified":"2020-03-17T22:30:14+00:00",
+      "description": description,
+      "breadcrumb":{
+        "@id":"https://www.sugarwod.com/#breadcrumb"
+      },
+      "inLanguage":"en-US",
+      "potentialAction":[
+        {
+        "@type":"ReadAction",
+        "target":[
+          baseUrl()
+          ]
+        }
+      ]
+    },
+    {
+      "@type":"BreadcrumbList",
+      "@id":`${baseUrl()}#breadcrumb`,
+      "itemListElement":[
+        {
+        "@type":"ListItem",
+        "position":1,
+        "item":{
+          "@type":"WebPage",
+          "@id": baseUrl(),
+          "url": baseUrl(),
+          "name":"Home"
+          }
+        },
+        {
+          "@type":"ListItem",
+          "position":2,
+          "item":{
+            "@type":"WebPage",
+            "@id": `${baseUrl()}/blog`,
+            "url": `${baseUrl()}/blog`,
+            "name":"Blog"
+            }
+          }
+      ]
+    }
+  ]
+}
+  // </script>
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   // nitro: {
@@ -51,6 +109,10 @@ export default defineNuxtConfig({
           async: true,
           defer: true,
         },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify(structuredData)
+        },
       ],
       meta: [
         { charset: "utf-8" },
@@ -69,8 +131,7 @@ export default defineNuxtConfig({
         {
           hid: "description",
           name: "description",
-          content:
-            "The app offers all workout timers for CrossFit and high-intensity interval training workouts. A intuitive interface enables you to select advanced timers within seconds, including HIIT, AMRAP, TABATA, EMOM, and more.",
+          content: description,
         },
         {
           hid: "og:title",
@@ -123,8 +184,7 @@ export default defineNuxtConfig({
         {
           hid: "og:description",
           property: "og:description",
-          content:
-            "The Captime app offers a variety of workout timers for common CrossFit and high-intensity interval training workouts.",
+          content: description,
         },
       ],
       link: [
