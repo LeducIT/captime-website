@@ -6,6 +6,11 @@
   publish = "dist"
   command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm build"
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  
 [dev]
   command = "npm run dev"
   autoLaunch = false
