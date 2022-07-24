@@ -1,7 +1,7 @@
 <template>
   <main class="text-center text-white">
     <div class="relative lg:pt-10 pb-4 lg:max-w-1/2 mx-auto">
-      <div class="block aspect-w-4 aspect-h-3">
+      <div class="block aspect-ratio-video">
         <img
           class="object-cover w-full h-full lg:rounded-lg"
           :src="page.data.value.head_image"
@@ -20,7 +20,7 @@
     <span
       class="block mt-6 text-sm font-semibold tracking-widest text-white uppercase"
     >
-      {{ formatTime(page.data.value.date) }}
+      {{ formatTime(page.data.value.updated_at) }}
     </span>
 
     <h1 class="py-5 text-3xl lg:text-4xl lg:max-w-1/2 px-4 font-800 mx-auto">
@@ -78,7 +78,7 @@
         <span
           class="block mt-3 text-sm font-semibold tracking-widest text-white uppercase"
         >
-          {{ formatTime(random.data.value.date) }}
+          {{ formatTime(random.data.value.updated_at) }}
         </span>
         <p class="mt-1">
           {{ random.data.value.description }}
@@ -93,6 +93,7 @@ import { createMeta } from "~/services/meta";
 import { randomArticle, formatTime } from "~/services/blog";
 
 const route = useRoute();
+const config = useRuntimeConfig();
 
 const page = await useAsyncData("articleData", async () => {
   return await queryContent("blog").where({ slug: route.params.id }).findOne();
@@ -105,9 +106,45 @@ const random = await useAsyncData("randomData", async () => {
         .findOne()
     : await randomArticle(page.data.value.slug);
 });
-
+const datePublished = new Date(page.data.value.created_at).toISOString()
+const dateModified = new Date(page.data.value.updated_at).toISOString()
+const structuredData: WithContext<NewsArticleLeaf> = {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `${config.baseUrl}/${page.data.value.slug}`
+      },
+      "headline": page.data.value.description,
+      "image": [
+        page.data.value.head_image,
+      ],
+      "datePublished": datePublished,
+      "dateModified": dateModified,
+      "author": {
+        "@type": "Person",
+        "name": page.data.value.author,
+        "url":  page.data.value.author_url
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Google",
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${config.baseUrl}/icon.webp`
+        }
+      }
+    }
+useJsonld(structuredData);
 useHead(() => ({
   titleTemplate: page.data.value.title || "No title",
+  script: [
+    {
+      hid: "seo-schema-graph",
+      type: "application/ld+json",
+      children: JSON.stringify(structuredData)
+    },
+  ],
   meta: createMeta(
     page.data.value.title || "No title",
     page.data.value.description || "No description",

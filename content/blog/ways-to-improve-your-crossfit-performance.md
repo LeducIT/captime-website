@@ -8,7 +8,9 @@ description:
   seasoned athletes in this workout. Many athletes even buy equipment to perform these
   workouts at home.
 author: Team Captime
-date: 2022-04-03T19:00:00Z
+author_url: "https://captime.app#team"
+created_at: 2022-04-03T19:00:00.000+00:00
+updated_at: 2022-04-03T19:00:00.000+00:00
 head_image: "/ways-to-improve-your-crossfit-performance.webp"
 tag: CrossFit Games
 published: true

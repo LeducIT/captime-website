@@ -9,7 +9,9 @@ description:
   men and women, therefore, this exercise has become a must for athletes and sports
   enthusiasts.
 author: Team Captime
-date: 2022-05-23T19:00:00Z
+author_url: "https://captime.app#team"
+created_at: 2022-05-23T19:00:00.000+00:00
+updated_at: 2022-06-01T19:00:00.000+00:00
 head_image: ""
 head_image_alt: ""
 tag: ""

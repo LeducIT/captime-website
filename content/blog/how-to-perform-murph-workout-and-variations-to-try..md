@@ -6,7 +6,9 @@ description:
   daunting, and wonderfully accessible out of all CrossFit. All you need is a pullup
   bar, two sneakers, and one helluva cardiovascular system
 author: Team Captime
-date: 2022-06-01T19:00:00Z
+author_url: "https://captime.app#team"
+created_at: 2022-06-01T19:00:00.000+00:00
+updated_at: 2022-06-01T19:00:00.000+00:00
 head_image: ""
 head_image_alt: ""
 tag: ""

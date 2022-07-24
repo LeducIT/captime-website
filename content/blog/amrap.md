@@ -6,7 +6,9 @@ subtitle: ""
 published: true
 description: AMRAP stand for “As Many Reps/Rounds As Possible.” This workout involves you competing with the clock,  complete as many reps or rounds as you can in a given time.
 author: Martin Donadieu
-date: 2022-01-12
+author_url: "https://twitter.com/martindonadieu"
+created_at: 2022-01-12T19:00:00.000+00:00
+updated_at: 2022-01-12T19:00:00.000+00:00
 head_image: "/amrap1.webp"
 head_image_alt: Crossfit Men doing sport and thinking about AMRAP
 tag: timers

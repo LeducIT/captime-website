@@ -3,7 +3,9 @@ slug: "beginners-guide-the-benefits-of-hiit"
 title: "Beginner's Guide: The Benefits Of HIIT"
 description: "HIIT (High-Intensity Interval Training) usually involves a very hard time of about 30 seconds, followed by a break of between twice and four times that time."
 author: Team Captime
-date: 2022-02-23T19:00:00Z
+author_url: "https://captime.app#team"
+created_at: 2022-02-23T19:00:00.000+00:00
+updated_at: 2022-04-10T19:00:00.000+00:00
 head_image: "/beginner-s-guide-the-benefits-of-hiit.webp"
 head_image_alt: Example Of HIIT Plan
 tag: HIIT

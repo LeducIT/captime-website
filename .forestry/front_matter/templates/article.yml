@@ -11,9 +11,15 @@ fields:
   - type: text
     name: author
     label: author
+  - type: text
+    name: author_url
+    label: author_url
   - type: datetime
-    name: date
-    label: date
+    name: created_at
+    label: created_at
+  - type: datetime
+    name: updated_at
+    label: updated_at
   - type: file
     name: head_image
     label: head_image

@@ -10,7 +10,9 @@ description:
   terms of what works for them so these tips will allow you to create an effective
   strategy for you as an individual to get the most out of your training.
 author: Team Captime
-date: 2022-05-24T19:00:00Z
+author_url: "https://captime.app#team"
+created_at: 2022-05-24T19:00:00.000+00:00
+updated_at: 2022-05-24T19:00:00.000+00:00
 head_image: ""
 head_image_alt: ""
 tag: ""

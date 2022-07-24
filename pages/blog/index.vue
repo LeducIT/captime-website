@@ -25,7 +25,7 @@
               <a
                 :href="article.path"
                 :title="article.title"
-                class="block aspect-w-4 aspect-h-3"
+                class="block aspect-ratio-video"
               >
                 <img
                   class="object-cover w-full h-full rounded-lg"
@@ -45,7 +45,7 @@
             <span
               class="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase"
             >
-              {{ formatTime(article.date) }}
+              {{ formatTime(article.updated_at) }}
             </span>
             <p class="mt-5 text-2xl font-semibold">
               <a :href="article.path" :title="article.title" class="text-black">
@@ -126,16 +126,18 @@
 <script setup lang="ts">
 import { createMeta } from "~/services/meta";
 import dayjs from "~/services/dayjs";
+import { formatTime } from "~/services/blog";
 
 const title = "Captime | Blog";
 const description = "The best articles to enhance your Crossfit experience.";
+
 const { data: articles } = await useAsyncData("count", () =>
   queryContent("blog").where({ published: true }).find()
 );
 
 const articlesOrder = computed(() =>
   articles.value.sort((a, b) => {
-    return dayjs(b.date).valueOf() - dayjs(a.date).valueOf();
+    return dayjs(b.created_at).valueOf() - dayjs(a.created_at).valueOf();
   })
 );
 
@@ -144,9 +146,4 @@ useHead(() => ({
   meta: createMeta(title, description),
 }));
 
-const formatTime = (s: string) => {
-  // use dayjs to parse dd-mm-yyyy
-  const d = dayjs(s, "YYYY-MM-DD");
-  return d.format("MMMM DD, YYYY");
-};
 </script>
