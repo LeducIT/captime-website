@@ -85,6 +85,9 @@ export default defineNuxtConfig({
   // },
   generate: {
     fallback: "true",
+    routes: [
+      "/404",
+    ]
   },
   ssr: true,
   target: "static",
