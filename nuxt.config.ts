@@ -206,7 +206,7 @@ export default defineNuxtConfig({
   },
   build: {
     extractCSS: true,
-    transpile: ["@headlessui/vue"],
+    transpile: ["@headlessui/vue", "@heroicons/vue"],
   },
   content: {
     // https://content.nuxtjs.org/api/configuration
