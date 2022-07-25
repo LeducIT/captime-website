@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-mesh">
+  <div class="">
     <Hero />
     <Features />
     <CallToAction />
