@@ -8,8 +8,8 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
+  to = "/404"
+  status = 404
 
 [dev]
   command = "pnpm run dev"
