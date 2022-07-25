@@ -38,4 +38,9 @@
 useHead(() => ({
   titleTemplate: "Captime | 404",
 }));
+const props = defineProps({
+  error: Object,
+});
+
+const handleError = () => clearError({ redirect: "/" });
 </script>

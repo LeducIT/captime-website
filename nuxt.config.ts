@@ -84,10 +84,7 @@ export default defineNuxtConfig({
   //   },
   // },
   generate: {
-    routes: [
-      "/error",
-    ],
-    fallback: "error.html"
+    fallback: "true",
   },
   ssr: true,
   target: "static",
