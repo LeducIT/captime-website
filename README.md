@@ -1,4 +1,4 @@
-# Nuxt 3 Minimal Starter
+# Captime Landing Page in Nuxt 3
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
