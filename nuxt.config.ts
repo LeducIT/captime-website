@@ -86,7 +86,7 @@ export default defineNuxtConfig({
   generate: {
     fallback: "true",
   },
-  ssr: true,
+  ssr: false,
   target: "static",
   publicRuntimeConfig: {
     domain: baseDomain(),

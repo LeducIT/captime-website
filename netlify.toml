@@ -4,15 +4,12 @@
 
 [build]
   publish = "dist"
-  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm build"
+  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  
+
 [dev]
-  command = "npm run dev"
-  autoLaunch = false
-  functionsPort = 8887
-  targetPort = 3336
+  command = "pnpm run dev"
