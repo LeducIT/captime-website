@@ -1,11 +1,12 @@
 import { SitemapStream, streamToPromise } from 'sitemap'
 import { serverQueryContent } from '#content/server'
 
-
 export default defineEventHandler(async (event) => {
   try {
     const config = useRuntimeConfig()
     const smStream = new SitemapStream({ hostname: config.baseUrl })
+
+    smStream.write({ url: '/', changefreq: 'daily', priority: 1 })
 
     smStream.write({ url: '/blog', changefreq: 'daily', priority: 1 })
 

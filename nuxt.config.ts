@@ -24,13 +24,13 @@ const structuredData = {
       "url": baseUrl(),
       "name": name,
       "isPartOf": {
-        "@id": "https://www.sugarwod.com/#website"
+        "@id": `${baseUrl()}/#website`,
       },
       "datePublished": "2018-01-12T22:51:56+00:00",
       "dateModified": "2020-03-17T22:30:14+00:00",
       "description": description,
       "breadcrumb": {
-        "@id": "https://www.sugarwod.com/#breadcrumb"
+        "@id": `${baseUrl()}/#breadcrumb`,
       },
       "inLanguage": "en-US",
       "potentialAction": [
@@ -100,6 +100,11 @@ export default defineNuxtConfig({
     ['nuxt-jsonld', { disableOptionsAPI: true }],
     '@unocss/nuxt'
   ],
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml', '/robots.txt'],
+    },
+  },
   experimental: {
     reactivityTransform: true,
     viteNode: false,
