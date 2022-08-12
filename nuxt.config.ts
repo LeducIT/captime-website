@@ -73,16 +73,6 @@ const structuredData = {
 // </script>
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  // nitro: {
-  //   preset: 'netlify-edge',
-  //   rollupConfig: {
-  //     output: {
-  //       generatedCode: {
-  //         symbols: true
-  //       }
-  //     }
-  //   },
-  // },
   generate: {
     fallback: "true",
   },
@@ -101,6 +91,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt'
   ],
   nitro: {
+    preset: 'netlify-edge',
     prerender: {
       routes: ['/sitemap.xml', '/robots.txt'],
     },
