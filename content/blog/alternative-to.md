@@ -21,7 +21,7 @@ Timer clocks come equipped with visual and auditory signals that can tell when t
 
 - **_It Helps Manage Time._**
 
-People with busy schedules usually want to perform their workouts only for a limited number of minutes in a day. Other fitness enthusiasts do not want to waste their time scrolling on their phone screens when spacing out between reps or rounds. Both these groups of people can benefit from gym timers. These timers send timely signals to notify you when to start or end a particular set or take a break. In the end, they help you avoid uselessly lengthy sessions.
+Athletes with busy schedules usually want to perform their workouts only for a limited number of minutes in a day. Other fitness enthusiasts do not want to waste their time scrolling on their phone screens when spacing out between reps or rounds. Both these groups of people can benefit from gym timers. These timers send timely signals to notify you when to start or end a particular set or take a break. In the end, they help you avoid uselessly lengthy sessions.
 
 - **_Effective Interval Training_**
 

@@ -22,7 +22,7 @@ However, Murph is not a typical CrossFit function. It is one of the longest, mos
 
 # **How To Train For Murph Workouts?**
 
-As the Murph Challenge is a difficult, long-term task. For most people, this exercise will take more than an hour. Currently, the world record for finishing the Murph Challenge is owned by Alex Blenis, who finished the race in just over 22 minutes. You will need perseverance and strength to complete the Murph Challenge.
+As the Murph Challenge is a difficult, long-term task. For most athletes, this exercise will take more than an hour. Currently, the world record for finishing the Murph Challenge is owned by Alex Blenis, who finished the race in just over 22 minutes. You will need perseverance and strength to complete the Murph Challenge.
 
 In fact, research has shown that the power of one-rep-max has less to do with exercise than Murph. The researchers also found that lifting time was more closely related to good performance than running time at work. So, while you need to be able to complete the run from start to finish, the real meat-and-potato challenge will be a drag, push, and squats.
 
