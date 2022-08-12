@@ -7,7 +7,7 @@ specifiers:
   '@nuxt/content': ^2.0.1
   '@unocss/nuxt': ^0.45.6
   dayjs: ^1.11.5
-  eslint: 8.21.0
+  eslint: ^8.21.0
   nuxt: 3.0.0-rc.8
   nuxt-jsonld: ^2.0.3
   outline: link:@heroicons/vue/outline
@@ -1033,13 +1033,13 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.4.5
-      '@types/estree': 1.0.0
+      '@types/estree': 0.0.51
     dev: true
 
   /@types/eslint/8.4.5:
     resolution: {integrity: sha512-dhsC09y1gpJWnK+Ff4SGvCuSnk9DaU0BJZSzOwa6GVSg65XtTugLBITDAAzRU5duGBoXBHpdR/9jHGxJjNflJQ==}
     dependencies:
-      '@types/estree': 1.0.0
+      '@types/estree': 0.0.51
       '@types/json-schema': 7.0.11
     dev: true
 
