@@ -1,3 +1,68 @@
+<script setup lang="ts">
+import { createMeta } from '~/services/meta'
+import { formatTime, randomArticle } from '~/services/blog'
+
+const route = useRoute()
+const config = useRuntimeConfig()
+
+const page = await useAsyncData('articleData', async () => {
+  return await queryContent('blog').where({ slug: route.params.id }).findOne()
+})
+
+const random = await useAsyncData('randomData', async () => {
+  return page.data.value.next_blog !== ''
+    ? await queryContent('blog')
+      .where({ slug: page.data.value.next_blog })
+      .findOne()
+    : await randomArticle(page.data.value.slug)
+})
+const datePublished = new Date(page.data.value.created_at).toISOString()
+const dateModified = new Date(page.data.value.updated_at).toISOString()
+const structuredData: WithContext<NewsArticleLeaf> = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  'mainEntityOfPage': {
+    '@type': 'WebPage',
+    '@id': `${config.baseUrl}/${page.data.value.slug}`,
+  },
+  'headline': page.data.value.description,
+  'image': [
+    page.data.value.head_image,
+  ],
+  'datePublished': datePublished,
+  'dateModified': dateModified,
+  'author': {
+    '@type': 'Person',
+    'name': page.data.value.author,
+    'url': page.data.value.author_url,
+  },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'Google',
+    'logo': {
+      '@type': 'ImageObject',
+      'url': `${config.baseUrl}/icon.webp`,
+    },
+  },
+}
+useJsonld(structuredData)
+useHead(() => ({
+  titleTemplate: page.data.value.title || 'No title',
+  script: [
+    {
+      hid: 'seo-schema-graph',
+      type: 'application/ld+json',
+      children: JSON.stringify(structuredData),
+    },
+  ],
+  meta: createMeta(
+    page.data.value.title || 'No title',
+    page.data.value.description || 'No description',
+    page.data.value.author || 'Captime',
+  ),
+}))
+</script>
+
 <template>
   <main class="text-center text-white">
     <div class="relative lg:pt-10 pb-4 lg:max-w-1/2 mx-auto">
@@ -5,8 +70,8 @@
         <img
           class="object-cover w-full h-full lg:rounded-lg"
           :src="page.data.value.head_image"
-          :alt="'blog illustration ' + page.data.value.title"
-        />
+          :alt="`blog illustration ${page.data.value.title}`"
+        >
       </div>
 
       <div class="absolute top-4 left-4 lg:top-15 lg:left-10">
@@ -43,15 +108,13 @@
         class="relative items-center justify-center px-6 py-2 text-xl font-bold text-white border border-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
       >
         Get
-        <span class="text-2xl font-handel font-bold text-ruby-500"
-          >Captime</span
-        >
+        <span class="text-2xl font-handel font-bold text-ruby-500">Captime</span>
       </a>
     </div>
 
     <a
       v-if="random"
-      :href="'/blog/' + random.data.value.slug"
+      :href="`/blog/${random.data.value.slug}`"
       class="flex flex-col sm:flex-row py-8 lg:max-w-1/2 mx-auto lg:my-10 bg-true-gray-800 lg:rounded-lg"
     >
       <div class="relative mx-4 flex">
@@ -59,8 +122,8 @@
           <img
             class="object-cover w-full sm:w-52 h-full rounded-lg"
             :src="random.data.value.head_image"
-            :alt="'blog illustration ' + random.data.value.title"
-          />
+            :alt="`blog illustration ${random.data.value.title}`"
+          >
         </div>
 
         <div class="absolute top-2 left-2">
@@ -87,68 +150,3 @@
     </a>
   </main>
 </template>
-
-<script setup lang="ts">
-import { createMeta } from "~/services/meta";
-import { randomArticle, formatTime } from "~/services/blog";
-
-const route = useRoute();
-const config = useRuntimeConfig();
-
-const page = await useAsyncData("articleData", async () => {
-  return await queryContent("blog").where({ slug: route.params.id }).findOne();
-});
-
-const random = await useAsyncData("randomData", async () => {
-  return page.data.value.next_blog !== ""
-    ? await queryContent("blog")
-        .where({ slug: page.data.value.next_blog })
-        .findOne()
-    : await randomArticle(page.data.value.slug);
-});
-const datePublished = new Date(page.data.value.created_at).toISOString()
-const dateModified = new Date(page.data.value.updated_at).toISOString()
-const structuredData: WithContext<NewsArticleLeaf> = {
-      "@context": "https://schema.org",
-      "@type": "NewsArticle",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": `${config.baseUrl}/${page.data.value.slug}`
-      },
-      "headline": page.data.value.description,
-      "image": [
-        page.data.value.head_image,
-      ],
-      "datePublished": datePublished,
-      "dateModified": dateModified,
-      "author": {
-        "@type": "Person",
-        "name": page.data.value.author,
-        "url":  page.data.value.author_url
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Google",
-        "logo": {
-          "@type": "ImageObject",
-          "url": `${config.baseUrl}/icon.webp`
-        }
-      }
-    }
-useJsonld(structuredData);
-useHead(() => ({
-  titleTemplate: page.data.value.title || "No title",
-  script: [
-    {
-      hid: "seo-schema-graph",
-      type: "application/ld+json",
-      children: JSON.stringify(structuredData)
-    },
-  ],
-  meta: createMeta(
-    page.data.value.title || "No title",
-    page.data.value.description || "No description",
-    page.data.value.author || "Captime"
-  ),
-}));
-</script>

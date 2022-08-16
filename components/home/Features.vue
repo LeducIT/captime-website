@@ -1,3 +1,26 @@
+<script setup lang="ts">
+const features = [
+  {
+    icon: '/clock.webp',
+    title: 'Six-in-one Timer',
+    description:
+      'Captime includes templates for common training formats. You can also use the custom timer to create one interval at a time if you want.',
+  },
+  {
+    icon: '/camera.webp',
+    title: 'Video Mode',
+    description:
+      'This is the first and only timer app with a video recording feature. Which enables you to record videos for your CrossFit competitions and challenges.',
+  },
+  {
+    icon: '/voice-recognition.webp',
+    title: 'Voice Recognition',
+    description:
+      'Management of timers without using your hands. You can stop the timer by shouting "TIME" or "STOP" when you finish your workout.',
+  },
+]
+</script>
+
 <template>
   <div class="relative backdrop-blur-lg bg-black/30 pt-8 pb-16">
     <h2
@@ -13,6 +36,7 @@
       <div class="grid lg:grid-cols-3 gap-6 md:w-8/12 md:mx-auto lg:w-full">
         <div
           v-for="feature in features"
+          :key="feature.title"
           class="group bg-white rounded-none shadow-xl px-8 py-12 space-y-6 text-center"
         >
           <img
@@ -20,7 +44,7 @@
             :src="feature.icon"
             alt="illustration"
             loading="lazy"
-          />
+          >
           <h3 class="text-2xl font-semibold text-gray-900">
             {{ feature.title }}
           </h3>
@@ -32,26 +56,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-const features = [
-  {
-    icon: "/clock.webp",
-    title: "Six-in-one Timer",
-    description:
-      "Captime includes templates for common training formats. You can also use the custom timer to create one interval at a time if you want.",
-  },
-  {
-    icon: "/camera.webp",
-    title: "Video Mode",
-    description:
-      "This is the first and only timer app with a video recording feature. Which enables you to record videos for your CrossFit competitions and challenges.",
-  },
-  {
-    icon: "/voice-recognition.webp",
-    title: "Voice Recognition",
-    description:
-      'Management of timers without using your hands. You can stop the timer by shouting "TIME" or "STOP" when you finish your workout.',
-  },
-];
-</script>

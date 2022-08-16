@@ -1,14 +1,15 @@
 <script setup lang="ts">
 useHead({
-  titleTemplate: "Captime | Return Policy",
+  titleTemplate: 'Captime | Return Policy',
   meta: [
-    { name: "description", content: "Return Policy" },
-    { name: "robots", content: "noindex, nofollow" },
+    { name: 'description', content: 'Return Policy' },
+    { name: 'robots', content: 'noindex, nofollow' },
   ],
-});
-const brand = "Captime";
-const domain = "https://captime.app";
+})
+const brand = 'Captime'
+const domain = 'https://captime.app'
 </script>
+
 <template>
   <div class="h-full">
     <div class="prose prose-sm text-left m-auto pt-8 text-white">
@@ -22,8 +23,7 @@ const domain = "https://captime.app";
         <a
           href="https://www.termsfeed.com/return-refund-policy-generator/"
           target="_blank"
-          >Return and Refund Policy Generator</a
-        >.
+        >Return and Refund Policy Generator</a>.
       </p>
       <p>
         The following terms are applicable for any products that You purchased
@@ -100,8 +100,7 @@ const domain = "https://captime.app";
             :href="`${domain}/#support`"
             rel="external nofollow noopener"
             target="_blank"
-            >{{ domain }}/#support</a
-          >
+          >{{ domain }}/#support</a>
         </li>
       </ul>
       <p>
@@ -153,8 +152,8 @@ const domain = "https://captime.app";
         You should send the Goods at the following address:
       </p>
       <p>
-        6 sepapaja<br />
-        Tallinn, 15510<br />
+        6 sepapaja<br>
+        Tallinn, 15510<br>
         Estonia
       </p>
       <p>
@@ -187,8 +186,7 @@ const domain = "https://captime.app";
             :href="`${domain}/#support`"
             rel="external nofollow noopener"
             target="_blank"
-            >{{ domain }}/#support</a
-          >
+          >{{ domain }}/#support</a>
         </li>
       </ul>
     </div>

@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const modes = ['HIIT', 'AMRAP', 'EMOM', 'SALLY', 'TABATA']
+</script>
+
 <template>
   <section class="relative py-12 overflow-hidden sm:py-16 lg:py-20 xl:py-32">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -11,7 +15,7 @@
             Challenge yourself in the different modes
           </h2>
           <p class="mt-6 text-lg font-normal text-white font-pj">
-            The only way to get better is to keep pushing yourself. <br />That's
+            The only way to get better is to keep pushing yourself. <br>That's
             why Captime helps you to break the limits.
           </p>
         </div>
@@ -24,8 +28,9 @@
               class="grid grid-cols-1 place-content-center gap-5 sm:grid-cols-3"
             >
               <a
-                href="#"
                 v-for="(mode, index) in modes"
+                :key="index"
+                href="#"
                 class="relative text-center items-center justify-center px-6 py-2 text-xl font-bold text-white border border-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
               >
                 {{ mode }}
@@ -37,7 +42,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-const modes = ["HIIT", "AMRAP", "EMOM", "SALLY", "TABATA"];
-</script>

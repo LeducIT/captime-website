@@ -1,14 +1,15 @@
 <script setup lang="ts">
 useHead({
-  titleTemplate: "Captime | Terms & Conditions",
+  titleTemplate: 'Captime | Terms & Conditions',
   meta: [
-    { name: "description", content: "Terms & Conditions" },
-    { name: "robots", content: "noindex, nofollow" },
+    { name: 'description', content: 'Terms & Conditions' },
+    { name: 'robots', content: 'noindex, nofollow' },
   ],
-});
-const brand = "Captime";
-const domain = "https://captime.app";
+})
+const brand = 'Captime'
+const domain = 'https://captime.app'
 </script>
+
 <template>
   <div class="h-full">
     <div class="prose prose-sm text-left m-auto pt-8 text-white">
@@ -520,8 +521,7 @@ const domain = "https://captime.app";
             :href="`https://${domain}#support`"
             rel="external nofollow noopener"
             target="_blank"
-            >https://{{ domain }}#support</a
-          >
+          >https://{{ domain }}#support</a>
         </li>
       </ul>
     </div>

@@ -1,14 +1,15 @@
 <script setup lang="ts">
 useHead({
-  titleTemplate: "Captime | End User License Agreement",
+  titleTemplate: 'Captime | End User License Agreement',
   meta: [
-    { name: "description", content: "End User License Agreement" },
-    { name: "robots", content: "noindex, nofollow" },
+    { name: 'description', content: 'End User License Agreement' },
+    { name: 'robots', content: 'noindex, nofollow' },
   ],
-});
-const brand = "Captime";
-const domain = "https://captime.app";
+})
+const brand = 'Captime'
+const domain = 'https://captime.app'
 </script>
+
 <template>
   <div class="h-full">
     <div class="prose prose-sm text-left m-auto pt-8 text-white">
@@ -434,8 +435,7 @@ const domain = "https://captime.app";
             :href="`${domain}/#support`"
             rel="external nofollow noopener"
             target="_blank"
-            >{{ domain }}/#support</a
-          >
+          >{{ domain }}/#support</a>
         </li>
       </ul>
     </div>

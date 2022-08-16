@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const expanded = ref(false)
+</script>
+
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
   <header class="py-2 bg-black sm:py-4" x-data="{expanded: false}">
@@ -9,7 +13,7 @@
               class="w-auto h-14 border-2 border-white"
               src="/icon.webp"
               alt="Captime logo"
-            />
+            >
             <span class="font-handel text-white text-3xl">Captime</span>
           </a>
         </div>
@@ -109,7 +113,3 @@
     </div>
   </header>
 </template>
-
-<script setup lang="ts">
-const expanded = ref(false);
-</script>

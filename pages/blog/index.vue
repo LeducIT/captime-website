@@ -1,3 +1,27 @@
+<script setup lang="ts">
+import { createMeta } from '~/services/meta'
+import dayjs from '~/services/dayjs'
+import { formatTime } from '~/services/blog'
+
+const title = 'Captime | Blog'
+const description = 'The best articles to enhance your Crossfit experience.'
+
+const { data: articles } = await useAsyncData('count', () =>
+  queryContent('blog').where({ published: true }).find(),
+)
+
+const articlesOrder = computed(() =>
+  articles.value.sort((a, b) => {
+    return dayjs(b.created_at).valueOf() - dayjs(a.created_at).valueOf()
+  }),
+)
+
+useHead(() => ({
+  titleTemplate: title,
+  meta: createMeta(title, description),
+}))
+</script>
+
 <template>
   <section class="py-10 sm:py-12 lg:py-20">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -30,8 +54,8 @@
                 <img
                   class="object-cover w-full h-full rounded-lg"
                   :src="article.head_image"
-                  :alt="'blog illustration ' + article.title"
-                />
+                  :alt="`blog illustration ${article.title}`"
+                >
               </a>
 
               <div class="absolute top-4 left-4">
@@ -56,7 +80,7 @@
               {{ article.description }}
             </p>
             <a
-              :href="'/blog/' + article.slug"
+              :href="`/blog/${article.slug}`"
               :title="article.title"
               class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-blue-600 transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600"
             >
@@ -122,28 +146,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-import { createMeta } from "~/services/meta";
-import dayjs from "~/services/dayjs";
-import { formatTime } from "~/services/blog";
-
-const title = "Captime | Blog";
-const description = "The best articles to enhance your Crossfit experience.";
-
-const { data: articles } = await useAsyncData("count", () =>
-  queryContent("blog").where({ published: true }).find()
-);
-
-const articlesOrder = computed(() =>
-  articles.value.sort((a, b) => {
-    return dayjs(b.created_at).valueOf() - dayjs(a.created_at).valueOf();
-  })
-);
-
-useHead(() => ({
-  titleTemplate: title,
-  meta: createMeta(title, description),
-}));
-
-</script>

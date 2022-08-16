@@ -1,14 +1,15 @@
 <script setup lang="ts">
 useHead({
-  titleTemplate: "Captime | Disclaimer",
+  titleTemplate: 'Captime | Disclaimer',
   meta: [
-    { name: "description", content: "Disclaimer" },
-    { name: "robots", content: "noindex, nofollow" },
+    { name: 'description', content: 'Disclaimer' },
+    { name: 'robots', content: 'noindex, nofollow' },
   ],
-});
-const brand = "Captime";
-const domain = "https://captime.app";
+})
+const brand = 'Captime'
+const domain = 'https://captime.app'
 </script>
+
 <template>
   <div class="h-full">
     <div class="prose prose-sm text-left m-auto pt-8 text-white">
@@ -72,8 +73,7 @@ const domain = "https://captime.app";
         <a
           href="https://www.termsfeed.com/blog/sample-disclaimer-template/"
           target="_blank"
-          >Disclaimer Template</a
-        >.
+        >Disclaimer Template</a>.
       </p>
       <p>
         The Company does not warrant that the Service is free of viruses or
@@ -173,8 +173,7 @@ const domain = "https://captime.app";
             :href="`https://${domain}#support`"
             rel="external nofollow noopener"
             target="_blank"
-            >https://{{ domain }}#support</a
-          >
+          >https://{{ domain }}#support</a>
         </li>
       </ul>
     </div>

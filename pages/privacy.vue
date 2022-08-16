@@ -1,14 +1,15 @@
 <script setup lang="ts">
 useHead({
-  titleTemplate: "Captime | Privacy Policy",
+  titleTemplate: 'Captime | Privacy Policy',
   meta: [
-    { name: "description", content: "Privacy Policy" },
-    { name: "robots", content: "noindex, nofollow" },
+    { name: 'description', content: 'Privacy Policy' },
+    { name: 'robots', content: 'noindex, nofollow' },
   ],
-});
-const brand = "Captime";
-const domain = "https://captime.app";
+})
+const brand = 'Captime'
+const domain = 'https://captime.app'
 </script>
+
 <template>
   <div class="h-full">
     <div class="prose prose-sm text-left m-auto pt-8 text-white">
@@ -427,8 +428,7 @@ const domain = "https://captime.app";
               href="https://www.apple.com/legal/privacy/en-ww/"
               rel="external nofollow noopener"
               target="_blank"
-              >https://www.apple.com/legal/privacy/en-ww/</a
-            >
+            >https://www.apple.com/legal/privacy/en-ww/</a>
           </p>
         </li>
         <li>
@@ -439,8 +439,7 @@ const domain = "https://captime.app";
               href="https://www.google.com/policies/privacy/"
               rel="external nofollow noopener"
               target="_blank"
-              >https://www.google.com/policies/privacy/</a
-            >
+            >https://www.google.com/policies/privacy/</a>
           </p>
         </li>
         <li>
@@ -451,8 +450,7 @@ const domain = "https://captime.app";
               href="https://stripe.com/us/privacy"
               rel="external nofollow noopener"
               target="_blank"
-              >https://stripe.com/us/privacy</a
-            >
+            >https://stripe.com/us/privacy</a>
           </p>
         </li>
       </ul>
@@ -516,10 +514,8 @@ const domain = "https://captime.app";
           about You.
         </li>
         <li>
-          <strong
-            >Request correction of the Personal Data that We hold about
-            You.</strong
-          >
+          <strong>Request correction of the Personal Data that We hold about
+            You.</strong>
           You have the right to have any incomplete or inaccurate information We
           hold about You corrected.
         </li>
@@ -603,11 +599,9 @@ const domain = "https://captime.app";
         </li>
         <li>
           <p>
-            <strong
-              >Category B: Personal information categories listed in the
+            <strong>Category B: Personal information categories listed in the
               California Customer Records statute (Cal. Civ. Code §
-              1798.80(e)).</strong
-            >
+              1798.80(e)).</strong>
           </p>
           <p>
             Examples: A name, signature, Social Security number, physical
@@ -623,10 +617,8 @@ const domain = "https://captime.app";
         </li>
         <li>
           <p>
-            <strong
-              >Category C: Protected classification characteristics under
-              California or federal law.</strong
-            >
+            <strong>Category C: Protected classification characteristics under
+              California or federal law.</strong>
           </p>
           <p>
             Examples: Age (40 years or older), race, color, ancestry, national
@@ -660,9 +652,7 @@ const domain = "https://captime.app";
         </li>
         <li>
           <p>
-            <strong
-              >Category F: Internet or other similar network activity.</strong
-            >
+            <strong>Category F: Internet or other similar network activity.</strong>
           </p>
           <p>Examples: Interaction with our Service or advertisement.</p>
           <p>Collected: Yes.</p>
@@ -682,10 +672,8 @@ const domain = "https://captime.app";
         </li>
         <li>
           <p>
-            <strong
-              >Category I: Professional or employment-related
-              information.</strong
-            >
+            <strong>Category I: Professional or employment-related
+              information.</strong>
           </p>
           <p>
             Examples: Current or past job history or performance evaluations.
@@ -694,11 +682,9 @@ const domain = "https://captime.app";
         </li>
         <li>
           <p>
-            <strong
-              >Category J: Non-public education information (per the Family
+            <strong>Category J: Non-public education information (per the Family
               Educational Rights and Privacy Act (20 U.S.C. Section 1232g, 34
-              C.F.R. Part 99)).</strong
-            >
+              C.F.R. Part 99)).</strong>
           </p>
           <p>
             Examples: Education records directly related to a student maintained
@@ -711,10 +697,8 @@ const domain = "https://captime.app";
         </li>
         <li>
           <p>
-            <strong
-              >Category K: Inferences drawn from other personal
-              information.</strong
-            >
+            <strong>Category K: Inferences drawn from other personal
+              information.</strong>
           </p>
           <p>
             Examples: Profile reflecting a person's preferences,
@@ -975,9 +959,7 @@ const domain = "https://captime.app";
           </ul>
         </li>
         <li>
-          <strong
-            >The right to say no to the sale of Personal Data (opt-out).</strong
-          >
+          <strong>The right to say no to the sale of Personal Data (opt-out).</strong>
           You have the right to direct Us to not sell Your personal information.
           To submit an opt-out request please contact Us.
         </li>
@@ -1068,8 +1050,7 @@ const domain = "https://captime.app";
             :href="`${domain}/#support`"
             rel="external nofollow noopener"
             target="_blank"
-            >{{ domain }}/#support</a
-          >
+          >{{ domain }}/#support</a>
         </li>
       </ul>
       <p>
@@ -1218,8 +1199,7 @@ const domain = "https://captime.app";
             :href="`${domain}/#support`"
             rel="external nofollow noopener"
             target="_blank"
-            >{{ domain }}/#support</a
-          >
+          >{{ domain }}/#support</a>
         </li>
       </ul>
     </div>

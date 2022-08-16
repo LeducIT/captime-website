@@ -1,10 +1,19 @@
+<script setup lang="ts">
+defineProps({
+  error: Object,
+})
+useHead(() => ({
+  titleTemplate: 'Captime | 404',
+}))
+</script>
+
 <template>
   <div class="relative w-full sm:h-screen md:h-full">
     <div class="h-full">
       <div
         aria-hidden="true"
         class="absolute inset-0 w-full h-full bg-opacity-30 backdrop-blur-sm"
-      ></div>
+      />
       <div class="relative container m-auto px-6 md:px-12 lg:px-6">
         <div
           class="mb-12 pt-6 space-y-6 md:mb-20 md:pt-12 lg:w-8/12 lg:mx-auto"
@@ -33,14 +42,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-useHead(() => ({
-  titleTemplate: "Captime | 404",
-}));
-const props = defineProps({
-  error: Object,
-});
-
-const handleError = () => clearError({ redirect: "/" });
-</script>
