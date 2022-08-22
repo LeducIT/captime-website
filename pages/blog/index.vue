@@ -3,8 +3,8 @@ import { createMeta } from '~/services/meta'
 import dayjs from '~/services/dayjs'
 import { formatTime } from '~/services/blog'
 
-const title = 'Captime | Blog'
-const description = 'The best articles to enhance your Crossfit experience.'
+const title = 'Captime | Crossfit Blog'
+const description = 'The best articles to enhance your Crossfit experience. Learn about the best tips and tricks to use Captime, and more.'
 
 const { data: articles } = await useAsyncData('count', () =>
   queryContent('blog').where({ published: true }).find(),
