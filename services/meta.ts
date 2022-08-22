@@ -47,14 +47,7 @@ export const createMeta = (
   author: string | null = null,
   audio: string | null = null,
 ): MetaDataProperty[] => {
-  const config = useRuntimeConfig()
-  const route = useRoute()
   const base: MetaDataProperty[] = [
-    {
-      hid: 'og:url',
-      property: 'og:url',
-      content: `${config.baseUrl}${route.fullPath}`,
-    },
     { hid: 'title', name: 'title', content: title },
     {
       hid: 'og:title',

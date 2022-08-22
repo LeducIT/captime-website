@@ -10,6 +10,7 @@ const { data: articles } = await useAsyncData('count', () =>
   queryContent('blog').where({ published: true }).find(),
 )
 
+// const articlesOrder =
 const articlesOrder = computed(() =>
   articles.value.sort((a, b) => {
     return dayjs(b.created_at).valueOf() - dayjs(a.created_at).valueOf()
