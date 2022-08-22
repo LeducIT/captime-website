@@ -6,5 +6,10 @@
   publish = "dist"
   command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run generate"
 
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 404
+
 [dev]
   command = "pnpm run dev"
