@@ -38,7 +38,7 @@ const structuredData: WithContext<NewsArticleLeaf> = {
   },
   'publisher': {
     '@type': 'Organization',
-    'name': 'Google',
+    'name': 'Captime',
     'logo': {
       '@type': 'ImageObject',
       'url': `${config.baseUrl}/icon.webp`,
