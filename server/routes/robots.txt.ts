@@ -1,4 +1,3 @@
-
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
 
@@ -6,7 +5,8 @@ export default defineEventHandler(async (event) => {
     const data = `User-agent: *\nAllow: /\nUser-agent: *\nDisallow: /rss.xml\nSitemap: ${config.baseUrl}/sitemap.xml`
     event.res.setHeader('Content-Type', 'text/plain')
     return data.toString()
-  } catch (e) {
+  }
+  catch (e) {
     console.error(e)
     event.res.statusCode = 500
     return {}

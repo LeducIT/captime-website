@@ -21,9 +21,10 @@ export default defineEventHandler(async (event) => {
     })
     smStream.end()
     const data = await streamToPromise(smStream)
-    event.res.setHeader('Content-Type', "application/xml")
+    event.res.setHeader('Content-Type', 'application/xml')
     return data.toString()
-  } catch (e) {
+  }
+  catch (e) {
     console.error(e)
     event.res.statusCode = 500
     return {}
