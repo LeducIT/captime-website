@@ -6,7 +6,7 @@ import type {
 export const createMetaImage = (image: string | null = null): MetaPropertyProperty[] => {
   if (image) {
     const image_unsecure = image.replace('https://', 'http://')
-    const title = image.split('/').pop().split('.')[0]
+    const title = (image.split('/').pop() || '.').split('.')[0]
     return [
       {
         hid: 'og:image:alt',
