@@ -9,7 +9,7 @@
 [[redirects]]
   from = "/*"
   to = "/"
-  status = 404
+  status = 200
 
 [dev]
   command = "pnpm run dev"
