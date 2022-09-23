@@ -3,15 +3,15 @@ import type {
   MetaPropertyProperty,
 } from 'vue-meta/types/vue-meta'
 
-export const createMetaImage = (image: string | null = null): MetaPropertyProperty[] => {
+export const createMetaImage = (image: string | null = null, title: string | null = null): MetaPropertyProperty[] => {
   if (image) {
     const image_unsecure = image.replace('https://', 'http://')
-    const title = (image.split('/').pop() || '.').split('.')[0]
+    const titleFix = title || (image.split('/').pop() || '.').split('.')[0]
     return [
       {
         hid: 'og:image:alt',
         property: 'og:image:alt',
-        content: title,
+        content: titleFix,
       },
       {
         hid: 'og:image:type',
@@ -72,7 +72,7 @@ export const createMeta = (
     )
   }
   if (image)
-    base.push(createMetaImage(image))
+    base.push(...createMetaImage(image))
 
   if (audio) {
     base.push(
@@ -84,5 +84,6 @@ export const createMeta = (
       },
     )
   }
+  // console.log('base', base)
   return base
 }
