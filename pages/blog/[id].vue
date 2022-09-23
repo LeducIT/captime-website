@@ -60,7 +60,6 @@ useHead(() => ({
     data.value?.head_image || '',
     data.value?.author || 'Capgo',
   ),
-  // meta: [],
 }))
 </script>
 
@@ -102,9 +101,9 @@ useHead(() => ({
       <ContentRenderer :value="data" />
     </article>
 
-    <NuxtLink
+    <a
       v-if="randomData"
-      :to="`/blog/${randomData.slug}/`"
+      :href="`/blog/${randomData.slug}/`"
       class="flex flex-col sm:flex-row py-8 lg:max-w-1/2 mx-auto lg:my-10 bg-gray-700 lg:rounded-lg"
     >
       <div class="relative mx-4 flex">
@@ -137,7 +136,7 @@ useHead(() => ({
           {{ randomData.description }}
         </p>
       </div>
-    </NuxtLink>
+    </a>
   </main>
 </template>
 
