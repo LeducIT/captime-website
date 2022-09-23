@@ -1,18 +1,19 @@
 <script setup lang="ts">
 import { createMeta } from '~/services/meta'
 import dayjs from '~/services/dayjs'
+import type { MyCustomParsedContent } from '~/services/blog'
 import { formatTime } from '~/services/blog'
 
 const title = 'Captime | Crossfit Blog'
 const description = 'The best articles to enhance your Crossfit experience. Learn about the best tips and tricks to use Captime, and more.'
 
-const { data: articles } = await useAsyncData('count', () =>
-  queryContent('blog').where({ published: true }).find(),
+const { data: articles } = await useAsyncData('allArticles', () =>
+  queryContent<MyCustomParsedContent>('blog').where({ published: true }).find(),
 )
 
 // const articlesOrder =
 const articlesOrder = computed(() =>
-  articles.value.sort((a, b) => {
+  articles.value.sort((a: MyCustomParsedContent, b: MyCustomParsedContent) => {
     return dayjs(b.created_at).valueOf() - dayjs(a.created_at).valueOf()
   }),
 )
