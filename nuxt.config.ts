@@ -13,7 +13,7 @@ const baseUrl = () => {
   return 'http://localhost:3000'
 }
 const name = 'Captime - Crossfit WOD Timer'
-const description = 'The app offers all workout timers for CrossFit and high-intensity interval training workouts. A intuitive interface enables you to select advanced timers within seconds, including HIIT, AMRAP, TABATA, EMOM, and more.'
+const description = 'All workout timers for CrossFit and high-intensity interval training. App with intuitive interface enables you to select HIIT, AMRAP, TABATA, EMOM, and more.'
 // <script type="application/ld+json" class="yoast-schema-graph">
 const structuredData = {
   '@context': 'https://schema.org',
