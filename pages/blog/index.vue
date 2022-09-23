@@ -1,19 +1,15 @@
 <script setup lang="ts">
+import dayjs from 'dayjs'
 import { createMeta } from '~/services/meta'
-import dayjs from '~/services/dayjs'
-import type { MyCustomParsedContent } from '~/services/blog'
-import { formatTime } from '~/services/blog'
+import type { MyCustomParsedContent } from '~~/services/blog'
 
 const title = 'Captime | Crossfit Blog'
 const description = 'The best articles to enhance your Crossfit experience. Learn about the best tips and tricks to use Captime, and more.'
-
 const { data: articles } = await useAsyncData('allArticles', () =>
-  queryContent<MyCustomParsedContent>('blog').where({ published: true }).find(),
-)
+  queryContent<MyCustomParsedContent>('blog').where({ published: true }).find())
 
-// const articlesOrder =
 const articlesOrder = computed(() =>
-  articles.value.sort((a: MyCustomParsedContent, b: MyCustomParsedContent) => {
+  articles.value?.sort((a: MyCustomParsedContent, b: MyCustomParsedContent) => {
     return dayjs(b.created_at).valueOf() - dayjs(a.created_at).valueOf()
   }),
 )
@@ -22,6 +18,12 @@ useHead(() => ({
   titleTemplate: title,
   meta: createMeta(title, description),
 }))
+
+const formatTime = (s: string) => {
+  // use dayjs to parse dd-mm-yyyy
+  const d = dayjs(s, 'YYYY-MM-DD')
+  return d.format('MMMM DD, YYYY')
+}
 </script>
 
 <template>
@@ -34,7 +36,7 @@ useHead(() => ({
           Latest from our blog
         </h1>
         <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-50">
-          The best articles to enhance your Crossfit experience.
+          {{ description }}
         </p>
       </div>
 
@@ -48,17 +50,17 @@ useHead(() => ({
         >
           <div class="p-5">
             <div class="relative">
-              <a
-                :href="article.path"
+              <NuxtLink
+                :to="`/blog/${article.slug}/`"
                 :title="article.title"
-                class="block aspect-ratio-video"
+                class="block aspect-w-4 aspect-h-3"
               >
                 <img
                   class="object-cover w-full h-full rounded-lg"
                   :src="article.head_image"
                   :alt="`blog illustration ${article.title}`"
                 >
-              </a>
+              </NuxtLink>
 
               <div class="absolute top-4 left-4">
                 <span
@@ -71,20 +73,20 @@ useHead(() => ({
             <span
               class="block mt-6 text-sm font-semibold tracking-widest text-gray-500 uppercase"
             >
-              {{ formatTime(article.updated_at) }}
+              {{ formatTime(article.created_at) }}
             </span>
             <p class="mt-5 text-2xl font-semibold">
-              <a :href="article.path" :title="article.title" class="text-black">
+              <NuxtLink :to="`/blog/${article.slug}/`" :title="article.title" class="text-black">
                 {{ article.title }}
-              </a>
+              </NuxtLink>
             </p>
             <p class="mt-4 text-base text-gray-600">
               {{ article.description }}
             </p>
-            <a
-              :href="`/blog/${article.slug}`"
+            <NuxtLink
+              :to="`/blog/${article.slug}/`"
               :title="article.title"
-              class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-blue-600 transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600"
+              class="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-gray-600 transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600"
             >
               Continue Reading
               <svg
@@ -99,52 +101,11 @@ useHead(() => ({
                   clip-rule="evenodd"
                 />
               </svg>
-            </a>
+            </NuxtLink>
           </div>
         </div>
-      </div>
-
-      <div class="flex items-center justify-center mt-8 space-x-3 lg:hidden">
-        <button
-          type="button"
-          class="flex items-center justify-center text-gray-400 transition-all duration-200 bg-transparent border border-gray-300 rounded w-9 h-9 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
-
-        <button
-          type="button"
-          class="flex items-center justify-center text-gray-400 transition-all duration-200 bg-transparent border border-gray-300 rounded w-9 h-9 hover:bg-blue-600 hover:text-white focus:bg-blue-600 focus:text-white"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </button>
       </div>
     </div>
   </section>
 </template>
+

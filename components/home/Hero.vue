@@ -29,7 +29,7 @@ export default {
           <div class="flex justify-center mt-8">
             <a
               target="_blank"
-              href="http://onelink.to/captime"
+              href="http://onelink.to/captime/"
               title="Download"
               class="relative items-center justify-center px-6 py-2 text-xl font-bold text-white border border-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
             >

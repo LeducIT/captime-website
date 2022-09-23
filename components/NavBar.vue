@@ -64,7 +64,7 @@ const expanded = ref(false)
           class="hidden ml-auto mr-10 space-x-10 md:flex md:items-center md:justify-end lg:space-x-12"
         >
           <a
-            href="/blog"
+            href="/blog/"
             title=""
             class="text-lg font-normal text-white transition-all duration-200 hover:text-white"
           >
@@ -77,7 +77,7 @@ const expanded = ref(false)
         >
           <a
             target="_blank"
-            href="http://onelink.to/captime"
+            href="http://onelink.to/captime/"
             title="Download"
             class="relative inline-flex items-center justify-center px-6 py-2 text-lg font-bold text-white border border-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
             role="button"
@@ -90,7 +90,7 @@ const expanded = ref(false)
       <nav :hidden="!expanded" class="md:hidden">
         <div class="flex flex-col pt-8 pb-4 space-y-6">
           <a
-            href="/blog"
+            href="/blog/"
             title="Blog"
             class="relative inline-flex items-center justify-center w-full text-lg font-normal text-white transition-all duration-200 hover:text-white"
           >
@@ -100,7 +100,7 @@ const expanded = ref(false)
           <div class="relative inline-flex items-center justify-center group">
             <a
               target="_blank"
-              href="http://onelink.to/captime"
+              href="http://onelink.to/captime/"
               title="Download"
               class="relative inline-flex items-center justify-center w-full px-6 py-2 text-lg font-normal text-white border border-white hover:text-black hover:bg-white rounded-none"
               role="button"
