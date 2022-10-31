@@ -22,11 +22,11 @@ const structuredData: WithContext<NewsArticle> = {
   '@type': 'NewsArticle',
   'mainEntityOfPage': {
     '@type': 'WebPage',
-    '@id': `${config.domain}/${data.value?.slug}`,
+    '@id': `${config.baseUrl}/${data.value?.slug}`,
   },
   'headline': data.value?.description,
   'image': [
-    `${config.domain}${data.value?.head_image || '/icon.webp'}`,
+    `${config.baseUrl}${data.value?.head_image || '/icon.webp'}`,
   ],
   'datePublished': datePublished,
   'dateModified': dateModified,
@@ -40,7 +40,7 @@ const structuredData: WithContext<NewsArticle> = {
     'name': 'Capgo',
     'logo': {
       '@type': 'ImageObject',
-      'url': `${config.domain}/icon.webp`,
+      'url': `${config.baseUrl}/icon.webp`,
     },
   },
 }
@@ -57,7 +57,7 @@ useHead(() => ({
   meta: createMeta(
     data.value?.title || 'No title',
     data.value?.description || 'No description',
-    `${config.domain}${data.value?.head_image || '/icon.webp'}`,
+    `${config.baseUrl}${data.value?.head_image || '/icon.webp'}`,
     data.value?.author || 'Capgo',
   ),
 }))
