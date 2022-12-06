@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from 'nuxt/config'
 
 const baseDomain = () => {
   if (process.env.NETLIFY && process.env.domain)
@@ -73,18 +73,14 @@ const structuredData = {
 // </script>
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  generate: {
-    fallback: 'true',
-  },
   ssr: true,
-  target: 'static',
-  publicRuntimeConfig: {
-    domain: baseDomain(),
-    baseUrl: baseUrl(),
-    handler: 'captime',
+  runtimeConfig: {
+    public: {
+      domain: baseDomain(),
+      baseUrl: baseUrl(),
+      handler: 'captime',
+    },
   },
-  runtimeConfig: {},
-  buildModules: [],
   modules: [
     '@nuxt/content',
     ['nuxt-jsonld', { disableOptionsAPI: true }],
@@ -202,7 +198,6 @@ export default defineNuxtConfig({
     },
   },
   build: {
-    extractCSS: true,
     transpile: ['@headlessui/vue', '@heroicons/vue'],
   },
   content: {
