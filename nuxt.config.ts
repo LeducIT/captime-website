@@ -154,7 +154,7 @@ export default defineNuxtConfig({
         {
           hid: 'og:site_name',
           property: 'og:site_name',
-          content: baseUrl(),
+          content: baseDomain(),
         },
         {
           hid: 'og:article:author',
