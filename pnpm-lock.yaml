@@ -16,7 +16,7 @@ specifiers:
 dependencies:
   '@headlessui/vue': 1.7.4_vue@3.2.45
   '@heroicons/vue': 1.0.6_vue@3.2.45
-  dayjs: 1.11.6
+  dayjs: 1.11.7
   nuxt-jsonld: 2.0.7_typescript@4.9.3
   outline: link:@heroicons/vue/outline
   sitemap: 7.1.1
@@ -2405,8 +2405,8 @@ packages:
     engines: {node: '>= 12'}
     dev: true
 
-  /dayjs/1.11.6:
-    resolution: {integrity: sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ==}
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
     dev: false
 
   /debug/2.6.9:
