@@ -7,7 +7,7 @@ const baseDomain = () => {
   return 'captime.app'
 }
 const baseUrl = () => {
-  if (process.env.NETLIFY)
+  if (process.env.NETLIFY && process.env.domain)
     return `https://${baseDomain()}`
 
   return 'http://localhost:3000'

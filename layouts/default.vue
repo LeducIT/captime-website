@@ -5,25 +5,25 @@ import { createMetaImage } from '~~/services/meta'
 
 const config = useRuntimeConfig()
 const route = useRoute()
-const image = `${config.baseUrl}/app-demo.webp`
+const image = `${config.public.baseUrl}/app-demo.webp`
 useHead(() => ({
   link: [
     {
       rel: 'alternate',
       title: 'Captime',
-      href: `${config.baseUrl}${route.fullPath}`,
+      href: `${config.public.baseUrl}${route.fullPath}`,
     },
     {
       rel: 'canonical',
       title: 'Captime',
-      href: `${config.baseUrl}${route.fullPath}`,
+      href: `${config.public.baseUrl}${route.fullPath}`,
     },
   ],
   meta: [
     {
       hid: 'og:url',
       property: 'og:url',
-      content: `${config.baseUrl}${route.fullPath}`,
+      content: `${config.public.baseUrl}${route.fullPath}`,
     },
     ...createMetaImage(image),
   ],

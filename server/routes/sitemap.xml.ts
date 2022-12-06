@@ -4,7 +4,7 @@ import { serverQueryContent } from '#content/server'
 export default defineEventHandler(async (event) => {
   try {
     const config = useRuntimeConfig()
-    const smStream = new SitemapStream({ hostname: config.baseUrl })
+    const smStream = new SitemapStream({ hostname: config.public.baseUrl })
 
     smStream.write({ url: '/', changefreq: 'daily', priority: 1 })
 
