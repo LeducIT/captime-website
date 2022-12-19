@@ -1,0 +1,7 @@
+{
+  "base_domain": {
+    "prod": "captime.app",
+    "development": "development.captime.app",
+    "local": "localhost:3000"
+  }
+}

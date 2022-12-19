@@ -1,16 +1,28 @@
 import { defineNuxtConfig } from 'nuxt/config'
+import keys from './configs.json'
 
-const baseDomain = () => {
-  if (process.env.NETLIFY && process.env.domain)
-    return process.env.domain
-
-  return 'captime.app'
+const getRightKey = (branch: string, keyname: 'base_domain'): string => {
+  if (branch === 'development')
+    return keys[keyname].development
+  else if (branch === 'local')
+    return keys[keyname].local
+  return keys[keyname].prod
 }
-const baseUrl = () => {
-  if (process.env.NETLIFY && process.env.domain)
-    return `https://${baseDomain()}`
 
-  return 'http://localhost:3000'
+const getUrl = (branch = ''): string => {
+  if (branch === 'local')
+    return `http://${getRightKey(branch, 'base_domain')}`
+  else if (branch === 'development')
+    return `https://${getRightKey(branch, 'base_domain')}`
+  else
+    return `https://${getRightKey('prod', 'base_domain')}`
+}
+
+const baseDomain = (branch = '') => {
+  if (branch)
+    return getRightKey(branch, 'base_domain')
+  else
+    return getRightKey('prod', 'base_domain')
 }
 const name = 'Captime - Crossfit WOD Timer'
 const description = 'All workout timers for CrossFit and high-intensity interval training. App with intuitive interface enables you to select HIIT, AMRAP, TABATA, EMOM, and more.'
@@ -20,39 +32,39 @@ const structuredData = {
   '@graph': [
     {
       '@type': 'WebPage',
-      '@id': `${baseUrl()}/#website`,
-      'url': baseUrl(),
+      '@id': `${getUrl(process.env.BRANCH)}/#website`,
+      'url': getUrl(process.env.BRANCH),
       'name': name,
       'isPartOf': {
-        '@id': `${baseUrl()}/#website`,
+        '@id': `${getUrl(process.env.BRANCH)}/#website`,
       },
       'datePublished': '2022-01-30T22:51:56+00:00',
       'dateModified': new Date().toISOString(),
       'description': description,
       'breadcrumb': {
-        '@id': `${baseUrl()}/#breadcrumb`,
+        '@id': `${getUrl(process.env.BRANCH)}/#breadcrumb`,
       },
       'inLanguage': 'en-US',
       'potentialAction': [
         {
           '@type': 'ReadAction',
           'target': [
-            baseUrl(),
+            getUrl(process.env.BRANCH),
           ],
         },
       ],
     },
     {
       '@type': 'BreadcrumbList',
-      '@id': `${baseUrl()}#breadcrumb`,
+      '@id': `${getUrl(process.env.BRANCH)}#breadcrumb`,
       'itemListElement': [
         {
           '@type': 'ListItem',
           'position': 1,
           'item': {
             '@type': 'WebPage',
-            '@id': baseUrl(),
-            'url': baseUrl(),
+            '@id': getUrl(process.env.BRANCH),
+            'url': getUrl(process.env.BRANCH),
             'name': 'Home',
           },
         },
@@ -61,8 +73,8 @@ const structuredData = {
           'position': 2,
           'item': {
             '@type': 'WebPage',
-            '@id': `${baseUrl()}/blog`,
-            'url': `${baseUrl()}/blog`,
+            '@id': `${getUrl(process.env.BRANCH)}/blog`,
+            'url': `${getUrl(process.env.BRANCH)}/blog`,
             'name': 'Blog',
           },
         },
@@ -76,8 +88,8 @@ export default defineNuxtConfig({
   ssr: true,
   runtimeConfig: {
     public: {
+      baseUrl: getUrl(process.env.BRANCH),
       domain: baseDomain(),
-      baseUrl: baseUrl(),
       handler: 'captime',
     },
   },
