@@ -170,10 +170,10 @@ const domain = 'https://captime.app'
         <li>
           By visiting this page on our website:
           <a
-            :href="`https://${domain}#support`"
+            :href="`${domain}#support`"
             rel="external nofollow noopener"
             target="_blank"
-          >https://{{ domain }}#support</a>
+          >{{ domain }}#support</a>
         </li>
       </ul>
     </div>
