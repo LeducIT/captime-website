@@ -1,4 +1,3 @@
-<!-- eslint-disable no-console -->
 <script setup lang="ts">
 import type { NewsArticle, WithContext } from 'schema-dts'
 import { createMeta } from '~/services/meta'
@@ -7,60 +6,62 @@ import { formatTime, randomArticle } from '~/services/blog'
 
 const config = useRuntimeConfig()
 const route = useRoute()
-const { data } = await useAsyncData('articleData', () => queryContent<MyCustomParsedContent>('blog', route.params.id as string).findOne())
-const { data: randomData } = await useAsyncData('randomData', async () => {
+
+const { data } = await useAsyncData(`blog-${route.params.id}`, () => queryContent<MyCustomParsedContent>('blog', route.params.id as string).findOne())
+const { data: randomData } = await useAsyncData(`random-blog-${route.params.id}`, async () => {
   return data.value?.next_blog && data.value?.next_blog !== ''
     ? await queryContent<MyCustomParsedContent>('blog', data.value.next_blog)
       .findOne()
     : await randomArticle(data.value?.slug)
 })
-
-const datePublished = new Date(data.value?.created_at).toISOString()
-const dateModified = new Date(data.value?.updated_at).toISOString()
-const structuredData: WithContext<NewsArticle> = {
-  '@context': 'https://schema.org',
-  '@type': 'NewsArticle',
-  'mainEntityOfPage': {
-    '@type': 'WebPage',
-    '@id': `${config.public.baseUrl}/${data.value?.slug}`,
-  },
-  'headline': data.value?.description,
-  'image': [
-    `${config.public.baseUrl}${data.value?.head_image || '/icon.webp'}`,
-  ],
-  'datePublished': datePublished,
-  'dateModified': dateModified,
-  'author': {
-    '@type': 'Person',
-    'name': data.value?.author,
-    'url': data.value?.author_url,
-  },
-  'publisher': {
-    '@type': 'Organization',
-    'name': 'Capgo',
-    'logo': {
-      '@type': 'ImageObject',
-      'url': `${config.public.baseUrl}/icon.webp`,
+if (data.value) {
+  const datePublished = new Date(data.value?.created_at).toISOString()
+  const dateModified = new Date(data.value?.updated_at).toISOString()
+  const structuredData: WithContext<NewsArticle> = {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    'mainEntityOfPage': {
+      '@type': 'WebPage',
+      '@id': `${config.public.baseUrl}/${data.value?.slug}`,
     },
-  },
+    'headline': data.value?.description,
+    'image': [
+      `${config.public.baseUrl}${data.value?.head_image || '/capgo_banner.webp'}`,
+    ],
+    'datePublished': datePublished,
+    'dateModified': dateModified,
+    'author': {
+      '@type': 'Person',
+      'name': data.value?.author,
+      'url': data.value?.author_url,
+    },
+    'publisher': {
+      '@type': 'Organization',
+      'name': 'Capgo',
+      'logo': {
+        '@type': 'ImageObject',
+        'url': `${config.public.baseUrl}/icon.webp`,
+      },
+    },
+  }
+  useJsonld(structuredData)
+  useHead(() => ({
+    title: data.value?.title || 'No title',
+    script: [
+      {
+        hid: 'seo-schema-graph',
+        type: 'application/ld+json',
+        children: JSON.stringify(structuredData),
+      },
+    ],
+    meta: createMeta(
+      data.value?.title || 'No title',
+      data.value?.description || 'No description',
+      `${config.public.baseUrl}${data.value?.head_image || '/capgo_banner.webp'}`,
+      data.value?.author || 'Capgo',
+    ),
+  }))
 }
-useJsonld(structuredData)
-useHead(() => ({
-  titleTemplate: data.value?.title || 'No title',
-  script: [
-    {
-      hid: 'seo-schema-graph',
-      type: 'application/ld+json',
-      children: JSON.stringify(structuredData),
-    },
-  ],
-  meta: createMeta(
-    data.value?.title || 'No title',
-    data.value?.description || 'No description',
-    `${config.public.baseUrl}${data.value?.head_image || '/icon.webp'}`,
-    data.value?.author || 'Capgo',
-  ),
-}))
 </script>
 
 <template>
@@ -104,7 +105,7 @@ useHead(() => ({
     <a
       v-if="randomData"
       :href="`/blog/${randomData.slug}/`"
-      class="flex flex-col sm:flex-row py-8 lg:max-w-1/2 mx-auto lg:my-10 bg-gray-700 lg:rounded-lg"
+      class="flex flex-col sm:flex-row py-8 lg:max-w-1/2 mx-auto lg:my-10 bg-gray-700 lg:rounded-lg transition-all duration-200 hover:bg-blue-700 focus:bg-blue-900"
     >
       <div class="relative mx-4 flex">
         <div :title="randomData.title" class="block w-full">
@@ -117,7 +118,7 @@ useHead(() => ({
 
         <div class="absolute top-2 left-2">
           <span
-            class="px-4 py-2 text-tiny font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full"
+            class="px-4 py-2 text-tiny font-semibold tracking-widest text-gray-900 uppercase bg-white rounded-full shadow-lg"
           >
             {{ randomData.tag }}
           </span>
@@ -139,4 +140,3 @@ useHead(() => ({
     </a>
   </main>
 </template>
-
