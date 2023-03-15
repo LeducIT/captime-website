@@ -121,7 +121,7 @@ export default defineNuxtConfig({
         {
           'src': 'https://pls.digitalshift-ee.workers.dev/js/script.js',
           'data-api': 'https://pls.digitalshift-ee.workers.dev/api/event',
-          'data-domain': 'captime.app',
+          'data-domain': 'captime-web.app',
           'async': true,
           'defer': true,
         },
