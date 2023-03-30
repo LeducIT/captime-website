@@ -68,11 +68,6 @@ export function createMeta(title: string,
       content: title,
     },
     {
-      hid: 'description',
-      name: 'description',
-      content: description,
-    },
-    {
       hid: 'og:description',
       property: 'og:description',
       content: description,
