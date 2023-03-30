@@ -1,9 +1,9 @@
 import { defineNuxtConfig } from 'nuxt/config'
 import { pwa } from './config/pwa'
-import { appName, appDescription } from './constants/index'
+import { appDescription, appName } from './constants/index'
 import keys from './configs.json'
 
-const getRightKey = (branch: string, keyname: 'base_domain'): string => {
+function getRightKey(branch: string, keyname: 'base_domain'): string {
   if (branch === 'development')
     return keys[keyname].development
   else if (branch === 'local')
@@ -11,7 +11,7 @@ const getRightKey = (branch: string, keyname: 'base_domain'): string => {
   return keys[keyname].prod
 }
 
-const getUrl = (branch = ''): string => {
+function getUrl(branch = ''): string {
   if (branch === 'local')
     return `http://${getRightKey(branch, 'base_domain')}`
   else if (branch === 'development')
@@ -20,7 +20,7 @@ const getUrl = (branch = ''): string => {
     return `https://${getRightKey('prod', 'base_domain')}`
 }
 
-const baseDomain = (branch = '') => {
+function baseDomain(branch = '') {
   if (branch)
     return getRightKey(branch, 'base_domain')
   else
