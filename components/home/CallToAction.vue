@@ -23,7 +23,11 @@ const slides = [
     <img
       class="w-full h-[120vh] sm:h-auto opacity-50 object-cover"
       :src="slide.image"
-      alt="Smash workout illusatration"
+      height="1200px"
+      width="1920px"
+      loading="lazy"
+      :alt="`Illustration ${slide.content}`"
+      :title="`Illustration ${slide.content}`"
     >
     <div
       class="text-center absolute pt-0 px-0 top-1/3 left-1/3 sm:top-1/2 sm:left-1/2 transform -translate-x-1/4 -translate-y-1/4 sm:-translate-x-1/2 sm:-translate-y-1/2"

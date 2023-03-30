@@ -2,21 +2,21 @@
 const testimonials = [
   {
     name: 'Leslie Alexander',
-    img: 'https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png',
+    img: '/user_1.webp',
     job: 'CrossFit Addict',
     comment:
       'Most timers for HIIT and EMOM’s seem to be designed by people that don’t workout. This one has been the simplest to use and doesn’t interrupt with annoying advertising.',
   },
   {
     name: 'Jacob Jones',
-    img: 'https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png',
+    img: '/user_3.webp',
     job: 'Sport Coach',
     comment:
       'Great options, automatic countdown from 10sec. Fun, being able to tally rounds or stop the clock with a shout out.',
   },
   {
     name: 'Jenny Wilson',
-    img: 'https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png',
+    img: '/user_2.webp',
     job: 'Graphic Designer',
     comment:
       'The home screen is really cool. The only time with EMOM 4 and EMOM 5 option',
@@ -48,9 +48,13 @@ const testimonials = [
               <div>
                 <div class="relative w-24 h-24 mx-auto">
                   <img
-                    class="relative object-cover w-24 h-24 mx-auto rounded-none"
+                    height="96px"
+                    width="96px"
+                    loading="lazy"
+                    class="relative object-cover w-24 h-24 mx-auto rounded-full"
                     :src="testimonial.img"
-                    alt="avatar"
+                    :alt="`avatar ${testimonial.name}`"
+                    :title="`avatar ${testimonial.name}`"
                   >
                   <div
                     class="absolute top-0 right-0 flex items-center justify-center bg-ruby rounded-full w-7 h-7"

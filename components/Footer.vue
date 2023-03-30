@@ -14,7 +14,7 @@ router.currentRoute.value.hash.startsWith('#support') && openMessenger()
 
     <div class="sm:flex sm:items-center sm:justify-between">
       <a href="/" class="flex items-center mb-4 sm:mb-0">
-        <img src="/icon.webp" class="mr-3 h-8 border" alt="Captime Logo">
+        <img src="/icon.webp" class="mr-3 h-8 border" height="32" width="32" alt="Captime Logo" title="Captime Logo" loading="lazy">
         <span
           class="self-center text-2xl text-white font-handel whitespace-nowrap"
         >Captime</span>

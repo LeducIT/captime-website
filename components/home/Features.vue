@@ -40,9 +40,12 @@ const features = [
           class="group bg-white rounded-none shadow-xl px-8 py-12 space-y-6 text-center"
         >
           <img
+            height="96px"
+            width="96px"
             class="mx-auto w-24"
             :src="feature.icon"
-            alt="illustration"
+            :alt="`Illustration ${feature.title}`"
+            :title="`Illustration ${feature.title}`"
             loading="lazy"
           >
           <h3 class="text-2xl font-semibold text-gray-900">

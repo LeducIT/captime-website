@@ -11,8 +11,10 @@ const expanded = ref(false)
           <a href="/" title="" class="flex items-center space-x-4">
             <img
               class="w-auto h-14 border-2 border-white"
+              height="56" width="56"
+              loading="eager"
+              alt="Captime Logo" title="Captime Logo"
               src="/icon.webp"
-              alt="Captime logo"
             >
             <span class="font-handel text-white text-3xl">Captime</span>
           </a>

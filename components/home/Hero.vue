@@ -42,7 +42,10 @@ export default {
         <div class="pb-16 flex flex-col items-center justify-center container">
           <img
             src="/app-demo.webp"
-            alt="image"
+            height="712"
+            width="1487"
+            title="Captime app preview"
+            alt="Captime app preview"
             loading="lazy"
             class="md:px-12 self-center"
           >
