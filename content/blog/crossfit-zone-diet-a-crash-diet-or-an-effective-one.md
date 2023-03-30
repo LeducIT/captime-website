@@ -18,7 +18,7 @@ published: true
 next_blog: ""
 ---
 
-### **What is a Compatible CrossFit Diet?**
+## **What is a Compatible CrossFit Diet?**
 
 In CrossFit, athletes are generally recommended to eat fats, vegetables, nuts and seeds, certain fruits, and low-starch and low-sugar foods, as well as to "maintain levels that will support exercise, yet not gain body fat. But specific CrossFit nutritional recommendations are based on the Zone Diet, founded 30 years ago by Barry Sears, a biochemist, and author of The Zone. Cross Fit diet is designed to control blood sugar and reduce inflammation, which can prevent hunger and reduce the risk of chronic diseases, such as obesity, heart disease, and type II diabetes.
 

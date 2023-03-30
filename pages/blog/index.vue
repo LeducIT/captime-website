@@ -19,7 +19,7 @@ useHead(() => ({
   meta: createMeta(title, description),
 }))
 
-const formatTime = (s: string) => {
+function formatTime(s: string) {
   // use dayjs to parse dd-mm-yyyy
   const d = dayjs(s, 'YYYY-MM-DD')
   return d.format('MMMM DD, YYYY')
@@ -56,9 +56,13 @@ const formatTime = (s: string) => {
                 class="block aspect-w-4 aspect-h-3"
               >
                 <img
+                  height="350"
+                  width="997"
+                  loading="lazy"
                   class="object-cover w-full h-full rounded-lg"
                   :src="article.head_image"
                   :alt="`blog illustration ${article.title}`"
+                  :title="`blog illustration ${article.title}`"
                 >
               </a>
 
