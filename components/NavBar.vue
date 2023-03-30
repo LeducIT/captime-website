@@ -23,6 +23,7 @@ const expanded = ref(false)
         <div class="flex md:hidden">
           <button
             type="button"
+            title="Expand menu"
             class="text-white"
             @click="expanded = !expanded"
           >
