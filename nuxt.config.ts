@@ -89,6 +89,7 @@ export default defineNuxtConfig({
   ssr: true,
   runtimeConfig: {
     public: {
+      brand: 'Captime',
       baseUrl: getUrl(process.env.BRANCH),
       domain: baseDomain(),
       handler: 'captime',
@@ -150,6 +151,16 @@ export default defineNuxtConfig({
           hid: 'keywords',
           property: 'keywords',
           content: 'crossfit, AMRAP, TABATA, HIIT, EMOM, SALLY, WOD, TIMER, INTERVAL, FOR TIME, FIGHT GONE BAD, ROXANNE',
+        },
+        {
+          hid: 'title',
+          name: 'title',
+          content: appName,
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: appDescription,
         },
         {
           hid: 'og:title',

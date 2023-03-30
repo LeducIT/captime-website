@@ -1,13 +1,21 @@
 <script setup lang="ts">
+const config = useRuntimeConfig()
+
+const domain = config.public.baseUrl
+const brand = config.public.brand
+const title = `${brand} | End-User License Agreement`
+const description = 'Read our End-User License Agreement'
 useHead({
-  titleTemplate: 'Captime | End User License Agreement',
+  title,
   meta: [
-    { name: 'description', content: 'End User License Agreement' },
+    { name: 'title', hid: 'title', content: title },
+    { name: 'og:title', hid: 'og:title', content: title },
+    { name: 'description', hid: 'description', content: description },
+    { name: 'og:description', hid: 'og:description', content: description },
+    { name: 'description', hid: 'description', content: 'Privacy Policy' },
     { name: 'robots', content: 'noindex, nofollow' },
   ],
 })
-const brand = 'Captime'
-const domain = 'https://captime.app'
 </script>
 
 <template>
