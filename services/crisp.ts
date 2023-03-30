@@ -1,6 +1,6 @@
 declare const window: any
 
-export const crispLoader = () => {
+export function crispLoader() {
   if (!window.$crisp) {
     // console.log('Load Crips')
     window.$crisp = []
@@ -33,7 +33,7 @@ export const crispLoader = () => {
   }
 }
 
-export const openMessenger = () => {
+export function openMessenger() {
   crispLoader()
   window.$crisp.push(['do', 'chat:show'])
   window.$crisp.push(['do', 'chat:open'])
