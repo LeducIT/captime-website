@@ -152,11 +152,6 @@ export default defineNuxtConfig({
           content: 'crossfit, AMRAP, TABATA, HIIT, EMOM, SALLY, WOD, TIMER, INTERVAL, FOR TIME, FIGHT GONE BAD, ROXANNE',
         },
         {
-          hid: 'title',
-          name: 'title',
-          content: appName,
-        },
-        {
           hid: 'og:title',
           property: 'og:title',
           content: appName,

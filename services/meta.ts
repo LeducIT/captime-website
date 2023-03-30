@@ -58,11 +58,6 @@ export function createMeta(title: string,
 
   const base: Meta[] = [
     {
-      hid: 'title',
-      name: 'title',
-      content: title,
-    },
-    {
       hid: 'og:title',
       property: 'og:title',
       content: title,
