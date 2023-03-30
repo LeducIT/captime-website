@@ -2,17 +2,17 @@
 const slides = [
   {
     content: 'It\'s time to smash your workout goals and achieve the maximum results using this professional timer app.',
-    image: 'https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1169&amp;q=80',
+    image: '/hero_1.webp',
     button: 'Get',
   },
   {
     content: 'It makes no difference if you workout at home or in the gym.',
-    image: 'https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80',
+    image: 'hero_3.webp',
     button: 'Download',
   },
   {
     content: 'Captime ensures that your workouts are effective regardless of where you train.',
-    image: 'https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
+    image: 'hero_2.webp',
     button: 'Use',
   },
 ]
