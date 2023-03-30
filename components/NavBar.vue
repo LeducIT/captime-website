@@ -8,7 +8,7 @@ const expanded = ref(false)
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="flex items-center justify-between">
         <div class="shrink-0">
-          <a href="/" title="" class="flex items-center space-x-4">
+          <a href="/" title="Captime home" aria-label="Captime home" class="flex items-center space-x-4">
             <img
               class="w-auto h-14 border-2 border-white"
               height="56" width="56"
