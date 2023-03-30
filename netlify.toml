@@ -5,17 +5,16 @@
     performance = 0.7
 
 [build.environment]
-  NPM_FLAGS = "--version"
-  NODE_VERSION = "16"
+  NODE_VERSION = "18"
 
 [build]
   publish = "dist"
-  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run generate"
+  command = "pnpm run build"
 
 [[redirects]]
   from = "/*"
-  to = "/404.html"
-  status = 404
+  to = "/index.html"
+  status = 200
 
 [dev]
   command = "pnpm run dev"

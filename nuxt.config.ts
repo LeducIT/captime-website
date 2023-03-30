@@ -1,4 +1,6 @@
 import { defineNuxtConfig } from 'nuxt/config'
+import { pwa } from './config/pwa'
+import { appName, appDescription } from './constants/index'
 import keys from './configs.json'
 
 const getRightKey = (branch: string, keyname: 'base_domain'): string => {
@@ -24,8 +26,7 @@ const baseDomain = (branch = '') => {
   else
     return getRightKey('prod', 'base_domain')
 }
-const name = 'Captime - Crossfit WOD Timer'
-const description = 'All workout timers for CrossFit and high-intensity interval training. App with intuitive interface enables you to select HIIT, AMRAP, TABATA, EMOM, and more.'
+
 // <script type="application/ld+json" class="yoast-schema-graph">
 const structuredData = {
   '@context': 'https://schema.org',
@@ -34,13 +35,13 @@ const structuredData = {
       '@type': 'WebPage',
       '@id': `${getUrl(process.env.BRANCH)}/#website`,
       'url': getUrl(process.env.BRANCH),
-      'name': name,
+      'name': appName,
       'isPartOf': {
         '@id': `${getUrl(process.env.BRANCH)}/#website`,
       },
       'datePublished': '2022-01-30T22:51:56+00:00',
       'dateModified': new Date().toISOString(),
-      'description': description,
+      'description': appDescription,
       'breadcrumb': {
         '@id': `${getUrl(process.env.BRANCH)}/#breadcrumb`,
       },
@@ -97,26 +98,36 @@ export default defineNuxtConfig({
     '@nuxt/content',
     ['nuxt-jsonld', { disableOptionsAPI: true }],
     '@unocss/nuxt',
+    '@vueuse/nuxt',
+    '@nuxtjs/color-mode',
+    '@vite-pwa/nuxt',
+    '@nuxt/devtools',
   ],
   nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
     preset: 'netlify-edge',
     prerender: {
-      routes: ['/sitemap.xml', '/robots.txt'],
+      routes: ['/', '/sitemap.xml', '/robots.txt'],
     },
   },
-  experimental: {
-    reactivityTransform: true,
-    viteNode: false,
+  colorMode: {
+    classSuffix: '',
   },
-  unocss: {
-    preflight: true,
+  experimental: {
+    payloadExtraction: false,
+    inlineSSRStyles: false,
   },
   app: {
     head: {
+      viewport: 'width=device-width,initial-scale=1',
       htmlAttrs: {
         lang: 'en',
       },
-      title: name,
+      title: appName,
       script: [
         {
           'src': 'https://pls.digitalshift-ee.workers.dev/js/script.js',
@@ -143,17 +154,17 @@ export default defineNuxtConfig({
         {
           hid: 'title',
           name: 'title',
-          content: name,
+          content: appName,
         },
         {
           hid: 'description',
           name: 'description',
-          content: description,
+          content: appDescription,
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: name,
+          content: appName,
         },
         { hid: 'theme-color', name: 'theme-color', content: '#ff2222' },
         { hid: 'og:type', property: 'og:type', content: 'website' },
@@ -176,7 +187,7 @@ export default defineNuxtConfig({
         {
           hid: 'twitter:app:id:iphone',
           property: 'twitter:app:id:iphone',
-          content: name,
+          content: appName,
         },
         {
           hid: 'twitter:app:id:googleplay',
@@ -186,7 +197,7 @@ export default defineNuxtConfig({
         {
           hid: 'twitter:app:name:iphone',
           property: 'twitter:app:name:iphone',
-          content: name,
+          content: appName,
         },
         {
           hid: 'twitter:app:name:googleplay',
@@ -201,11 +212,14 @@ export default defineNuxtConfig({
         {
           hid: 'og:description',
           property: 'og:description',
-          content: description,
+          content: appDescription,
         },
+        { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/nuxt.svg' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
       ],
     },
   },
@@ -217,5 +231,7 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/css/global.css',
+    '@unocss/reset/tailwind.css',
   ],
+  pwa,
 })
