@@ -21,13 +21,13 @@ router.currentRoute.value.hash.startsWith('#support') && openMessenger()
       </a>
       <ul class="flex flex-wrap items-center mb-6 text-sm text-white sm:mb-0">
         <li>
-          <a href="/privacy/" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          <a href="/privacy/" rel="nofollow" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
         </li>
         <li>
-          <a href="/tos/" class="mr-4 hover:underline md:mr-6">Terms & Conditions</a>
+          <a href="/tos/" rel="nofollow" class="mr-4 hover:underline md:mr-6">Terms & Conditions</a>
         </li>
         <li>
-          <a href="#support" class="mr-4 hover:underline md:mr-6">Support</a>
+          <a href="#support" rel="nofollow" class="mr-4 hover:underline md:mr-6">Support</a>
         </li>
       </ul>
     </div>
