@@ -2,6 +2,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 import { pwa } from './config/pwa'
 import { appDescription, appName } from './constants/index'
 import keys from './configs.json'
+// import { serverQueryContent } from '#content/server'
 
 function getRightKey(branch: string, keyname: 'base_domain'): string {
   if (branch === 'development')
@@ -103,6 +104,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@nuxt/devtools',
+    // '@nuxtjs/sitemap',
   ],
   nitro: {
     esbuild: {
@@ -112,8 +114,12 @@ export default defineNuxtConfig({
     },
     preset: 'netlify-edge',
     prerender: {
-      routes: ['/', '/sitemap.xml', '/robots.txt'],
+      routes: ['/', '/robots.txt'],
     },
+  // },
+  // sitemap: {
+  //   hostname: getUrl(process.env.BRANCH),
+  //   gzip: true,
   },
   colorMode: {
     classSuffix: '',

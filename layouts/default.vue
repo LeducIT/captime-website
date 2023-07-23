@@ -11,19 +11,19 @@ useHead(() => ({
     {
       rel: 'alternate',
       title: 'Captime',
-      href: `${config.public.baseUrl}${route.fullPath}`,
+      href: `${config.public.baseUrl}${route.fullPath}/`,
     },
     {
       rel: 'canonical',
       title: 'Captime',
-      href: `${config.public.baseUrl}${route.fullPath}`,
+      href: `${config.public.baseUrl}${route.fullPath}/`,
     },
   ],
   meta: [
     {
       hid: 'og:url',
       property: 'og:url',
-      content: `${config.public.baseUrl}${route.fullPath}`,
+      content: `${config.public.baseUrl}${route.fullPath}/`,
     },
     ...createMetaImage(image),
   ],
