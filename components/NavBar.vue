@@ -8,7 +8,7 @@ const expanded = ref(false)
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="flex items-center justify-between">
         <div class="shrink-0">
-          <a href="/" title="Captime home" aria-label="Captime home" class="flex items-center space-x-4">
+          <NuxtLink to="/" title="Captime home" aria-label="Captime home" class="flex items-center space-x-4">
             <img
               class="w-auto h-14 border-2 border-white"
               height="56" width="56"
@@ -17,7 +17,7 @@ const expanded = ref(false)
               src="/icon.webp"
             >
             <span class="font-handel text-white text-3xl">Captime</span>
-          </a>
+          </nuxtlink>
         </div>
 
         <div class="flex md:hidden">
@@ -66,13 +66,13 @@ const expanded = ref(false)
         <nav
           class="hidden ml-auto mr-10 space-x-10 md:flex md:items-center md:justify-end lg:space-x-12"
         >
-          <a
-            href="/blog/"
+          <NuxtLink
+            to="/blog/"
             title=""
             class="text-lg font-normal text-white transition-all duration-200 hover:text-white"
           >
             Blog
-          </a>
+          </NuxtLink>
         </nav>
 
         <div
@@ -92,13 +92,13 @@ const expanded = ref(false)
 
       <nav :hidden="!expanded" class="md:hidden">
         <div class="flex flex-col pt-8 pb-4 space-y-6">
-          <a
-            href="/blog/"
+          <NuxtLink
+            to="/blog/"
             title="Blog"
             class="relative inline-flex items-center justify-center w-full text-lg font-normal text-white transition-all duration-200 hover:text-white"
           >
             Blog
-          </a>
+          </NuxtLink>
 
           <div class="relative inline-flex items-center justify-center group">
             <a

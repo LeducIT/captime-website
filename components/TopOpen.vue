@@ -63,7 +63,7 @@ fetch(`https://${import.meta.env.domain}/api/topOpen?limit=${props.limit}&skip=$
             <img class="object-cover !w-24 h-24 mx-auto border border-gray-200 rounded-full" :src="athlete.profilePic" :alt="athlete.name">
 
             <p class="mt-5 text-base font-bold text-gray-900">
-              <a :href="athlete.link" :title="athlete.name" target="_blank">
+              <a to="athlete.link" :title="athlete.name" target="_blank">
                 {{ athlete.name }}
                 <a class="absolute inset-0" aria-hidden="true" />
               </a>
