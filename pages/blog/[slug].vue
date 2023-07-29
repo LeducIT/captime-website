@@ -6,14 +6,11 @@ import { formatTime } from '~/services/blog'
 
 const config = useRuntimeConfig()
 const route = useRoute()
-const { data: articles } = await useAsyncData('allArticles', () =>
-  queryContent<MyCustomParsedContent>('blog')
-    .where({ published: true, slug: { $ne: route.params.id as string } })
-    .sort({ created_at: -1 })
-    .limit(3)
-    .find())
 
-const { data } = await useAsyncData(`blog-${route.params.id}`, () => queryContent<MyCustomParsedContent>('blog', route.params.id as string).findOne())
+const { data: res } = await useFetch<{ blog: MyCustomParsedContent; related: MyCustomParsedContent[] }>(`/api/blog/${route.params.slug}`)
+
+const data = ref(res.value?.blog)
+const articles = ref(res.value?.related)
 if (data.value) {
   const datePublished = new Date(data.value?.created_at).toISOString()
   const dateModified = new Date(data.value?.updated_at).toISOString()
@@ -26,7 +23,7 @@ if (data.value) {
     },
     'headline': data.value?.description,
     'image': [
-      `${config.public.baseUrl}${data.value?.head_image || '/app_demo.webp'}`,
+      `${config.public.baseUrl}${data.value?.head_image || '/capgo_banner.webp'}`,
     ],
     'datePublished': datePublished,
     'dateModified': dateModified,
@@ -37,7 +34,7 @@ if (data.value) {
     },
     'publisher': {
       '@type': 'Organization',
-      'name': 'Captime',
+      'name': 'Capgo',
       'logo': {
         '@type': 'ImageObject',
         'url': `${config.public.baseUrl}/icon.webp`,
@@ -69,7 +66,7 @@ if (data.value) {
     <div class="relative pb-4 lg:max-w-1/2 mx-auto">
       <div class="block aspect-w-4 aspect-h-3">
         <img
-          class="object-cover w-full h-full lg:rounded-lg"
+          class="object-cover w-full h-full lg:rounded-lg md:shadow-xl md:shadow-gray-700"
           :src="data?.head_image"
           loading="eager"
           height="486"
@@ -90,7 +87,7 @@ if (data.value) {
     <span
       class="block mt-6 text-sm font-semibold tracking-widest text-white uppercase"
     >
-      {{ formatTime(data?.created_at) }}
+      {{ formatTime(data?.created_at || "") }}
     </span>
 
     <h1 class="py-5 text-3xl lg:text-4xl lg:max-w-1/2 px-4 font-800 mx-auto">
@@ -101,7 +98,7 @@ if (data.value) {
     </p>
     <article
       v-if="data"
-      class="mx-auto text-left text-white prose text-white pb-4 px-4 lg:max-w-1/2"
+      class="mx-auto text-left text-white prose md:rounded-lg text-white pb-4 px-4 lg:max-w-1/2"
     >
       <ContentRenderer :value="data" />
     </article>
@@ -113,14 +110,14 @@ if (data.value) {
             Latest from news
           </h2>
           <p class="mt-4 text-base font-normal leading-7 text-gray-400 lg:text-lg lg:mt-6 lg:leading-8">
-            Captime gives you the best insights you need to create a truly professional Crossfit pratice.
+            capgo gives you the best insights you need to create a truly professional mobile app.
           </p>
         </div>
 
         <div class="grid max-w-md grid-cols-1 gap-5 mx-auto mt-12 xl:gap-6 lg:grid-cols-3 lg:max-w-none sm:mt-16">
           <Blog
             v-for="article in articles" :key="article._id"
-            :link="`/blog/${article.slug}/`"
+            :link="article._path"
             :title="article.title"
             :description="article.description"
             :image="article.head_image"

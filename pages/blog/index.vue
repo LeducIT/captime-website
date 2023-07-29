@@ -1,26 +1,15 @@
 <script setup lang="ts">
-import dayjs from 'dayjs'
+import type { MyCustomParsedContent } from '~/services/blog'
 import { createMeta } from '~/services/meta'
-import type { MyCustomParsedContent } from '~~/services/blog'
 
-const title = 'Captime | Crossfit Blog'
-const description = 'The best articles to enhance your Crossfit experience. Learn about the best tips and tricks to use Captime, and more.'
-const { data: articles } = await useAsyncData('allArticles', () =>
-  queryContent<MyCustomParsedContent>('blog')
-    .where({ published: true })
-    .sort({ created_at: -1 })
-    .find())
+const config = useRuntimeConfig()
+
+const { data } = await useFetch<MyCustomParsedContent[]>('/api/blogs')
 
 useHead(() => ({
-  title,
-  meta: createMeta(title, description),
+  title: config.public.blog_tile,
+  meta: createMeta(config.public.blog_tile, config.public.blog_description),
 }))
-
-function formatTime(s: string) {
-  // use dayjs to parse dd-mm-yyyy
-  const d = dayjs(s, 'YYYY-MM-DD')
-  return d.format('MMMM DD, YYYY')
-}
 </script>
 
 <template>
@@ -33,7 +22,7 @@ function formatTime(s: string) {
           Latest from the blog
         </h1>
         <h2 class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-50">
-          {{ description }}
+          {{ config.public.blog_description }}
         </h2>
       </div>
 
@@ -41,8 +30,8 @@ function formatTime(s: string) {
         class="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 lg:grid-cols-3 lg:max-w-full"
       >
         <Blog
-          v-for="article in articles" :key="article._id"
-          :link="`/blog/${article.slug}/`"
+          v-for="article in data" :key="article.slug"
+          :link="article.slug"
           :title="article.title"
           :description="article.description"
           :image="article.head_image"

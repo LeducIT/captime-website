@@ -2,7 +2,12 @@ import { defineNuxtConfig } from 'nuxt/config'
 import { pwa } from './config/pwa'
 import { appDescription, appName } from './constants/index'
 import keys from './configs.json'
+
 // import { serverQueryContent } from '#content/server'
+
+const brand = 'Captime'
+const blogTitle = `${brand} | Capacitor Blog`
+const blogDescription = 'The best articles to enhance your Crossfit experience. Learn about the best tips and tricks to use Captime, and more.'
 
 function getRightKey(branch: string, keyname: 'base_domain'): string {
   if (branch === 'development')
@@ -90,7 +95,9 @@ export default defineNuxtConfig({
   ssr: true,
   runtimeConfig: {
     public: {
-      brand: 'Captime',
+      brand,
+      blog_title: blogTitle,
+      blog_description: blogDescription,
       baseUrl: getUrl(process.env.BRANCH),
       domain: baseDomain(),
       handler: 'captime',

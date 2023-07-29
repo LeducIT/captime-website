@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { formatTime } from '~/services/blog'
 
-defineProps<{
+const props = defineProps<{
   link: string
   title: string
   image: string
@@ -9,11 +9,12 @@ defineProps<{
   date: string
   tag: string
 }>()
+const cannLink = computed(() => `${props.link}/`)
 </script>
 
 <template>
   <div class="p-6 transition-all duration-200 group border border-2 border-white hover:-translate-y-1">
-    <NuxtLink :to="link" :title="title" :aria-label="title" class="block overflow-hidden aspect-w-16 aspect-h-9 rounded-xl">
+    <a :href="cannLink" :title="title" :aria-label="title" class="block overflow-hidden aspect-w-16 aspect-h-9 rounded-xl">
       <img
         class="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110"
         loading="lazy"
@@ -23,7 +24,7 @@ defineProps<{
         :title="`blog illustration ${title}`"
         :src="image"
       >
-    </NuxtLink>
+    </a>
 
     <div class="flex items-center justify-between mt-6">
       <p class="text-sm font-medium text-gray-400">
@@ -38,9 +39,9 @@ defineProps<{
     <hr class="my-5 border-gray-700">
 
     <h3 class="text-lg font-semibold text-white xl:text-xl group-hover:text-gray-200">
-      <NuxtLink :to="link" :title="title" :aria-label="title" class="">
+      <a :href="cannLink" :title="title" :aria-label="title" class="">
         {{ title }}
-      </NuxtLink>
+      </a>
     </h3>
   </div>
 </template>
