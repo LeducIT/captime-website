@@ -17,6 +17,9 @@ dependencies:
   nuxt-jsonld:
     specifier: ^2.0.8
     version: 2.0.8(typescript@5.1.6)
+  schema-dts:
+    specifier: ^1.1.2
+    version: 1.1.2(typescript@5.1.6)
   sitemap:
     specifier: ^7.1.1
     version: 7.1.1

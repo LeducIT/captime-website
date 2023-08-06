@@ -16,6 +16,7 @@
     "@heroicons/vue": "^2.0.18",
     "dayjs": "^1.11.9",
     "nuxt-jsonld": "^2.0.8",
+    "schema-dts": "^1.1.2",
     "sitemap": "^7.1.1"
   },
   "devDependencies": {
