@@ -36,16 +36,16 @@ fields:
     name: next_blog
     label: next_blog
 pages:
-  - content/blog/alternative-to.md
-  - content/blog/amrap.md
-  - content/blog/beginner-s-guide-the-benefits-of-hiit.md
-  - content/blog/crossfit-zone-diet-a-crash-diet-or-an-effective-one.md
-  - content/blog/explanation-of-emom-in-crossfit-for-beginners.md
-  - content/blog/explanation-of-tabata-in-crossfit-for-beginners.md
-  - content/blog/farmer-s-walk-benefits-best-exercise-to-strengthen-your-core-muscles.md
-  - content/blog/how-to-perform-murph-workout-and-variations-to-try.md
-  - content/blog/regenerate-faster-tips-for-regeneration-in-crossfit.md
-  - content/blog/regeneration-cool-down-for-after-crossfit-workout.md
-  - content/blog/steps-to-getting-ready-for-the-next-crossfit-open.md
-  - content/blog/supercompensation-how-to-avoid-overtraining.md
-  - content/blog/ways-to-improve-your-crossfit-performance.md
+  - src/content/blog/alternative-to.md
+  - src/content/blog/amrap.md
+  - src/content/blog/beginner-s-guide-the-benefits-of-hiit.md
+  - src/content/blog/crossfit-zone-diet-a-crash-diet-or-an-effective-one.md
+  - src/content/blog/explanation-of-emom-in-crossfit-for-beginners.md
+  - src/content/blog/explanation-of-tabata-in-crossfit-for-beginners.md
+  - src/content/blog/farmer-s-walk-benefits-best-exercise-to-strengthen-your-core-muscles.md
+  - src/content/blog/how-to-perform-murph-workout-and-variations-to-try.md
+  - src/content/blog/regenerate-faster-tips-for-regeneration-in-crossfit.md
+  - src/content/blog/regeneration-cool-down-for-after-crossfit-workout.md
+  - src/content/blog/steps-to-getting-ready-for-the-next-crossfit-open.md
+  - src/content/blog/supercompensation-how-to-avoid-overtraining.md
+  - src/content/blog/ways-to-improve-your-crossfit-performance.md
