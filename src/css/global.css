@@ -1,0 +1,31 @@
+body {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+img:not([src]) {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Handel_Gothic';
+  src: url('/fonts/Handel_Gothic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Alarm_Clock';
+  src: url('/fonts/Alarm_Clock.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  color: #ffff;
+}
