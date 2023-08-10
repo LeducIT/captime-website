@@ -16,7 +16,7 @@ const { content } = Astro.props
     <SEO {...content} />
   </head>
   <body>
-    <div class="overflow-x-hidden bg-gray-900 text-white">
+    <div class="overflow-x-hidden text-white">
       <Header client:load />
       <slot />
       <Footer client:load />
