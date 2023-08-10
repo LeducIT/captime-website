@@ -26,7 +26,7 @@ onMounted(() => {
           <a href="/tos/" rel="nofollow" class="mr-4 hover:underline md:mr-6"> Terms & Conditions </a>
         </li>
         <li>
-          <a href="#support" rel="nofollow" class="mr-4 hover:underline md:mr-6"> Support </a>
+          <a @click="openMessenger()" rel="nofollow" class="mr-4 hover:underline md:mr-6"> Support </a>
         </li>
       </ul>
     </div>
