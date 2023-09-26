@@ -12,6 +12,11 @@
   command = "pnpm run build"
 
 [[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "text/xml"
+    
+[[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
