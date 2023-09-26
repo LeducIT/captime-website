@@ -23,8 +23,8 @@
     "@iconify-json/twemoji": "^1.1.12",
     "@types/node": "^20.4.9",
     "@types/semver": "^7.5.0",
-    "@unocss/astro": "^0.55.0",
-    "@unocss/reset": "^0.55.0",
+    "@unocss/astro": "^0.56.0",
+    "@unocss/reset": "^0.56.0",
     "@vite-pwa/astro": "^0.1.1",
     "dayjs": "^1.11.9",
     "dotenv": "^16.3.1",
@@ -32,6 +32,6 @@
     "prettier": "^3.0.1",
     "prettier-plugin-astro": "^0.11.0",
     "schema-dts": "^1.1.2",
-    "unocss": "^0.55.0"
+    "unocss": "^0.56.0"
   }
 }
