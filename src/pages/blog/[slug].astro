@@ -66,7 +66,7 @@ const dateModified = new Date(data.frontmatter.updated_at).toISOString()
 const datePublished = new Date(data.frontmatter.created_at).toISOString()
 
 // @ts-ignore
-content['ldJSON'] = {
+content['ldJSON'] = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'NewsArticle',
   mainEntityOfPage: {
@@ -90,7 +90,7 @@ content['ldJSON'] = {
       url: `${config.public.baseUrl}/icon.webp`,
     },
   },
-}
+})
 ---
 
 <Layout content={content}>
