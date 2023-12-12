@@ -8,5 +8,15 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
   compressHTML: true,
   site: `https://${config.base_domain.prod}`,
-  integrations: [UnoCSS({ injectReset: true }), vue(), AstroPWA(pwa)],
+  integrations: [
+    UnoCSS({ injectReset: true }),
+    vue({
+      template: {
+        transformAssetUrls: {
+          includeAbsolute: false,
+        },
+      },
+    }),
+    AstroPWA(pwa),
+  ],
 })
