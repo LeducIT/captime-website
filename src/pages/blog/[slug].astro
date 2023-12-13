@@ -9,7 +9,7 @@ export async function getStaticPaths() {
     let related = posts
       .filter((i) => i.frontmatter.slug !== post.frontmatter.slug)
       .filter((i) => i.frontmatter.published)
-      .sort((a, b) => (new Date(a.frontmatter.created_at) > new Date(b.frontmatter.created_at) ? -1 : 1))
+      .sort((a, b) => (new Date(a.frontmatter.created_at.trim().replace(' ', 'T')) > new Date(b.frontmatter.created_at.trim().replace(' ', 'T')) ? -1 : 1))
       .slice(0, 3)
     if (post.frontmatter.next_blog) {
       if (related.length > 0) {
@@ -62,8 +62,8 @@ if (data.frontmatter.author) {
   content['author'] = data.frontmatter.author || 'Capgo'
 }
 
-const dateModified = new Date(data.frontmatter.updated_at).toISOString()
-const datePublished = new Date(data.frontmatter.created_at).toISOString()
+const datePublished = new Date(data.frontmatter.created_at.trim().replace(' ', 'T')).toISOString()
+const dateModified = data.frontmatter.updated_at ? new Date(data.frontmatter.updated_at.trim().replace(' ', 'T')).toISOString() : datePublished
 
 // @ts-ignore
 content['ldJSON'] = JSON.stringify({
