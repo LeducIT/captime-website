@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "fmt": "prettier --write '**/*' --ignore-unknown"
+    "fmt": "prettier --write '**/*' --ignore-unknown",
+    "test:visual": "playwright test",
+    "test:visual:update": "playwright test --update-snapshots"
   },
   "dependencies": {
     "@astrojs/vue": "^4.0.2",
@@ -21,6 +23,7 @@
     "@antfu/eslint-config": "^0.40.0",
     "@iconify-json/carbon": "^1.1.19",
     "@iconify-json/twemoji": "^1.1.12",
+    "@playwright/test": "1.49.1",
     "@types/node": "^20.4.9",
     "@types/semver": "^7.5.0",
     "@unocss/astro": "^0.55.0",
