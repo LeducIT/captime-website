@@ -5,7 +5,7 @@
     performance = 0.7
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "22"
 
 [build]
   publish = "dist"
