@@ -1,4 +1,8 @@
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from '@playwright/test'
+
+process.env.FONTCONFIG_FILE = resolve(dirname(fileURLToPath(import.meta.url)), 'tests/fonts.conf')
 
 const port = 4321
 const baseURL = `http://127.0.0.1:${port}`
