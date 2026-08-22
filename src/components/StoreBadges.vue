@@ -21,7 +21,7 @@ withDefaults(defineProps<{
         alt="Download on the App Store"
         width="120"
         height="40"
-        :class="size === 'sm' ? 'h-8 w-auto' : 'h-10 w-auto'"
+        :class="size === 'sm' ? 'h-8 w-auto border border-white' : 'h-10 w-auto border border-white'"
         loading="lazy"
       >
     </a>
@@ -36,7 +36,7 @@ withDefaults(defineProps<{
         alt="Get it on Google Play"
         width="135"
         height="40"
-        :class="size === 'sm' ? 'h-8 w-auto' : 'h-10 w-auto'"
+        :class="size === 'sm' ? 'h-8 w-auto border border-white' : 'h-10 w-auto border border-white'"
         loading="lazy"
       >
     </a>
