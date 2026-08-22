@@ -13,8 +13,8 @@ author_url: "https://captime.app#team"
 created_at: 2022-05-25T19:00:00.000+00:00
 updated_at: 2022-05-25T19:00:00.000+00:00
 head_image: ""
-head_image_alt: ""
-tag: ""
+head_image_alt: Athlete planning rest to avoid overtraining
+tag: Recovery
 published: false
 next_blog: ""
 ---

@@ -1,9 +1,9 @@
 ---
 slug: "top-5-open-2023"
-title: "Top 5 Athletes Crossfit Open 2023 - Leaderboad"
+title: "Top 5 Athletes CrossFit Open 2023 Leaderboard"
 description: The Open is held over 3 weeks, and a series of workouts are released weekly for competitors to complete. Athletes who wish to progress further in individual competitions need to perform the workouts as prescribed
-author: Martin Donadieu
-author_url: "https://twitter.com/martindonadieu"
+author: Team Captime
+author_url: "https://captime.app#team"
 created_at: 2022-03-10T19:00:00.000+00:00
 updated_at: 2022-03-10T19:00:00.000+00:00
 head_image: "/crossfit_games.webp"

@@ -1,7 +1,6 @@
-<script>
-export default {
-  name: 'Hero',
-}
+<script setup lang="ts">
+import { downloadUrl } from '../../constants'
+import StoreBadges from '../StoreBadges.vue'
 </script>
 
 <template>
@@ -14,16 +13,18 @@ export default {
 
           <p class="text-white text-center text-lg">Captime app offers all workout timers for CrossFit and high-intensity interval training workouts.</p>
 
-          <div class="flex justify-center mt-8">
+          <div class="flex flex-col items-center justify-center gap-5">
             <a
               target="_blank"
-              href="http://onelink.to/captime/"
+              rel="noopener noreferrer"
+              :href="downloadUrl"
               title="Download"
               class="relative items-center justify-center px-6 py-2 text-xl font-bold text-white border border-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
             >
               Smash wods
               <span class="text-2xl font-handel font-bold text-ruby-500">NOW</span>
             </a>
+            <StoreBadges />
           </div>
         </div>
 

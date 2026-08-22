@@ -3,8 +3,8 @@ import { useRuntimeConfig } from '../config/app'
 export function GET() {
   try {
     const config = useRuntimeConfig()
-    const data = `User-agent: *\nAllow: /\nUser-agent: *\nDisallow: /rss.xml\nSitemap: ${config.public.baseUrl}/sitemap.xml`
-    return new Response(data.toString(), {
+    const data = `User-agent: *\nAllow: /\nSitemap: ${config.public.baseUrl}/sitemap.xml\n`
+    return new Response(data, {
       status: 200,
       headers: {
         'Content-Type': 'text/plain',

@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { downloadUrl } from '../../constants'
+import StoreBadges from '../StoreBadges.vue'
+
 const slides = [
   {
     content: "It's time to smash your workout goals and achieve the maximum results using this professional timer app.",
@@ -7,12 +10,12 @@ const slides = [
   },
   {
     content: 'It makes no difference if you workout at home or in the gym.',
-    image: 'hero_3.webp',
+    image: '/hero_3.webp',
     button: 'Download',
   },
   {
     content: 'Captime ensures that your workouts are effective regardless of where you train.',
-    image: 'hero_2.webp',
+    image: '/hero_2.webp',
     button: 'Use',
   },
 ]
@@ -36,10 +39,14 @@ const slides = [
       <a
         title="Get Captime"
         target="_blank"
-        href="http://onelink.to/captime/"
+        rel="noopener noreferrer"
+        :href="downloadUrl"
         class="inline-block mt-8 text-white font-bold text-xl bg-ruby border px-6 py-2 rounded-none hover:bg-white hover:text-ruby-500 transition ease-in-out"
         >{{ slide.button }} <span class="font-handel text-2xl">Captime</span>
       </a>
+      <div class="mt-5">
+        <StoreBadges />
+      </div>
     </div>
   </section>
 </template>

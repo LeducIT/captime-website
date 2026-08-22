@@ -1,14 +1,14 @@
 ---
 slug: "alternative-to"
-title: "Best alternative to Rogue Echo Gym Timer"
-description: "For your home gym or CrossFit box, it’s crucial to invest in a good timer. Focus on your workout without dealing with your watch when you’re out of breath."
-author: "Martin Donadieu"
-author_url: "https://twitter.com/martindonadieu"
+title: "Best Alternative to the Rogue Echo Gym Timer"
+description: "For a home gym or CrossFit box, a dedicated WOD timer keeps you on the clock. Focus on the workout instead of checking your watch when you are out of breath."
+author: "Team Captime"
+author_url: "https://captime.app#team"
 created_at: 2022-01-13T19:00:00.000+00:00
 updated_at: 2022-02-23T19:00:00.000+00:00
 head_image: /alternative_to_1.webp
-head_image_alt: Crossfit Men looking for alternative
-tag: alternatives
+head_image_alt: CrossFit athlete looking for a gym timer alternative
+tag: Timers
 published: true
 next_blog: ""
 ---
