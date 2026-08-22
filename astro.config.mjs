@@ -9,7 +9,7 @@ export default defineConfig({
   compressHTML: true,
   site: `https://${config.base_domain.prod}`,
   integrations: [
-    UnoCSS({ injectReset: true }),
+    UnoCSS({ injectReset: false }),
     vue({
       template: {
         transformAssetUrls: {

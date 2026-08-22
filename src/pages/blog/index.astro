@@ -1,9 +1,10 @@
 ---
-let posts = await Astro.glob('../../content/blog/**/*.md')
-
 import Layout from '../../layouts/Layout.astro'
+import { loadBlogPosts } from '../../services/blog'
 import { useRuntimeConfig } from '../../config/app'
 import VueBlogIndex from '../../vue-pages/blog/index.vue'
+
+let posts = loadBlogPosts()
 
 posts = posts.filter((i) => i.frontmatter.published).sort((a, b) => (new Date(a.frontmatter.created_at.trim().replace(' ', 'T')) > new Date(b.frontmatter.created_at.trim().replace(' ', 'T')) ? -1 : 1))
 
