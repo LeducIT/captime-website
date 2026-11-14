@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test'
 import { readFileSync } from 'node:fs'
-import { appStoreCampaignUrl, campaignDecision, campaignLocation, campaignRedirectResponse, playStoreCampaignUrl } from '../src/lib/campaign'
+import { appStoreCampaignUrl, appStoreProviderToken, campaignDecision, campaignLocation, campaignRedirectResponse, playStoreCampaignUrl } from '../src/lib/campaign'
 
 const origin = 'https://captime.app'
 const iphone = 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1'
@@ -46,9 +46,12 @@ test.describe('campaign redirect logic', () => {
     expect(campaignLocation(new URL('/go/qr', origin), desktop)).toBe(`${origin}/download/`)
   })
 
-  test('omits empty App Store pt param', () => {
-    expect(appStoreCampaignUrl('hero')).toBe('https://apps.apple.com/app/id1369288585?ct=hero&mt=8')
-    expect(appStoreCampaignUrl('hero')).not.toContain('pt=')
+  test('App Store URL includes pt, ct, and mt, and omits an empty pt', () => {
+    expect(appStoreProviderToken).toBe('126840438')
+    expect(appStoreCampaignUrl('hero')).toBe('https://apps.apple.com/app/id1369288585?pt=126840438&ct=hero&mt=8')
+    expect(appStoreCampaignUrl('nav')).toBe('https://apps.apple.com/app/id1369288585?pt=126840438&ct=nav&mt=8')
+    expect(appStoreCampaignUrl('hero', '')).toBe('https://apps.apple.com/app/id1369288585?ct=hero&mt=8')
+    expect(appStoreCampaignUrl('hero', '')).not.toContain('pt=')
     expect(playStoreCampaignUrl('hero')).toBe(
       'https://play.google.com/store/apps/details?id=ee.forgr.captime&referrer=utm_source%3Dcaptime.app%26utm_campaign%3Dhero',
     )

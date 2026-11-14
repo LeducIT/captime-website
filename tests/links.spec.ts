@@ -19,7 +19,7 @@ test.describe('download links', () => {
     const html = await response.text()
     expect(html).toContain('href="/go/download?store=ios"')
     expect(html).toContain('href="/go/download?store=android"')
-    expect(html).toContain('id1369288585?ct=download')
+    expect(html).toMatch(/id1369288585\?pt=126840438(?:&|&amp;)ct=download(?:&|&amp;)mt=8/)
     expect(html).toContain('ee.forgr.captime')
     expect(html).toContain('utm_campaign%3Ddownload')
     expect(html).not.toMatch(/n\.to\/captime/i)

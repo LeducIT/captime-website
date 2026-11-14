@@ -3,8 +3,7 @@ import { downloadPath } from '../constants'
 export const appleAppId = '1369288585'
 export const playAppId = 'ee.forgr.captime'
 
-// TODO: set the Apple App Analytics provider token (pt). Omit the query param while empty.
-export const appStoreProviderToken = ''
+export const appStoreProviderToken = '126840438'
 
 export const campaignPathPattern = /^\/go\/([A-Za-z0-9][A-Za-z0-9_-]*)\/?$/
 
@@ -14,10 +13,10 @@ export function campaignPath(ct: string, store?: 'ios' | 'android'): string {
   return `/go/${ct}?store=${store}`
 }
 
-export function appStoreCampaignUrl(ct: string): string {
+export function appStoreCampaignUrl(ct: string, providerToken: string = appStoreProviderToken): string {
   const parts = [`ct=${encodeURIComponent(ct)}`, 'mt=8']
-  if (appStoreProviderToken)
-    parts.unshift(`pt=${encodeURIComponent(appStoreProviderToken)}`)
+  if (providerToken)
+    parts.unshift(`pt=${encodeURIComponent(providerToken)}`)
   return `https://apps.apple.com/app/id${appleAppId}?${parts.join('&')}`
 }
 
