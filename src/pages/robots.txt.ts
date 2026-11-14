@@ -1,23 +1,12 @@
-import { useRuntimeConfig } from '../config/app'
+import { robotsTxt } from '../services/seo'
+
+export const prerender = true
 
 export function GET() {
-  try {
-    const config = useRuntimeConfig()
-    const data = `User-agent: *\nAllow: /\nSitemap: ${config.public.baseUrl}/sitemap.xml\n`
-    return new Response(data, {
-      status: 200,
-      headers: {
-        'Content-Type': 'text/plain',
-      },
-    })
-  }
-  catch (e) {
-    console.error(e)
-    return new Response(null, {
-      status: 500,
-      headers: {
-        'Content-Type': 'text/plain',
-      },
-    })
-  }
+  return new Response(robotsTxt(), {
+    status: 200,
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+    },
+  })
 }

@@ -49,7 +49,7 @@ AMRAP based on repetitions involves performing each exercise for a specific time
 
 Since you will be performing multiple exercises instead of one, the timeframe will undoubtedly be longer with this AMRAP protocol. This timeframe can last up to 5, 10, 15, or even 20 minutes. The goal of this protocol is to complete as many circuits as possible.
 
-![Untitled](/amrap2.webp)
+![CrossFit athlete checking rounds on an AMRAP workout](/amrap2.webp)
 
 ## **Remember, It Is More About Form Than Speed.**
 

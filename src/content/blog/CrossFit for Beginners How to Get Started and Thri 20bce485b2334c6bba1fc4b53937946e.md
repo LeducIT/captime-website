@@ -5,7 +5,7 @@ published: true
 author: "Martin Donadieu"
 description: "Discover how to thrive in your CrossFit journey as a beginner. Learn the basics, set goals, find a box, and build a strong foundation for long-term success."
 created_at: 2023-12-08 14:27:00
-head_image: "/images/page-cover/nasa_tim_peake_spacewalk.jpg"
+head_image: "/blog_meta.webp"
 ---
 
 # CrossFit for Beginners: How to Get Started and Thrive in Your Fitness Journey

@@ -1,3 +1,16 @@
 # Legacy Feather slug with spaces (crossfit.training 301 target)
 /blog/How%20to%20Prevent%20Injury%20During%20High-Intensity%20Workouts%20with%20Captime%20Timer /blog/how-to-prevent-injury-during-high-intensity-workouts-with-captime-timer/ 301
 /blog/How%20to%20Prevent%20Injury%20During%20High-Intensity%20Workouts%20with%20Captime%20Timer/ /blog/how-to-prevent-injury-during-high-intensity-workouts-with-captime-timer/ 301
+
+# Missing Feather/Notion cover image still linked from the beginners post
+/images/page-cover/nasa_tim_peake_spacewalk.jpg /blog_meta.webp 301
+
+# Unpublished posts: send leftover URLs to the closest live guide
+/blog/farmer-s-walk-benefits-best-exercise-to-strengthen-your-core-muscles /blog/the-top-5-crossfit-exercises-for-building-strength-and-endurance/ 301
+/blog/farmer-s-walk-benefits-best-exercise-to-strengthen-your-core-muscles/ /blog/the-top-5-crossfit-exercises-for-building-strength-and-endurance/ 301
+/blog/how-to-perform-murph-workout-and-variations-to-try /blog/for-time-timer-the-ultimate-challenge-for-crossfit-enthusiasts/ 301
+/blog/how-to-perform-murph-workout-and-variations-to-try/ /blog/for-time-timer-the-ultimate-challenge-for-crossfit-enthusiasts/ 301
+/blog/regenerate-faster-tips-for-regeneration-in-crossfit /blog/regeneration-cool-down-for-after-crossfit-workout/ 301
+/blog/regenerate-faster-tips-for-regeneration-in-crossfit/ /blog/regeneration-cool-down-for-after-crossfit-workout/ 301
+/blog/supercompensation-how-to-avoid-overtraining /blog/the-importance-of-recovery-and-rest-days-in-crossfit/ 301
+/blog/supercompensation-how-to-avoid-overtraining/ /blog/the-importance-of-recovery-and-rest-days-in-crossfit/ 301
