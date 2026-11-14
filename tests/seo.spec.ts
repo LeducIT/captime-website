@@ -123,10 +123,15 @@ test.describe('on-page SEO', () => {
       expect(body).not.toContain('Stripe')
       expect(body).not.toContain('Digital Shift')
       expect(body).not.toContain('hello@forgr.ee')
+      expect(body).not.toContain('workers.dev')
+      expect(body).not.toContain('Plausible')
+      expect(body).not.toContain('de.sentry.io')
       if (path === '/privacy/') {
-        expect(body).toContain('Crisp')
-        expect(body).toContain('Plausible-compatible')
-        expect(body).toContain('Apple App Store, Google Play, and RevenueCat are the payment and subscription processors')
+        expect(body).toContain('App stores and payments: Apple, Google, RevenueCat.')
+        expect(body).toContain('Crash reports: Sentry.')
+        expect(body).toContain('Support chat: Crisp.')
+        expect(body).toContain('Privacy-friendly website analytics.')
+        expect(body).toContain('App updates: CapGo.')
       }
     }
   })
