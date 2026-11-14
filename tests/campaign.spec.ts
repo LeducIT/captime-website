@@ -1,9 +1,10 @@
 import { expect, test } from '@playwright/test'
 import { readFileSync } from 'node:fs'
-import { appStoreCampaignUrl, campaignLocation, campaignRedirectResponse, playStoreCampaignUrl } from '../src/lib/campaign'
+import { appStoreCampaignUrl, campaignDecision, campaignLocation, campaignRedirectResponse, playStoreCampaignUrl } from '../src/lib/campaign'
 
 const origin = 'https://captime.app'
 const iphone = 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1'
+const ipad = 'Mozilla/5.0 (iPad; CPU OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1'
 const macos = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'
 const android = 'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36'
 const desktop = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
@@ -23,16 +24,24 @@ test.describe('smart app banner', () => {
 test.describe('campaign redirect logic', () => {
   test('resolves store URLs from User-Agent', () => {
     expect(campaignLocation(new URL('/go/hero', origin), iphone)).toBe(appStoreCampaignUrl('hero'))
-    expect(campaignLocation(new URL('/go/hero', origin), macos)).toBe(appStoreCampaignUrl('hero'))
+    expect(campaignLocation(new URL('/go/hero', origin), ipad)).toBe(appStoreCampaignUrl('hero'))
     expect(campaignLocation(new URL('/go/blog_cta', origin), android)).toBe(playStoreCampaignUrl('blog_cta'))
     expect(campaignLocation(new URL('/go/footer', origin), desktop)).toBe(`${origin}/download/`)
     expect(campaignLocation(new URL('/go/hero', origin), desktop)).toBe(`${origin}/download/`)
     expect(campaignLocation(new URL('/missing', origin), iphone)).toBeNull()
+    const mac = campaignDecision(new URL('/go/nav', origin), macos)
+    expect(mac).toEqual({
+      action: 'touch',
+      appStore: appStoreCampaignUrl('nav'),
+      download: `${origin}/download/`,
+    })
+    expect(campaignLocation(new URL('/go/nav', origin), macos)).toBeNull()
   })
 
   test('explicit store param overrides the device', () => {
     expect(campaignLocation(new URL('/go/hero?store=android', origin), iphone)).toBe(playStoreCampaignUrl('hero'))
     expect(campaignLocation(new URL('/go/hero?store=ios', origin), android)).toBe(appStoreCampaignUrl('hero'))
+    expect(campaignLocation(new URL('/go/hero?store=ios', origin), macos)).toBe(appStoreCampaignUrl('hero'))
     expect(campaignLocation(new URL('/go/download?store=ios', origin), desktop)).toBe(appStoreCampaignUrl('download'))
     expect(campaignLocation(new URL('/go/qr', origin), desktop)).toBe(`${origin}/download/`)
   })
@@ -55,13 +64,27 @@ test.describe('campaign redirect logic', () => {
 })
 
 test.describe('Workers /go/ redirects', () => {
-  test('iOS and macOS go to the App Store', async ({ request }) => {
-    for (const ua of [iphone, macos]) {
+  test('iPhone and iPad go to the App Store', async ({ request }) => {
+    for (const ua of [iphone, ipad]) {
       const response = await request.get('/go/hero', { maxRedirects: 0, headers: { 'user-agent': ua } })
       expect(response.status()).toBe(302)
       expect(response.headers()['location']).toBe(appStoreCampaignUrl('hero'))
       expect(response.headers()['cache-control']).toBe('no-store')
     }
+  })
+
+  test('Mac User-Agent gets a touch check that keeps the campaign', async ({ request }) => {
+    const response = await request.get('/go/nav', { maxRedirects: 0, headers: { 'user-agent': macos } })
+    expect(response.status()).toBe(200)
+    expect(response.headers()['content-type']).toContain('text/html')
+    expect(response.headers()['cache-control']).toBe('no-store')
+    const html = await response.text()
+    expect(html).toContain('navigator.maxTouchPoints > 1')
+    expect(html).toContain(appStoreCampaignUrl('nav'))
+    expect(html).toContain('/download/')
+    const pinned = await request.get('/go/qr?store=ios', { maxRedirects: 0, headers: { 'user-agent': macos } })
+    expect(pinned.status()).toBe(302)
+    expect(pinned.headers()['location']).toBe(appStoreCampaignUrl('qr'))
   })
 
   test('Android goes to Google Play', async ({ request }) => {
@@ -74,6 +97,28 @@ test.describe('Workers /go/ redirects', () => {
     const response = await request.get('/go/footer', { maxRedirects: 0, headers: { 'user-agent': desktop } })
     expect(response.status()).toBe(302)
     expect(new URL(response.headers()['location'] || '', 'http://127.0.0.1:4321').pathname).toBe('/download/')
+  })
+
+  test('touch sends iPad-like Macs to the App Store and desktop Macs to /download/', async ({ browser }) => {
+    async function land(touch: number, path: string) {
+      const context = await browser.newContext({ userAgent: macos })
+      await context.addInitScript((points) => {
+        Object.defineProperty(Navigator.prototype, 'maxTouchPoints', { configurable: true, get: () => points })
+      }, touch)
+      const page = await context.newPage()
+      await page.route('https://apps.apple.com/**', route => route.fulfill({
+        status: 200,
+        contentType: 'text/html',
+        body: '<!doctype html><title>store</title>',
+      }))
+      await page.goto(path)
+      const url = page.url()
+      await context.close()
+      return url
+    }
+
+    expect(await land(0, '/go/qr')).toMatch(/\/download\/$/)
+    expect(await land(5, '/go/nav')).toBe(appStoreCampaignUrl('nav'))
   })
 
   test('store query overrides the iPhone User-Agent', async ({ request }) => {
