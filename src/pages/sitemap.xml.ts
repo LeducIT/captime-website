@@ -7,6 +7,7 @@ export async function GET() {
     const config = useRuntimeConfig()
     const smStream = new SitemapStream({ hostname: config.public.baseUrl })
     smStream.write({ url: '/', changefreq: 'daily', priority: 1, lastmod: new Date() })
+    smStream.write({ url: '/download', changefreq: 'weekly', priority: 0.8, lastmod: new Date() })
     smStream.write({ url: '/blog/', changefreq: 'weekly', priority: 1, lastmod: new Date() })
     const blogs = loadBlogPosts().filter(isPublishedPost)
     blogs.forEach((article) => {

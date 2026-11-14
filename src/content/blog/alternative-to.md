@@ -37,9 +37,9 @@ Counting the number of reps you can perform in a set is the primary way to measu
 
 Rogue echo gym trainer is considered a gold standard in fitness circles, and for good reasons. It comes with several preset interval settings, which are also programmable. Hence, you can customize this timer according to your workout requirements or preferences.
 
-But since Rogue Echo Gym Timer comes with specific hardware, you have to spend a fortune to have it set in your fitness training area. But does that mean you have got no options other than this timer? Well, no. [Captime](http://onelink.to/captime) is one of the best alternatives to the Rogue Echo gym Timer.
+But since Rogue Echo Gym Timer comes with specific hardware, you have to spend a fortune to have it set in your fitness training area. But does that mean you have got no options other than this timer? Well, no. [Captime](https://captime.app/download) is one of the best alternatives to the Rogue Echo gym Timer.
 
-[Captime](http://onelink.to/captime) is a mobile app that you can install on your iPhone or iPad.
+[Captime](https://captime.app/download) is a mobile app that you can install on your iPhone or iPad.
 
 It comes with multiple preset timers for:
 
@@ -50,4 +50,4 @@ It comes with multiple preset timers for:
 - For Time (the voice recognition system that allows you to control the timer by screaming TIME or STOP)
 - Sally
 
-This app also features a video timer recorder, which allows you to analyze your workout after you are done exercising. In short, [Captime](http://onelink.to/captime) is an all-inclusive CrossFit timer app that helps you reach your top performance.
+This app also features a video timer recorder, which allows you to analyze your workout after you are done exercising. In short, [Captime](https://captime.app/download) is an all-inclusive CrossFit timer app that helps you reach your top performance.

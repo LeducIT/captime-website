@@ -14,7 +14,7 @@ next_blog: ""
 ---
 
 Every week competitors perform the workouts and submit their scores online before a specified time.
-This should be supported by either video like in [Captime](http://onelink.to/captime) of their workouts or validations by a CrossFit affiliate.
+This should be supported by either video like in [Captime](https://captime.app/download) of their workouts or validations by a CrossFit affiliate.
 
 In every event, the competitors are ranked according to their performance.
 They gain points awarded directly corresponding to their rank.

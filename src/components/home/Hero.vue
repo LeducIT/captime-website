@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import CtaButton from '../CtaButton.vue'
 import StoreBadges from '../StoreBadges.vue'
+import DownloadQr from '../DownloadQr.vue'
 </script>
 
 <template>
@@ -18,11 +18,10 @@ import StoreBadges from '../StoreBadges.vue'
           </p>
 
           <div class="flex flex-col items-center justify-center gap-4 pt-1">
-            <CtaButton title="Download">
-              Smash wods
-              <span class="font-handel text-[1.15em] tracking-wide">NOW</span>
-            </CtaButton>
             <StoreBadges />
+            <div class="hidden md:flex">
+              <DownloadQr />
+            </div>
           </div>
         </div>
 

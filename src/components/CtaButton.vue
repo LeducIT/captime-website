@@ -1,23 +1,26 @@
 <script setup lang="ts">
-import { downloadUrl } from '../constants'
+import { computed } from 'vue'
+import { downloadPath } from '../constants'
 
-withDefaults(defineProps<{
+const props = withDefaults(defineProps<{
   href?: string
   size?: 'sm' | 'md'
   title?: string
 }>(), {
-  href: downloadUrl,
+  href: downloadPath,
   size: 'md',
   title: 'Download Captime',
 })
+
+const isExternal = computed(() => /^https?:\/\//.test(props.href))
 </script>
 
 <template>
   <a
     :href="href"
     :title="title"
-    target="_blank"
-    rel="noopener noreferrer"
+    :target="isExternal ? '_blank' : undefined"
+    :rel="isExternal ? 'noopener noreferrer' : undefined"
     :class="size === 'sm' ? 'btn-cta-sm' : 'btn-cta-md'"
   >
     <slot />
