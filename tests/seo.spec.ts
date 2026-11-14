@@ -146,6 +146,29 @@ test.describe('on-page SEO', () => {
     expect(person).not.toHaveProperty('url')
   })
 
+  test('older posts credit Victor Leduc and keep their dates', async ({ request }) => {
+    const cases: Array<[string, string]> = [
+      ['/blog/amrap/', 'January 12, 2022'],
+      ['/blog/alternative-to/', 'January 13, 2022'],
+      ['/blog/regeneration-cool-down-for-after-crossfit-workout/', 'February 02, 2022'],
+      ['/blog/explanation-of-tabata-in-crossfit-for-beginners/', 'February 15, 2022'],
+      ['/blog/explanation-of-emom-in-crossfit-for-beginners/', 'February 20, 2022'],
+      ['/blog/beginners-guide-the-benefits-of-hiit/', 'February 23, 2022'],
+      ['/blog/steps-to-getting-ready-for-the-next-crossfit-open/', 'March 09, 2022'],
+      ['/blog/top-5-open-2022/', 'March 10, 2022'],
+      ['/blog/top-5-open-2023/', 'March 10, 2022'],
+      ['/blog/ways-to-improve-your-crossfit-performance/', 'April 03, 2022'],
+      ['/blog/crossfit-zone-diet-a-crash-diet-or-an-effective-one/', 'April 10, 2022'],
+    ]
+    for (const [path, date] of cases) {
+      const html = await (await request.get(path)).text()
+      expect(html, path).toContain('Victor Leduc')
+      expect(html, path).toContain('/victor-leduc-96.webp')
+      expect(html, path).toContain(date)
+      expect(html, path).not.toContain('Team Captime')
+    }
+  })
+
   test('built HTML does not mention Martin Donadieu', () => {
     const htmlFiles = globSync('dist/**/*.html')
     expect(htmlFiles.length).toBeGreaterThan(10)

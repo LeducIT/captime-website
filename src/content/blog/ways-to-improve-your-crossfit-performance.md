@@ -7,8 +7,7 @@ description:
   CrossFit gyms worldwide is good enough proof of the growing interest of new and
   seasoned athletes in this workout. Many athletes even buy equipment to perform these
   workouts at home.
-author: Team Captime
-author_url: "https://captime.app#team"
+author: "Victor Leduc"
 created_at: 2022-04-03T19:00:00.000+00:00
 updated_at: 2022-04-03T19:00:00.000+00:00
 head_image: "/ways-to-improve-your-crossfit-performance.webp"
