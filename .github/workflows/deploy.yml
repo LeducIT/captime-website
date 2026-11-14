@@ -37,6 +37,9 @@ jobs:
             fi
           }
           flatten dist/sitemap.xml
+          flatten dist/sitemap-index.xml
+          flatten dist/sitemap-0.xml
+          flatten dist/sitemap-1.xml
           flatten dist/robots.txt
       - name: Deploy
         uses: cloudflare/wrangler-action@v4

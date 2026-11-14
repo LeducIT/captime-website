@@ -31,7 +31,7 @@ Interval training refers to exercises that improve your cardiovascular health by
 
 Counting the number of reps you can perform in a set is the primary way to measure your progress in any given workout. Unfortunately, it is easier said than done if you perform AMRAP or other forms of HIIT without the support of a preset timer. These timers help you use the time to measure your movements. The best thing about these timers is they take care of the counting process, helping you focus on your movements in a better way.
 
-![alternative_to_2](/alternative_to_2.webp)
+![Captime timer app compared with a gym wall timer](/alternative_to_2.webp)
 
 ## **The Best Alternative To Rogue Echo Gym Timer**
 

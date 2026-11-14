@@ -7,9 +7,9 @@ export const appStoreUrl = 'https://apps.apple.com/us/app/captime-hiit-wod-timer
 
 export const playStoreUrl = 'https://play.google.com/store/apps/details?id=ee.forgr.captime'
 
-export const downloadPath = '/download'
+export const downloadPath = '/download/'
 
-export const downloadUrl = 'https://captime.app/download'
+export const downloadUrl = 'https://captime.app/download/'
 
 export const defaultAuthor = 'Captime'
 

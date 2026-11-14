@@ -1,15 +1,14 @@
 ---
-import { structuredData } from '../config/app'
 import { appDescription, appName, defaultAuthor, seoKeywords } from '../constants'
-import { useRuntimeConfig } from '../config/app'
+import { canonicalUrl, defaultStructuredData, siteOrigin } from '../services/seo'
 
 const {
-  ldJSON = structuredData,
+  ldJSON = defaultStructuredData(),
   title = appName,
   description = appDescription,
-  url = Astro.url,
-  image = `${useRuntimeConfig().public.baseUrl}/blog_meta.webp`,
-  canonical = Astro.url,
+  url,
+  image,
+  canonical,
   author = defaultAuthor,
   audio = null,
   type = 'website',
@@ -23,8 +22,11 @@ if (description.length > descSize) {
   displayDescription = `${description.substring(0, descSize - 3)}...`
 }
 
-const image_unsecure = image.replace('https://', 'http://')
-const titleFix = title || (image.split('/').pop() || '.').split('.')[0]
+const origin = siteOrigin()
+const resolvedCanonical = String(canonical || url || canonicalUrl(Astro.url.pathname))
+const resolvedUrl = String(url || resolvedCanonical)
+const resolvedImage = String(image || `${origin}/blog_meta.webp`).replace(/^http:\/\//, 'https://')
+const titleFix = title || (resolvedImage.split('/').pop() || '.').split('.')[0]
 const ogType = type === 'article' ? 'article' : 'website'
 ---
 
@@ -36,8 +38,9 @@ const ogType = type === 'article' ? 'article' : 'website'
 <meta name="apple-mobile-web-app-title" content="Captime" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="keywords" content={seoKeywords} />
+<meta name="robots" content="index, follow" />
 
-<link rel="canonical" href={canonical} />
+<link rel="canonical" href={resolvedCanonical} />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -51,33 +54,33 @@ const ogType = type === 'article' ? 'article' : 'website'
 <meta name="publisher" content="Captime" />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:url" content={url} />
+<meta property="og:url" content={resolvedUrl} />
 <meta property="og:title" content={title} />
-<meta property="og:audio" content={audio} />
 <meta property="og:type" content={ogType} />
 <meta property="og:locale" content="en_US" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="627" />
 <meta property="og:image:alt" content={titleFix} />
-<meta property="og:image:secure" content={image} />
-<meta property="og:image" content={image_unsecure} />
+<meta property="og:image" content={resolvedImage} />
+<meta property="og:image:secure_url" content={resolvedImage} />
 <meta property="og:image:type" content="image/webp" />
-<meta property="og:article:author" content={author} />
-<meta property="og:audio:type" content="audio/mpeg" />
 <meta property="og:site_name" content="Captime" />
 <meta property="og:description" content={displayDescription} />
+{ogType === 'article' && <meta property="article:author" content={author} />}
+{audio && <meta property="og:audio" content={audio} />}
+{audio && <meta property="og:audio:type" content="audio/mpeg" />}
 
 <!-- Twitter -->
-<meta property="twitter:url" content={url} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:image" content={image} />
-<meta property="twitter:app:id:iphone" content="Captime" />
-<meta property="twitter:app:name:iphone" content="Captime" />
-<meta property="twitter:creator" content="Captime" />
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:description" content={displayDescription} />
-<meta property="twitter:app:id:googleplay" content="app.captime" />
-<meta property="twitter:app:name:googleplay" content="Captime" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="Captime" />
+<meta name="twitter:url" content={resolvedUrl} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={displayDescription} />
+<meta name="twitter:image" content={resolvedImage} />
+<meta name="twitter:image:alt" content={titleFix} />
+<meta name="twitter:app:name:iphone" content="Captime" />
+<meta name="twitter:app:id:iphone" content="1369288585" />
+<meta name="twitter:app:name:googleplay" content="Captime" />
+<meta name="twitter:app:id:googleplay" content="ee.forgr.captime" />
 
-<!-- @ts-ignore -->
 <script hid="seo-schema-graph" type="application/ld+json" set:html={ldJSON} />

@@ -1,19 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import VueReturn from '../vue-pages/return.vue'
-
 import { useRuntimeConfig } from '../config/app'
+import { pageMeta, webPageStructuredData } from '../services/seo'
+
 const config = useRuntimeConfig()
-
 const brand = config.public.brand
-
 const title = `${brand} | Return Policy`
-
-const description = 'Read our Return Policy'
-
+const description = 'Read the Captime return policy for the CrossFit timer app.'
 const content = {
-  description,
-  title,
+  ...pageMeta('/return/', title, description),
+  ldJSON: webPageStructuredData('/return/', title, description),
 }
 ---
 
