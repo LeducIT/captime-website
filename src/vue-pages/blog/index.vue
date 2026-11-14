@@ -78,7 +78,7 @@ function goTo(next: number) {
             </p>
             <a
               :href="`/blog/${featured.frontmatter.slug}/`"
-              class="inline-flex mt-6 items-center justify-center border border-white px-6 py-2 text-lg font-bold text-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
+              class="inline-flex mt-6 items-center justify-center border border-white px-6 py-2 text-lg font-bold text-white rounded-xl hover:bg-white hover:text-black transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               Read the guide
             </a>
@@ -123,7 +123,7 @@ function goTo(next: number) {
       <div v-if="pageCount > 1" class="flex items-center justify-center gap-4 mt-10">
         <button
           type="button"
-          class="px-4 py-2 text-sm font-bold text-white border border-white rounded-none disabled:opacity-40 hover:bg-white hover:text-black"
+          class="px-4 py-2 text-sm font-bold text-white ring-1 ring-white/40 rounded-xl disabled:opacity-40 hover:bg-white hover:text-black transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           :disabled="page === 1"
           @click="goTo(page - 1)"
         >
@@ -134,7 +134,7 @@ function goTo(next: number) {
         </p>
         <button
           type="button"
-          class="px-4 py-2 text-sm font-bold text-white border border-white rounded-none disabled:opacity-40 hover:bg-white hover:text-black"
+          class="px-4 py-2 text-sm font-bold text-white ring-1 ring-white/40 rounded-xl disabled:opacity-40 hover:bg-white hover:text-black transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           :disabled="page === pageCount"
           @click="goTo(page + 1)"
         >

@@ -1,11 +1,5 @@
 <script setup lang="ts">
 import { downloadUrl } from '../constants'
-
-withDefaults(defineProps<{
-  size?: 'sm' | 'md'
-}>(), {
-  size: 'md',
-})
 </script>
 
 <template>
@@ -15,13 +9,14 @@ withDefaults(defineProps<{
       target="_blank"
       rel="noopener noreferrer"
       title="Download Captime on the App Store"
+      class="rounded-[5px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
     >
       <img
-        src="/app-store-button.webp"
+        src="/app-store-badge.svg"
         alt="Download on the App Store"
-        width="120"
-        height="40"
-        :class="size === 'sm' ? 'h-8 w-auto border border-white' : 'h-10 w-auto border border-white'"
+        width="144"
+        height="48"
+        class="store-badge"
         loading="lazy"
       >
     </a>
@@ -30,13 +25,14 @@ withDefaults(defineProps<{
       target="_blank"
       rel="noopener noreferrer"
       title="Download Captime on Google Play"
+      class="rounded-[5px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
     >
       <img
-        src="/play-store-button.webp"
+        src="/play-store-badge.png"
         alt="Get it on Google Play"
-        width="135"
-        height="40"
-        :class="size === 'sm' ? 'h-8 w-auto border border-white' : 'h-10 w-auto border border-white'"
+        width="158"
+        height="48"
+        class="store-badge"
         loading="lazy"
       >
     </a>

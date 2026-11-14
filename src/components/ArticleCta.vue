@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { downloadUrl } from '../constants'
+import CtaButton from './CtaButton.vue'
 import StoreBadges from './StoreBadges.vue'
 
 const props = defineProps<{
@@ -15,22 +15,16 @@ const copy = computed(() => {
 </script>
 
 <template>
-  <aside class="not-prose my-10 border border-white bg-black px-6 py-8 text-center">
+  <aside class="not-prose my-10 rounded-2xl ring-1 ring-white/10 bg-[#151515] px-6 py-8 text-center">
     <p class="font-handel text-2xl text-white sm:text-3xl">
       {{ copy }}
     </p>
-    <p class="mt-3 text-sm text-gray-300">
+    <p class="mt-3 text-sm text-gray-400">
       Start the timer on iPhone or Android and smash the clock.
     </p>
-    <a
-      :href="downloadUrl"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Download Captime"
-      class="mt-6 inline-flex items-center justify-center border border-white px-6 py-2 text-lg font-bold text-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
-    >
+    <CtaButton class="mt-6" title="Download Captime">
       Try for free
-    </a>
+    </CtaButton>
     <div class="mt-5">
       <StoreBadges />
     </div>
