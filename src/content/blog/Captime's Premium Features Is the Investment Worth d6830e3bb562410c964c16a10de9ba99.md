@@ -2,7 +2,7 @@
 title: "Captime's Premium Features: Is the Investment Worth It for Your Fitness Journey?"
 slug: "captimes-premium-features-is-the-investment-worth-it-for-your-fitness-journey"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Explore the transformative impact of Captime's premium features on your fitness journey. Precision timing, customization options, real-time cues, data insights, and progress tracking combine to maximize results and empower you to achieve peak performance."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1623874228601-f4193c7b1818?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

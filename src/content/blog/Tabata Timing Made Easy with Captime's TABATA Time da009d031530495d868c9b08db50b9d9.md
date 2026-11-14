@@ -2,7 +2,7 @@
 title: "Tabata Timing Made Easy with Captime's TABATA Timer"
 slug: "tabata-timing-made-easy-with-captimes-tabata-timer"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Transform your workouts and reach your fitness goals faster with Captime's TABATA Timer. This comprehensive timer includes multiple timers, customizable settings, and unique features for CrossFit games, Sally Timer, and Fight Gone Bad workouts. Perfect for CrossFit, HIIT, and Tabata enthusiasts."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

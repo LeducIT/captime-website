@@ -2,7 +2,7 @@
 title: "Exploring the Tabata Protocol: High-Intensity Training in 4 Minutes"
 slug: "exploring-the-tabata-protocol-high-intensity-training-in-4-minutes"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the power of Tabata training. Learn the science, compare to traditional cardio, design effective workouts, and maximize your results in just four minutes."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

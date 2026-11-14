@@ -2,7 +2,7 @@
 title: "Incorporating CrossFit into Your Weight Loss Journey: Tips and Tricks"
 slug: "incorporating-crossfit-into-your-weight-loss-journey-tips-and-tricks"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "nan"
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1604247584233-99c80a8aae2c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

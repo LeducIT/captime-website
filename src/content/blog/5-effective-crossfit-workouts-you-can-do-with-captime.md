@@ -2,7 +2,7 @@
 title: "5 Effective CrossFit Workouts You Can Do with Captime"
 slug: "5-effective-crossfit-workouts-you-can-do-with-captime"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Looking to incorporate CrossFit workouts into your routine? Check out these 5 effective CrossFit workouts you can do with Captime, a timer app designed specifically for high-intensity training. With features like TABATA, AMRAP, and EMOM timers, you'll be able to time your workouts and push yourself to perform better. Learn more about the benefits of CrossFit and how Captime can help you achieve your fitness goals."
 created_at: 2023-04-01
 head_image: "https://images.unsplash.com/photo-1580051745101-2dca6e53f15c?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

@@ -2,7 +2,7 @@
 title: "Captime: The Essential Tool for CrossFit Athletes"
 slug: "captime-the-essential-tool-for-crossfit-athletes"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how Captime, the ultimate tracking and analyzing tool, can revolutionize your CrossFit training. Customize timers, track progress, and analyze performance to optimize your workouts and achieve your fitness goals. Unlock your full potential with Captime."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1581009137042-c552e485697a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

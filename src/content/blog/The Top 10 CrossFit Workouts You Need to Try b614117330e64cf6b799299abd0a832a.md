@@ -2,7 +2,7 @@
 title: "The Top 10 CrossFit Workouts You Need to Try"
 slug: "the-top-10-crossfit-workouts-you-need-to-try"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the top 10 CrossFit workouts you need to try, including classics like Fran and hero workouts like Murph. Learn how to use timing tools and push your limits to achieve your fitness goals."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1618170124457-901852f6f724?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

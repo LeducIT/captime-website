@@ -2,7 +2,7 @@
 title: "The Top 10 CrossFit Games Moments That Will Inspire You"
 slug: "the-top-10-crossfit-games-moments-that-will-inspire-you"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the top 10 inspiring moments from the CrossFit Games, including incredible comebacks, surprising underdog stories, and personal triumphs."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1596357395217-80de13130e92?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

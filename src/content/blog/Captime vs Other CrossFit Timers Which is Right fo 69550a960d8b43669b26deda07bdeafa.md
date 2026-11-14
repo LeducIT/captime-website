@@ -2,7 +2,7 @@
 title: "Captime vs. Other CrossFit Timers: Which is Right for You?"
 slug: "captime-vs-other-crossfit-timers-which-is-right-for-you"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Looking for the best CrossFit timer? Read our comprehensive review of Captime and compare it to other leading timers on the market to find the one that's right for you."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1518549223891-a997ef942a35?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

@@ -5,6 +5,7 @@ import ModeChip from '../../components/ModeChip.vue'
 import ArticleCta from '../../components/ArticleCta.vue'
 import WodWhiteboard from '../../components/WodWhiteboard.vue'
 import { formatTime } from '../../config/app'
+import { resolveAuthor } from '../../lib/authors'
 import { getPostMode, isModeGuide } from '../../services/modes'
 
 const props = defineProps<{
@@ -15,6 +16,7 @@ const props = defineProps<{
   description?: string
   author?: string
   author_url?: string
+  author_image?: string
   created_at?: string
   updated_at?: string
   head_image?: string
@@ -34,6 +36,7 @@ const mode = computed(() => getPostMode({
 const chip = computed(() => mode.value || (props.tag || '').trim())
 const showBoard = computed(() => Boolean(mode.value && isModeGuide(props.slug)))
 const imageSrc = computed(() => props.head_image || '/blog_meta.webp')
+const authorProfile = computed(() => resolveAuthor(props.author))
 const imageAlt = computed(() => props.head_image_alt || props.title || 'Captime blog')
 const headings = computed(() => (props.toc || []).filter((item: { depth: number }) => item.depth >= 2))
 
@@ -90,7 +93,26 @@ const parts = computed(() => {
       </nav>
 
       <div class="min-w-0 flex-1 max-w-[65ch] mx-auto">
-        <p class="mt-6 text-sm font-semibold tracking-widest text-white uppercase text-center">
+        <div v-if="authorProfile.image" class="mt-6 flex flex-col items-center text-center">
+          <picture>
+            <source type="image/avif" srcset="/victor-leduc-96.avif 96w, /victor-leduc-192.avif 192w" sizes="48px" />
+            <source type="image/webp" srcset="/victor-leduc-96.webp 96w, /victor-leduc-192.webp 192w" sizes="48px" />
+            <img
+              :src="authorProfile.image96 || authorProfile.image"
+              :alt="authorProfile.name"
+              width="48"
+              height="48"
+              class="h-12 w-12 rounded-full object-cover"
+              loading="eager"
+              decoding="async"
+            >
+          </picture>
+          <p class="mt-3 text-sm font-semibold tracking-widest text-white uppercase">
+            <span>{{ authorProfile.name }}</span>
+            <span v-if="created_at"> · {{ formatTime(created_at) }}</span>
+          </p>
+        </div>
+        <p v-else class="mt-6 text-sm font-semibold tracking-widest text-white uppercase text-center">
           <span v-if="author">{{ author }}</span>
           <span v-if="author && created_at"> · </span>
           <span v-if="created_at">{{ formatTime(created_at) }}</span>

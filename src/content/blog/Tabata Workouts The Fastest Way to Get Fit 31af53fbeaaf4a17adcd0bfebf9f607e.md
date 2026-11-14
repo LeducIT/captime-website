@@ -2,7 +2,7 @@
 title: "Tabata Workouts: The Fastest Way to Get Fit"
 slug: "tabata-workouts-the-fastest-way-to-get-fit"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the benefits of Tabata, a form of high-intensity interval training, and learn how to incorporate it into your fitness routine with these tips and workout ideas."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1554284126-aa88f22d8b74?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

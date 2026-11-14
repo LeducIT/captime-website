@@ -2,7 +2,7 @@
 title: "EMOM Workouts: Elevate Your Fitness with Every Minute on the Minute"
 slug: "emom-workouts-elevate-your-fitness-with-every-minute-on-the-minute"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Unlock your fitness potential with EMOM (Every Minute on the Minute) workouts. Enhance mental focus, manage time efficiently, and push through challenges to reach peak performance."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1584380931214-dbb5b72e7fd0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

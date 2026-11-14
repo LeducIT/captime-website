@@ -2,7 +2,7 @@
 title: "The Top 5 CrossFit Exercises for Building Strength and Endurance"
 slug: "the-top-5-crossfit-exercises-for-building-strength-and-endurance"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the top five CrossFit exercises for building strength and endurance. Enhance your performance with barbell back squats, kettlebell swings, pull-ups, deadlifts, and burpees."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

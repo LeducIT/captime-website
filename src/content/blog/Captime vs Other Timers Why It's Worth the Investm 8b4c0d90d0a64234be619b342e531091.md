@@ -2,7 +2,7 @@
 title: "Captime vs. Other Timers: Why It's Worth the Investment"
 slug: "captime-vs-other-timers-why-its-worth-the-investment"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover why Captime is the ultimate timer for fitness enthusiasts. Explore its advanced features, user-friendly interface, customization options, and durability for enhanced workouts and optimal results."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1470468969717-61d5d54fd036?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

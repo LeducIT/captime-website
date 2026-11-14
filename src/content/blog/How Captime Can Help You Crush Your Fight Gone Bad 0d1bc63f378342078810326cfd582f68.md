@@ -2,7 +2,7 @@
 title: "How Captime Can Help You Crush Your Fight Gone Bad Workouts"
 slug: "how-captime-can-help-you-crush-your-fight-gone-bad-workouts"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how Captime revolutionizes Fight Gone Bad workouts with customizable features, performance tracking, and a user-friendly interface. Crush your fitness goals today!"
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1627483298423-03e2e972431c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

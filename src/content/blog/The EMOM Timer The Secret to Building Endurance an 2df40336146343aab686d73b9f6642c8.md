@@ -2,7 +2,7 @@
 title: "The EMOM Timer: The Secret to Building Endurance and Strength"
 slug: "the-emom-timer-the-secret-to-building-endurance-and-strength"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the benefits of using an EMOM timer for your workouts, how to incorporate them into your fitness routine, and tips for maximizing results. Improve your endurance and strength with structured interval training."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

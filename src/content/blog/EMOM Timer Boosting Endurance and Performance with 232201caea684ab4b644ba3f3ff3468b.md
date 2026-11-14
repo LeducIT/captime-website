@@ -2,7 +2,7 @@
 title: "EMOM Timer: Boosting Endurance and Performance with Captime"
 slug: "emom-timer-boosting-endurance-and-performance-with-captime"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the power of EMOM training with Captime EMOM Timer. Elevate your workouts, enhance endurance, and achieve remarkable performance gains. Unleash your full potential now!"
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

@@ -2,7 +2,7 @@
 title: "Taking Your HIIT Workouts to the Next Level: The Power of Captime"
 slug: "taking-your-hiit-workouts-to-the-next-level-the-power-of-captime"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the power of Captime for your HIIT workouts. From customizable timers to progress tracking, elevate your performance and achieve optimal results with Captime."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1599552683573-9dc48255fe85?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

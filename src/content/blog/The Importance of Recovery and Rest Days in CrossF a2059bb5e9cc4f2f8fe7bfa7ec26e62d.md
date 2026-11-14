@@ -2,7 +2,7 @@
 title: "The Importance of Recovery and Rest Days in CrossFit"
 slug: "the-importance-of-recovery-and-rest-days-in-crossfit"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the importance of recovery and rest days in CrossFit training. Learn effective strategies, nutrition tips, and active recovery techniques to optimize your performance and prevent overtraining."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1609096458733-95b38583ac4e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

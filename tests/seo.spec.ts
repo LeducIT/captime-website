@@ -112,6 +112,38 @@ test.describe('on-page SEO', () => {
     expect(jsonLd).toContain('Article')
   })
 
+  test('mapped posts credit Victor Leduc in byline and JSON-LD', async ({ request }) => {
+    const html = await (await request.get('/blog/5-effective-crossfit-workouts-you-can-do-with-captime/')).text()
+    expect(html).toContain('Victor Leduc')
+    expect(html).toContain('/victor-leduc-96.webp')
+    expect(html).not.toContain('Martin Donadieu')
+    expect(html).not.toContain('linkedin.com')
+    expect(html).not.toContain('github.com/victorleduc')
+    expect(html).toContain('"@type":"Person"')
+    expect(html).toContain('"name":"Victor Leduc"')
+    const jsonLd = html.match(/<script[^>]*type="application\/ld\+json">([^<]+)<\/script>/)?.[1]
+    expect(jsonLd).toBeTruthy()
+    const graph = JSON.parse(jsonLd!)
+    const nodes = Array.isArray(graph) ? graph : graph['@graph'] || [graph]
+    const article = nodes.find((node: { '@type'?: string | string[], author?: Record<string, unknown> }) => {
+      const type = node['@type']
+      return type === 'BlogPosting' || (Array.isArray(type) && type.includes('BlogPosting'))
+    })
+    const person = article?.author
+    expect(person).toMatchObject({ '@type': 'Person', name: 'Victor Leduc' })
+    expect(person).not.toHaveProperty('sameAs')
+    expect(person).not.toHaveProperty('url')
+  })
+
+  test('built HTML does not mention Martin Donadieu', () => {
+    const htmlFiles = globSync('dist/**/*.html')
+    expect(htmlFiles.length).toBeGreaterThan(10)
+    for (const file of htmlFiles) {
+      const html = readFileSync(file, 'utf8')
+      expect.soft(html, file).not.toContain('Martin Donadieu')
+    }
+  })
+
   test('legal pages have unique titles and canonicals', async ({ page }) => {
     const titles = new Set<string>()
     for (const path of ['/privacy/', '/tos/', '/eula/', '/disclaimer/', '/return/']) {

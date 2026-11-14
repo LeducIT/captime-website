@@ -2,7 +2,7 @@
 title: "Captime's User-Friendly Interface: Simplifying Your CrossFit Timer Experience"
 slug: "captimes-user-friendly-interface-simplifying-your-crossfit-timer-experience"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how Captime's user-friendly interface enhances CrossFit training. Customize workouts, navigate with ease, and optimize performance effortlessly. Elevate your CrossFit with Captime."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

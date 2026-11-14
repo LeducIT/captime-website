@@ -2,7 +2,7 @@
 title: "CrossFit vs. Other Exercise Modalities: Which Is Right for You?"
 slug: "crossfit-vs-other-exercise-modalities-which-is-right-for-you"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the ideal exercise modality for you! Explore the differences between CrossFit and other modalities, consider your goals and preferences, and make an informed decision. Achieve your fitness goals with the perfect workout approach."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

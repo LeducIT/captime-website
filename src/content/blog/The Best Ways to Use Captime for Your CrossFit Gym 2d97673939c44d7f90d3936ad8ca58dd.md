@@ -2,7 +2,7 @@
 title: "The Best Ways to Use Captime for Your CrossFit Gymnastics Workouts"
 slug: "the-best-ways-to-use-captime-for-your-crossfit-gymnastics-workouts"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Learn how to use Captime timers and tools to improve your CrossFit gymnastics workouts, increase strength, flexibility, and coordination, and avoid injury. Explore advanced Captime techniques and tips for getting the most out of your workouts."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1540360659264-3b079dde8890?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

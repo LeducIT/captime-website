@@ -2,7 +2,7 @@
 title: "Tabata Training Made Easy with Captime: Enhance Your Fitness Routine"
 slug: "tabata-training-made-easy-with-captime-enhance-your-fitness-routine"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Enhance your Tabata workouts with Captime. Customizable timers, progress tracking, and motivation-boosting features for optimal fitness results."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

@@ -2,7 +2,7 @@
 title: "Building Endurance: Training for CrossFit Games and Competitions"
 slug: "building-endurance-training-for-crossfit-games-and-competitions"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Unleash your full potential in CrossFit competitions with mental toughness. Learn strategies for goal setting, visualization, and positive self-talk to enhance performance."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

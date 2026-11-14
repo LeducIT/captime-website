@@ -2,7 +2,7 @@
 title: "Why Captime is the Perfect Timer for AMRAP Workouts"
 slug: "why-captime-is-the-perfect-timer-for-amrap-workouts"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Elevate your AMRAP workouts with Captime, the ultimate timer designed to enhance your performance. Customize settings, track progress, and stay motivated. Maximize your potential!"
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1558017487-06bf9f82613a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

@@ -2,7 +2,7 @@
 title: "The Fight Gone Bad workout: what it is and how to do it"
 slug: "the-fight-gone-bad-workout-what-it-is-and-how-to-do-it"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the Fight Gone Bad workout, a popular CrossFit routine that combines HIIT with Tabata-style movements. Learn how to do it, its benefits, and modifications to suit your fitness level."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1525711857929-4272fb4a040f?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

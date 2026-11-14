@@ -2,7 +2,7 @@
 title: "How to Build a Custom Interval Timer for Your Workouts"
 slug: "how-to-build-a-custom-interval-timer-for-your-workouts"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Learn how to build a custom interval timer for your workouts with our comprehensive guide. Discover the importance of interval training, choosing the right components, programming your timer, incorporating it into your workout routine, troubleshooting, and upgrading."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

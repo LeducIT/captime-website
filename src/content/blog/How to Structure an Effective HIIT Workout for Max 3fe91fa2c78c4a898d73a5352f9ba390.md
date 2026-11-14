@@ -2,7 +2,7 @@
 title: "How to Structure an Effective HIIT Workout for Maximum Results"
 slug: "how-to-structure-an-effective-hiit-workout-for-maximum-results"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Unlock your fitness potential with effective HIIT workout structures. Discover key elements, exercise selection, and customization tips for maximum results."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1550259979-ed79b48d2a30?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

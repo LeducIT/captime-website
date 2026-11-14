@@ -2,7 +2,7 @@
 title: "Tips for Effective Tabata Training with Captime: Achieve Your Fitness Goals"
 slug: "tips-for-effective-tabata-training-with-captime-achieve-your-fitness-goals"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how Captime, the ultimate timer for Tabata training, can help you achieve your fitness goals. Maximize your workouts, track progress, and push your limits with Captime's customizable features."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1546483875-ad9014c88eba?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

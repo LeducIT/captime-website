@@ -2,7 +2,7 @@
 title: "Achieve Your Best Performance with Captime: The Ultimate CrossFit Timer"
 slug: "achieve-your-best-performance-with-captime-the-ultimate-crossfit-timer"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Take your CrossFit workouts to the next level with Captime, the ultimate timer designed to enhance your performance. Discover its user-friendly interface, customizable features, and performance tracking capabilities. Unleash your full potential with Captime!"
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1627483298235-f3bac2567c1c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

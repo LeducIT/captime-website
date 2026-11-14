@@ -2,7 +2,7 @@
 title: "Top Tips for Utilizing Captime's SALLY Timer Effectively"
 slug: "top-tips-for-utilizing-captimes-sally-timer-effectively"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Master Captime's SALLY Timer in CrossFit with expert tips for mental endurance, form, and goal-setting. Elevate your performance and reach new heights in your fitness journey."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1517344884509-a0c97ec11bcc?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

@@ -2,7 +2,7 @@
 title: "Fight Gone Bad Workouts: The Ultimate Test of Strength and Endurance"
 slug: "fight-gone-bad-workouts-the-ultimate-test-of-strength-and-endurance"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Looking to push your limits and test your strength and endurance? Discover the ultimate test with the Fight Gone Bad workout, and learn how to train for it, survive it, and keep your routine interesting with variations."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1605235186583-a8272b61f9fe?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

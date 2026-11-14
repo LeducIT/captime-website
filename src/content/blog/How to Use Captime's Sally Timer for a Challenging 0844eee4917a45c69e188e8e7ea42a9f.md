@@ -2,7 +2,7 @@
 title: "How to Use Captime's Sally Timer for a Challenging CrossFit Workout"
 slug: "how-to-use-captimes-sally-timer-for-a-challenging-crossfit-workout"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how to use Captime's Sally Timer for a challenging CrossFit workout. Learn how to set it up, execute your workout, and take your fitness to the next level."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

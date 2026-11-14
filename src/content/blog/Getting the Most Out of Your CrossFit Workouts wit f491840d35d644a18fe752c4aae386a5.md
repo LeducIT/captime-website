@@ -2,7 +2,7 @@
 title: "Getting the Most Out of Your CrossFit Workouts with Captime"
 slug: "getting-the-most-out-of-your-crossfit-workouts-with-captime"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Elevate your CrossFit experience with Captime, the ultimate timer for optimized workouts. Precision timing and advanced features take your training to new heights, maximizing results and transforming your fitness journey."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"
