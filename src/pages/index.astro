@@ -1,10 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import VueIndex from '../vue-pages/index.vue'
+import { homeStructuredData, pageMeta } from '../services/seo'
 
 const content = {
-  title: `Captime | CrossFit Timer`,
-  description: 'The Captime app offers a variety of workout timers for common CrossFit and high-intensity interval training workouts.',
+  ...pageMeta(
+    '/',
+    'Captime | CrossFit Timer',
+    'The Captime app offers a variety of workout timers for common CrossFit and high-intensity interval training workouts.',
+  ),
+  ldJSON: homeStructuredData(),
 }
 ---
 

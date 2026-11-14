@@ -1,19 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import VuePrivacy from '../vue-pages/privacy.vue'
-
 import { useRuntimeConfig } from '../config/app'
+import { pageMeta, webPageStructuredData } from '../services/seo'
 
 const config = useRuntimeConfig()
-
 const brand = config.public.brand
-
 const title = `${brand} | Privacy Policy`
-const description = 'Read our Privacy Policy'
-
+const description = 'Read the Captime Privacy Policy for the CrossFit timer app.'
 const content = {
-  description,
-  title,
+  ...pageMeta('/privacy/', title, description),
+  ldJSON: webPageStructuredData('/privacy/', title, description),
 }
 ---
 
