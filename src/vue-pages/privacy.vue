@@ -23,22 +23,27 @@ const toc = [
   >
     <h2 id="who-we-are">Who we are</h2>
     <p>
-      Leduc IT OÜ ("we", "us", "the Company") publishes the Captime workout timer. We are established in Estonia, in the European Union. The GDPR applies to personal data we
-      process because we are established in the EU.
+      Leduc IT OÜ ("we", "us", "the Company") publishes the Captime workout timer. Leduc IT OÜ is a private limited company established in Estonia, in the European Union. The
+      registry code is 14574207. The registered address is Harju maakond, Tallinn, Lasnamäe linnaosa, Sepapaja tn 6, 15551, Estonia. The GDPR applies because we are established in
+      the EU.
     </p>
     <p>
-      We are the data controller for the personal data described in this policy. The Service means the Captime mobile application and the website at
-      <a href="https://captime.app/">https://captime.app</a>, including the blog.
+      We are the data controller for the personal data described in this policy. Email us at <a href="mailto:victor@leduc.it">victor@leduc.it</a>. The Service means the Captime
+      mobile application and the website at <a href="https://captime.app/">https://captime.app</a>, including the blog.
     </p>
-    <p>This policy sits alongside our <a href="/tos/">Terms of Service</a> and our <a href="/eula/">End-User License Agreement</a>.</p>
+    <p>
+      You must be at least 13 years old to use the Service. Captime does not ask you to create an account, and we do not create one for you. This policy sits alongside our
+      <a href="/tos/">Terms of Service</a> and our <a href="/eula/">End-User License Agreement</a>.
+    </p>
 
     <h2 id="data-we-collect">Data we collect</h2>
     <p>We collect the following categories of information. We do not receive your full payment card number.</p>
     <ul class="legal-cards">
       <li>
         <strong>Purchases and subscriptions.</strong>
-        When you buy a subscription or lifetime access, Apple or Google processes the payment. RevenueCat receives purchase and subscription status so the app can unlock what you
-        bought. That status can include the product, whether a subscription is active, and whether a trial or introductory period is in progress.
+        The Apple App Store, Google Play, and RevenueCat are the payment and subscription processors. Apple or Google charges your store account. RevenueCat receives purchase and
+        subscription status so the app can unlock what you bought. That status can include the product, whether a subscription is active, and whether a trial or introductory period
+        is in progress.
       </li>
       <li>
         <strong>Apple Search Ads attribution.</strong>
@@ -46,15 +51,10 @@ const toc = [
         advertising.
       </li>
       <li>
-        <strong>App analytics.</strong>
-        PostHog processes product analytics for the app. PostHog replaced Plausible. Analytics can include usage events, device type, operating system, app version, and identifiers
-        used to count those events.
-      </li>
-      <li>
-        <strong>Website visits.</strong>
-        The website loads an analytics script from
+        <strong>Website analytics.</strong>
+        captime.app uses Plausible-compatible analytics, loaded from
         <a href="https://pls.digitalshift-ee.workers.dev/js/script.js" rel="external nofollow noopener" target="_blank">pls.digitalshift-ee.workers.dev</a> for the domain
-        captime.app. That script can record pages viewed and basic technical data about the visit. It is separate from PostHog.
+        captime.app. It can record pages viewed and basic technical data about the visit, such as browser type and referrer.
       </li>
       <li>
         <strong>Crash and error reports.</strong>
@@ -63,16 +63,21 @@ const toc = [
       <li>
         <strong>App updates.</strong>
         CapGo delivers over-the-air updates to the app. It processes the technical data needed to choose and install an update, such as platform, app version, and an app-scoped
-        device identifier.
+        device identifier. We do not list an IP address or a country for CapGo.
       </li>
       <li>
-        <strong>Support messages.</strong>
-        If you contact us through the support chat on this website, Crisp processes the messages you choose to send. That can include an email address if you provide one.
+        <strong>Support chat.</strong>
+        The help button in the app's Settings opens a web view with Crisp chat. If you use it, Crisp processes the messages you choose to send. That can include an email address if
+        you provide one.
+      </li>
+      <li>
+        <strong>Email you send us.</strong>
+        If you email <a href="mailto:victor@leduc.it">victor@leduc.it</a>, we receive the address you write from and the message you send.
       </li>
     </ul>
     <p>
-      These providers may also process an IP address as part of delivering their service. We do not knowingly collect precise location, government identity numbers, or health
-      records. Workout timers run on your device.
+      Videos you record in the app stay on your device. We do not upload them, and we do not receive them. Apple, Google, RevenueCat, the website analytics service, Sentry, or
+      Crisp may process an IP address as part of delivering their service. We do not knowingly collect precise location, government identity numbers, or health records.
     </p>
 
     <h2 id="how-we-use-data">How we use data</h2>
@@ -80,24 +85,24 @@ const toc = [
     <ul>
       <li>To provide Captime and to unlock a subscription or lifetime purchase you requested.</li>
       <li>To tell which plan is active, including a free trial or a discounted first period.</li>
-      <li>To understand how the app and the website are used, and to improve them.</li>
+      <li>To understand which pages on the website are read, and to improve the site.</li>
       <li>To measure Apple Search Ads that we run.</li>
       <li>To diagnose crashes and errors in the iPhone app, the Apple Watch app, and the watch complication.</li>
       <li>To deliver app updates and to keep the app working.</li>
-      <li>To answer a support request you send us.</li>
+      <li>To answer an email you send us, or a support chat you open from the app's Settings.</li>
       <li>To comply with law, to keep records we are required to keep, and to prevent abuse.</li>
     </ul>
     <h3>Legal bases under the GDPR</h3>
     <ul>
       <li><strong>Contract.</strong> Processing a purchase is needed to deliver the subscription or lifetime access you requested.</li>
       <li>
-        <strong>Legitimate interests.</strong> Analytics, diagnosing crashes and errors, measuring our own ads, delivering updates, securing the service, and improving Captime. You
-        can object to processing that relies on legitimate interests.
+        <strong>Legitimate interests.</strong> Website analytics, diagnosing crashes and errors, measuring our own ads, delivering updates, securing the service, and improving
+        Captime. You can object to processing that relies on legitimate interests.
       </li>
       <li><strong>Legal obligation.</strong> Records we must keep under tax, accounting, or other law.</li>
-      <li><strong>Your request.</strong> Information you choose to send when you contact support, so we can reply.</li>
+      <li><strong>Your request.</strong> Information you choose to send when you email us or use the in-app support chat, so we can reply.</li>
     </ul>
-    <p>We do not sell personal data for money. Using Captime is not a blanket consent for unrelated marketing. These pages do not sign you up for a mailing list.</p>
+    <p>We do not sell personal data for money. We do not send marketing emails, and we do not send marketing push notifications.</p>
 
     <h2 id="processors">Processors</h2>
     <p>
@@ -107,23 +112,22 @@ const toc = [
     <ul class="legal-cards">
       <li>
         <strong>RevenueCat.</strong>
-        Purchases, subscriptions, and Apple Search Ads attribution.
+        Payment and subscription processor. It receives purchase and subscription status, and Apple Search Ads attribution.
         <a href="https://www.revenuecat.com/privacy" rel="external nofollow noopener" target="_blank">RevenueCat privacy policy</a>
       </li>
       <li>
         <strong>Apple App Store.</strong>
-        Billing for iOS purchases, and Apple Search Ads.
+        Payment and subscription processor for iOS purchases, and Apple Search Ads.
         <a href="https://www.apple.com/legal/privacy/en-ww/" rel="external nofollow noopener" target="_blank">Apple privacy policy</a>
       </li>
       <li>
         <strong>Google Play.</strong>
-        Billing for Android purchases.
+        Payment and subscription processor for Android purchases.
         <a href="https://policies.google.com/privacy" rel="external nofollow noopener" target="_blank">Google privacy policy</a>
       </li>
       <li>
-        <strong>PostHog.</strong>
-        Product analytics for the app. PostHog replaced Plausible.
-        <a href="https://posthog.com/privacy" rel="external nofollow noopener" target="_blank">PostHog privacy policy</a>
+        <strong>Website analytics.</strong>
+        Plausible-compatible page analytics for captime.app, loaded from pls.digitalshift-ee.workers.dev.
       </li>
       <li>
         <strong>Sentry.</strong>
@@ -132,12 +136,12 @@ const toc = [
       </li>
       <li>
         <strong>CapGo.</strong>
-        Over-the-air updates of the app.
+        Over-the-air update service for the app.
         <a href="https://capgo.app/privacy/" rel="external nofollow noopener" target="_blank">CapGo privacy policy</a>
       </li>
       <li>
         <strong>Crisp.</strong>
-        Support chat on the website, only when you write to us.
+        Support chat opened from the help button in the app's Settings.
         <a href="https://crisp.chat/en/privacy/" rel="external nofollow noopener" target="_blank">Crisp privacy policy</a>
       </li>
     </ul>
@@ -172,7 +176,7 @@ const toc = [
     </p>
     <h3>How to ask for deletion</h3>
     <p>
-      Contact us through <a href="/#support">Captime support</a>. Tell us what you want deleted and enough detail for us to find the data, such as the store you used and the
+      Email <a href="mailto:victor@leduc.it">victor@leduc.it</a>. Tell us what you want deleted and enough detail for us to find the data, such as the store you used and the
       approximate date of a purchase. We may ask you to confirm that you are the person the data is about before we act.
     </p>
     <p>
@@ -184,11 +188,15 @@ const toc = [
       We aim to reply within one month of a valid request. If a request is complex, the GDPR allows us to extend that by up to two further months, and we will tell you if we do.
     </p>
     <h3>How long we keep data</h3>
-    <p>
-      We keep personal data only for as long as we need it for the purposes in this policy. Purchase records may be kept for as long as tax and accounting law requires. Analytics
-      are kept under the retention settings of PostHog and of the website analytics endpoint. Crash and error reports are kept under Sentry's retention settings. Support messages
-      are kept for as long as we need them to handle your request and any follow-up. When we no longer need the data, we delete it or anonymize it.
-    </p>
+    <p>We keep personal data only for as long as we need it for the purposes in this policy.</p>
+    <ul>
+      <li>Purchase and subscription records are kept for 7 years after the end of the financial year in which they were recorded, so we can meet Estonian accounting rules.</li>
+      <li>Website analytics are kept for 24 months, then deleted or aggregated.</li>
+      <li>Crash and error reports are kept for up to 90 days, unless we need a particular report to investigate a problem you emailed us about.</li>
+      <li>Update-delivery data is kept only while we need it to deliver over-the-air updates.</li>
+      <li>Emails you send to victor@leduc.it, and support chat messages, are kept for 24 months after we close the request, or longer if we need them for a legal claim.</li>
+    </ul>
+    <p>Videos you record are not uploaded, so we do not store them. When we no longer need personal data, we delete it or anonymize it.</p>
     <h3>Security</h3>
     <p>We use commercially reasonable measures to protect personal data. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
     <h3>Changes to this policy</h3>
@@ -199,30 +207,30 @@ const toc = [
 
     <h2 id="children">Children</h2>
     <p>
-      Captime is not directed at children under 13. We do not knowingly collect personal data from children under 13. If you are a parent or guardian and you believe a child under
-      13 has provided personal data, contact us. We will delete that data.
+      You must be at least 13 years old to use Captime. We do not knowingly collect personal data from children under 13. If you are a parent or guardian and you believe a child
+      under 13 has used the Service or provided personal data, email <a href="mailto:victor@leduc.it">victor@leduc.it</a>. We will delete that data.
     </p>
-    <p>If we ever need consent to process a child's data, and your country requires a parent to give that consent, we will ask for it before we collect the data.</p>
 
     <h2 id="california">California residents</h2>
     <p>This section applies if you are a California resident. It adds to the rest of this policy.</p>
     <p>In the 12 months before the date above, the categories of personal information we collect and disclose for business purposes are:</p>
     <ul>
       <li>
-        <strong>Identifiers and device data</strong>, such as an IP address where a provider receives one, an analytics identifier, an app-scoped device identifier used for
-        updates, or crash and error diagnostics.
+        <strong>Identifiers and device data</strong>, such as an IP address where a provider receives one, website analytics data, an app-scoped device identifier used for updates,
+        or crash and error diagnostics.
       </li>
       <li><strong>Commercial information</strong>, such as the product you bought and whether a subscription is active.</li>
-      <li><strong>Internet or app activity</strong>, such as usage events in the app and pages viewed on the website.</li>
-      <li><strong>Information you send to support</strong>, which can include an email address if you choose to provide one.</li>
+      <li><strong>Internet activity</strong>, such as pages viewed on the website.</li>
+      <li><strong>Information you send us</strong>, including email to victor@leduc.it and messages in the in-app support chat.</li>
     </ul>
     <p>
-      We do not knowingly collect precise geolocation, biometric data, government identity numbers, or the contents of your workouts. We do not sell personal information for money.
-      We do not knowingly sell the personal information of anyone under 16.
+      We do not knowingly collect precise geolocation, biometric data, government identity numbers, account profiles, or videos. Videos recorded in the app stay on the device. We
+      do not sell personal information for money. We do not send marketing emails or marketing push notifications. We do not knowingly sell the personal information of anyone under
+      16.
     </p>
     <p>
-      Sharing attribution data with RevenueCat and Apple so we can measure our own Apple Search Ads can be treated as "sharing" under California law. You can contact us and ask us
-      to stop that measurement for data we control.
+      Sharing attribution data with RevenueCat and Apple so we can measure our own Apple Search Ads can be treated as "sharing" under California law. Email
+      <a href="mailto:victor@leduc.it">victor@leduc.it</a> and ask us to stop that measurement for data we control.
     </p>
     <p>You can ask us to:</p>
     <ul>

@@ -34,13 +34,20 @@ const toc = [
     </p>
     <p>In these terms:</p>
     <ul>
-      <li><strong>Company</strong> means Leduc IT OÜ, established in Estonia, in the European Union. "We" and "us" mean the Company.</li>
+      <li>
+        <strong>Company</strong> means Leduc IT OÜ, registry code 14574207, registered at Harju maakond, Tallinn, Lasnamäe linnaosa, Sepapaja tn 6, 15551, Estonia. "We" and "us"
+        mean the Company.
+      </li>
       <li><strong>Application</strong> means the Captime app for iOS and Android.</li>
       <li><strong>Application Store</strong> means the Apple App Store or Google Play, depending on where you downloaded the app.</li>
       <li><strong>Service</strong> means the Application and the website at <a href="https://captime.app/">https://captime.app</a>.</li>
       <li><strong>You</strong> means the person using the Service.</li>
     </ul>
-    <p>The Service is not directed at children under 13. Our <a href="/privacy/">Privacy Policy</a> explains what we do if a child under 13 provides personal data.</p>
+    <p>
+      You must be at least 13 years old to use the Service. Captime does not ask you to create an account. Videos you record stay on your device and are not uploaded. We do not
+      send marketing emails, and we do not send marketing push notifications. Our <a href="/privacy/">Privacy Policy</a> explains what we do if a child under 13 provides personal
+      data.
+    </p>
 
     <h2 id="subscriptions">Subscriptions</h2>
     <p>
@@ -67,8 +74,9 @@ const toc = [
       </li>
     </ul>
     <p>
-      Payment is charged to your Apple ID or your Google Play account when you confirm the purchase. Apple and Google process the payment. We do not receive your full payment card
-      number. RevenueCat receives the purchase status so the app can unlock the plan you bought. See the <a href="/privacy/">Privacy Policy</a> for how that data is used.
+      Payments and subscriptions are processed only by the Apple App Store, Google Play, and RevenueCat. Payment is charged to your Apple ID or your Google Play account when you
+      confirm the purchase. We do not receive your full payment card number. RevenueCat receives the purchase and subscription status so the app can unlock the plan you bought. See
+      the <a href="/privacy/">Privacy Policy</a> for how that data is used.
     </p>
     <h3>Auto-renewal</h3>
     <p>The yearly, monthly, and weekly subscriptions renew automatically. Lifetime access does not.</p>
@@ -115,7 +123,7 @@ const toc = [
     </p>
     <p>
       Refunds of App Store and Google Play purchases are handled by Apple or Google under their refund rules. To request a refund, contact the store where you bought Captime. If
-      the law gives you a refund right that the store does not handle, contact us through <a href="/#support">Captime support</a>.
+      the law gives you a refund right that the store does not handle, email <a href="mailto:victor@leduc.it">victor@leduc.it</a>.
     </p>
     <p>Except where the law requires a refund, fees already charged are not refundable, and canceling a subscription does not refund the current period.</p>
     <p>
@@ -162,8 +170,8 @@ const toc = [
       particular purpose, title, and non-infringement, and we do not warrant that the Service will be uninterrupted, error free, or fit for a particular workout.
     </p>
     <p>
-      To the maximum extent permitted by law, the total liability of Leduc IT OÜ and its suppliers under these terms is limited to the amount you actually paid through the Service,
-      or 100 USD if you have not paid anything through the Service.
+      To the maximum extent permitted by law, the total liability of Leduc IT OÜ and its suppliers under these terms is limited to the greater of (a) the amount you paid for
+      Captime in the 12 months before the claim and (b) 100 USD.
     </p>
     <p>
       To the maximum extent permitted by law, we are not liable for indirect, incidental, special, consequential, or punitive damages, including lost profits, lost data, or

@@ -8,7 +8,7 @@ withDefaults(
   defineProps<{
     title: string
     lede: string
-    current: 'privacy' | 'tos' | 'eula'
+    current: 'privacy' | 'tos' | 'eula' | 'disclaimer' | 'return'
     contactAbout: string
     toc: TocItem[]
     updated?: string
@@ -24,6 +24,8 @@ const docs = [
   { id: 'privacy', href: '/privacy/', label: 'Privacy' },
   { id: 'tos', href: '/tos/', label: 'Terms' },
   { id: 'eula', href: '/eula/', label: 'EULA' },
+  { id: 'disclaimer', href: '/disclaimer/', label: 'Disclaimer' },
+  { id: 'return', href: '/return/', label: 'Refunds' },
 ]
 </script>
 
@@ -76,13 +78,19 @@ const docs = [
           <slot />
 
           <h2 id="contact">Contact</h2>
-          <p>If you have questions about {{ contactAbout }}, or you want to access, correct, or delete personal data, contact Leduc IT OÜ through Captime support:</p>
-          <ul>
-            <li>
-              <a href="/#support">https://captime.app/#support</a>
-            </li>
-          </ul>
-          <p>Leduc IT OÜ is established in Estonia, in the European Union. The support link above is the contact method published on these pages.</p>
+          <p>
+            If you have questions about {{ contactAbout }}, or you want to access, correct, or delete personal data, email <a href="mailto:victor@leduc.it">victor@leduc.it</a>.
+          </p>
+          <p>
+            Leduc IT OÜ<br />
+            Registry code 14574207<br />
+            Harju maakond, Tallinn, Lasnamäe linnaosa, Sepapaja tn 6<br />
+            15551, Estonia
+          </p>
+          <p>
+            Registry code and address are taken from the
+            <a href="https://ariregister.rik.ee/eng/company/14574207" rel="external nofollow noopener" target="_blank">Estonian e-Business Register</a>.
+          </p>
         </article>
       </div>
     </div>

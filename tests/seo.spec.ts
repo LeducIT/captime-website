@@ -19,15 +19,13 @@ function readDist(name: string) {
 }
 
 function locsFrom(xml: string) {
-  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1])
+  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1])
 }
 
 function distHasPage(pathname: string) {
   const clean = (pathname.replace(/\/$/, '') || '').replace(/^\//, '')
-  const candidates = clean
-    ? [join(dist, clean, 'index.html'), join(dist, `${clean}.html`), join(dist, clean)]
-    : [join(dist, 'index.html')]
-  return candidates.some(path => existsSync(path) && lstatSync(path).isFile())
+  const candidates = clean ? [join(dist, clean, 'index.html'), join(dist, `${clean}.html`), join(dist, clean)] : [join(dist, 'index.html')]
+  return candidates.some((path) => existsSync(path) && lstatSync(path).isFile())
 }
 
 test.describe('sitemaps and robots', () => {
@@ -36,10 +34,7 @@ test.describe('sitemaps and robots', () => {
     expect(xml.startsWith('<?xml')).toBeTruthy()
     expect(xml).toContain('<sitemapindex')
     expect(xml).not.toContain('<html')
-    expect(locsFrom(xml)).toEqual([
-      `${origin}/sitemap-0.xml`,
-      `${origin}/sitemap-1.xml`,
-    ])
+    expect(locsFrom(xml)).toEqual([`${origin}/sitemap-0.xml`, `${origin}/sitemap-1.xml`])
   })
 
   test('sitemap.xml is the same sitemap index', () => {
@@ -56,11 +51,10 @@ test.describe('sitemaps and robots', () => {
 
     const locs = [...locsFrom(pages), ...locsFrom(posts)]
     expect(locs.length).toBeGreaterThan(10)
-    expect(locs.every(loc => loc.startsWith(`${origin}/`))).toBeTruthy()
-    expect(locs.some(loc => loc.includes('%20') || loc.includes(' '))).toBeFalsy()
+    expect(locs.every((loc) => loc.startsWith(`${origin}/`))).toBeTruthy()
+    expect(locs.some((loc) => loc.includes('%20') || loc.includes(' '))).toBeFalsy()
 
-    for (const slug of unpublished)
-      expect(locs.some(loc => loc.includes(slug))).toBeFalsy()
+    for (const slug of unpublished) expect(locs.some((loc) => loc.includes(slug))).toBeFalsy()
 
     for (const loc of locs) {
       const path = loc.replace(origin, '') || '/'
@@ -121,6 +115,19 @@ test.describe('on-page SEO', () => {
       titles.add(title)
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `${origin}${path}`)
       await expect(page.locator('h1')).toHaveCount(1)
+      const body = await page.locator('body').innerText()
+      expect(body).toContain('victor@leduc.it')
+      expect(body).toContain('14574207')
+      expect(body).toContain('Leduc IT OÜ')
+      expect(body).not.toContain('PostHog')
+      expect(body).not.toContain('Stripe')
+      expect(body).not.toContain('Digital Shift')
+      expect(body).not.toContain('hello@forgr.ee')
+      if (path === '/privacy/') {
+        expect(body).toContain('Crisp')
+        expect(body).toContain('Plausible-compatible')
+        expect(body).toContain('Apple App Store, Google Play, and RevenueCat are the payment and subscription processors')
+      }
     }
   })
 })
@@ -131,9 +138,9 @@ test.describe('internal links', () => {
     const redirectSources = new Set(
       redirects
         .split('\n')
-        .map(line => line.trim())
-        .filter(line => line && !line.startsWith('#'))
-        .map(line => line.split(/\s+/)[0]),
+        .map((line) => line.trim())
+        .filter((line) => line && !line.startsWith('#'))
+        .map((line) => line.split(/\s+/)[0]),
     )
     const htmlFiles = globSync('dist/**/*.html')
     expect(htmlFiles.length).toBeGreaterThan(10)
@@ -141,13 +148,11 @@ test.describe('internal links', () => {
     const missing: string[] = []
     for (const file of htmlFiles) {
       const html = readFileSync(file, 'utf8')
-      const hrefs = [...html.matchAll(/\b(?:href|src)="(\/[^"]*)"/g)].map(match => match[1])
+      const hrefs = [...html.matchAll(/\b(?:href|src)="(\/[^"]*)"/g)].map((match) => match[1])
       for (const href of hrefs) {
         const path = href.split('#')[0].split('?')[0]
-        if (!path || path.startsWith('//') || path.endsWith('.xml'))
-          continue
-        if (redirectSources.has(path) || distHasPage(path) || existsSync(join(dist, path.replace(/^\//, ''))))
-          continue
+        if (!path || path.startsWith('//') || path.endsWith('.xml')) continue
+        if (redirectSources.has(path) || distHasPage(path) || existsSync(join(dist, path.replace(/^\//, '')))) continue
         missing.push(`${file} -> ${href}`)
       }
     }
@@ -155,16 +160,15 @@ test.describe('internal links', () => {
   })
 
   test('unpublished post pages are not built', () => {
-    for (const slug of unpublished)
-      expect(existsSync(join(dist, 'blog', slug, 'index.html')), slug).toBeFalsy()
+    for (const slug of unpublished) expect(existsSync(join(dist, 'blog', slug, 'index.html')), slug).toBeFalsy()
   })
 
   test('_redirects send old URLs to live pages', () => {
     const redirects = readFileSync('public/_redirects', 'utf8')
     const rules = redirects
       .split('\n')
-      .map(line => line.trim())
-      .filter(line => line && !line.startsWith('#'))
+      .map((line) => line.trim())
+      .filter((line) => line && !line.startsWith('#'))
       .map((line) => {
         const [source, dest, code] = line.split(/\s+/)
         return { source, dest, code }

@@ -23,12 +23,14 @@ const toc = [
   >
     <h2 id="license">This license</h2>
     <p>
-      This End-User License Agreement ("Agreement") is between you and Leduc IT OÜ only. Leduc IT OÜ is established in Estonia, in the European Union. It is not an agreement with
-      the Apple App Store or Google Play, except that Apple may enforce it as a third-party beneficiary when you download the app from the App Store, as described below.
+      This End-User License Agreement ("Agreement") is between you and Leduc IT OÜ only. Leduc IT OÜ, registry code 14574207, is registered at Harju maakond, Tallinn, Lasnamäe
+      linnaosa, Sepapaja tn 6, 15551, Estonia. It is not an agreement with the Apple App Store or Google Play, except that Apple may enforce it as a third-party beneficiary when
+      you download the app from the App Store, as described below.
     </p>
     <p>
       By downloading, installing, or using Captime, you agree to this Agreement, to the <a href="/tos/">Terms of Service</a>, and to the <a href="/privacy/">Privacy Policy</a>. If
-      you do not agree, do not download or use the app.
+      you do not agree, do not download or use the app. You must be at least 13 years old. The app does not ask you to create an account. Videos you record stay on your device and
+      are not uploaded.
     </p>
     <p>
       The Application means the Captime software you download from an Application Store to a device. Application Store means the Apple App Store or Google Play. Device means a
@@ -122,8 +124,8 @@ const toc = [
       <li>Lifetime access is charged once and does not auto-renew.</li>
     </ul>
     <p>
-      Billing is handled by the Application Store, not by Leduc IT OÜ. We do not store your full payment card number. If a payment fails or you want a refund, contact the store.
-      Store refund rules apply, except where the law requires otherwise.
+      Payments and subscriptions are processed only by the Apple App Store, Google Play, and RevenueCat. We do not store your full payment card number. If a payment fails or you
+      want a refund, contact the store. Store refund rules apply, except where the law requires otherwise.
     </p>
 
     <h2 id="updates">Updates and support</h2>
@@ -136,13 +138,13 @@ const toc = [
       the law allows.
     </p>
     <p>
-      To the extent maintenance or support is required by applicable law, Leduc IT OÜ provides it, not the Application Store. You can contact us through
-      <a href="/#support">Captime support</a>.
+      To the extent maintenance or support is required by applicable law, Leduc IT OÜ provides it, not the Application Store. Email
+      <a href="mailto:victor@leduc.it">victor@leduc.it</a>. The help button in the app's Settings also opens a Crisp support chat.
     </p>
     <h3>Third-party services</h3>
     <p>
-      The app relies on third-party services named in the <a href="/privacy/">Privacy Policy</a>, including RevenueCat, Apple, Google, PostHog, Sentry, and CapGo. Their terms apply
-      to their services. We are not responsible for third-party services, and you use them at your own risk and under their terms.
+      The app relies on third-party services named in the <a href="/privacy/">Privacy Policy</a>, including the Apple App Store, Google Play, RevenueCat, Sentry, CapGo, and Crisp.
+      Their terms apply to their services. We are not responsible for third-party services, and you use them at your own risk and under their terms.
     </p>
     <h3>Termination</h3>
     <p>
@@ -163,9 +165,9 @@ const toc = [
       particular training goal.
     </p>
     <p>
-      To the maximum extent permitted by law, our total liability under this Agreement is limited to the amount you actually paid for the app or through the app, or 100 USD if you
-      have not paid anything. We are not liable for indirect, incidental, special, consequential, or punitive damages, including lost data, lost profits, or personal injury, even
-      if we were advised of the possibility.
+      To the maximum extent permitted by law, the total liability of Leduc IT OÜ and its suppliers under this Agreement is limited to the greater of (a) the amount you paid for
+      Captime in the 12 months before the claim and (b) 100 USD. We are not liable for indirect, incidental, special, consequential, or punitive damages, including lost data, lost
+      profits, or personal injury, even if we were advised of the possibility.
     </p>
     <p>
       Some jurisdictions do not allow these exclusions. In those places, the exclusions apply only as far as the law allows. If a warranty exists that cannot be disclaimed, Leduc

@@ -60,6 +60,8 @@ test.describe('visual baselines', () => {
     { path: '/privacy/', name: 'legal-privacy.png', heading: 'Privacy Policy' },
     { path: '/tos/', name: 'legal-tos.png', heading: 'Terms of Service' },
     { path: '/eula/', name: 'legal-eula.png', heading: 'End-User License Agreement' },
+    { path: '/disclaimer/', name: 'legal-disclaimer.png', heading: 'Disclaimer' },
+    { path: '/return/', name: 'legal-return.png', heading: 'Return and Refund Policy' },
   ]) {
     test(pageCase.heading, async ({ page }) => {
       await page.goto(pageCase.path)
@@ -83,7 +85,10 @@ test.describe('visual baselines', () => {
         await expect(page.locator(href!)).toHaveCount(1)
       }
 
-      if (pageCase.path === '/privacy/') await expect(page.getByRole('link', { name: 'Sentry privacy policy' })).toHaveCount(1)
+      if (pageCase.path === '/privacy/') {
+        await expect(page.getByRole('link', { name: 'Sentry privacy policy' })).toHaveCount(1)
+        await expect(page.getByRole('link', { name: 'Crisp privacy policy' })).toHaveCount(1)
+      }
 
       await expect(page).toHaveScreenshot(pageCase.name)
     })
