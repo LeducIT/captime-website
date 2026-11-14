@@ -55,4 +55,35 @@ test.describe('visual baselines', () => {
     await waitForVisualReady(page, { scroll: false })
     await expect(page).toHaveScreenshot('404.png', { fullPage: true })
   })
+
+  for (const pageCase of [
+    { path: '/privacy/', name: 'legal-privacy.png', heading: 'Privacy Policy' },
+    { path: '/tos/', name: 'legal-tos.png', heading: 'Terms of Service' },
+    { path: '/eula/', name: 'legal-eula.png', heading: 'End-User License Agreement' },
+  ]) {
+    test(pageCase.heading, async ({ page }) => {
+      await page.goto(pageCase.path)
+      await waitForVisualReady(page, { scroll: false })
+      await expect(page.getByRole('heading', { level: 1, name: pageCase.heading })).toBeVisible()
+      await expect(page.locator('time')).toHaveAttribute('datetime', '2026-11-14')
+      await expect(page.getByText('Last updated', { exact: true })).toBeVisible()
+
+      const family = await page.locator('h1').evaluate((el) => getComputedStyle(el).fontFamily)
+      expect(family.toLowerCase()).toContain('handel')
+
+      const padding = await page.locator('[data-legal-root]').evaluate((el) => Number.parseFloat(getComputedStyle(el).paddingLeft))
+      expect(padding).toBeGreaterThanOrEqual(16)
+
+      const toc = page.locator('nav[aria-label="Table of contents"]')
+      await expect(toc).toBeVisible()
+      const hrefs = await toc.locator('a').evaluateAll((anchors) => anchors.map((anchor) => anchor.getAttribute('href')))
+      expect(hrefs.length).toBeGreaterThan(3)
+      for (const href of hrefs) {
+        expect(href?.startsWith('#')).toBeTruthy()
+        await expect(page.locator(href!)).toHaveCount(1)
+      }
+
+      await expect(page).toHaveScreenshot(pageCase.name)
+    })
+  }
 })
