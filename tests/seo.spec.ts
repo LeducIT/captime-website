@@ -103,6 +103,17 @@ test.describe('on-page SEO', () => {
     expect(jsonLd).toContain('"Organization"')
   })
 
+  test('blog pages use the Captime Blog wordmark', async ({ page }) => {
+    await page.goto('/blog/')
+    const wordmark = page.locator('header').getByRole('link', { name: 'Captime Blog' })
+    await expect(wordmark).toHaveAttribute('href', '/blog/')
+    await expect(wordmark).toHaveCSS('font-family', /Handel_Gothic/)
+    await expect(page.locator('header').getByRole('link', { name: 'Captime home' })).toHaveAttribute('href', '/')
+    await page.goto('/blog/amrap/')
+    await expect(page.locator('header').getByRole('link', { name: 'Captime Blog' })).toHaveAttribute('href', '/blog/')
+    await expect(page.locator('header').getByRole('link', { name: 'Captime home' })).toHaveAttribute('href', '/')
+  })
+
   test('blog article has canonical, article schema, and one H1', async ({ page }) => {
     await page.goto('/blog/amrap/')
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `${origin}/blog/amrap/`)

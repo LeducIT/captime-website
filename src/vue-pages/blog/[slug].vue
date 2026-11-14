@@ -55,10 +55,10 @@ const parts = computed(() => {
 
 <template>
   <main class="text-white">
-    <div class="relative mx-auto max-w-[65ch] px-4 pb-4">
-      <div class="block aspect-w-4 aspect-h-3">
+    <div class="relative mx-auto max-w-[65ch] md:px-4">
+      <div class="relative aspect-[4/3] overflow-hidden bg-black md:rounded-lg">
         <img
-          class="object-cover w-full h-full lg:rounded-lg md:shadow-xl md:shadow-gray-700"
+          class="absolute inset-0 h-full w-full object-cover"
           :src="imageSrc"
           loading="eager"
           fetchpriority="high"
@@ -68,9 +68,31 @@ const parts = computed(() => {
           :alt="imageAlt"
           :title="imageAlt"
         >
-      </div>
-      <div v-if="chip" class="absolute top-4 left-8">
-        <ModeChip :label="chip" />
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-b from-transparent via-black/80 to-black" />
+        <div v-if="chip" class="absolute left-4 top-4 z-1">
+          <ModeChip :label="chip" />
+        </div>
+        <div class="absolute inset-x-0 bottom-0 z-1 px-4 pb-4">
+          <h1 class="text-left text-2xl font-handel text-white sm:text-3xl lg:text-4xl">
+            {{ title }}
+          </h1>
+          <p class="mt-2 flex items-center gap-2 text-xs leading-none text-gray-200 sm:text-sm">
+            <img
+              v-if="authorProfile.image"
+              :src="authorProfile.image96 || authorProfile.image"
+              alt=""
+              width="28"
+              height="28"
+              class="h-7 w-7 shrink-0 rounded-full object-cover"
+              loading="eager"
+              decoding="async"
+            >
+            <span class="min-w-0">
+              <span>{{ authorProfile.name || author }}</span>
+              <span v-if="created_at"> · {{ formatTime(created_at) }}</span>
+            </span>
+          </p>
+        </div>
       </div>
     </div>
 
@@ -93,34 +115,7 @@ const parts = computed(() => {
       </nav>
 
       <div class="min-w-0 flex-1 max-w-[65ch] mx-auto">
-        <div v-if="authorProfile.image" class="mt-6 flex flex-col items-center text-center">
-          <picture>
-            <source type="image/avif" srcset="/victor-leduc-96.avif 96w, /victor-leduc-192.avif 192w" sizes="48px" />
-            <source type="image/webp" srcset="/victor-leduc-96.webp 96w, /victor-leduc-192.webp 192w" sizes="48px" />
-            <img
-              :src="authorProfile.image96 || authorProfile.image"
-              :alt="authorProfile.name"
-              width="48"
-              height="48"
-              class="h-12 w-12 rounded-full object-cover"
-              loading="eager"
-              decoding="async"
-            >
-          </picture>
-          <p class="mt-3 text-sm font-semibold tracking-widest text-white uppercase">
-            <span>{{ authorProfile.name }}</span>
-            <span v-if="created_at"> · {{ formatTime(created_at) }}</span>
-          </p>
-        </div>
-        <p v-else class="mt-6 text-sm font-semibold tracking-widest text-white uppercase text-center">
-          <span v-if="author">{{ author }}</span>
-          <span v-if="author && created_at"> · </span>
-          <span v-if="created_at">{{ formatTime(created_at) }}</span>
-        </p>
-        <h1 class="py-5 text-3xl lg:text-4xl font-handel font-800 text-center">
-          {{ title }}
-        </h1>
-        <p class="pb-5 text-left text-gray-200">
+        <p class="py-5 text-left text-gray-200">
           {{ description }}
         </p>
 
