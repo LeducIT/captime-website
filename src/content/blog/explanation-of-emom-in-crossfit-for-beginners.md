@@ -1,13 +1,13 @@
 ---
 slug: "explanation-of-emom-in-crossfit-for-beginners"
-title: Explanation of EMOM in CrossFit For Beginners
-description: EMOM is the abbreviation for "Every Minute on the Minute". In this particular CrossFit variant, you perform a different exercise every minute.
+title: "EMOM in CrossFit: A Beginner's Guide"
+description: EMOM means Every Minute on the Minute. In this CrossFit format you start a set number of reps at the top of each minute, then rest until the next minute.
 author: Team Captime
 author_url: "https://captime.app#team"
 created_at: 2022-02-20T19:00:00.000+00:00
 updated_at: 2022-02-25T19:00:00.000+00:00
 head_image: "/explanation-of-emom-in-crossfit-for-beginners.webp"
-head_image_alt: Crossfit Men looking for alternative
+head_image_alt: CrossFit athlete training with an EMOM timer
 tag: EMOM
 published: true
 next_blog: ""

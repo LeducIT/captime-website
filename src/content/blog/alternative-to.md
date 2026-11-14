@@ -1,14 +1,14 @@
 ---
 slug: "alternative-to"
-title: "Best alternative to Rogue Echo Gym Timer"
-description: "For your home gym or CrossFit box, it’s crucial to invest in a good timer. Focus on your workout without dealing with your watch when you’re out of breath."
-author: "Martin Donadieu"
-author_url: "https://twitter.com/martindonadieu"
+title: "Best Alternative to the Rogue Echo Gym Timer"
+description: "For a home gym or CrossFit box, a dedicated WOD timer keeps you on the clock. Focus on the workout instead of checking your watch when you are out of breath."
+author: "Team Captime"
+author_url: "https://captime.app#team"
 created_at: 2022-01-13T19:00:00.000+00:00
 updated_at: 2022-02-23T19:00:00.000+00:00
 head_image: /alternative_to_1.webp
-head_image_alt: Crossfit Men looking for alternative
-tag: alternatives
+head_image_alt: CrossFit athlete looking for a gym timer alternative
+tag: Timers
 published: true
 next_blog: ""
 ---
@@ -37,9 +37,9 @@ Counting the number of reps you can perform in a set is the primary way to measu
 
 Rogue echo gym trainer is considered a gold standard in fitness circles, and for good reasons. It comes with several preset interval settings, which are also programmable. Hence, you can customize this timer according to your workout requirements or preferences.
 
-But since Rogue Echo Gym Timer comes with specific hardware, you have to spend a fortune to have it set in your fitness training area. But does that mean you have got no options other than this timer? Well, no. [Captime](http://onelink.to/captime) is one of the best alternatives to the Rogue Echo gym Timer.
+But since Rogue Echo Gym Timer comes with specific hardware, you have to spend a fortune to have it set in your fitness training area. But does that mean you have got no options other than this timer? Well, no. [Captime](https://captime.app/download) is one of the best alternatives to the Rogue Echo gym Timer.
 
-[Captime](http://onelink.to/captime) is a mobile app that you can install on your iPhone or iPad.
+[Captime](https://captime.app/download) is a mobile app that you can install on your iPhone or iPad.
 
 It comes with multiple preset timers for:
 
@@ -50,4 +50,4 @@ It comes with multiple preset timers for:
 - For Time (the voice recognition system that allows you to control the timer by screaming TIME or STOP)
 - Sally
 
-This app also features a video timer recorder, which allows you to analyze your workout after you are done exercising. In short, [Captime](http://onelink.to/captime) is an all-inclusive CrossFit timer app that helps you reach your top performance.
+This app also features a video timer recorder, which allows you to analyze your workout after you are done exercising. In short, [Captime](https://captime.app/download) is an all-inclusive CrossFit timer app that helps you reach your top performance.

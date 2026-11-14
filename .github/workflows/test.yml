@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - main
+      - dev
 
   pull_request:
     branches:
       - main
+      - dev
 
 jobs:
   build:
@@ -16,13 +18,46 @@ jobs:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
         with:
-          version: 8
+          version: 10
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 22
           cache: pnpm
       - name: Install dependencies
         run: pnpm install
       - name: Generate static pages
         run: pnpm build
+
+  visual:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 10
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install
+      - name: Generate static pages
+        run: pnpm build
+      - name: Install Playwright Chromium
+        run: pnpm exec playwright install --with-deps chromium
+      - name: Run screenshot tests
+        run: pnpm test:visual
+      - name: Upload screenshot artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-screenshots
+          path: |
+            test-results/
+            playwright-report/
+            tests/__screenshots__/
+          if-no-files-found: ignore

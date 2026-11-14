@@ -1,17 +1,18 @@
 ---
 import { structuredData } from '../config/app'
-import { appDescription, appName } from '../constants'
-import { baseDomain, useRuntimeConfig } from '../config/app'
+import { appDescription, appName, defaultAuthor, seoKeywords } from '../constants'
+import { useRuntimeConfig } from '../config/app'
 
 const {
   ldJSON = structuredData,
   title = appName,
   description = appDescription,
   url = Astro.url,
-  image = `${useRuntimeConfig().public.baseUrl}/capgo_banner.png`,
+  image = `${useRuntimeConfig().public.baseUrl}/blog_meta.webp`,
   canonical = Astro.url,
-  author = `Martin DONADIEU`,
+  author = defaultAuthor,
   audio = null,
+  type = 'website',
 } = Astro.props
 
 let displayDescription = description
@@ -24,19 +25,20 @@ if (description.length > descSize) {
 
 const image_unsecure = image.replace('https://', 'http://')
 const titleFix = title || (image.split('/').pop() || '.').split('.')[0]
+const ogType = type === 'article' ? 'article' : 'website'
 ---
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
-<meta name="theme-color" content="#456b9a" />
+<meta name="theme-color" content="#000000" />
 <meta name="generator" content={Astro.generator} />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="apple-mobile-web-app-title" content={baseDomain()} />
+<meta name="apple-mobile-web-app-title" content="Captime" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta property="keywords" content="Capacitor, updater, OTA, autoupdate, capgo" />
+<meta name="keywords" content={seoKeywords} />
 
 <link rel="canonical" href={canonical} />
-<link rel="apple-touch-icon" href="/capgo.webp" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <link rel="icon" type="image/svg+xml" href="/safari-pinned-tab.svg" />
@@ -46,14 +48,14 @@ const titleFix = title || (image.split('/').pop() || '.').split('.')[0]
 <meta name="title" content={title} />
 <meta name="author" content={author} />
 <meta name="description" content={displayDescription} />
+<meta name="publisher" content="Captime" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:url" content={url} />
 <meta property="og:title" content={title} />
 <meta property="og:audio" content={audio} />
-<meta property="og:type" content="website" />
-<meta property="og:locale" content="en_EN" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content={ogType} />
+<meta property="og:locale" content="en_US" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="627" />
 <meta property="og:image:alt" content={titleFix} />
@@ -62,20 +64,20 @@ const titleFix = title || (image.split('/').pop() || '.').split('.')[0]
 <meta property="og:image:type" content="image/webp" />
 <meta property="og:article:author" content={author} />
 <meta property="og:audio:type" content="audio/mpeg" />
-<meta property="og:site_name" content={baseDomain()} />
+<meta property="og:site_name" content="Captime" />
 <meta property="og:description" content={displayDescription} />
 
 <!-- Twitter -->
 <meta property="twitter:url" content={url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:image" content={image} />
-<meta property="twitter:app:id:iphone" content={appName} />
-<meta property="twitter:app:name:iphone" content={appName} />
-<meta property="twitter:creator" content="@martindonadieu" />
+<meta property="twitter:app:id:iphone" content="Captime" />
+<meta property="twitter:app:name:iphone" content="Captime" />
+<meta property="twitter:creator" content="Captime" />
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:description" content={displayDescription} />
-<meta property="twitter:app:id:googleplay" content="ee.forgr.capgo" />
-<meta property="twitter:app:name:googleplay" content="ee.forgr.capgo" />
+<meta property="twitter:app:id:googleplay" content="app.captime" />
+<meta property="twitter:app:name:googleplay" content="Captime" />
 
 <!-- @ts-ignore -->
 <script hid="seo-schema-graph" type="application/ld+json" set:html={ldJSON} />

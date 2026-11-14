@@ -1,0 +1,46 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-captime-website
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 10
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Generate static pages
+        run: pnpm build
+      - name: Flatten sitemap and robots if emitted as directories
+        run: |
+          flatten() {
+            local path="$1"
+            if [ -d "$path" ] && [ -f "$path/index.html" ]; then
+              mv "$path/index.html" "${path}.tmp"
+              rm -rf "$path"
+              mv "${path}.tmp" "$path"
+            fi
+          }
+          flatten dist/sitemap.xml
+          flatten dist/robots.txt
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy

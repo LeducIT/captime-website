@@ -14,6 +14,6 @@ export function initAffiliate() {
   g.defer = true
   g.async = true
   g.setAttribute('data-reflio', 'hi8q6z93wyt147h')
-  g.setAttribute('data-domain', 'https://capgo.app,https://web.capgo.app')
+  g.setAttribute('data-domain', 'https://captime.app')
   s.parentNode.insertBefore(g, s)
 }

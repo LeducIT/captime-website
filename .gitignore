@@ -1,5 +1,6 @@
 # build output
 dist/
+.wrangler/
 
 # generated types
 .astro/
@@ -19,3 +20,9 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/

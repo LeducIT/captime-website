@@ -1,17 +1,17 @@
 ---
 slug: "amrap"
-title: "AMRAP Guide: What are the benefits - 2022"
+title: "AMRAP Guide: What Are the Benefits"
 surtitle: ""
 subtitle: ""
 published: true
-description: AMRAP stand for “As Many Reps/Rounds As Possible.” This workout involves you competing with the clock,  complete as many reps or rounds as you can in a given time.
-author: Martin Donadieu
-author_url: "https://twitter.com/martindonadieu"
+description: AMRAP stands for As Many Reps or Rounds As Possible. This workout has you competing with the clock to complete as many reps or rounds as you can in a given time.
+author: Team Captime
+author_url: "https://captime.app#team"
 created_at: 2022-01-12T19:00:00.000+00:00
 updated_at: 2022-01-12T19:00:00.000+00:00
 head_image: "/amrap1.webp"
-head_image_alt: Crossfit Men doing sport and thinking about AMRAP
-tag: timers
+head_image_alt: CrossFit athlete training with an AMRAP timer
+tag: AMRAP
 next_blog: ""
 ---
 
@@ -59,4 +59,4 @@ While completing a greater number of rounds or reps makes an AMRAP-based workout
 
 With the help of AMRAP exercises, you can measure changes and improvements in your fitness. Having that said, keeping track of the allotted time plays a vital role. That’s where you can consider incorporating app-based timers that give you an alert when the time is up for a round or rep. With the help of these timers, you can track the number of intervals or rounds you perform during your workout.
 
-In the end, you can use the [Captime](http://onelink.to/captime) app to allot time for your AMRAP and other workouts. The best thing about this app is its ease of use. It's simple options help you start the timer of your choice on the go.
+In the end, you can use the [Captime](https://captime.app/download) app to allot time for your AMRAP and other workouts. The best thing about this app is its ease of use. It's simple options help you start the timer of your choice on the go.

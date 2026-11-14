@@ -1,9 +1,9 @@
 ---
 slug: "top-5-open-2022"
-title: "Top 5 Athletes Crossfit Open 2022 - Leaderboad"
+title: "Top 5 Athletes CrossFit Open 2022 Leaderboard"
 description: The Open is held over 3 weeks, and a series of workouts are released weekly for competitors to complete. Athletes who wish to progress further in individual competitions need to perform the workouts as prescribed
-author: Martin Donadieu
-author_url: "https://twitter.com/martindonadieu"
+author: Team Captime
+author_url: "https://captime.app#team"
 created_at: 2022-03-10T19:00:00.000+00:00
 updated_at: 2022-03-10T19:00:00.000+00:00
 head_image: "/crossfit_games.webp"
@@ -14,7 +14,7 @@ next_blog: ""
 ---
 
 Every week competitors perform the workouts and submit their scores online before a specified time.
-This should be supported by either video like in [Captime](http://onelink.to/captime) of their workouts or validations by a CrossFit affiliate.
+This should be supported by either video like in [Captime](https://captime.app/download) of their workouts or validations by a CrossFit affiliate.
 
 In every event, the competitors are ranked according to their performance.
 They gain points awarded directly corresponding to their rank.

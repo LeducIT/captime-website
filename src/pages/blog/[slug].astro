@@ -1,26 +1,22 @@
 ---
 import Layout from '../../layouts/Layout.astro'
-import { useRuntimeConfig } from '../../config/app'
+import { loadBlogPosts, parsePostDate } from '../../services/blog'
+import { getRelatedKey } from '../../services/modes'
+import { publisherOrg, useRuntimeConfig } from '../../config/app'
 import VueBlogSlug from '../../vue-pages/blog/[slug].vue'
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob('../../content/blog/**/*.md')
+  const posts = loadBlogPosts()
   return posts.map((post) => {
-    let related = posts
-      .filter((i) => i.frontmatter.slug !== post.frontmatter.slug)
-      .filter((i) => i.frontmatter.published)
-      .sort((a, b) => (new Date(a.frontmatter.created_at.trim().replace(' ', 'T')) > new Date(b.frontmatter.created_at.trim().replace(' ', 'T')) ? -1 : 1))
-      .slice(0, 3)
-    if (post.frontmatter.next_blog) {
-      if (related.length > 0) {
-        const next_blog = posts.find((i) => i.frontmatter.slug === post.frontmatter.next_blog)
-        if (next_blog) {
-          related[0] = next_blog
-        }
-      } else {
-        related = posts.filter((i) => i.frontmatter.slug === post.frontmatter.next_blog)
-      }
-    }
+    const key = getRelatedKey(post.frontmatter)
+    const related = key
+      ? posts
+          .filter((item) => item.frontmatter.slug !== post.frontmatter.slug)
+          .filter((item) => item.frontmatter.published)
+          .filter((item) => getRelatedKey(item.frontmatter) === key)
+          .sort((a, b) => parsePostDate(b.frontmatter.created_at).getTime() - parsePostDate(a.frontmatter.created_at).getTime())
+          .slice(0, 3)
+      : []
     return {
       params: {
         slug: post.frontmatter.slug,
@@ -37,60 +33,47 @@ const data = Astro.props.post
 const related = Astro.props.related
 
 const config = useRuntimeConfig()
+const slug = data.frontmatter.slug
+const canonical = `${config.public.baseUrl}/blog/${slug}/`
+const fallbackImage = `${config.public.baseUrl}/blog_meta.webp`
+const image = data.frontmatter.head_image
+  ? data.frontmatter.head_image.startsWith('http')
+    ? data.frontmatter.head_image
+    : `${config.public.baseUrl}${data.frontmatter.head_image}`
+  : fallbackImage
 
-const markdown = data.compiledContent()
+const markdown = await data.compiledContent()
 
-const content = {}
+const datePublished = parsePostDate(data.frontmatter.created_at).toISOString()
+const dateModified = parsePostDate(data.frontmatter.updated_at || data.frontmatter.created_at).toISOString()
 
-if (data.frontmatter.title) {
-  // @ts-ignore
-  content['title'] = data.frontmatter.title
-}
-
-if (data.frontmatter.description) {
-  // @ts-ignore
-  content['description'] = data.frontmatter.description
-}
-
-if (data.frontmatter.head_image) {
-  // @ts-ignore
-  content['image'] = `${config.public.baseUrl}${data.frontmatter.head_image || '/capgo_banner.webp'}`
-}
-
-if (data.frontmatter.author) {
-  // @ts-ignore
-  content['author'] = data.frontmatter.author || 'Capgo'
-}
-
-const datePublished = new Date(data.frontmatter.created_at.trim().replace(' ', 'T')).toISOString()
-const dateModified = data.frontmatter.updated_at ? new Date(data.frontmatter.updated_at.trim().replace(' ', 'T')).toISOString() : datePublished
-
-// @ts-ignore
-content['ldJSON'] = JSON.stringify({
-  '@context': 'https://schema.org',
-  '@type': 'NewsArticle',
-  mainEntityOfPage: {
-    '@type': 'WebPage',
-    '@id': `${config.public.baseUrl}/${data.frontmatter?.slug}`,
-  },
-  headline: data.frontmatter?.description,
-  image: [`${config.public.baseUrl}${data.frontmatter?.head_image || '/capgo_banner.webp'}`],
-  datePublished: datePublished,
-  dateModified: dateModified,
-  author: {
-    '@type': 'Person',
-    name: data.frontmatter?.author,
-    url: data.frontmatter?.author_url,
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Capgo',
-    logo: {
-      '@type': 'ImageObject',
-      url: `${config.public.baseUrl}/icon.webp`,
+const content = {
+  title: data.frontmatter.title,
+  description: data.frontmatter.description,
+  image,
+  author: data.frontmatter.author || 'Captime',
+  canonical,
+  url: canonical,
+  type: 'article',
+  ldJSON: JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': canonical,
     },
-  },
-})
+    headline: data.frontmatter.title,
+    image: [image],
+    datePublished,
+    dateModified,
+    author: {
+      '@type': 'Person',
+      name: data.frontmatter.author || 'Captime',
+      url: data.frontmatter.author_url || config.public.baseUrl,
+    },
+    publisher: publisherOrg,
+  }),
+}
 ---
 
 <Layout content={content}>

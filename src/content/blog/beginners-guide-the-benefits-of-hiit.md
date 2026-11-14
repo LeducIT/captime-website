@@ -7,7 +7,7 @@ author_url: "https://captime.app#team"
 created_at: 2022-02-23T19:00:00.000+00:00
 updated_at: 2022-04-10T19:00:00.000+00:00
 head_image: "/beginner-s-guide-the-benefits-of-hiit.webp"
-head_image_alt: Example Of HIIT Plan
+head_image_alt: Sample HIIT workout plan for CrossFit training
 tag: HIIT
 published: true
 next_blog: ""

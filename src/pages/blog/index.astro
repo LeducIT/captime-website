@@ -1,24 +1,23 @@
 ---
-let posts = await Astro.glob('../../content/blog/**/*.md')
-
 import Layout from '../../layouts/Layout.astro'
-import { useRuntimeConfig } from '../../config/app'
+import { loadBlogPosts, parsePostDate } from '../../services/blog'
+import { blogIndexStructuredData, useRuntimeConfig } from '../../config/app'
 import VueBlogIndex from '../../vue-pages/blog/index.vue'
 
-posts = posts.filter((i) => i.frontmatter.published).sort((a, b) => (new Date(a.frontmatter.created_at.trim().replace(' ', 'T')) > new Date(b.frontmatter.created_at.trim().replace(' ', 'T')) ? -1 : 1))
+const posts = loadBlogPosts()
+  .filter((item) => item.frontmatter.published)
+  .sort((a, b) => parsePostDate(b.frontmatter.created_at).getTime() - parsePostDate(a.frontmatter.created_at).getTime())
+  .map((item) => ({ frontmatter: item.frontmatter }))
 
 const config = useRuntimeConfig()
 
-const content = {}
-
-if (config.public.blog_title) {
-  // @ts-ignore
-  content['title'] = config.public.blog_title
-}
-
-if (config.public.blog_description) {
-  // @ts-ignore
-  content['description'] = config.public.blog_description
+const content = {
+  title: config.public.blog_title,
+  description: config.public.blog_description,
+  image: `${config.public.baseUrl}/blog_meta.webp`,
+  canonical: `${config.public.baseUrl}/blog/`,
+  url: `${config.public.baseUrl}/blog/`,
+  ldJSON: blogIndexStructuredData(),
 }
 ---
 

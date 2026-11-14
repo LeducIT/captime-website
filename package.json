@@ -1,37 +1,54 @@
 {
   "name": "proud-planet",
   "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "astro": "astro",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "fmt": "prettier --write '**/*' --ignore-unknown"
+    "fmt": "prettier --write '**/*' --ignore-unknown",
+    "test:visual": "playwright test",
+    "test:visual:update": "playwright test --update-snapshots"
   },
   "dependencies": {
-    "@astrojs/vue": "^4.0.2",
-    "@headlessui/vue": "^1.7.15",
-    "@heroicons/vue": "^2.0.18",
-    "astro": "^4.0.3",
-    "sitemap": "^7.1.1",
-    "vue": "^3.3.11"
+    "@astrojs/vue": "^7.0.2",
+    "@headlessui/vue": "^1.7.23",
+    "@heroicons/vue": "^2.2.0",
+    "astro": "^7.2.4",
+    "sitemap": "^9.0.1",
+    "vue": "^3.5.41"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.40.0",
-    "@iconify-json/carbon": "^1.1.19",
-    "@iconify-json/twemoji": "^1.1.12",
-    "@types/node": "^20.4.9",
-    "@types/semver": "^7.5.0",
-    "@unocss/astro": "^0.55.0",
-    "@unocss/reset": "^0.55.0",
-    "@vite-pwa/astro": "^0.1.1",
-    "dayjs": "^1.11.9",
-    "dotenv": "^16.3.1",
-    "eslint": "^8.46.0",
-    "prettier": "^3.0.1",
-    "prettier-plugin-astro": "^0.11.0",
-    "schema-dts": "^1.1.2",
-    "unocss": "^0.55.0"
+    "@antfu/eslint-config": "^9.3.0",
+    "@iconify-json/carbon": "^1.2.25",
+    "@iconify-json/twemoji": "^1.2.5",
+    "@playwright/test": "1.49.1",
+    "@types/node": "^22.20.1",
+    "@types/semver": "^7.8.0",
+    "@unocss/astro": "^66.8.1",
+    "@unocss/reset": "^66.8.1",
+    "@vite-pwa/astro": "^1.2.0",
+    "dayjs": "^1.11.23",
+    "dotenv": "^16.6.1",
+    "eslint": "^10.9.0",
+    "prettier": "^3.9.6",
+    "prettier-plugin-astro": "^0.14.1",
+    "schema-dts": "^1.1.5",
+    "unocss": "^66.8.1",
+    "vite-plugin-pwa": "^1.2.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ],
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "astro": ">=4"
+      }
+    }
   }
 }
