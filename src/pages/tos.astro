@@ -2,17 +2,15 @@
 import VueTos from '../vue-pages/tos.vue'
 import Layout from '../layouts/Layout.astro'
 import { useRuntimeConfig } from '../config/app'
+import { pageMeta, webPageStructuredData } from '../services/seo'
 
 const config = useRuntimeConfig()
-
 const brand = config.public.brand
-
 const title = `${brand} | Terms of Service`
-const description = 'Read our Terms of Service'
-
+const description = 'Read the Captime Terms of Service for the CrossFit timer app.'
 const content = {
-  description,
-  title,
+  ...pageMeta('/tos/', title, description),
+  ldJSON: webPageStructuredData('/tos/', title, description),
 }
 ---
 

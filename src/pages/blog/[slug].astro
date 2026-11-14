@@ -1,18 +1,19 @@
 ---
 import Layout from '../../layouts/Layout.astro'
-import { loadBlogPosts, parsePostDate } from '../../services/blog'
+import { isPublishedPost, loadBlogPosts, parsePostDate } from '../../services/blog'
 import { getRelatedKey } from '../../services/modes'
-import { publisherOrg, useRuntimeConfig } from '../../config/app'
+import { useRuntimeConfig } from '../../config/app'
+import { articleStructuredData, isCanonicalBlogSlug, pageMeta, stripLeadingH1 } from '../../services/seo'
 import VueBlogSlug from '../../vue-pages/blog/[slug].vue'
+import { decorateContentImages } from '../../lib/images'
 
 export async function getStaticPaths() {
-  const posts = loadBlogPosts()
+  const posts = loadBlogPosts().filter(isPublishedPost).filter((post) => isCanonicalBlogSlug(post.frontmatter.slug))
   return posts.map((post) => {
     const key = getRelatedKey(post.frontmatter)
     const related = key
       ? posts
           .filter((item) => item.frontmatter.slug !== post.frontmatter.slug)
-          .filter((item) => item.frontmatter.published)
           .filter((item) => getRelatedKey(item.frontmatter) === key)
           .sort((a, b) => parsePostDate(b.frontmatter.created_at).getTime() - parsePostDate(a.frontmatter.created_at).getTime())
           .slice(0, 3)
@@ -34,48 +35,32 @@ const related = Astro.props.related
 
 const config = useRuntimeConfig()
 const slug = data.frontmatter.slug
-const canonical = `${config.public.baseUrl}/blog/${slug}/`
 const fallbackImage = `${config.public.baseUrl}/blog_meta.webp`
 const image = data.frontmatter.head_image
   ? data.frontmatter.head_image.startsWith('http')
-    ? data.frontmatter.head_image
+    ? data.frontmatter.head_image.replace(/^http:\/\//, 'https://')
     : `${config.public.baseUrl}${data.frontmatter.head_image}`
   : fallbackImage
 
-const markdown = await data.compiledContent()
-
-const datePublished = parsePostDate(data.frontmatter.created_at).toISOString()
-const dateModified = parsePostDate(data.frontmatter.updated_at || data.frontmatter.created_at).toISOString()
+const markdown = decorateContentImages(stripLeadingH1(String(await data.compiledContent() || '')))
 
 const content = {
-  title: data.frontmatter.title,
-  description: data.frontmatter.description,
-  image,
-  author: data.frontmatter.author || 'Captime',
-  canonical,
-  url: canonical,
-  type: 'article',
-  ldJSON: JSON.stringify({
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': canonical,
-    },
-    headline: data.frontmatter.title,
-    image: [image],
-    datePublished,
-    dateModified,
-    author: {
-      '@type': 'Person',
-      name: data.frontmatter.author || 'Captime',
-      url: data.frontmatter.author_url || config.public.baseUrl,
-    },
-    publisher: publisherOrg,
+  ...pageMeta(`/blog/${slug}/`, data.frontmatter.title, data.frontmatter.description, {
+    image,
+    author: data.frontmatter.author || 'Captime',
+    type: 'article',
+    ldJSON: articleStructuredData(data.frontmatter, image),
   }),
 }
 ---
 
-<Layout content={content}>
+<Layout
+  content={content}
+  lcpPreload={{
+    href: data.frontmatter.head_image?.startsWith('http')
+      ? data.frontmatter.head_image
+      : (data.frontmatter.head_image || '/blog_meta.webp'),
+  }}
+>
   <VueBlogSlug toc={data.getHeadings()} related={related} Content={markdown} client:load {...data.frontmatter} />
 </Layout>

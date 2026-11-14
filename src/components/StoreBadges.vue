@@ -17,7 +17,8 @@ import { appStoreUrl, playStoreUrl } from '../constants'
         width="160"
         height="48"
         class="store-badge"
-        loading="lazy"
+        loading="eager"
+        decoding="async"
       >
     </a>
     <a
@@ -33,7 +34,8 @@ import { appStoreUrl, playStoreUrl } from '../constants'
         width="160"
         height="48"
         class="store-badge"
-        loading="lazy"
+        loading="eager"
+        decoding="async"
       >
     </a>
   </div>

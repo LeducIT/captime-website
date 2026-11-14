@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro'
 import { loadBlogPosts, parsePostDate } from '../../services/blog'
 import { blogIndexStructuredData, useRuntimeConfig } from '../../config/app'
+import { pageMeta } from '../../services/seo'
 import VueBlogIndex from '../../vue-pages/blog/index.vue'
 
 const posts = loadBlogPosts()
@@ -12,15 +13,12 @@ const posts = loadBlogPosts()
 const config = useRuntimeConfig()
 
 const content = {
-  title: config.public.blog_title,
-  description: config.public.blog_description,
+  ...pageMeta('/blog/', config.public.blog_title, config.public.blog_description),
   image: `${config.public.baseUrl}/blog_meta.webp`,
-  canonical: `${config.public.baseUrl}/blog/`,
-  url: `${config.public.baseUrl}/blog/`,
   ldJSON: blogIndexStructuredData(),
 }
 ---
 
-<Layout content={content}>
+<Layout content={content} lcpPreload={{ href: '/amrap1.webp' }}>
   <VueBlogIndex Content={posts} client:load />
 </Layout>

@@ -2,13 +2,14 @@
 import Layout from '../layouts/Layout.astro'
 import StoreBadges from '../components/StoreBadges.vue'
 import DownloadQr from '../components/DownloadQr.vue'
-import { useRuntimeConfig } from '../config/app'
 import { appStoreUrl, playStoreUrl } from '../constants'
+import { pageMeta, webPageStructuredData } from '../services/seo'
 
+const title = 'Download Captime'
+const description = 'Get the Captime CrossFit timer on the App Store or Google Play.'
 const content = {
-  title: 'Download Captime',
-  description: 'Get the Captime CrossFit timer on the App Store or Google Play.',
-  canonical: `${useRuntimeConfig().public.baseUrl}/download`,
+  ...pageMeta('/download/', title, description),
+  ldJSON: webPageStructuredData('/download/', title, description),
 }
 ---
 

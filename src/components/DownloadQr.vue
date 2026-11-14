@@ -15,7 +15,8 @@ import { downloadPath } from '../constants'
         width="120"
         height="120"
         class="h-[120px] w-[120px]"
-        loading="lazy"
+        loading="eager"
+        decoding="async"
       >
     </a>
     <figcaption class="text-sm text-gray-400">
