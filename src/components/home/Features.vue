@@ -35,6 +35,7 @@ const features = [
             :alt="`Illustration ${feature.title}`"
             :title="`Illustration ${feature.title}`"
             loading="lazy"
+            decoding="async"
           />
           <h3 class="text-2xl font-semibold text-white">
             {{ feature.title }}

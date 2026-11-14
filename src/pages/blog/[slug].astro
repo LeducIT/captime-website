@@ -4,6 +4,7 @@ import { loadBlogPosts, parsePostDate } from '../../services/blog'
 import { getRelatedKey } from '../../services/modes'
 import { publisherOrg, useRuntimeConfig } from '../../config/app'
 import VueBlogSlug from '../../vue-pages/blog/[slug].vue'
+import { decorateContentImages } from '../../lib/images'
 
 export async function getStaticPaths() {
   const posts = loadBlogPosts()
@@ -42,7 +43,7 @@ const image = data.frontmatter.head_image
     : `${config.public.baseUrl}${data.frontmatter.head_image}`
   : fallbackImage
 
-const markdown = await data.compiledContent()
+const markdown = decorateContentImages(String(await data.compiledContent() || ''))
 
 const datePublished = parsePostDate(data.frontmatter.created_at).toISOString()
 const dateModified = parsePostDate(data.frontmatter.updated_at || data.frontmatter.created_at).toISOString()
@@ -76,6 +77,13 @@ const content = {
 }
 ---
 
-<Layout content={content}>
+<Layout
+  content={content}
+  lcpPreload={{
+    href: data.frontmatter.head_image?.startsWith('http')
+      ? data.frontmatter.head_image
+      : (data.frontmatter.head_image || '/blog_meta.webp'),
+  }}
+>
   <VueBlogSlug toc={data.getHeadings()} related={related} Content={markdown} client:load {...data.frontmatter} />
 </Layout>

@@ -66,6 +66,9 @@ function goTo(next: number) {
               class="object-cover w-full h-full"
               height="320"
               width="560"
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
             >
           </a>
           <div class="text-left">

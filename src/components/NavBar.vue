@@ -11,7 +11,7 @@ const expanded = ref(false)
       <div class="flex items-center justify-between">
         <div class="shrink-0">
           <a href="/" title="Captime home" aria-label="Captime home" class="flex items-center space-x-4 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black">
-            <img class="w-auto h-14 border-2 border-white" height="56" width="56" loading="eager" alt="Captime Logo" title="Captime Logo" src="/icon.webp" />
+            <img class="w-auto h-14 border-2 border-white" height="56" width="56" loading="eager" decoding="async" alt="Captime Logo" title="Captime Logo" src="/icon.webp" />
             <span class="font-handel text-white text-3xl">Captime</span>
           </a>
         </div>

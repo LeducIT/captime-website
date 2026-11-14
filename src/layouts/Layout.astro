@@ -6,13 +6,27 @@ import { pwaInfo } from 'virtual:pwa-info'
 import Header from '../components/NavBar.vue'
 import Footer from '../components/Footer.vue'
 
-const { content } = Astro.props
+const { content, lcpPreload } = Astro.props
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
+    <link rel="preload" href="/fonts/Handel_Gothic.woff2" as="font" type="font/woff2" crossorigin />
+    {lcpPreload?.srcset && (
+      <link
+        rel="preload"
+        as="image"
+        type={lcpPreload.type}
+        imagesrcset={lcpPreload.srcset}
+        imagesizes={lcpPreload.sizes}
+        fetchpriority="high"
+      />
+    )}
+    {lcpPreload?.href && !lcpPreload?.srcset && (
+      <link rel="preload" as="image" href={lcpPreload.href} fetchpriority="high" />
+    )}
     <SEO {...content} />
   </head>
   <body>
