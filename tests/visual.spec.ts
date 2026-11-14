@@ -83,6 +83,8 @@ test.describe('visual baselines', () => {
         await expect(page.locator(href!)).toHaveCount(1)
       }
 
+      if (pageCase.path === '/privacy/') await expect(page.getByRole('link', { name: 'Sentry privacy policy' })).toHaveCount(1)
+
       await expect(page).toHaveScreenshot(pageCase.name)
     })
   }

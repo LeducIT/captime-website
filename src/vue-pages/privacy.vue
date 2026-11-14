@@ -57,6 +57,10 @@ const toc = [
         captime.app. That script can record pages viewed and basic technical data about the visit. It is separate from PostHog.
       </li>
       <li>
+        <strong>Crash and error reports.</strong>
+        Sentry processes crash and error diagnostics from the iPhone app, the Apple Watch app, and the watch complication. Those reports are hosted in the EU at de.sentry.io.
+      </li>
+      <li>
         <strong>App updates.</strong>
         CapGo delivers over-the-air updates to the app. It processes the technical data needed to choose and install an update, such as platform, app version, and an app-scoped
         device identifier.
@@ -78,6 +82,7 @@ const toc = [
       <li>To tell which plan is active, including a free trial or a discounted first period.</li>
       <li>To understand how the app and the website are used, and to improve them.</li>
       <li>To measure Apple Search Ads that we run.</li>
+      <li>To diagnose crashes and errors in the iPhone app, the Apple Watch app, and the watch complication.</li>
       <li>To deliver app updates and to keep the app working.</li>
       <li>To answer a support request you send us.</li>
       <li>To comply with law, to keep records we are required to keep, and to prevent abuse.</li>
@@ -86,8 +91,8 @@ const toc = [
     <ul>
       <li><strong>Contract.</strong> Processing a purchase is needed to deliver the subscription or lifetime access you requested.</li>
       <li>
-        <strong>Legitimate interests.</strong> Analytics, measuring our own ads, delivering updates, securing the service, and improving Captime. You can object to processing that
-        relies on legitimate interests.
+        <strong>Legitimate interests.</strong> Analytics, diagnosing crashes and errors, measuring our own ads, delivering updates, securing the service, and improving Captime. You
+        can object to processing that relies on legitimate interests.
       </li>
       <li><strong>Legal obligation.</strong> Records we must keep under tax, accounting, or other law.</li>
       <li><strong>Your request.</strong> Information you choose to send when you contact support, so we can reply.</li>
@@ -121,6 +126,11 @@ const toc = [
         <a href="https://posthog.com/privacy" rel="external nofollow noopener" target="_blank">PostHog privacy policy</a>
       </li>
       <li>
+        <strong>Sentry.</strong>
+        Crash and error diagnostics for the iPhone app, the Apple Watch app, and the watch complication. Hosted in the EU (de.sentry.io).
+        <a href="https://sentry.io/privacy/" rel="external nofollow noopener" target="_blank">Sentry privacy policy</a>
+      </li>
+      <li>
         <strong>CapGo.</strong>
         Over-the-air updates of the app.
         <a href="https://capgo.app/privacy/" rel="external nofollow noopener" target="_blank">CapGo privacy policy</a>
@@ -133,8 +143,8 @@ const toc = [
     </ul>
     <h3>International transfers</h3>
     <p>
-      Some of these providers are located outside the European Economic Area, including in the United States, where data protection laws can differ from Estonian and EU law.
-      Contact us if you want the details of a particular transfer.
+      Sentry stores crash and error reports in the European Union (de.sentry.io). Some of the other providers are located outside the European Economic Area, including in the
+      United States, where data protection laws can differ from Estonian and EU law. Contact us if you want the details of a particular transfer.
     </p>
     <h3>Other sharing</h3>
     <p>We may also share personal data in these cases:</p>
@@ -176,8 +186,8 @@ const toc = [
     <h3>How long we keep data</h3>
     <p>
       We keep personal data only for as long as we need it for the purposes in this policy. Purchase records may be kept for as long as tax and accounting law requires. Analytics
-      are kept under the retention settings of PostHog and of the website analytics endpoint. Support messages are kept for as long as we need them to handle your request and any
-      follow-up. When we no longer need the data, we delete it or anonymize it.
+      are kept under the retention settings of PostHog and of the website analytics endpoint. Crash and error reports are kept under Sentry's retention settings. Support messages
+      are kept for as long as we need them to handle your request and any follow-up. When we no longer need the data, we delete it or anonymize it.
     </p>
     <h3>Security</h3>
     <p>We use commercially reasonable measures to protect personal data. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
@@ -199,8 +209,8 @@ const toc = [
     <p>In the 12 months before the date above, the categories of personal information we collect and disclose for business purposes are:</p>
     <ul>
       <li>
-        <strong>Identifiers and device data</strong>, such as an IP address where a provider receives one, an analytics identifier, or an app-scoped device identifier used for
-        updates.
+        <strong>Identifiers and device data</strong>, such as an IP address where a provider receives one, an analytics identifier, an app-scoped device identifier used for
+        updates, or crash and error diagnostics.
       </li>
       <li><strong>Commercial information</strong>, such as the product you bought and whether a subscription is active.</li>
       <li><strong>Internet or app activity</strong>, such as usage events in the app and pages viewed on the website.</li>

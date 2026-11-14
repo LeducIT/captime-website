@@ -141,8 +141,8 @@ const toc = [
     </p>
     <h3>Third-party services</h3>
     <p>
-      The app relies on third-party services named in the <a href="/privacy/">Privacy Policy</a>, including RevenueCat, Apple, Google, PostHog, and CapGo. Their terms apply to
-      their services. We are not responsible for third-party services, and you use them at your own risk and under their terms.
+      The app relies on third-party services named in the <a href="/privacy/">Privacy Policy</a>, including RevenueCat, Apple, Google, PostHog, Sentry, and CapGo. Their terms apply
+      to their services. We are not responsible for third-party services, and you use them at your own risk and under their terms.
     </p>
     <h3>Termination</h3>
     <p>
