@@ -27,10 +27,31 @@ test.describe('download links', () => {
 
   test('home CTAs point at /go/ campaign routes', async ({ page }) => {
     await page.goto('/')
-    await expect(page.locator('a[href="/go/hero"]').first()).toHaveAttribute('href', '/go/hero')
+    await expect(page.locator('a[href="/go/hero"]')).toHaveCount(2)
     await expect(page.locator('a[href="/go/nav"]').first()).toHaveAttribute('href', '/go/nav')
     await expect(page.locator('a[href="/go/qr"]').first()).toHaveAttribute('href', '/go/qr')
-    await expect(page.locator('a[href="/go/cta"]').first()).toHaveAttribute('href', '/go/cta')
+    await expect(page.locator('a[href="/go/cta"]')).toHaveCount(0)
+    await expect(page.getByRole('link', { name: 'Download on the App Store' })).toHaveCount(1)
+    await expect(page.getByRole('link', { name: 'Get it on Google Play' })).toHaveCount(1)
+    const smash = page.getByRole('link', { name: 'Smash wods NOW' })
+    await expect(smash).toHaveCount(3)
+    await expect(smash.first()).toHaveAttribute('href', '#hero-downloads')
+  })
+
+  test('landing Smash button scrolls to the hero store badges', async ({ page }) => {
+    await page.goto('/')
+    await page.getByRole('heading', { name: 'Train anywhere.' }).scrollIntoViewIfNeeded()
+    await page.getByRole('link', { name: 'Smash wods NOW' }).last().click()
+    await expect(page.locator('#hero-downloads')).toBeInViewport()
+    await expect(page.getByRole('link', { name: 'Download on the App Store' })).toBeInViewport()
+  })
+
+  test('reduced motion still lands on the hero store badges', async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: 'reduce' })
+    await page.goto('/')
+    await page.getByRole('heading', { name: 'Train anywhere.' }).scrollIntoViewIfNeeded()
+    await page.getByRole('link', { name: 'Smash wods NOW' }).last().click()
+    await expect(page.locator('#hero-downloads')).toBeInViewport()
   })
 
   test('blog CTAs point at /go/blog_cta', async ({ page }) => {
