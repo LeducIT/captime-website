@@ -78,19 +78,8 @@ const docs = [
           <slot />
 
           <h2 id="contact">Contact</h2>
-          <p>
-            If you have questions about {{ contactAbout }}, or you want to access, correct, or delete personal data, email <a href="mailto:victor@leduc.it">victor@leduc.it</a>.
-          </p>
-          <p>
-            Leduc IT OÜ<br />
-            Registry code 14574207<br />
-            Harju maakond, Tallinn, Lasnamäe linnaosa, Sepapaja tn 6<br />
-            15551, Estonia
-          </p>
-          <p>
-            Registry code and address are taken from the
-            <a href="https://ariregister.rik.ee/eng/company/14574207" rel="external nofollow noopener" target="_blank">Estonian e-Business Register</a>.
-          </p>
+          <p>Questions about {{ contactAbout }}, or a request about your personal data: <a href="mailto:victor@leduc.it">victor@leduc.it</a></p>
+          <p>Leduc IT OÜ, Estonia</p>
         </article>
       </div>
     </div>

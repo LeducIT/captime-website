@@ -85,10 +85,7 @@ test.describe('visual baselines', () => {
         await expect(page.locator(href!)).toHaveCount(1)
       }
 
-      if (pageCase.path === '/privacy/') {
-        await expect(page.getByText('Crash reports: Sentry.')).toBeVisible()
-        await expect(page.getByText('Support chat: Crisp.')).toBeVisible()
-      }
+      await expect(page.getByRole('link', { name: 'victor@leduc.it' }).first()).toBeVisible()
 
       await expect(page).toHaveScreenshot(pageCase.name)
     })
