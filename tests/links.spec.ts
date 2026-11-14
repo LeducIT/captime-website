@@ -17,6 +17,8 @@ test.describe('download links', () => {
     const response = await request.get('/download/')
     expect(response.status()).toBe(200)
     const html = await response.text()
+    expect(html).toContain('href="/go/download?store=ios"')
+    expect(html).toContain('href="/go/download?store=android"')
     expect(html).toContain('id1369288585?ct=download')
     expect(html).toContain('ee.forgr.captime')
     expect(html).toContain('utm_campaign%3Ddownload')
@@ -27,7 +29,9 @@ test.describe('download links', () => {
 
   test('home CTAs point at /go/ campaign routes', async ({ page }) => {
     await page.goto('/')
-    await expect(page.locator('a[href="/go/hero"]')).toHaveCount(2)
+    await expect(page.locator('a[href="/go/hero?store=ios"]')).toHaveCount(1)
+    await expect(page.locator('a[href="/go/hero?store=android"]')).toHaveCount(1)
+    await expect(page.locator('a[href="/go/hero"]')).toHaveCount(0)
     await expect(page.locator('a[href="/go/nav"]').first()).toHaveAttribute('href', '/go/nav')
     await expect(page.locator('a[href="/go/qr"]').first()).toHaveAttribute('href', '/go/qr')
     await expect(page.locator('a[href="/go/cta"]')).toHaveCount(0)
@@ -54,9 +58,19 @@ test.describe('download links', () => {
     await expect(page.locator('#hero-downloads')).toBeInViewport()
   })
 
-  test('blog CTAs point at /go/blog_cta', async ({ page }) => {
+  test('blog store badges keep their own store', async ({ page }) => {
     await page.goto('/blog/amrap/')
-    await expect(page.locator('a[href="/go/blog_cta"]').first()).toHaveAttribute('href', '/go/blog_cta')
+    await expect(page.locator('a[href="/go/blog_cta?store=ios"]').first()).toHaveAttribute('href', '/go/blog_cta?store=ios')
+    await expect(page.locator('a[href="/go/blog_cta?store=android"]').first()).toHaveAttribute('href', '/go/blog_cta?store=android')
+    await expect(page.locator('a[href="/go/blog_cta"]')).toHaveCount(0)
+  })
+
+  test('footer copyright falls back to 2026 and updates from the clock', async ({ request }) => {
+    const html = await (await request.get('/')).text()
+    expect(html).toContain('data-current-year')
+    expect(html).toContain('>2026<')
+    expect(html).toContain('new Date().getFullYear()')
+    expect(html).not.toContain('© 2022')
   })
 
   test('hero store badges are the same size', async ({ page }) => {

@@ -8,8 +8,10 @@ export const appStoreProviderToken = ''
 
 export const campaignPathPattern = /^\/go\/([A-Za-z0-9][A-Za-z0-9_-]*)\/?$/
 
-export function campaignPath(ct: string): string {
-  return `/go/${ct}`
+export function campaignPath(ct: string, store?: 'ios' | 'android'): string {
+  if (!store)
+    return `/go/${ct}`
+  return `/go/${ct}?store=${store}`
 }
 
 export function appStoreCampaignUrl(ct: string): string {
@@ -34,23 +36,29 @@ export function storeFromUserAgent(ua: string): CampaignStore {
   return 'other'
 }
 
-export function campaignLocation(pathname: string, ua: string, origin: string): string | null {
-  const match = pathname.match(campaignPathPattern)
+function explicitStore(value: string | null): 'ios' | 'android' | null {
+  if (value === 'ios' || value === 'android')
+    return value
+  return null
+}
+
+export function campaignLocation(target: URL, ua: string): string | null {
+  const match = target.pathname.match(campaignPathPattern)
   if (!match)
     return null
 
   const ct = match[1]
-  const store = storeFromUserAgent(ua)
+  const store = explicitStore(target.searchParams.get('store')) || storeFromUserAgent(ua)
   if (store === 'android')
     return playStoreCampaignUrl(ct)
   if (store === 'ios')
     return appStoreCampaignUrl(ct)
-  return new URL(downloadPath, origin).toString()
+  return new URL(downloadPath, target.origin).toString()
 }
 
 export function campaignRedirectResponse(request: Request): Response | null {
   const url = new URL(request.url)
-  const location = campaignLocation(url.pathname, request.headers.get('user-agent') || '', url.origin)
+  const location = campaignLocation(url, request.headers.get('user-agent') || '')
   if (!location)
     return null
 

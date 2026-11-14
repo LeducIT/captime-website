@@ -10,7 +10,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <footer class="p-4 rounded-none shadow md:px-6 md:py-8">
+  <div>
     <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
 
     <div class="sm:flex sm:items-center sm:justify-between">
@@ -31,6 +31,5 @@ onMounted(() => {
       </ul>
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-    <span class="block text-sm text-white sm:text-center">© 2022 <a href="/" class="hover:underline font-handel">Captime</a>. All Rights Reserved. </span>
-  </footer>
+  </div>
 </template>

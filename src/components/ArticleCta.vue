@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import CtaButton from './CtaButton.vue'
 import StoreBadges from './StoreBadges.vue'
 
 const props = defineProps<{
@@ -22,10 +21,7 @@ const copy = computed(() => {
     <p class="mt-3 text-sm text-gray-400">
       Start the timer on iPhone or Android and smash the clock.
     </p>
-    <CtaButton class="mt-6" ct="blog_cta" title="Download Captime">
-      Try for free
-    </CtaButton>
-    <div class="mt-5">
+    <div class="mt-6">
       <StoreBadges ct="blog_cta" />
     </div>
   </aside>

@@ -1,16 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { appStoreCampaignUrl, campaignPath, playStoreCampaignUrl } from '../lib/campaign'
+import { campaignPath } from '../lib/campaign'
 
-const props = withDefaults(defineProps<{
+const props = defineProps<{
   ct: string
-  direct?: boolean
-}>(), {
-  direct: false,
-})
+}>()
 
-const appleHref = computed(() => props.direct ? appStoreCampaignUrl(props.ct) : campaignPath(props.ct))
-const playHref = computed(() => props.direct ? playStoreCampaignUrl(props.ct) : campaignPath(props.ct))
+const appleHref = computed(() => campaignPath(props.ct, 'ios'))
+const playHref = computed(() => campaignPath(props.ct, 'android'))
 </script>
 
 <template>

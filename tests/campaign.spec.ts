@@ -22,12 +22,19 @@ test.describe('smart app banner', () => {
 
 test.describe('campaign redirect logic', () => {
   test('resolves store URLs from User-Agent', () => {
-    expect(campaignLocation('/go/hero', iphone, origin)).toBe(appStoreCampaignUrl('hero'))
-    expect(campaignLocation('/go/hero', macos, origin)).toBe(appStoreCampaignUrl('hero'))
-    expect(campaignLocation('/go/blog_cta', android, origin)).toBe(playStoreCampaignUrl('blog_cta'))
-    expect(campaignLocation('/go/footer', desktop, origin)).toBe(`${origin}/download/`)
-    expect(campaignLocation('/go/hero', desktop, origin)).toBe(`${origin}/download/`)
-    expect(campaignLocation('/missing', iphone, origin)).toBeNull()
+    expect(campaignLocation(new URL('/go/hero', origin), iphone)).toBe(appStoreCampaignUrl('hero'))
+    expect(campaignLocation(new URL('/go/hero', origin), macos)).toBe(appStoreCampaignUrl('hero'))
+    expect(campaignLocation(new URL('/go/blog_cta', origin), android)).toBe(playStoreCampaignUrl('blog_cta'))
+    expect(campaignLocation(new URL('/go/footer', origin), desktop)).toBe(`${origin}/download/`)
+    expect(campaignLocation(new URL('/go/hero', origin), desktop)).toBe(`${origin}/download/`)
+    expect(campaignLocation(new URL('/missing', origin), iphone)).toBeNull()
+  })
+
+  test('explicit store param overrides the device', () => {
+    expect(campaignLocation(new URL('/go/hero?store=android', origin), iphone)).toBe(playStoreCampaignUrl('hero'))
+    expect(campaignLocation(new URL('/go/hero?store=ios', origin), android)).toBe(appStoreCampaignUrl('hero'))
+    expect(campaignLocation(new URL('/go/download?store=ios', origin), desktop)).toBe(appStoreCampaignUrl('download'))
+    expect(campaignLocation(new URL('/go/qr', origin), desktop)).toBe(`${origin}/download/`)
   })
 
   test('omits empty App Store pt param', () => {
@@ -67,6 +74,15 @@ test.describe('Workers /go/ redirects', () => {
     const response = await request.get('/go/footer', { maxRedirects: 0, headers: { 'user-agent': desktop } })
     expect(response.status()).toBe(302)
     expect(new URL(response.headers()['location'] || '', 'http://127.0.0.1:4321').pathname).toBe('/download/')
+  })
+
+  test('store query overrides the iPhone User-Agent', async ({ request }) => {
+    const play = await request.get('/go/hero?store=android', { maxRedirects: 0, headers: { 'user-agent': iphone } })
+    expect(play.status()).toBe(302)
+    expect(play.headers()['location']).toBe(playStoreCampaignUrl('hero'))
+    const apple = await request.get('/go/blog_cta?store=ios', { maxRedirects: 0, headers: { 'user-agent': android } })
+    expect(apple.status()).toBe(302)
+    expect(apple.headers()['location']).toBe(appStoreCampaignUrl('blog_cta'))
   })
 })
 

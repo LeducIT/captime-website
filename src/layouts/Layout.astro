@@ -34,7 +34,17 @@ const blog = Astro.url.pathname.startsWith('/blog')
     <div class="overflow-x-hidden text-white">
       <Header client:load blog={blog} />
       <slot />
-      <Footer client:load />
+      <footer class="p-4 rounded-none shadow md:px-6 md:py-8">
+        <Footer client:load />
+        <span class="block text-sm text-white sm:text-center">© <span data-current-year>2026</span> <a href="/" class="hover:underline font-handel">Captime</a>. All Rights Reserved.</span>
+      </footer>
+      <script is:inline>
+        (function () {
+          var node = document.querySelector('[data-current-year]')
+          if (node)
+            node.textContent = String(new Date().getFullYear())
+        })()
+      </script>
     </div>
     <script
       is:inline
