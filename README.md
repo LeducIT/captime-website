@@ -40,3 +40,5 @@ npm run preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+
+Production deploys to Cloudflare Workers on push to `main` (see `.github/workflows/deploy.yml`). `netlify.toml` is kept until DNS cutover.
