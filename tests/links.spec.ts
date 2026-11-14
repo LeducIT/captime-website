@@ -14,14 +14,28 @@ test.describe('download links', () => {
   })
 
   test('/download page lists both stores and no n.to', async ({ request }) => {
-    const response = await request.get('/download')
+    const response = await request.get('/download/')
     expect(response.status()).toBe(200)
     const html = await response.text()
-    expect(html).toContain('https://apps.apple.com/us/app/captime-hiit-wod-timer/id1369288585')
-    expect(html).toContain('https://play.google.com/store/apps/details?id=ee.forgr.captime')
+    expect(html).toContain('id1369288585?ct=download')
+    expect(html).toContain('ee.forgr.captime')
+    expect(html).toContain('utm_campaign%3Ddownload')
     expect(html).not.toMatch(/n\.to\/captime/i)
     expect(html).not.toMatch(/https?:\/\/n\.to\b/i)
     expect(html).not.toMatch(/onelink\.to/i)
+  })
+
+  test('home CTAs point at /go/ campaign routes', async ({ page }) => {
+    await page.goto('/')
+    await expect(page.locator('a[href="/go/hero"]').first()).toHaveAttribute('href', '/go/hero')
+    await expect(page.locator('a[href="/go/nav"]').first()).toHaveAttribute('href', '/go/nav')
+    await expect(page.locator('a[href="/go/qr"]').first()).toHaveAttribute('href', '/go/qr')
+    await expect(page.locator('a[href="/go/cta"]').first()).toHaveAttribute('href', '/go/cta')
+  })
+
+  test('blog CTAs point at /go/blog_cta', async ({ page }) => {
+    await page.goto('/blog/amrap/')
+    await expect(page.locator('a[href="/go/blog_cta"]').first()).toHaveAttribute('href', '/go/blog_cta')
   })
 
   test('hero store badges are the same size', async ({ page }) => {

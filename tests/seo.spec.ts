@@ -97,6 +97,7 @@ test.describe('on-page SEO', () => {
     await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', /^https:\/\//)
     await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute('content', 'summary_large_image')
     await expect(page.locator('h1')).toHaveCount(1)
+    await expect(page.locator('meta[name="apple-itunes-app"]')).toHaveAttribute('content', 'app-id=1369288585')
     const jsonLd = await page.locator('script[type="application/ld+json"]').first().textContent()
     expect(jsonLd).toContain('"SoftwareApplication"')
     expect(jsonLd).toContain('"Organization"')
@@ -146,6 +147,8 @@ test.describe('internal links', () => {
         const path = href.split('#')[0].split('?')[0]
         if (!path || path.startsWith('//') || path.endsWith('.xml'))
           continue
+        if (path.startsWith('/go/'))
+          continue
         if (redirectSources.has(path) || distHasPage(path) || existsSync(join(dist, path.replace(/^\//, ''))))
           continue
         missing.push(`${file} -> ${href}`)
@@ -173,6 +176,8 @@ test.describe('internal links', () => {
     expect(rules.length).toBeGreaterThan(0)
     for (const rule of rules) {
       expect(rule.code).toBe('301')
+      if (rule.dest.includes(':') || rule.dest.includes('*'))
+        continue
       expect(distHasPage(rule.dest), rule.dest).toBeTruthy()
     }
   })

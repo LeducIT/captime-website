@@ -37,7 +37,7 @@ const expanded = ref(false)
         </nav>
 
         <div class="relative hidden md:block">
-          <CtaButton size="sm">
+          <CtaButton size="sm" ct="nav">
             Try for free
           </CtaButton>
         </div>
@@ -49,7 +49,7 @@ const expanded = ref(false)
             Blog
           </a>
 
-          <CtaButton size="sm">
+          <CtaButton size="sm" ct="nav">
             Try for free
           </CtaButton>
         </div>

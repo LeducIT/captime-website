@@ -1,11 +1,22 @@
 <script setup lang="ts">
-import { appStoreUrl, playStoreUrl } from '../constants'
+import { computed } from 'vue'
+import { appStoreCampaignUrl, campaignPath, playStoreCampaignUrl } from '../lib/campaign'
+
+const props = withDefaults(defineProps<{
+  ct: string
+  direct?: boolean
+}>(), {
+  direct: false,
+})
+
+const appleHref = computed(() => props.direct ? appStoreCampaignUrl(props.ct) : campaignPath(props.ct))
+const playHref = computed(() => props.direct ? playStoreCampaignUrl(props.ct) : campaignPath(props.ct))
 </script>
 
 <template>
   <div class="flex flex-row flex-wrap items-center justify-center gap-3">
     <a
-      :href="appStoreUrl"
+      :href="appleHref"
       target="_blank"
       rel="noopener noreferrer"
       title="Download Captime on the App Store"
@@ -22,7 +33,7 @@ import { appStoreUrl, playStoreUrl } from '../constants'
       >
     </a>
     <a
-      :href="playStoreUrl"
+      :href="playHref"
       target="_blank"
       rel="noopener noreferrer"
       title="Download Captime on Google Play"

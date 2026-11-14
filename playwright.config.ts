@@ -58,8 +58,8 @@ export default defineConfig({
   ],
   webServer: {
     command: process.env.CI
-      ? `pnpm preview --host 127.0.0.1 --port ${port}`
-      : `pnpm build && pnpm preview --host 127.0.0.1 --port ${port}`,
+      ? `npx --yes wrangler@4 dev --port ${port} --ip 127.0.0.1`
+      : `pnpm build && npx --yes wrangler@4 dev --port ${port} --ip 127.0.0.1`,
     url: baseURL,
     reuseExistingServer: !process.env.CI,
     timeout: 180_000,

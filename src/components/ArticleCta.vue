@@ -22,11 +22,11 @@ const copy = computed(() => {
     <p class="mt-3 text-sm text-gray-400">
       Start the timer on iPhone or Android and smash the clock.
     </p>
-    <CtaButton class="mt-6" title="Download Captime">
+    <CtaButton class="mt-6" ct="blog_cta" title="Download Captime">
       Try for free
     </CtaButton>
     <div class="mt-5">
-      <StoreBadges />
+      <StoreBadges ct="blog_cta" />
     </div>
   </aside>
 </template>

@@ -2,8 +2,8 @@ ci:
   collect:
     numberOfRuns: 5
     url:
-      - https://capgo.app
-      - https://capgo.app/blog
+      - https://captime.app
+      - https://captime.app/blog
   assert:
     preset: lighthouse:recommended
     assertions:
@@ -20,4 +20,4 @@ ci:
           aggregationMethod: optimistic
   upload:
     target: lhci
-    serverBaseUrl: https://capgo.app
+    serverBaseUrl: https://captime.app
