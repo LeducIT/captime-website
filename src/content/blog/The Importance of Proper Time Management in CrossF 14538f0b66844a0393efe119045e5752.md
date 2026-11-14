@@ -2,7 +2,7 @@
 title: "The Importance of Proper Time Management in CrossFit Training"
 slug: "the-importance-of-proper-time-management-in-crossfit-training"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Proper time management is essential for getting the most out of your CrossFit training. Learn how to balance your schedule, avoid burnout, and achieve your fitness goals with the help of timers like the TABATA Timer, AMRAP Timer, EMOM Timer, HIIT+ Interval Timer, For Time Timer, Sally Timer, and Fight gone bad Timer."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1578762560042-46ad127c95ea?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

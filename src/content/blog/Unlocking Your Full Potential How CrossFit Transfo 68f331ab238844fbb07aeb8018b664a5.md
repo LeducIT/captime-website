@@ -2,7 +2,7 @@
 title: "Unlocking Your Full Potential: How CrossFit Transforms Mind and Body"
 slug: "unlocking-your-full-potential-how-crossfit-transforms-mind-and-body"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how CrossFit transforms mind and body. Explore the science, psychological benefits, community support, and ways to unlock your full potential with CrossFit."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

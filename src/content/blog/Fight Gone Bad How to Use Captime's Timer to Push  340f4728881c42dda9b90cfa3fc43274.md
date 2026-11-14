@@ -2,7 +2,7 @@
 title: "Fight Gone Bad: How to Use Captime's Timer to Push Your Limits"
 slug: "fight-gone-bad-how-to-use-captimes-timer-to-push-your-limits"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Looking to take your CrossFit, HIIT, or Tabata workouts to the next level? Captime's Timer can help. Learn how to use its various timers and features to push your limits and track your progress."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/flagged/photo-1574005280900-3ff489fa1f70?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

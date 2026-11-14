@@ -2,7 +2,7 @@
 title: "Mastering the AMRAP Timer: Pushing Your Limits in CrossFit"
 slug: "mastering-the-amrap-timer-pushing-your-limits-in-crossfit"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Maximize your CrossFit performance with AMRAP training. Discover tips, techniques, and variations to push your limits and achieve new levels of intensity."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1518644961665-ed172691aaa1?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

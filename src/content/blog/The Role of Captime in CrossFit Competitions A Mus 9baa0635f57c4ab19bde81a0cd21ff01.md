@@ -2,7 +2,7 @@
 title: "The Role of Captime in CrossFit Competitions: A Must-Have Timer"
 slug: "the-role-of-captime-in-crossfit-competitions-a-must-have-timer"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Elevate your CrossFit competition performance with Captime. Its user-friendly interface and customizable features help you stay focused and achieve your goals. Maximize your potential with the ultimate CrossFit competition timer."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

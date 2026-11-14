@@ -2,7 +2,7 @@
 title: "Staying on Track with Captime: The Ideal Timer for HIIT Enthusiasts"
 slug: "staying-on-track-with-captime-the-ideal-timer-for-hiit-enthusiasts"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover Captime, the ultimate timer designed for HIIT enthusiasts. Enhance your workouts, track performance, and stay motivated with its user-friendly interface. Take your HIIT sessions to new heights!"
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

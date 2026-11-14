@@ -2,7 +2,7 @@
 title: "AMRAP vs. EMOM: Which Workout Style is Right for You?"
 slug: "amrap-vs-emom-which-workout-style-is-right-for-you"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the benefits of AMRAP and EMOM workouts, and choose the best training style for your fitness goals. Improve endurance, time management, and skills with AMRAP, or enhance efficiency and consistency with EMOM."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1556817411-9571d6fba73b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

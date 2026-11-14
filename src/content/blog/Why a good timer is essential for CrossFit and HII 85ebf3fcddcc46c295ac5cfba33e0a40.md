@@ -2,7 +2,7 @@
 title: "Why a good timer is essential for CrossFit and HIIT workouts"
 slug: "why-a-good-timer-is-essential-for-crossfit-and-hiit-workouts"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover why a good timer is essential for CrossFit and HIIT workouts. Learn how timing can help you maximize your workout efficiency, avoid injury, and build mental endurance. Find the best timer for your routine and achieve your fitness goals."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1609096458733-95b38583ac4e?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

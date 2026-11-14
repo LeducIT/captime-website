@@ -2,7 +2,7 @@
 title: "Maximizing Your AMRAP Workouts: Strategies for Success"
 slug: "maximizing-your-amrap-workouts-strategies-for-success"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Enhance your AMRAP workouts with powerful mental strategies. Set goals, manage pacing, choose the right exercises, and develop mental resilience for peak performance. Elevate your fitness journey now."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1556817411-92f5ec899a55?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

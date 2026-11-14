@@ -2,7 +2,7 @@
 title: "Creating Your CrossFit Routine: Designing Workouts for Progression"
 slug: "creating-your-crossfit-routine-designing-workouts-for-progression"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Design an effective CrossFit routine for progression, with tips on setting goals, choosing exercises, structuring workouts, and progressing safely. Maximize your fitness potential!"
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1517344884509-a0c97ec11bcc?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

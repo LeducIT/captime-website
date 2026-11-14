@@ -2,8 +2,7 @@
 slug: "explanation-of-tabata-in-crossfit-for-beginners"
 title: "Tabata in CrossFit: A Beginner's Guide"
 description: Tabata is a 4-minute HIIT format. Eight rounds of 20 seconds on and 10 seconds off, used as a CrossFit and WOD timer mode.
-author: Team Captime
-author_url: "https://captime.app#team"
+author: "Victor Leduc"
 created_at: 2022-02-15T19:00:00.000+00:00
 updated_at: 2022-05-23T19:00:00.000+00:00
 head_image: "/explanation-of-tabata-in-crossfit-for-beginners.webp"

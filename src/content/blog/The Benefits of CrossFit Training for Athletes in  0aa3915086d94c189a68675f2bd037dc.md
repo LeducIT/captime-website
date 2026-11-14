@@ -2,7 +2,7 @@
 title: "The Benefits of CrossFit Training for Athletes in Their 30s"
 slug: "the-benefits-of-crossfit-training-for-athletes-in-their-30s"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the transformative power of CrossFit for athletes in their 30s. From physical prowess to mental fortitude, explore the benefits and unlock your potential."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1517344884509-a0c97ec11bcc?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

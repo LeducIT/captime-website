@@ -2,7 +2,7 @@
 title: "Maximizing Efficiency with Captime: The Ideal Timer for Interval Training"
 slug: "maximizing-efficiency-with-captime-the-ideal-timer-for-interval-training"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the power of Captime, the ultimate timer for interval training. Customize, track, and maximize your efficiency with a user-friendly interface. Elevate your workouts and achieve your fitness goals with Captime."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

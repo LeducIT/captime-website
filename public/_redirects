@@ -14,3 +14,13 @@
 /blog/regenerate-faster-tips-for-regeneration-in-crossfit/ /blog/regeneration-cool-down-for-after-crossfit-workout/ 301
 /blog/supercompensation-how-to-avoid-overtraining /blog/the-importance-of-recovery-and-rest-days-in-crossfit/ 301
 /blog/supercompensation-how-to-avoid-overtraining/ /blog/the-importance-of-recovery-and-rest-days-in-crossfit/ 301
+
+# Permanent trailing slashes (override Cloudflare html_handling 307s)
+/blog /blog/ 301
+/download /download/ 301
+/privacy /privacy/ 301
+/tos /tos/ 301
+/eula /eula/ 301
+/disclaimer /disclaimer/ 301
+/return /return/ 301
+/blog/:slug /blog/:slug/ 301

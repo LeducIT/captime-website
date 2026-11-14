@@ -2,7 +2,7 @@
 title: "Fight Gone Bad: Pushing Your Limits in CrossFit Conditioning"
 slug: "fight-gone-bad-pushing-your-limits-in-crossfit-conditioning"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Push your limits and test your conditioning with Fight Gone Bad, a challenging CrossFit workout. Discover its origins, format, movements, benefits, and strategies for success in this comprehensive guide."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1519311965067-36d3e5f33d39?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

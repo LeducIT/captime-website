@@ -2,7 +2,7 @@
 title: "The Best Apps for Tracking Your CrossFit Workouts"
 slug: "the-best-apps-for-tracking-your-crossfit-workouts"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the best apps for tracking your CrossFit workouts, including Tabata Timer +, Interval Timer, and CrossFit WOD. Learn about the features to look for in a tracking app and how it can help you achieve your fitness goals."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

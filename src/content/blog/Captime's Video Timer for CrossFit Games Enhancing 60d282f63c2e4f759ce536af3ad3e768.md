@@ -2,7 +2,7 @@
 title: "Captime's Video Timer for CrossFit Games: Enhancing the Competition Experience"
 slug: "captimes-video-timer-for-crossfit-games-enhancing-the-competition-experience"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Uncover the revolution in CrossFit Games with Captime's Video Timer. Elevate competitions with precise timing, fairness, and athlete empowerment. Discover the future of CrossFit with Captime's innovative Video Timer."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1519311965067-36d3e5f33d39?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

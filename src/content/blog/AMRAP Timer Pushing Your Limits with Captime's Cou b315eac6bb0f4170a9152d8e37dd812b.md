@@ -2,7 +2,7 @@
 title: "AMRAP Timer: Pushing Your Limits with Captime's Countdown"
 slug: "amrap-timer-pushing-your-limits-with-captimes-countdown"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Unleash peak performance in your workouts with Captime's AMRAP Countdown. Learn how precise timing and customization enhance AMRAP sessions, taking your fitness journey to new heights."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1556817411-58c45dd94e8c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

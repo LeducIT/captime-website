@@ -2,7 +2,7 @@
 title: "How to Prevent Injury During High-Intensity Workouts with Captime Timer"
 slug: "how-to-prevent-injury-during-high-intensity-workouts-with-captime-timer"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Learn how to prevent injury during high-intensity workouts with Captime Timer. Discover the importance of rest, proper form, and listening to your body."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1600881333168-2ef49b341f30?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

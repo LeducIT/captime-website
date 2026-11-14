@@ -2,7 +2,7 @@
 title: "Sally Up, Sally Down: A Guide to the Iconic CrossFit Challenge"
 slug: "sally-up-sally-down-a-guide-to-the-iconic-crossfit-challenge"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Explore the origins, mechanics, and benefits of the iconic CrossFit challenge, Sally Up, Sally Down. Discover variations, tips, and strategies to conquer this demanding movement and enhance your strength and endurance."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1632758243488-7e6f9173cfa1?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

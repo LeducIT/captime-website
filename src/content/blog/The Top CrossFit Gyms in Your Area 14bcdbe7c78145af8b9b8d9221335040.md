@@ -2,7 +2,7 @@
 title: "The Top CrossFit Gyms in Your Area"
 slug: "the-top-crossfit-gyms-in-your-area"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Looking to get into CrossFit? Check out our guide to finding the best CrossFit gym in your area, including reviews and recommendations for top gyms and the benefits of joining."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1571388208497-71bedc66e932?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

@@ -2,7 +2,7 @@
 title: "Breaking Down the Features of Captime: The Perfect Timer for CrossFit Enthusiasts"
 slug: "breaking-down-the-features-of-captime-the-perfect-timer-for-crossfit-enthusiasts"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Elevate your CrossFit training with Captime - the ultimate timer for enthusiasts. Discover its features, versatility, and performance tracking capabilities. Maximize your workouts and achieve your fitness goals like never before."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

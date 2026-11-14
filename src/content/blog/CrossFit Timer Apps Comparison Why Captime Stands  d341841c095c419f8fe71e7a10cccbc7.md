@@ -2,7 +2,7 @@
 title: "CrossFit Timer Apps Comparison: Why Captime Stands Out from the Rest"
 slug: "crossfit-timer-apps-comparison-why-captime-stands-out-from-the-rest"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover Captime, the revolutionary CrossFit timer app with precision timing, user-friendly interface, and customizable features. Elevate your training and achieve unparalleled results in your fitness journey."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1639511205270-2b1ce5b112c6?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

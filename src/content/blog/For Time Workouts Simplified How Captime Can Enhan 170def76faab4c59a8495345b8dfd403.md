@@ -2,7 +2,7 @@
 title: "For Time Workouts Simplified: How Captime Can Enhance Your Training"
 slug: "for-time-workouts-simplified-how-captime-can-enhance-your-training"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Enhance your For Time workouts with Captime. Discover customizable timer settings, a user-friendly interface, and tracking capabilities to optimize your performance. Elevate your fitness journey today."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1538805060514-97d9cc17730c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

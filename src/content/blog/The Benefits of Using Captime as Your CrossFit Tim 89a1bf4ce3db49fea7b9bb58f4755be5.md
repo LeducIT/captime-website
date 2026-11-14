@@ -2,7 +2,7 @@
 title: "The Benefits of Using Captime as Your CrossFit Timer"
 slug: "the-benefits-of-using-captime-as-your-crossfit-timer"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the power of Captime, the ultimate CrossFit timer. Elevate your workouts, track your progress, and achieve new fitness goals with this must-have tool. Try Captime now and unlock your full training potential."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

@@ -2,7 +2,7 @@
 title: "Why CrossFit is the Ultimate Workout for Fitness Enthusiasts"
 slug: "why-crossfit-is-the-ultimate-workout-for-fitness-enthusiasts"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the transformative power of community in CrossFit. Explore how camaraderie, support, and accountability fuel fitness success in this insightful blog post."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

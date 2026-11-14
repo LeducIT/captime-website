@@ -2,8 +2,7 @@
 slug: "explanation-of-emom-in-crossfit-for-beginners"
 title: "EMOM in CrossFit: A Beginner's Guide"
 description: EMOM means Every Minute on the Minute. In this CrossFit format you start a set number of reps at the top of each minute, then rest until the next minute.
-author: Team Captime
-author_url: "https://captime.app#team"
+author: "Victor Leduc"
 created_at: 2022-02-20T19:00:00.000+00:00
 updated_at: 2022-02-25T19:00:00.000+00:00
 head_image: "/explanation-of-emom-in-crossfit-for-beginners.webp"

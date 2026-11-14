@@ -1,9 +1,12 @@
+import { withResolvedAuthor } from '../lib/authors'
+
 export interface MyCustomParsedContent {
   slug: string
   title: string
   description: string
   author: string
   author_url?: string
+  author_image?: string
   created_at: string
   updated_at?: string
   head_image: string
@@ -38,5 +41,8 @@ export interface BlogPostModule {
 }
 
 export function loadBlogPosts(): BlogPostModule[] {
-  return Object.values(import.meta.glob<BlogPostModule>('../content/blog/**/*.md', { eager: true }))
+  return Object.values(import.meta.glob<BlogPostModule>('../content/blog/**/*.md', { eager: true })).map((post) => ({
+    ...post,
+    frontmatter: withResolvedAuthor(post.frontmatter),
+  }))
 }

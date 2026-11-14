@@ -2,7 +2,7 @@
 title: "Why HIIT Training is Perfect for Busy Professionals"
 slug: "why-hiit-training-is-perfect-for-busy-professionals"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how busy professionals can incorporate High-Intensity Interval Training (HIIT) into their schedules for efficient workouts and enhanced well-being."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1616279969856-759f316a5ac1?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

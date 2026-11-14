@@ -2,7 +2,7 @@
 title: "For Time Timer: Crushing Goals with Captime's Time Challenges"
 slug: "for-time-timer-crushing-goals-with-captimes-time-challenges"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Explore the transformative power of Captime's Time Challenges. Elevate your workouts, conquer goals, and boost productivity with dynamic training methods. Embrace the burstiness and master time management for remarkable results."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

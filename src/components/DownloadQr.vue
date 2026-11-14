@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { downloadPath } from '../constants'
+import { campaignPath } from '../lib/campaign'
 </script>
 
 <template>
   <figure class="flex flex-col items-center gap-2">
     <a
-      :href="downloadPath"
+      :href="campaignPath('qr')"
       title="Scan to get Captime on your phone"
       class="rounded-xl bg-white p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
     >

@@ -2,7 +2,7 @@
 title: "Success Stories: How Captime Transformed CrossFit Training for Athletes Worldwide"
 slug: "success-stories-how-captime-transformed-crossfit-training-for-athletes-worldwide"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the impact of Captime's revolutionary timer on CrossFit training. Explore real-life success stories, precision timing, and global influence that empower athletes to triumph over challenges and elevate their performance. Join the global community of driven individuals on the path to greatness."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1533681904393-9ab6eee7e408?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

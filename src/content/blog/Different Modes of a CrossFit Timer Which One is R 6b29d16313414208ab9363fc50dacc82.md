@@ -2,7 +2,7 @@
 title: "Different Modes of a CrossFit Timer: Which One is Right for You?"
 slug: "different-modes-of-a-crossfit-timer-which-one-is-right-for-you"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Looking for the right CrossFit timer for your workouts? Check out our comprehensive guide to different types of timers, their benefits, and factors to consider when choosing the perfect one for your fitness goals."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1536922246289-88c42f957773?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

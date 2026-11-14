@@ -2,7 +2,7 @@
 title: "How to Use Captime to Improve Your Gymnastics Skills"
 slug: "how-to-use-captime-to-improve-your-gymnastics-skills"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Learn how to use Captime to improve your gymnastics skills with versatile timers, warm-up routines, technique improvement, and progress tracking. Take your training to the next level!"
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1577702310329-f7293ba86b58?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

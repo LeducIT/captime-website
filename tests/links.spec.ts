@@ -14,14 +14,63 @@ test.describe('download links', () => {
   })
 
   test('/download page lists both stores and no n.to', async ({ request }) => {
-    const response = await request.get('/download')
+    const response = await request.get('/download/')
     expect(response.status()).toBe(200)
     const html = await response.text()
-    expect(html).toContain('https://apps.apple.com/us/app/captime-hiit-wod-timer/id1369288585')
-    expect(html).toContain('https://play.google.com/store/apps/details?id=ee.forgr.captime')
+    expect(html).toContain('href="/go/download?store=ios"')
+    expect(html).toContain('href="/go/download?store=android"')
+    expect(html).toMatch(/id1369288585\?pt=126840438(?:&|&amp;)ct=download(?:&|&amp;)mt=8/)
+    expect(html).toContain('ee.forgr.captime')
+    expect(html).toContain('utm_campaign%3Ddownload')
     expect(html).not.toMatch(/n\.to\/captime/i)
     expect(html).not.toMatch(/https?:\/\/n\.to\b/i)
     expect(html).not.toMatch(/onelink\.to/i)
+  })
+
+  test('home CTAs point at /go/ campaign routes', async ({ page }) => {
+    await page.goto('/')
+    await expect(page.locator('a[href="/go/hero?store=ios"]')).toHaveCount(1)
+    await expect(page.locator('a[href="/go/hero?store=android"]')).toHaveCount(1)
+    await expect(page.locator('a[href="/go/hero"]')).toHaveCount(0)
+    await expect(page.locator('a[href="/go/nav"]').first()).toHaveAttribute('href', '/go/nav')
+    await expect(page.locator('a[href="/go/qr"]').first()).toHaveAttribute('href', '/go/qr')
+    await expect(page.locator('a[href="/go/cta"]')).toHaveCount(0)
+    await expect(page.getByRole('link', { name: 'Download on the App Store' })).toHaveCount(1)
+    await expect(page.getByRole('link', { name: 'Get it on Google Play' })).toHaveCount(1)
+    const smash = page.getByRole('link', { name: 'Smash wods NOW' })
+    await expect(smash).toHaveCount(3)
+    await expect(smash.first()).toHaveAttribute('href', '#hero-downloads')
+  })
+
+  test('landing Smash button scrolls to the hero store badges', async ({ page }) => {
+    await page.goto('/')
+    await page.getByRole('heading', { name: 'Train anywhere.' }).scrollIntoViewIfNeeded()
+    await page.getByRole('link', { name: 'Smash wods NOW' }).last().click()
+    await expect(page.locator('#hero-downloads')).toBeInViewport()
+    await expect(page.getByRole('link', { name: 'Download on the App Store' })).toBeInViewport()
+  })
+
+  test('reduced motion still lands on the hero store badges', async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: 'reduce' })
+    await page.goto('/')
+    await page.getByRole('heading', { name: 'Train anywhere.' }).scrollIntoViewIfNeeded()
+    await page.getByRole('link', { name: 'Smash wods NOW' }).last().click()
+    await expect(page.locator('#hero-downloads')).toBeInViewport()
+  })
+
+  test('blog store badges keep their own store', async ({ page }) => {
+    await page.goto('/blog/amrap/')
+    await expect(page.locator('a[href="/go/blog_cta?store=ios"]').first()).toHaveAttribute('href', '/go/blog_cta?store=ios')
+    await expect(page.locator('a[href="/go/blog_cta?store=android"]').first()).toHaveAttribute('href', '/go/blog_cta?store=android')
+    await expect(page.locator('a[href="/go/blog_cta"]')).toHaveCount(0)
+  })
+
+  test('footer copyright falls back to 2026 and updates from the clock', async ({ request }) => {
+    const html = await (await request.get('/')).text()
+    expect(html).toContain('data-current-year')
+    expect(html).toContain('>2026<')
+    expect(html).toContain('new Date().getFullYear()')
+    expect(html).not.toContain('© 2022')
   })
 
   test('hero store badges are the same size', async ({ page }) => {

@@ -2,7 +2,7 @@
 title: "Why Investing in a Premium Timer Like Captime is Worth It"
 slug: "why-investing-in-a-premium-timer-like-captime-is-worth-it"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Investing in a premium timer like Captime is worth it for CrossFit and HIIT enthusiasts. With unique features like the SALLY Timer and video timer for CrossFit games, Captime offers ultimate convenience and precision for achieving fitness goals. Accurate timing is also essential for cooking and baking results."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1456574808786-d2ba7a6aa654?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

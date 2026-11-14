@@ -6,8 +6,7 @@ description:
   amount of hard work in the gym and outdoors. But don’t get overwhelmed by the thought
   of this challenge. All you need is to follow a proper schedule with a well-developed
   strategy. Eventually, you will get there.
-author: Team Captime
-author_url: "https://captime.app#team"
+author: "Victor Leduc"
 created_at: 2022-03-09T19:00:00.000+00:00
 updated_at: 2022-05-25T19:00:00.000+00:00
 head_image: "/steps-to-getting-ready-for-the-next-crossfit-open.webp"

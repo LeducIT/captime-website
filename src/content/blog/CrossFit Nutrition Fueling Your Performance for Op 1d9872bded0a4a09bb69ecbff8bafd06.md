@@ -2,7 +2,7 @@
 title: "CrossFit Nutrition: Fueling Your Performance for Optimal Results"
 slug: "crossfit-nutrition-fueling-your-performance-for-optimal-results"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Unlock your CrossFit potential with proper nutrition. Learn about macronutrients, fueling strategies, and hydration to enhance your performance and reach your fitness goals."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

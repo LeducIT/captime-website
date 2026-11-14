@@ -2,7 +2,7 @@
 title: "The Role of Recovery Drinks in Crossfit Training"
 slug: "the-role-of-recovery-drinks-in-crossfit-training"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the importance of recovery drinks in Crossfit training and how they aid in muscle recovery, replenishing energy, and preventing injury. Learn how to choose the best recovery drinks for your Crossfit goals and needs."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1520787497953-1985ca467702?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

@@ -7,6 +7,7 @@ import Header from '../components/NavBar.vue'
 import Footer from '../components/Footer.vue'
 
 const { content, lcpPreload } = Astro.props
+const blog = Astro.url.pathname.startsWith('/blog')
 ---
 
 <!DOCTYPE html>
@@ -31,9 +32,19 @@ const { content, lcpPreload } = Astro.props
   </head>
   <body>
     <div class="overflow-x-hidden text-white">
-      <Header client:load />
+      <Header client:load blog={blog} />
       <slot />
-      <Footer client:load />
+      <footer class="p-4 rounded-none shadow md:px-6 md:py-8">
+        <Footer client:load />
+        <span class="block text-sm text-white sm:text-center">© <span data-current-year>2026</span> <a href="/" class="hover:underline font-handel">Captime</a>. All Rights Reserved.</span>
+      </footer>
+      <script is:inline>
+        (function () {
+          var node = document.querySelector('[data-current-year]')
+          if (node)
+            node.textContent = String(new Date().getFullYear())
+        })()
+      </script>
     </div>
     <script
       is:inline

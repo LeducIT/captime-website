@@ -2,7 +2,7 @@
 title: "How Captime Can Elevate Your CrossFit Games Experience: The Ultimate Video Timer"
 slug: "how-captime-can-elevate-your-crossfit-games-experience-the-ultimate-video-timer"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover Captime, the ultimate CrossFit timer that enhances your training experience. Precise timing, customizable intervals, and user-friendly features elevate your workouts. Maximize your CrossFit potential with Captime."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

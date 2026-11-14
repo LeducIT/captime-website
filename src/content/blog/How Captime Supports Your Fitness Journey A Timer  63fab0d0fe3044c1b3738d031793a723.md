@@ -2,7 +2,7 @@
 title: "How Captime Supports Your Fitness Journey: A Timer Designed for Success"
 slug: "using-captime-to-how-captime-supports-your-fitness-journey-a-timer-designed-for-success-your-crossfit-training-tips-and-tricks"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover advanced tips and strategies for optimal results in your fitness journey with Captime. Unleash the power of advanced techniques, track your progress, and stay motivated with Captime's tools. Unlock your full potential and achieve success in your fitness journey."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

@@ -2,7 +2,7 @@
 title: "How Captime Helps Athletes Track Progress and Performance Over Time"
 slug: "how-captime-helps-athletes-track-progress-and-performance-over-time"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how Captime's tracking capabilities revolutionize progress monitoring in CrossFit. Analyze your growth, capture workout data, and measure your performance with ease. Elevate your CrossFit journey with Captime's insights."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

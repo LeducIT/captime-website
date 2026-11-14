@@ -2,7 +2,7 @@
 title: "Unlock Your Potential with EMOM Training: Use Captime for Optimal Results"
 slug: "unlock-your-potential-with-emom-training-use-captime-for-optimal-results"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how Captime enhances your EMOM (Every Minute on the Minute) workouts with customizable timer settings, performance tracking, and motivation to achieve optimal results. Elevate your training experience and unlock your potential with Captime."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

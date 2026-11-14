@@ -2,7 +2,7 @@
 title: "SALLY Timer: Adding a Twist to Your CrossFit Training"
 slug: "sally-timer-adding-a-twist-to-your-crossfit-training"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Elevate your CrossFit training with the SALLY Timer. Discover creative variations, progressions, and strategies to challenge your limits and unlock new levels of performance."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1623874228601-f4193c7b1818?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"
