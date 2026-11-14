@@ -25,6 +25,7 @@ const imageSrc = computed(() => props.image || '/blog_meta.webp')
       <img
         class="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110"
         loading="lazy"
+        decoding="async"
         height="232"
         width="378"
         :alt="description || `blog illustration ${title}`"

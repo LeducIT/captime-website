@@ -58,6 +58,8 @@ const parts = computed(() => {
           class="object-cover w-full h-full lg:rounded-lg md:shadow-xl md:shadow-gray-700"
           :src="imageSrc"
           loading="eager"
+          fetchpriority="high"
+          decoding="async"
           height="486"
           width="864"
           :alt="imageAlt"

@@ -19,6 +19,6 @@ const content = {
 }
 ---
 
-<Layout content={content}>
+<Layout content={content} lcpPreload={{ href: '/amrap1.webp' }}>
   <VueBlogIndex Content={posts} client:load />
 </Layout>

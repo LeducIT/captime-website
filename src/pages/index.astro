@@ -1,6 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import VueIndex from '../vue-pages/index.vue'
+import Hero from '../components/home/Hero.astro'
+import CallToAction from '../components/home/CallToAction.astro'
+import Features from '../components/home/Features.vue'
+import Testimonials from '../components/home/Testimonials.vue'
+import Trust from '../components/home/Trust.vue'
+import FAQ from '../components/home/FAQ.vue'
+import { heroDemoSizes, heroDemoWidths, srcsetFor } from '../lib/images'
 import { homeStructuredData, pageMeta } from '../services/seo'
 
 const content = {
@@ -11,6 +17,31 @@ const content = {
   ),
   ldJSON: homeStructuredData(),
 }
+
+const lcpPreload = {
+  type: 'image/avif',
+  srcset: srcsetFor('app-demo', heroDemoWidths, 'avif'),
+  sizes: heroDemoSizes,
+}
 ---
 
-<Layout content={content}><VueIndex client:load /></Layout>
+<Layout content={content} lcpPreload={lcpPreload}>
+  <Hero />
+  <Features />
+  <CallToAction />
+  <Testimonials />
+  <Trust />
+  <FAQ client:visible />
+</Layout>
+
+<script>
+  import { crispLoader } from '../services/crisp'
+
+  window.addEventListener(
+    'scroll',
+    () => {
+      crispLoader()
+    },
+    { capture: true, once: true, passive: true },
+  )
+</script>

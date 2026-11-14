@@ -5,6 +5,7 @@ import { getRelatedKey } from '../../services/modes'
 import { useRuntimeConfig } from '../../config/app'
 import { articleStructuredData, isCanonicalBlogSlug, pageMeta, stripLeadingH1 } from '../../services/seo'
 import VueBlogSlug from '../../vue-pages/blog/[slug].vue'
+import { decorateContentImages } from '../../lib/images'
 
 export async function getStaticPaths() {
   const posts = loadBlogPosts().filter(isPublishedPost).filter((post) => isCanonicalBlogSlug(post.frontmatter.slug))
@@ -41,7 +42,7 @@ const image = data.frontmatter.head_image
     : `${config.public.baseUrl}${data.frontmatter.head_image}`
   : fallbackImage
 
-const markdown = stripLeadingH1(await data.compiledContent())
+const markdown = decorateContentImages(stripLeadingH1(String(await data.compiledContent() || '')))
 
 const content = {
   ...pageMeta(`/blog/${slug}/`, data.frontmatter.title, data.frontmatter.description, {
@@ -53,6 +54,13 @@ const content = {
 }
 ---
 
-<Layout content={content}>
+<Layout
+  content={content}
+  lcpPreload={{
+    href: data.frontmatter.head_image?.startsWith('http')
+      ? data.frontmatter.head_image
+      : (data.frontmatter.head_image || '/blog_meta.webp'),
+  }}
+>
   <VueBlogSlug toc={data.getHeadings()} related={related} Content={markdown} client:load {...data.frontmatter} />
 </Layout>

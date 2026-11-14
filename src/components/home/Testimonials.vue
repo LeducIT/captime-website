@@ -35,9 +35,10 @@ const testimonials = [
               <div>
                 <div class="relative w-24 h-24 mx-auto">
                   <img
-                    height="96px"
-                    width="96px"
+                    height="96"
+                    width="96"
                     loading="lazy"
+                    decoding="async"
                     class="relative object-cover w-24 h-24 mx-auto rounded-full"
                     :src="testimonial.img"
                     :alt="`avatar ${testimonial.name}`"
