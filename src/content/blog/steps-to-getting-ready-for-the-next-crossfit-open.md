@@ -11,6 +11,7 @@ author_url: "https://captime.app#team"
 created_at: 2022-03-09T19:00:00.000+00:00
 updated_at: 2022-05-25T19:00:00.000+00:00
 head_image: "/steps-to-getting-ready-for-the-next-crossfit-open.webp"
+head_image_alt: Athletes preparing for the CrossFit Open
 tag: CrossFit Open
 published: true
 next_blog: ""

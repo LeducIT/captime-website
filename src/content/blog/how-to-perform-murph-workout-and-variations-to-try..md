@@ -10,8 +10,8 @@ author_url: "https://captime.app#team"
 created_at: 2022-06-01T19:00:00.000+00:00
 updated_at: 2022-06-01T19:00:00.000+00:00
 head_image: ""
-head_image_alt: ""
-tag: ""
+head_image_alt: Murph workout, a CrossFit hero WOD for time
+tag: For Time
 published: false
 next_blog: ""
 ---

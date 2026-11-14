@@ -21,12 +21,20 @@ test.describe('visual baselines', () => {
     await expect(hero).toHaveScreenshot('home-hero-cta.png')
   })
 
+  test('home store badges', async ({ page }) => {
+    await page.goto('/')
+    await waitForVisualReady(page, { scroll: false })
+    const apple = page.getByRole('link', { name: 'Download on the App Store' }).first()
+    const row = apple.locator('xpath=ancestor::div[contains(@class,"flex")][1]')
+    await expect(row).toHaveScreenshot('store-badges.png')
+  })
+
   test('home call to action download', async ({ page }) => {
     await page.goto('/')
     await waitForVisualReady(page)
-    const cta = page.getByRole('link', { name: /get captime/i }).first()
-    await cta.scrollIntoViewIfNeeded()
-    const section = page.locator('section').filter({ has: cta }).first()
+    const heading = page.getByRole('heading', { name: 'Smash every workout.' })
+    await heading.scrollIntoViewIfNeeded()
+    const section = page.locator('section').filter({ has: heading }).first()
     await expect(section).toHaveScreenshot('home-cta.png')
   })
 

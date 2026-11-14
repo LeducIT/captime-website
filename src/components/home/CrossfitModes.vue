@@ -18,7 +18,7 @@ const modes = ['HIIT', 'AMRAP', 'EMOM', 'SALLY', 'TABATA']
                 v-for="(mode, index) in modes"
                 :key="index"
                 href="#"
-                class="relative text-center items-center justify-center px-6 py-2 text-xl font-bold text-white border border-white rounded-none hover:bg-white hover:text-black transition ease-in-out"
+                class="relative text-center items-center justify-center px-6 py-2 text-xl font-bold text-white ring-1 ring-white/40 rounded-xl hover:bg-white hover:text-black transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 {{ mode }}
               </a>
