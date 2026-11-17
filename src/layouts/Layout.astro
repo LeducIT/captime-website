@@ -54,6 +54,10 @@ const blog = Astro.url.pathname.startsWith('/blog')
       src="https://pls.digitalshift-ee.workers.dev/js/script.js"
       data-api="https://pls.digitalshift-ee.workers.dev/api/event"></script>
     <script>
+      import { initAnalytics } from '../lib/analytics'
+      initAnalytics()
+    </script>
+    <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker
           .register('/sw.js')

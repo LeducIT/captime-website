@@ -19,6 +19,7 @@
     "@headlessui/vue": "^1.7.23",
     "@heroicons/vue": "^2.2.0",
     "astro": "^7.2.4",
+    "posthog-js": "^1.450.1",
     "sitemap": "^9.0.1",
     "vue": "^3.5.41"
   },

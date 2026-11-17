@@ -5,15 +5,27 @@ const blockedHosts = [
   'client.crisp.chat',
   'app.chatwoot.com',
   'js.crisp.chat',
+  'eu.i.posthog.com',
+  'eu-assets.i.posthog.com',
+  'eu.posthog.com',
+  'us.i.posthog.com',
+  'us-assets.i.posthog.com',
+  'us.posthog.com',
 ]
 
 export async function blockThirdParty(page: Page) {
   await page.route('**/*', (route) => {
-    const host = new URL(route.request().url()).hostname
-    if (blockedHosts.some((blocked) => host === blocked || host.endsWith(`.${blocked}`)))
+    const url = new URL(route.request().url())
+    if (url.pathname === '/ingest' || url.pathname.startsWith('/ingest/'))
+      return route.abort()
+    if (blockedHosts.some(blocked => hostMatches(url.hostname, blocked)))
       return route.abort()
     return route.continue()
   })
+}
+
+function hostMatches(hostname: string, blocked: string) {
+  return hostname === blocked || hostname.endsWith(`.${blocked}`)
 }
 
 async function waitForImages(page: Page, timeoutMs = 4000) {
