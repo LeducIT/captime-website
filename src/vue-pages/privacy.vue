@@ -35,6 +35,10 @@ const toc = [
       processors such as the app stores, acting on our behalf. Some of them may process data outside the European Economic Area, with safeguards where the law requires them. We do
       not sell personal data, and we do not send marketing emails or marketing push notifications.
     </p>
+    <p>
+      The Captime app may record anonymous usage sessions (screens and taps, via PostHog EU) to improve the app. No account, typed text, or camera footage is recorded. The camera
+      feed in video mode is never sent anywhere and stays on the device.
+    </p>
 
     <h2 id="rights">Your rights</h2>
     <p>

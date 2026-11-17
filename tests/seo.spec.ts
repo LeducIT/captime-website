@@ -186,8 +186,13 @@ test.describe('on-page SEO', () => {
       expect(body).toContain('victor@leduc.it')
       expect(body).toContain('Leduc IT OÜ')
       expect(body).toContain('Estonia')
-      for (const banned of ['14574207', 'Sepapaja', 'RevenueCat', 'Sentry', 'Crisp', 'CapGo', 'PostHog', 'Stripe', 'Plausible', 'workers.dev', 'hello@forgr.ee', 'Digital Shift'])
+      for (const banned of ['14574207', 'Sepapaja', 'RevenueCat', 'Sentry', 'Crisp', 'CapGo', 'PostHog', 'Stripe', 'Plausible', 'workers.dev', 'hello@forgr.ee', 'Digital Shift']) {
+        if (path === '/privacy/' && banned === 'PostHog')
+          continue
         expect(body, banned).not.toContain(banned)
+      }
+      if (path === '/privacy/')
+        expect(body).toContain('PostHog EU')
     }
   })
 })
