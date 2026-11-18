@@ -2,7 +2,7 @@
 title: "The Science Behind Effective HIIT Training: Insights from Captime"
 slug: "the-science-behind-effective-hiit-training-insights-from-captime"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Uncover the science behind effective HIIT training with Captime's precision timing and personalization. Real-life success stories showcase how Captime enhances HIIT workouts, delivering remarkable results and transforming fitness journeys. Discover the power of Captime for elevated HIIT training."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

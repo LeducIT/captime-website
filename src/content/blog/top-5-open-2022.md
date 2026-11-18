@@ -2,8 +2,7 @@
 slug: "top-5-open-2022"
 title: "Top 5 Athletes CrossFit Open 2022 Leaderboard"
 description: The Open is held over 3 weeks, and a series of workouts are released weekly for competitors to complete. Athletes who wish to progress further in individual competitions need to perform the workouts as prescribed
-author: Team Captime
-author_url: "https://captime.app#team"
+author: "Victor Leduc"
 created_at: 2022-03-10T19:00:00.000+00:00
 updated_at: 2022-03-10T19:00:00.000+00:00
 head_image: "/crossfit_games.webp"

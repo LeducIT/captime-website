@@ -2,7 +2,7 @@
 title: "CrossFit for Beginners: How to Get Started and Thrive in Your Fitness Journey"
 slug: "crossfit-for-beginners-how-to-get-started-and-thrive-in-your-fitness-journey"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how to thrive in your CrossFit journey as a beginner. Learn the basics, set goals, find a box, and build a strong foundation for long-term success."
 created_at: 2023-12-08 14:27:00
 head_image: "/blog_meta.webp"

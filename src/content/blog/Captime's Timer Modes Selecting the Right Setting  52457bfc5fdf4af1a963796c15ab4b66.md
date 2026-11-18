@@ -2,7 +2,7 @@
 title: "Captime's Timer Modes: Selecting the Right Setting for Your Goals"
 slug: "captimes-timer-modes-selecting-the-right-setting-for-your-goals"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Explore Captime's Timer Modes for precision timing and customized workouts. From HIIT to EMOM and For Time challenges, achieve your fitness goals with ease and efficiency. Elevate your training experience with Captime's innovative features."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

@@ -2,7 +2,7 @@
 title: "How to Use Captime's TABATA Timer for Maximum Results"
 slug: "how-to-use-captimes-tabata-timer-for-maximum-results"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the benefits of TABATA training and how Captime's TABATA Timer can help you achieve your fitness goals. Maximise your workouts and track your progress with ease."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

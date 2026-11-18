@@ -2,7 +2,7 @@
 title: "Fight Gone Bad: Testing Your Limits with this CrossFit Classic"
 slug: "fight-gone-bad-testing-your-limits-with-this-crossfit-classic"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Unleash your full potential with Fight Gone Bad. Explore its origins, structure, benefits, tips, and variations for all fitness levels. Elevate your CrossFit training today!"
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1434596922112-19c563067271?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

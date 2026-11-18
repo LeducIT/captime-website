@@ -2,7 +2,7 @@
 title: "Why a Premium CrossFit Timer Is Worth the Investment"
 slug: "why-a-premium-crossfit-timer-is-worth-the-investment"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Learn why investing in a premium CrossFit timer is worth it, and discover the top features to look for in a buyer's guide. Enhance your training experience today!"
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1623428455276-c5243d302dbe?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

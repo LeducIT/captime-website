@@ -2,7 +2,7 @@
 title: "HIIT Workouts for Fat Loss: Torch Calories and Boost Metabolism"
 slug: "hiit-workouts-for-fat-loss-torch-calories-and-boost-metabolism"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the science behind HIIT workouts for fat loss. Learn how HIIT boosts metabolism, targets fat, and design effective HIIT routines to torch calories."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1470468969717-61d5d54fd036?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

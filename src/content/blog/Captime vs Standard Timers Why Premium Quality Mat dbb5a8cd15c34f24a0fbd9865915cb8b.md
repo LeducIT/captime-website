@@ -2,7 +2,7 @@
 title: "Captime vs. Standard Timers: Why Premium Quality Matters in CrossFit Training"
 slug: "captime-vs-standard-timers-why-premium-quality-matters-in-crossfit-training"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the game-changing impact of a premium timer like Captime in CrossFit training. From durability to advanced features, elevate your workouts and achieve long-term success with precision timing and reliability."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

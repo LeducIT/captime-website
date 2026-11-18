@@ -2,7 +2,7 @@
 title: "Captime's Timers: The Perfect Tool for CrossFit Coaches and Trainers"
 slug: "captimes-timers-the-perfect-tool-for-crossfit-coaches-and-trainers"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Captime's Timers are the perfect tool for CrossFit coaches and trainers. With a range of specialized timers for different workout types, customization options, and user-friendly features, Captime's Timers are a must-have for any CrossFit athlete looking to improve their training and track their progress. Read on to learn more about how Captime's Timers can benefit your CrossFit workouts and classes."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1520399636535-24741e71b160?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

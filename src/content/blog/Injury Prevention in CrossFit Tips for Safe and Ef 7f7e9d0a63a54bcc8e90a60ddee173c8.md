@@ -2,7 +2,7 @@
 title: "Injury Prevention in CrossFit: Tips for Safe and Effective Training"
 slug: "injury-prevention-in-crossfit-tips-for-safe-and-effective-training"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover essential tips and strategies for injury prevention in CrossFit training. Learn about common injuries, warm-up routines, technique and form, recovery, and scaling and progression strategies to train safely and effectively."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1609113160023-4e31f3765fd7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

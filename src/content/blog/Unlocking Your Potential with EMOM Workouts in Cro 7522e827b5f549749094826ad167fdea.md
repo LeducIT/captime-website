@@ -2,7 +2,7 @@
 title: "Unlocking Your Potential with EMOM Workouts in CrossFit"
 slug: "unlocking-your-potential-with-emom-workouts-in-crossfit"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Unlock your potential in CrossFit with EMOM workouts. Enhance conditioning, manage time effectively, and challenge your limits. Discover strategies and variations to maximize performance."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

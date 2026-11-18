@@ -2,7 +2,7 @@
 title: "The Top Supplements for CrossFit Athletes"
 slug: "the-top-supplements-for-crossfit-athletes"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the top supplements for CrossFit athletes, including protein powder, creatine, BCAAs, and fish oil. Learn how to optimize your workouts with timers and take your performance to the next level."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1502904550040-7534597429ae?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

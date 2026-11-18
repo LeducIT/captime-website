@@ -5,8 +5,7 @@ surtitle: ""
 subtitle: ""
 published: true
 description: AMRAP stands for As Many Reps or Rounds As Possible. This workout has you competing with the clock to complete as many reps or rounds as you can in a given time.
-author: Team Captime
-author_url: "https://captime.app#team"
+author: "Victor Leduc"
 created_at: 2022-01-12T19:00:00.000+00:00
 updated_at: 2022-01-12T19:00:00.000+00:00
 head_image: "/amrap1.webp"

@@ -1,16 +1,13 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import { openMessenger } from '../services/crisp'
 
 onMounted(() => {
-  if (window.location.hash.includes('#support')) {
-    openMessenger()
-  }
+  if (window.location.hash.includes('#support')) window.location.href = 'mailto:victor@leduc.it'
 })
 </script>
 
 <template>
-  <footer class="p-4 rounded-none shadow md:px-6 md:py-8">
+  <div>
     <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
 
     <div class="sm:flex sm:items-center sm:justify-between">
@@ -26,11 +23,10 @@ onMounted(() => {
           <a href="/tos/" rel="nofollow" class="mr-4 hover:underline md:mr-6"> Terms & Conditions </a>
         </li>
         <li>
-          <a @click="openMessenger()" rel="nofollow" class="mr-4 hover:underline md:mr-6"> Support </a>
+          <a href="mailto:victor@leduc.it" class="mr-4 hover:underline md:mr-6"> Support </a>
         </li>
       </ul>
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-    <span class="block text-sm text-white sm:text-center">© 2022 <a href="/" class="hover:underline font-handel">Captime</a>. All Rights Reserved. </span>
-  </footer>
+  </div>
 </template>

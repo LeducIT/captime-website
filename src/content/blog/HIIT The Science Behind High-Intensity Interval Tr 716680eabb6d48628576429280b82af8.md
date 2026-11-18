@@ -2,7 +2,7 @@
 title: "HIIT: The Science Behind High-Intensity Interval Training"
 slug: "hiit-the-science-behind-high-intensity-interval-training"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how to design an effective HIIT workout routine with our tips and strategies. Elevate your fitness level, burn fat, and achieve maximum results in minimal time with high-intensity interval training."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

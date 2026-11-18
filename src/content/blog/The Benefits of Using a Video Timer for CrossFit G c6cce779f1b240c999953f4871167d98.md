@@ -2,7 +2,7 @@
 title: "The Benefits of Using a Video Timer for CrossFit Games"
 slug: "the-benefits-of-using-a-video-timer-for-crossfit-games"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the benefits of using a video timer for CrossFit games, including improved time management, increased accountability, enhanced motivation, and better performance tracking."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1652191109798-52c213534a9c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

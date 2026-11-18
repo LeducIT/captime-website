@@ -2,7 +2,7 @@
 title: "How to Train for a CrossFit Competition"
 slug: "how-to-train-for-a-crossfit-competition"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Learn how to train for a CrossFit competition with these tips. Set goals, focus on strengths and weaknesses, incorporate a variety of workouts, prioritize nutrition and recovery, and join a community for support."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1666979290090-dde24b4614bb?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

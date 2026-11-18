@@ -2,7 +2,7 @@
 title: "EMOM Timer: What It Is and How to Use It for Maximum Results"
 slug: "emom-timer-what-it-is-and-how-to-use-it-for-maximum-results"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the EMOM timer and how it can help you achieve maximum results in your workouts. Learn how to set it up and use it for strength and conditioning, with helpful tips and top workouts to try."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

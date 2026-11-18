@@ -2,7 +2,7 @@
 title: "How to Use Interval Training to Boost Your Fitness Levels"
 slug: "how-to-use-interval-training-to-boost-your-fitness-levels"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how to use interval training to boost your fitness levels with CrossFit, HIIT, and Tabata workouts. Learn how to design an effective program, incorporate interval training into your workouts, and maximize the benefits while staying safe and injury-free."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1546483875-ad9014c88eba?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

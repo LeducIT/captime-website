@@ -2,7 +2,7 @@
 title: "Tabata Training: Unleashing the Power of High-Intensity Interval Training"
 slug: "tabata-training-unleashing-the-power-of-high-intensity-interval-training"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Unleash the power of Tabata training to elevate your athletic performance. Boost speed, power, and endurance with high-intensity interval training. Discover the science behind Tabata and unlock your full potential."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

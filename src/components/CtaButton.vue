@@ -1,23 +1,25 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { downloadPath } from '../constants'
+import { campaignPath } from '../lib/campaign'
 
 const props = withDefaults(defineProps<{
   href?: string
+  ct?: string
   size?: 'sm' | 'md'
   title?: string
 }>(), {
-  href: downloadPath,
+  ct: 'nav',
   size: 'md',
   title: 'Download Captime',
 })
 
-const isExternal = computed(() => /^https?:\/\//.test(props.href))
+const resolvedHref = computed(() => props.href || campaignPath(props.ct))
+const isExternal = computed(() => /^https?:\/\//.test(resolvedHref.value))
 </script>
 
 <template>
   <a
-    :href="href"
+    :href="resolvedHref"
     :title="title"
     :target="isExternal ? '_blank' : undefined"
     :rel="isExternal ? 'noopener noreferrer' : undefined"

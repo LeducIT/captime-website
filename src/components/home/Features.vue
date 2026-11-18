@@ -19,7 +19,7 @@ const features = [
 </script>
 
 <template>
-  <div class="relative backdrop-blur-lg bg-black/30 pt-8 pb-16">
+  <div class="relative backdrop-blur-lg bg-black/30 pt-6 pb-8 md:pt-8 md:pb-16">
     <h2 class="text-white text-center text-2xl font-bold sm:text-3xl md:text-4xl mb-6">The features you always needed</h2>
     <h3 class="text-gray-400 text-center text-lg pb-8 max-w-3xl mx-auto px-6">
       The intuitive interface enables you to select advanced timers within seconds, including HIIT, AMRAP, TABATA, EMOM, and more.

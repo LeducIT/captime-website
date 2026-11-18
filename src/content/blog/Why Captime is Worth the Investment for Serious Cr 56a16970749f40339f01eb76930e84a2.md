@@ -2,7 +2,7 @@
 title: "Why Captime is Worth the Investment for Serious CrossFit Athletes"
 slug: "why-captime-is-worth-the-investment-for-serious-crossfit-athletes"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover why Captime is a must-have investment for serious CrossFit athletes. From advanced technology to customizable timers, Captime helps track progress and improve performance."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1556817411-58c45dd94e8c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

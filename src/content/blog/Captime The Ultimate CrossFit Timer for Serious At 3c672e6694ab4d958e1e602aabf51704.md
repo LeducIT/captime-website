@@ -2,7 +2,7 @@
 title: "Captime: The Ultimate CrossFit Timer for Serious Athletes"
 slug: "captime-the-ultimate-crossfit-timer-for-serious-athletes"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the game-changer for CrossFit athletes! Introducing Captime, the ultimate timer designed for precision and customization. Elevate your performance, conquer challenges, and achieve peak results with this advanced CrossFit timer."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

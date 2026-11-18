@@ -7,8 +7,7 @@ description:
   only go to their body limits but should also aim for sport-related nutrition i.e.
   CrossFit nutrition. In this article, you will find out what a compatible Crossfit
   diet looks like and what you should be careful about.
-author: Team Captime
-author_url: "https://captime.app#team"
+author: "Victor Leduc"
 created_at: 2022-04-10T19:00:00.000+00:00
 updated_at: 2022-04-10T19:00:00.000+00:00
 head_image: "/crossfit-zone-diet-a-crash-diet-or-an-effective-one.webp"

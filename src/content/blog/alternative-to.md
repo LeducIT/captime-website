@@ -2,8 +2,7 @@
 slug: "alternative-to"
 title: "Best Alternative to the Rogue Echo Gym Timer"
 description: "For a home gym or CrossFit box, a dedicated WOD timer keeps you on the clock. Focus on the workout instead of checking your watch when you are out of breath."
-author: "Team Captime"
-author_url: "https://captime.app#team"
+author: "Victor Leduc"
 created_at: 2022-01-13T19:00:00.000+00:00
 updated_at: 2022-02-23T19:00:00.000+00:00
 head_image: /alternative_to_1.webp

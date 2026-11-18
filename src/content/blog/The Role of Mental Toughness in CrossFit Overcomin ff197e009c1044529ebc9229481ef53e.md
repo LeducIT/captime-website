@@ -2,7 +2,7 @@
 title: "The Role of Mental Toughness in CrossFit: Overcoming Challenges and Pushing Boundaries"
 slug: "the-role-of-mental-toughness-in-crossfit-overcoming-challenges-and-pushing-boundaries"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Unleash your full potential in CrossFit with the power of mental toughness. Explore the role of mindset, resilience, and overcoming plateaus in this informative blog post. Discover how mental strength influences physical performance and learn strategies to enhance your CrossFit journey."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1604247584233-99c80a8aae2c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

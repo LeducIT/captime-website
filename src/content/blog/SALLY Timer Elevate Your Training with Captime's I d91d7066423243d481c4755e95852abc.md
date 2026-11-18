@@ -2,7 +2,7 @@
 title: "SALLY Timer: Elevate Your Training with Captime's Innovative Feature"
 slug: "sally-timer-elevate-your-training-with-captimes-innovative-feature"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Unlock your full potential and elevate your training with Captime's SALLY Timer. Maximize intensity, improve endurance, and achieve remarkable results in your workouts. Take your fitness to new heights with this innovative feature."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

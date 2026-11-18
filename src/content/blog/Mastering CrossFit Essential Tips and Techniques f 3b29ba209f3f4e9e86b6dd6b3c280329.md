@@ -2,7 +2,7 @@
 title: "Mastering CrossFit: Essential Tips and Techniques for Peak Performance"
 slug: "mastering-crossfit-essential-tips-and-techniques-for-peak-performance"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the power of mental resilience in CrossFit. Learn how to develop a strong mindset, set goals, and utilize mental strategies to overcome challenges and achieve peak performance. Elevate your CrossFit game with these valuable tips and techniques."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

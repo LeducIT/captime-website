@@ -2,7 +2,7 @@
 title: "Fight Gone Bad: Intensify Your Workouts with Captime's Customizable Intervals"
 slug: "fight-gone-bad-intensify-your-workouts-with-captimes-customizable-intervals"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the power of Captime in CrossFit. Customize intervals, optimize performance, and track progress with precision timing and data analytics. Elevate your CrossFit journey with Captime."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

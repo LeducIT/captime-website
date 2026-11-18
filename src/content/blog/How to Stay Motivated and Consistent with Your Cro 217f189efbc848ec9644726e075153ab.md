@@ -2,7 +2,7 @@
 title: "How to Stay Motivated and Consistent with Your CrossFit Training"
 slug: "how-to-stay-motivated-and-consistent-with-your-crossfit-training"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover effective strategies to stay motivated and consistent in your CrossFit training. Set clear goals, establish routines, build a supportive community, and cultivate a positive mindset. Unlock your full potential in CrossFit."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1517438984742-1262db08379e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

@@ -2,7 +2,7 @@
 title: "The Benefits of CrossFit: Strength, Agility, and Stamina"
 slug: "the-benefits-of-crossfit-strength-agility-and-stamina"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the benefits of CrossFit for strength, agility, and stamina. Enhance your fitness and unlock your full potential with dynamic workouts."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

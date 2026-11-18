@@ -2,7 +2,7 @@
 title: "Why Interval Training is Essential for Building Endurance"
 slug: "why-interval-training-is-essential-for-building-endurance"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover why interval training is essential for building endurance and how to avoid common mistakes. Learn about different timers to maximize your workouts."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

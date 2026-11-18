@@ -2,7 +2,7 @@
 title: "The Role of CrossFit in Preventing Common Sports Injuries"
 slug: "the-role-of-crossfit-in-preventing-common-sports-injuries"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Enhance your CrossFit performance and prevent injuries by prioritizing mobility and flexibility. Learn effective exercises, stretches, and techniques to improve joint health and range of motion in this informative blog post."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1517130038641-a774d04afb3c?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

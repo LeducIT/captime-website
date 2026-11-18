@@ -2,7 +2,7 @@
 title: "The Power of Tabata Intervals with Captime: Maximize Your Workout Results"
 slug: "the-power-of-tabata-intervals-with-captime-maximize-your-workout-results"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the potent combination of Tabata Intervals and Captime, enhancing your fitness journey with precision timing and customization. Elevate your results and stay motivated with Captime as your ultimate training partner."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1609096458733-95b38583ac4e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

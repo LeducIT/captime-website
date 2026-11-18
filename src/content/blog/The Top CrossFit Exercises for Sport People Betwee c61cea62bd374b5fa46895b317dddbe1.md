@@ -2,7 +2,7 @@
 title: "The Top CrossFit Exercises for Sport People Between 25-35"
 slug: "the-top-crossfit-exercises-for-sport-people-between-25-35"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Looking to incorporate CrossFit into your workout routine? Check out our top exercises and tips for staying safe while improving strength and endurance."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1499083773823-5000fa2b23e4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

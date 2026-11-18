@@ -2,7 +2,7 @@
 title: "The Evolution of CrossFit: From Garage Gyms to Mainstream Fitness"
 slug: "the-evolution-of-crossfit-from-garage-gyms-to-mainstream-fitness"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Explore the remarkable journey of CrossFit, from garage gyms to a mainstream fitness phenomenon. Discover its impact on the industry, functional movements, high-intensity workouts, and community-driven approach."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1540474211005-7c8a448f69e6?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

@@ -2,7 +2,7 @@
 title: "How to Incorporate Tabata Workouts into Your CrossFit Routine"
 slug: "how-to-incorporate-tabata-workouts-into-your-crossfit-routine"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover the perfect fusion of Tabata and CrossFit. Elevate your training with intense Tabata workouts and unleash new levels of endurance and strength."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1470468969717-61d5d54fd036?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

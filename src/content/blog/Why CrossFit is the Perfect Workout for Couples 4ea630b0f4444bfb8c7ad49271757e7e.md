@@ -2,7 +2,7 @@
 title: "Why CrossFit is the Perfect Workout for Couples"
 slug: "why-crossfit-is-the-perfect-workout-for-couples"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover why CrossFit is the perfect workout for couples. From building stronger bonds to finding balance, read about the benefits of working out together."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1518459031867-a89b944bffe4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

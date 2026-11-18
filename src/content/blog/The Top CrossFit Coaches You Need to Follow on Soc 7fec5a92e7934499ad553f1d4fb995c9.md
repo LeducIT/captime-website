@@ -2,7 +2,7 @@
 title: "The Top CrossFit Coaches You Need to Follow on Social Media"
 slug: "the-top-crossfit-coaches-you-need-to-follow-on-social-media"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Looking to improve your CrossFit game? Check out these top CrossFit coaches on social media and get access to expert tips, timers, and a supportive community!"
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1521830101529-057b1dfd9784?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

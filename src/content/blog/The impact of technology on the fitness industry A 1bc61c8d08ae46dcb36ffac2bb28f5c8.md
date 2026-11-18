@@ -2,7 +2,7 @@
 title: "The impact of technology on the fitness industry: A look at Captime"
 slug: "the-impact-of-technology-on-the-fitness-industry-a-look-at-captime"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Discover how Captime and other fitness technology are revolutionizing the way people work out, with features like timers, progress tracking, and more."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1627483297886-49710ae1fc22?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

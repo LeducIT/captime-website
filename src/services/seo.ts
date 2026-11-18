@@ -1,4 +1,5 @@
 import { appDescription, appName, appStoreUrl, playStoreUrl } from '../constants'
+import { resolveAuthor } from '../lib/authors'
 import { useRuntimeConfig } from '../config/app'
 import { isPublishedPost, loadBlogPosts, parsePostDate, type MyCustomParsedContent } from './blog'
 
@@ -119,6 +120,17 @@ export function xmlResponse(body: string): Response {
       'Content-Type': 'application/xml; charset=utf-8',
     },
   })
+}
+
+function personNode(post: MyCustomParsedContent, origin: string) {
+  const profile = resolveAuthor(post.author)
+  const node: Record<string, unknown> = {
+    '@type': 'Person',
+    name: profile.name,
+  }
+  if (profile.image)
+    node.image = `${origin}${profile.image}`
+  return node
 }
 
 function organizationNode() {
@@ -278,11 +290,7 @@ export function articleStructuredData(post: MyCustomParsedContent, image: string
         datePublished,
         dateModified,
         inLanguage: 'en',
-        author: {
-          '@type': 'Person',
-          name: post.author || 'Captime',
-          url: post.author_url || origin,
-        },
+        author: personNode(post, origin),
         publisher: {
           '@id': `${origin}/#organization`,
         },

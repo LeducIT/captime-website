@@ -17,13 +17,17 @@ picture {
 
 @font-face {
   font-family: 'Handel_Gothic';
-  src: url('/fonts/Handel_Gothic.woff2') format('woff2'), url('/fonts/Handel_Gothic.ttf') format('truetype');
+  src:
+    url('/fonts/Handel_Gothic.woff2') format('woff2'),
+    url('/fonts/Handel_Gothic.ttf') format('truetype');
   font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: 'Alarm_Clock';
-  src: url('/fonts/Alarm_Clock.woff2') format('woff2'), url('/fonts/Alarm_Clock.woff') format('woff'),
+  src:
+    url('/fonts/Alarm_Clock.woff2') format('woff2'),
+    url('/fonts/Alarm_Clock.woff') format('woff'),
     url('/fonts/Alarm_Clock.ttf') format('truetype');
   font-weight: 300;
   font-display: swap;
@@ -36,4 +40,107 @@ picture {
 .prose h5,
 .prose h6 {
   color: #ffff;
+}
+
+.legal-prose {
+  color: #e5e7eb;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.legal-prose h2,
+.legal-prose h3 {
+  color: #fff;
+  font-family: Handel_Gothic, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  scroll-margin-top: 1.5rem;
+}
+
+.legal-prose h2 {
+  font-size: 1.75rem;
+  margin: 2.75rem 0 0;
+}
+
+.legal-prose h3 {
+  font-size: 1.25rem;
+  margin: 1.75rem 0 0;
+}
+
+.legal-prose > h2:first-child {
+  margin-top: 0;
+}
+
+.legal-prose p,
+.legal-prose ul,
+.legal-prose ol {
+  margin: 1rem 0 0;
+}
+
+.legal-prose ul,
+.legal-prose ol {
+  padding-left: 1.25rem;
+}
+
+.legal-prose ul {
+  list-style: disc;
+}
+
+.legal-prose ol {
+  list-style: decimal;
+}
+
+.legal-prose li {
+  margin-top: 0.55rem;
+  padding-left: 0.35rem;
+}
+
+.legal-prose li::marker {
+  color: #eb0e0e;
+}
+
+.legal-prose strong {
+  color: #fff;
+  font-weight: 650;
+}
+
+.legal-prose a {
+  color: #7ccdff;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  overflow-wrap: anywhere;
+}
+
+.legal-prose a:hover {
+  color: #fff;
+}
+
+.legal-prose a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.legal-prose ul.legal-cards {
+  list-style: none;
+  padding-left: 0;
+}
+
+.legal-prose ul.legal-cards > li {
+  margin-top: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.legal-prose ul.legal-cards > li::marker {
+  content: '';
+}
+
+.legal-prose ul.legal-cards a {
+  display: inline-block;
+  margin-top: 0.35rem;
 }

@@ -2,7 +2,7 @@
 title: "CrossFit and Mental Toughness: Developing Resilience through Exercise"
 slug: "crossfit-and-mental-toughness-developing-resilience-through-exercise"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Unlock the power of your mind with CrossFit! Explore the connection between CrossFit and mental toughness, learn techniques to develop resilience, and discover how mental toughness translates to everyday life."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1533681904393-9ab6eee7e408?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

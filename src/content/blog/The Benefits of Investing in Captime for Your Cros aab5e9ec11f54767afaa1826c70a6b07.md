@@ -2,7 +2,7 @@
 title: "The Benefits of Investing in Captime for Your CrossFit Journey"
 slug: "the-benefits-of-investing-in-captime-for-your-crossfit-journey"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Unleash your full potential in CrossFit with Captime. Precision timing, advanced features, and durability redefine timer performance, fueling your success in the world of CrossFit."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1578762560042-46ad127c95ea?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

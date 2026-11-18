@@ -2,7 +2,7 @@
 title: "How to Stay Motivated During Your CrossFit Training with Captime"
 slug: "how-to-stay-motivated-during-your-crossfit-training-with-captime"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Learn how to stay motivated during your CrossFit training with Captime! Discover the benefits of setting clear goals, finding a supportive community, keeping workouts varied, rewarding yourself for achievements, and prioritizing rest and recovery."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200"

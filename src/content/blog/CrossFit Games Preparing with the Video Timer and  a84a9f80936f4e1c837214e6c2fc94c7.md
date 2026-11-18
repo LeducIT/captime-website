@@ -2,7 +2,7 @@
 title: "CrossFit Games: Preparing with the Video Timer and Training Strategies"
 slug: "crossfit-games-preparing-with-the-video-timer-and-training-strategies"
 published: true
-author: "Martin Donadieu"
+author: "Victor Leduc"
 description: "Take your CrossFit Games training to new heights by integrating the Video Timer. Discover practical tips to optimize workouts, refine technique, and enhance performance evaluation."
 created_at: 2023-12-08 14:27:00
 head_image: "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200"

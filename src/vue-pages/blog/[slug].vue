@@ -5,6 +5,7 @@ import ModeChip from '../../components/ModeChip.vue'
 import ArticleCta from '../../components/ArticleCta.vue'
 import WodWhiteboard from '../../components/WodWhiteboard.vue'
 import { formatTime } from '../../config/app'
+import { resolveAuthor } from '../../lib/authors'
 import { getPostMode, isModeGuide } from '../../services/modes'
 
 const props = defineProps<{
@@ -15,6 +16,7 @@ const props = defineProps<{
   description?: string
   author?: string
   author_url?: string
+  author_image?: string
   created_at?: string
   updated_at?: string
   head_image?: string
@@ -34,6 +36,7 @@ const mode = computed(() => getPostMode({
 const chip = computed(() => mode.value || (props.tag || '').trim())
 const showBoard = computed(() => Boolean(mode.value && isModeGuide(props.slug)))
 const imageSrc = computed(() => props.head_image || '/blog_meta.webp')
+const authorProfile = computed(() => resolveAuthor(props.author))
 const imageAlt = computed(() => props.head_image_alt || props.title || 'Captime blog')
 const headings = computed(() => (props.toc || []).filter((item: { depth: number }) => item.depth >= 2))
 
@@ -52,10 +55,10 @@ const parts = computed(() => {
 
 <template>
   <main class="text-white">
-    <div class="relative mx-auto max-w-[65ch] px-4 pb-4">
-      <div class="block aspect-w-4 aspect-h-3">
+    <div class="relative mx-auto max-w-[65ch] md:px-4">
+      <div class="relative aspect-[4/3] overflow-hidden bg-black md:rounded-lg">
         <img
-          class="object-cover w-full h-full lg:rounded-lg md:shadow-xl md:shadow-gray-700"
+          class="absolute inset-0 h-full w-full object-cover"
           :src="imageSrc"
           loading="eager"
           fetchpriority="high"
@@ -65,9 +68,31 @@ const parts = computed(() => {
           :alt="imageAlt"
           :title="imageAlt"
         >
-      </div>
-      <div v-if="chip" class="absolute top-4 left-8">
-        <ModeChip :label="chip" />
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-b from-transparent via-black/80 to-black" />
+        <div v-if="chip" class="absolute left-4 top-4 z-1">
+          <ModeChip :label="chip" />
+        </div>
+        <div class="absolute inset-x-0 bottom-0 z-1 px-4 pb-4">
+          <h1 class="text-left text-2xl font-handel text-white sm:text-3xl lg:text-4xl">
+            {{ title }}
+          </h1>
+          <p class="mt-2 flex items-center gap-2 text-xs leading-none text-gray-200 sm:text-sm">
+            <img
+              v-if="authorProfile.image"
+              :src="authorProfile.image96 || authorProfile.image"
+              alt=""
+              width="28"
+              height="28"
+              class="h-7 w-7 shrink-0 rounded-full object-cover"
+              loading="eager"
+              decoding="async"
+            >
+            <span class="min-w-0">
+              <span>{{ authorProfile.name || author }}</span>
+              <span v-if="created_at"> · {{ formatTime(created_at) }}</span>
+            </span>
+          </p>
+        </div>
       </div>
     </div>
 
@@ -90,15 +115,7 @@ const parts = computed(() => {
       </nav>
 
       <div class="min-w-0 flex-1 max-w-[65ch] mx-auto">
-        <p class="mt-6 text-sm font-semibold tracking-widest text-white uppercase text-center">
-          <span v-if="author">{{ author }}</span>
-          <span v-if="author && created_at"> · </span>
-          <span v-if="created_at">{{ formatTime(created_at) }}</span>
-        </p>
-        <h1 class="py-5 text-3xl lg:text-4xl font-handel font-800 text-center">
-          {{ title }}
-        </h1>
-        <p class="pb-5 text-left text-gray-200">
+        <p class="py-5 text-left text-gray-200">
           {{ description }}
         </p>
 
