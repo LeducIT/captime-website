@@ -15,6 +15,8 @@ const toc = [
     current="privacy"
     contact-about="this Privacy Policy"
     :toc="toc"
+    updated="November 20, 2026"
+    updated-iso="2026-11-20"
     lede="This policy describes, in general terms, how Leduc IT OÜ handles personal data when you use Captime."
   >
     <h2 id="who-we-are">Who we are</h2>
@@ -26,9 +28,9 @@ const toc = [
 
     <h2 id="data">Data</h2>
     <p>
-      We may process account or contact information if you provide it, purchase status, device and usage data, and messages you send to support. Website usage is measured without
-      cookies and without identifying you. We use this data to provide and improve the service, to support you, for security, and for legal compliance. We rely on contract, legitimate
-      interests, legal duty, and your request when you contact us.
+      We may process account or contact information if you provide it, purchase status, device and usage data, and messages you send to support. The website stores an anonymous
+      analytics identifier in the browser and may record anonymous sessions (pages, clicks, scrolling) via PostHog EU, with typed text masked. We use this data to provide and improve
+      the service, to support you, for security, and for legal compliance. We rely on contract, legitimate interests, legal duty, and your request when you contact us.
     </p>
     <p>
       We keep personal data only for as long as we need it for these purposes, or longer where the law requires us to keep it. We use trusted service providers, and payment
