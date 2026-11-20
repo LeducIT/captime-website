@@ -15,7 +15,8 @@ export function initAnalytics(): void {
   posthog.init(posthogKey, {
     api_host: posthogApiHost,
     ui_host: posthogUiHost,
-    cookieless_mode: 'always',
+    // Replay needs a stored session id. localStorage+cookie is the posthog-js default that keeps it.
+    persistence: 'localStorage+cookie',
     person_profiles: 'identified_only',
     autocapture: true,
     // Full page loads. This site does not use Astro view transitions.
