@@ -37,7 +37,7 @@ async function forwardRequest(request: Request, pathWithSearch: string): Promise
   originHeaders.delete('host')
   if (!/^Bearer ph[csx]_/.test(originHeaders.get('authorization') ?? ''))
     originHeaders.delete('authorization')
-  // Client events need the visitor IP so EU cookieless hashing can run. PostHog drops the IP after that.
+  // Forward the visitor IP so PostHog can attach a location. PostHog drops the IP after that.
   originHeaders.set('X-Forwarded-For', ip)
 
   const hasBody = request.method !== 'GET' && request.method !== 'HEAD'

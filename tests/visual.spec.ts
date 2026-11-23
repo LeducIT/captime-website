@@ -67,7 +67,8 @@ test.describe('visual baselines', () => {
       await page.goto(pageCase.path)
       await waitForVisualReady(page, { scroll: false })
       await expect(page.getByRole('heading', { level: 1, name: pageCase.heading })).toBeVisible()
-      await expect(page.locator('time')).toHaveAttribute('datetime', '2026-11-14')
+      const updated = pageCase.path === '/privacy/' ? '2026-11-20' : '2026-11-14'
+      await expect(page.locator('time')).toHaveAttribute('datetime', updated)
       await expect(page.getByText('Last updated', { exact: true })).toBeVisible()
 
       const family = await page.locator('h1').evaluate((el) => getComputedStyle(el).fontFamily)

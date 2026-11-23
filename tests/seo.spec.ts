@@ -191,8 +191,13 @@ test.describe('on-page SEO', () => {
           continue
         expect(body, banned).not.toContain(banned)
       }
-      if (path === '/privacy/')
+      if (path === '/privacy/') {
         expect(body).toContain('PostHog EU')
+        expect(body).toContain('anonymous analytics identifier')
+        expect(body).toContain('anonymous sessions (pages, clicks, scrolling)')
+        expect(body).toContain('typed text masked')
+        expect(body).toContain('The Captime app may record anonymous usage sessions')
+      }
     }
   })
 })

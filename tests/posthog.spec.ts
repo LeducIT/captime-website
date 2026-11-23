@@ -221,23 +221,25 @@ test.describe('PostHog on the page', () => {
 
     await expect.poll(() => page.evaluate(() => {
       const client = (window as Window & {
-        posthog?: { __loaded?: boolean, config?: { api_host?: string, cookieless_mode?: string, session_recording?: { maskAllInputs?: boolean } } }
+        posthog?: { __loaded?: boolean, config?: { api_host?: string, persistence?: string, cookieless_mode?: string, session_recording?: { maskAllInputs?: boolean } } }
       }).posthog
       return {
         loaded: Boolean(client?.__loaded),
         apiHost: client?.config?.api_host || '',
+        persistence: client?.config?.persistence || '',
         cookieless: client?.config?.cookieless_mode || '',
         maskAllInputs: client?.config?.session_recording?.maskAllInputs === true,
       }
     })).toEqual({
       loaded: true,
       apiHost: '/ingest',
-      cookieless: 'always',
+      persistence: 'localStorage+cookie',
+      cookieless: '',
       maskAllInputs: true,
     })
 
     await expect.poll(() => scriptUrls.some(url => url.startsWith('200 '))).toBe(true)
-    expect(await page.evaluate(() => document.cookie)).not.toContain('ph_')
+    expect(await page.evaluate(() => document.cookie)).toContain('ph_')
 
     // Playwright sets navigator.webdriver, which PostHog treats as a bot and drops.
     await page.evaluate(() => {
@@ -257,5 +259,85 @@ test.describe('PostHog on the page', () => {
       platform: 'ios',
       ct: 'hero',
     })
+  })
+
+  test('session recording starts and posts snapshots to /ingest/s/', async ({ page }) => {
+    test.setTimeout(45_000)
+    const ingestUrls: string[] = []
+    page.on('request', (request) => {
+      const url = request.url()
+      if (url.includes('/ingest/'))
+        ingestUrls.push(`${request.method()} ${url}`)
+    })
+
+    await page.goto('/')
+    await expect.poll(() => page.evaluate(() => {
+      const client = (window as Window & {
+        posthog?: {
+          sessionRecordingStarted?: () => boolean
+          config?: {
+            api_host?: string
+            persistence?: string
+            cookieless_mode?: string
+            person_profiles?: string
+            disable_surveys?: boolean
+            autocapture?: boolean
+            capture_dead_clicks?: boolean
+            capture_heatmaps?: boolean
+            capture_performance?: boolean | object
+            disable_session_recording?: boolean
+            session_recording?: { maskAllInputs?: boolean }
+          }
+        }
+      }).posthog
+      const performance = client?.config?.capture_performance
+      return {
+        started: client?.sessionRecordingStarted?.() === true,
+        apiHost: client?.config?.api_host || '',
+        persistence: client?.config?.persistence || '',
+        cookieless: client?.config?.cookieless_mode || '',
+        personProfiles: client?.config?.person_profiles || '',
+        surveysOff: client?.config?.disable_surveys === true,
+        autocapture: client?.config?.autocapture === true,
+        deadClicks: client?.config?.capture_dead_clicks === true,
+        heatmaps: client?.config?.capture_heatmaps === true,
+        performance: performance === true || (typeof performance === 'object' && performance !== null),
+        recordingEnabled: client?.config?.disable_session_recording === false,
+        maskAllInputs: client?.config?.session_recording?.maskAllInputs === true,
+      }
+    }), { timeout: 20_000 }).toEqual({
+      started: true,
+      apiHost: '/ingest',
+      persistence: 'localStorage+cookie',
+      cookieless: '',
+      personProfiles: 'identified_only',
+      surveysOff: true,
+      autocapture: true,
+      deadClicks: true,
+      heatmaps: true,
+      performance: true,
+      recordingEnabled: true,
+      maskAllInputs: true,
+    })
+
+    // Playwright's userAgentData brand is HeadlessChrome, which PostHog treats as a bot and drops.
+    // The init config above is the real one. This only lets the test browser deliver the snapshot.
+    await page.evaluate(() => {
+      const client = (window as Window & { posthog?: { set_config: (config: { opt_out_useragent_filter: boolean }) => void } }).posthog
+      client?.set_config({ opt_out_useragent_filter: true })
+    })
+
+    // The project minimum is 3s of recorded activity, measured from event timestamps.
+    // Interact after that so the snapshot is old enough to send.
+    await page.waitForTimeout(3_500)
+    await page.mouse.move(80, 160)
+    await page.mouse.move(300, 420, { steps: 12 })
+    await page.mouse.wheel(0, 500)
+    await page.mouse.click(120, 240)
+
+    await expect.poll(() => ingestUrls.some(url => url.includes('/ingest/s/')), { timeout: 15_000 }).toBe(true)
+    const snapshot = ingestUrls.find(url => url.includes('/ingest/s/'))
+    console.log(`session replay evidence: sessionRecordingStarted=true ${snapshot}`)
+    expect(snapshot?.startsWith('POST ')).toBe(true)
   })
 })
